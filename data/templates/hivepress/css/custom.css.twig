@@ -20,6 +20,12 @@ abbr[title] {
     min-height: var(--top-header-height);
     padding: 0 var(--spacing-sm);
     text-align: right;
+    padding: 0 2em;
+    border-bottom: 1px solid rgba(7,36,86,.075);
+}
+
+.phpdocumentor-top-header .phpdocumentor-section {
+    width: auto;
 }
 
 .phpdocumentor-top-header a {
@@ -46,23 +52,26 @@ abbr[title] {
 
 /* Logo */
 .site-branding {
-    margin: 1.5em 0 1em;
+    margin: 1em 0;
     text-align: left;
 }
 
-.site-branding a::after {
-    content: 'DOCS';
-    font-family: var(--font-secondary);
-    color: #000;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32.5px;
-    vertical-align: top;
-    letter-spacing: -2px;
-    margin-left: 8px;
+.site-logo,
+.site-logo img {
+    display:block;
+}
+
+.site-logo img {
+    height:auto;
 }
 
 /* Navigation */
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .main-navigation ul {
     margin-bottom: 1em;
     padding-left: 0;
@@ -74,6 +83,11 @@ abbr[title] {
     font-weight: 400;
     font-size: .9em;
     text-decoration: none;
+    padding:0 1em;
+}
+
+.main-navigation li:last-child a {
+    padding-right:0;
 }
 
 .main-navigation a:hover {
