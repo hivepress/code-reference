@@ -26,6 +26,8 @@ abbr[title] {
 
 .phpdocumentor-top-header .phpdocumentor-section {
     width: auto;
+    max-width: none;
+    flex: 1;
 }
 
 .phpdocumentor-top-header a {
@@ -66,10 +68,12 @@ abbr[title] {
 }
 
 /* Navigation */
-.main-navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+@media (min-width: 400px) {
+    .main-navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
 .main-navigation ul {
@@ -83,7 +87,12 @@ abbr[title] {
     font-weight: 400;
     font-size: .9em;
     text-decoration: none;
-    padding:0 1em;
+}
+
+@media (min-width: 400px) {
+    .main-navigation a {
+        padding:0 1em;
+    }
 }
 
 .main-navigation li:last-child a {
@@ -241,8 +250,8 @@ abbr[title] {
 }
 
 .autoComplete_highlighted::selection {
-    color: rgba(#ffffff, 0);
-    background-color: rgba(#ffffff, 0);
+    color: rgba(255,255,255, 0);
+    background-color: rgba(255,255,255, 0);
 }
 
 /* Footer */

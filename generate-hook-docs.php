@@ -216,7 +216,7 @@ class HookDocsGenerator
 
             foreach ($hooks_found as $hook => $details) {
                 if (!strstr($hook, 'hivepress')) {
-                    //unset( $hooks_found[ $hook ] );
+                    unset( $hooks_found[ $hook ] );
                 }
             }
 
