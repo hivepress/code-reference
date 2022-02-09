@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title>HivePress Code Reference</title>
+  <files>
+    <directory>hivepress/</directory>
+    <ignore>hivepress/assets/</ignore>
+    <ignore>hivepress/languages/</ignore>
+    <ignore>hivepress/vendor/</ignore>
+  </files>
+</phpdoc>

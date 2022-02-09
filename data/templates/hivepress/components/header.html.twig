@@ -1,0 +1,19 @@
+<header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="{{ path("/index.html") }}"><img width="186" src="{{ path('images/logo.svg') }}" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="https://help.hivepress.io/">Help Center</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<div class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">{{ project.name }}</h1>
+        {{ include('components/search.html.twig') }}
+    </section>
+</div>

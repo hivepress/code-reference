@@ -1,1 +1,1 @@
-# code-reference
+This repository generates and hosts the HivePress code reference.
