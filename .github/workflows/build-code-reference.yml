@@ -1,4 +1,4 @@
-name: Update code reference
+name: Build code reference
 
 on:
   workflow_dispatch:
