@@ -41,7 +41,7 @@ class HookDocsGenerator
     {
         $files = [];
 
-        $files['Template Files']     = self::getFiles('*.php', GLOB_MARK, self::SOURCE_PATH);
+        $files['hooks']     = self::getFiles('*.php', GLOB_MARK, self::SOURCE_PATH . 'includes/');
 
         return array_filter($files);
     }
@@ -241,16 +241,8 @@ class HookDocsGenerator
     {
         $output = '';
 
-        $index = [];
-        foreach ($files_to_scan as $heading => $files) {
-            $index[] = '<a href="#hooks-' . str_replace(' ', '-', strtolower($heading)) . '">' . $heading . '</a>';
-        }
-
-        $output .= '<p>' . implode(', ', $index) . '</p>';
-
         $output .= '<div class="hooks-reference">';
         foreach ($hook_list as $heading => $hooks) {
-            $output .= '<h2 id="hooks-' . str_replace(' ', '-', strtolower($heading)) . '">' . $heading . '</h2>';
             $output .= '<dl class="phpdocumentor-table-of-contents">';
             foreach ($hooks as $hook => $details) {
                 $output .= '<dt class="phpdocumentor-table-of-contents__entry -' . $details['type'] . '">' . $hook . '</dt>';
