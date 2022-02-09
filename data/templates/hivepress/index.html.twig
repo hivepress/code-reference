@@ -3,18 +3,18 @@
 {% block content %}
     <h2>Documentation</h2>
 
-    {% set node = 'HivePress' %}
+    {% set node = project.namespace %}
 
     {{
     include(
         'components/table-of-contents.html.twig',
         {
-            'node': 'HivePress',
+            'node': project.namespace,
             'namespaces': usesNamespaces or not usesPackages ? node.children : [],
             'packages': usesPackages ? project.package.children : []
         }
     )
     }}
-    {{ include('components/constants.html.twig', {'node': 'HivePress'}) }}
-    {{ include('components/functions.html.twig', {'node': 'HivePress'}) }}
+    {{ include('components/constants.html.twig', {'node': project.namespace}) }}
+    {{ include('components/functions.html.twig', {'node': project.namespace}) }}
 {% endblock %}
