@@ -50,6 +50,7 @@
         };
     </script>
     <script src="{{ path('js/searchIndex.js') }}?updated={{ "now"|date('U') }}"></script>
-    <script src="{{ path('js/search.js') }}?updated={{ "now"|date('U') }}"></script>
+    {% block footer_javascripts %}
+    {% endblock %}
 </body>
 </html>

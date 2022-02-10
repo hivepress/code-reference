@@ -27,3 +27,7 @@
     {{ include('components/constants.html.twig', {'node': project.namespace}) }}
     {{ include('components/functions.html.twig', {'node': project.namespace}) }}
 {% endblock %}
+
+{% block footer_javascripts %}
+    <script src="{{ path('js/search.js') }}?updated={{ "now"|date('U') }}"></script>
+{% endblock %}

@@ -3,6 +3,7 @@
   <title>HivePress Code Reference</title>
   <files>
     <directory>hivepress/</directory>
+    <ignore>hivepress/includes/traits/</ignore>
     <ignore>hivepress/assets/</ignore>
     <ignore>hivepress/languages/</ignore>
     <ignore>hivepress/vendor/</ignore>

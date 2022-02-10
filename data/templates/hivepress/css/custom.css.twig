@@ -25,6 +25,10 @@ abbr[title] {
     line-height: 36px;
 }
 
+.phpdocumentor-top-header + main {
+    margin-bottom: var(--spacing-xl);
+}
+
 .phpdocumentor-top-header .phpdocumentor-section {
     width: auto;
     max-width: none;
@@ -111,6 +115,21 @@ abbr[title] {
     background-position: center center;
 	background-image: url("../images/pattern-light.svg");
 	background-color: #f6f9fc;
+    padding-top:96px;
+    padding-bottom:96px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.phpdocumentor-header {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.phpdocumentor-header {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 }
 
 .phpdocumentor-header p {
@@ -149,8 +168,17 @@ abbr[title] {
     position: absolute;
     right: 0;
     transition: all 0.1s ease-in-out;
-    width: 75%;
+    width: 90%;
     z-index: 1000;
+    box-shadow: 0 5px 30px rgb(7, 36, 86, 0.08);
+    border-radius: 10px;
+    margin-top:1em;
+}
+
+@media (min-width: 768px) {
+    .phpdocumentor-search-results__entries {
+        width:620px;
+    }
 }
 
 .phpdocumentor-search-results__entry {
@@ -246,7 +274,7 @@ abbr[title] {
 
 @media (min-width: 768px) {
     .phpdocumentor-search__field {
-        width:620px;
+        width:556px;
     }
 }
 
