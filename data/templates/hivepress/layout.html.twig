@@ -44,12 +44,6 @@
     <script>
         cssVars({});
     </script>
-    <script>
-        var searchParams = {
-            'searchIndex': '{{ path('js/searchIndex.json')|e('js') }}'
-        };
-    </script>
-    <script src="{{ path('js/searchIndex.js') }}?updated={{ "now"|date('U') }}"></script>
     {% block footer_javascripts %}
     {% endblock %}
 </body>

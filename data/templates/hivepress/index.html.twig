@@ -29,5 +29,11 @@
 {% endblock %}
 
 {% block footer_javascripts %}
+    <script>
+        var searchParams = {
+            'searchIndex': '{{ path('js/searchIndex.json')|e('js') }}'
+        };
+    </script>
+    <script src="{{ path('js/searchIndex.js') }}?updated={{ "now"|date('U') }}"></script>
     <script src="{{ path('js/search.js') }}?updated={{ "now"|date('U') }}"></script>
 {% endblock %}
