@@ -22,6 +22,7 @@ abbr[title] {
     text-align: right;
     padding: 0 2em;
     border-bottom: 1px solid rgba(7,36,86,.075);
+    min-height: none;
 }
 
 .phpdocumentor-top-header .phpdocumentor-section {
@@ -91,12 +92,12 @@ abbr[title] {
 
 @media (min-width: 400px) {
     .main-navigation a {
-        padding:0 1em;
+        padding:0 1em!important;
     }
 }
 
 .main-navigation li:last-child a {
-    padding-right:0;
+    padding-right:0!important;
 }
 
 .main-navigation a:hover {
@@ -105,9 +106,12 @@ abbr[title] {
 
 /* Header */
 .phpdocumentor-header {
-    background: var(--header-bg-color);
+    margin-top: -1px;
     margin-bottom: var(--spacing-xl);
     position: relative;
+    background-position: center center;
+	background-image: url("../images/pattern-light.svg");
+	background-color: #f6f9fc;
 }
 
 .phpdocumentor-header p {
