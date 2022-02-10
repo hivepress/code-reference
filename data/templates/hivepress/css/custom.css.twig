@@ -26,7 +26,7 @@ abbr[title] {
 }
 
 .phpdocumentor-top-header + main {
-    margin-bottom: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
 }
 
 .phpdocumentor-top-header .phpdocumentor-section {
@@ -70,6 +70,7 @@ abbr[title] {
 
 .site-logo img {
     height:auto;
+    margin:0 auto;
 }
 
 /* Navigation */
@@ -78,6 +79,12 @@ abbr[title] {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+    }
+}
+
+@media (max-width: 549px) {
+    .main-navigation {
+        display: none;
     }
 }
 
@@ -141,7 +148,7 @@ abbr[title] {
     font-family: var(--font-secondary);
     color: rgba(15,23,39,.85);
     letter-spacing: -1px;
-    line-height: 1.2;
+    line-height: 36px;
     text-align: center;
     padding: 0.67em 0;
     margin-top: 0;
@@ -163,7 +170,7 @@ abbr[title] {
     max-height: 30rem;
     opacity: 1;
     overflow-x: auto;
-    padding: 0 var(--spacing-lg);
+    padding: 0 32px;
     pointer-events: all;
     position: absolute;
     right: 0;
@@ -177,7 +184,7 @@ abbr[title] {
 
 @media (min-width: 768px) {
     .phpdocumentor-search-results__entries {
-        width:620px;
+        width:556px;
     }
 }
 
@@ -239,7 +246,7 @@ abbr[title] {
 
 .phpdocumentor-search .phpdocumentor-label {
     display: block;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 2em;
 }
 
 .phpdocumentor-search--enabled {
@@ -266,7 +273,7 @@ abbr[title] {
     font-size: 18px;
     line-height: 70px;
     padding: 0 32px;
-    width: auto;
+    width: 80%;
     height: 70px;
     margin-bottom: 0;
     box-shadow: 0 5px 30px rgb(7, 36, 86, 0.08);
