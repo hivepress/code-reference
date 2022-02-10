@@ -1,11 +1,13 @@
 <header class="phpdocumentor-top-header">
     <section class="phpdocumentor-section">
         <div class="site-branding">
-            <a class="site-logo" href="{{ path("/index.html") }}"><img width="186" src="{{ path('images/logo.svg') }}" alt="HivePress" /></a>
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="{{ path('images/logo.svg') }}" alt="HivePress" /></a>
         </div>
         <nav class="main-navigation">
             <ul>
-                <li><a href="https://help.hivepress.io/">Help Center</a></li>
+                <li><a href="{{ path("/index.html") }}">Home</a></li>
+                <li><a href="{{ path("hooks/hooks.html") }}">Hooks</a></li>
+                <li><a href="{{ path("indices/files.html") }}">Files</a></li>
             </ul>
         </nav>
     </section>

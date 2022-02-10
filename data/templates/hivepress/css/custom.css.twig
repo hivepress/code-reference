@@ -13,16 +13,15 @@ abbr[title] {
     font-family: var(--font-secondary);
     align-items: center;
     background: var(--top-header-bg-color);
-    color: var(--top-header-text-color);
+    color: rgba(15,23,39,.85);
     display: flex;
     flex-direction: row;
     font-size: var(--text-md);
-    min-height: var(--top-header-height);
+    min-height: auto;
     padding: 0 var(--spacing-sm);
     text-align: right;
     padding: 0 2em;
     border-bottom: 1px solid rgba(7,36,86,.075);
-    min-height: none;
 }
 
 .phpdocumentor-top-header .phpdocumentor-section {
@@ -233,14 +232,21 @@ abbr[title] {
 .phpdocumentor-search__field {
     background-color: #fff;
     border: 0;
-    border-radius: 50px;
+    border-radius: 999px;
     color: #333;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 70px;
     padding-left: 45px;
-    width: 80%;
-    height: 50px;
+    width: auto;
+    height: 70px;
     margin-bottom: 0;
+    box-shadow: 0 5px 30px rgb(7, 36, 86, 0.08);
+}
+
+@media (min-width: 768px) {
+    .phpdocumentor-search__field {
+        max-width:620px;
+    }
 }
 
 .phpdocumentor-search__field:focus {
@@ -261,7 +267,7 @@ abbr[title] {
 /* Footer */
 .phpdocumentor-footer {
     clear: both;
-    background-color: #f7f7f7;
+    background-color: #f6f9fc;
     font-size: var(--text-xs);
     font-weight: 700;
     margin-top: var(--spacing-lg);
@@ -364,6 +370,9 @@ main.phpdocumentor::after {
     }
 
     .phpdocumentor-title {
-        font-size: var(--text-xxxxl);
+        font-size: 48px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
     }
 }
