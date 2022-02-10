@@ -22,6 +22,7 @@ abbr[title] {
     text-align: right;
     padding: 0 2em;
     border-bottom: 1px solid rgba(7,36,86,.075);
+    line-height: 36px;
 }
 
 .phpdocumentor-top-header .phpdocumentor-section {
@@ -60,7 +61,7 @@ abbr[title] {
 
 .site-logo,
 .site-logo img {
-    display:block;
+    display:block!important;
 }
 
 .site-logo img {
@@ -85,7 +86,6 @@ abbr[title] {
 .main-navigation a {
     color: #333;
     font-weight: 400;
-    font-size: .9em;
     text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ abbr[title] {
 }
 
 .main-navigation a:hover {
-    color: var(--primary-color);
+    color: #ffc107;
 }
 
 /* Header */
@@ -120,12 +120,13 @@ abbr[title] {
 
 .phpdocumentor-title {
     font-family: var(--font-secondary);
-    color: var(--title-text-color);
+    color: rgba(15,23,39,.85);
     letter-spacing: -1px;
     line-height: 1.2;
     text-align: center;
     padding: 0.67em 0;
     margin-top: 0;
+    padding-top: 0.4em;
 }
 .phpdocumentor-title small {
     text-shadow: none;
@@ -236,7 +237,7 @@ abbr[title] {
     color: #333;
     font-size: 18px;
     line-height: 70px;
-    padding-left: 45px;
+    padding: 0 32px;
     width: auto;
     height: 70px;
     margin-bottom: 0;
@@ -245,7 +246,7 @@ abbr[title] {
 
 @media (min-width: 768px) {
     .phpdocumentor-search__field {
-        max-width:620px;
+        width:620px;
     }
 }
 
@@ -340,17 +341,17 @@ main.phpdocumentor::after {
     }
 
     .main-navigation ul > li:hover {
-        background: #e6e6e6;
         transition: all ease-in-out .2s;
     }
 
     .main-navigation a {
-        padding: 2.5em .8em;
-        font-size: .8em;
+        color:rgba(15,23,39,.85);
+        font-weight:500;
+        transition: all ease-in-out .2s;
     }
 
     .main-navigation a:hover {
-        color: #333;
+        color: #ffc107;
     }
 
     th.phpdocumentor-heading,
@@ -371,7 +372,6 @@ main.phpdocumentor::after {
 
     .phpdocumentor-title {
         font-size: 48px;
-        line-height: 36px;
         margin-bottom: 24px;
         padding-bottom: 24px;
     }
