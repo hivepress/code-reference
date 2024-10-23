@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-cache.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Cache component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Handles caching.
+ */
+final class Cache extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Clear transient cache.
+		add_action( &#039;import_end&#039;, [ $this, &#039;clear_transient_cache&#039; ] );
+
+		// Clear meta cache.
+		add_action( &#039;hivepress/v1/events/hourly&#039;, [ $this, &#039;clear_meta_cache&#039; ] );
+
+		// Clear user cache.
+		add_action( &#039;hivepress/v1/models/user/create&#039;, [ $this, &#039;clear_user_cache&#039; ], 1000 );
+		add_action( &#039;hivepress/v1/models/user/update&#039;, [ $this, &#039;clear_user_cache&#039; ], 1000 );
+		add_action( &#039;hivepress/v1/models/user/delete&#039;, [ $this, &#039;clear_user_cache&#039; ], 1000 );
+
+		// Clear post cache.
+		add_action( &#039;hivepress/v1/models/post/create&#039;, [ $this, &#039;clear_post_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/post/update&#039;, [ $this, &#039;clear_post_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/post/delete&#039;, [ $this, &#039;clear_post_cache&#039; ], 1000, 2 );
+
+		// Clear post term cache.
+		add_action( &#039;hivepress/v1/models/post/update_terms&#039;, [ $this, &#039;clear_post_term_cache&#039; ], 1000, 3 );
+
+		// Clear term cache.
+		add_action( &#039;hivepress/v1/models/term/create&#039;, [ $this, &#039;clear_term_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/term/update&#039;, [ $this, &#039;clear_term_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/term/delete&#039;, [ $this, &#039;clear_term_cache&#039; ], 1000, 2 );
+
+		// Clear comment cache.
+		add_action( &#039;hivepress/v1/models/comment/create&#039;, [ $this, &#039;clear_comment_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/comment/update&#039;, [ $this, &#039;clear_comment_cache&#039; ], 1000, 2 );
+		add_action( &#039;hivepress/v1/models/comment/delete&#039;, [ $this, &#039;clear_comment_cache&#039; ], 1000, 2 );
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Checks if cache is enabled.
+	 *
+	 * @return bool
+	 */
+	protected function is_enabled() {
+		return ! defined( &#039;HP_CACHE&#039; ) || HP_CACHE;
+	}
+
+	/**
+	 * Catches calls to undefined methods.
+	 *
+	 * @param string $name Method name.
+	 * @param array  $args Method arguments.
+	 * @throws \BadMethodCallException Invalid method.
+	 * @return mixed
+	 */
+	public function __call( $name, $args ) {
+		preg_match( &#039;/^(get|set|delete)_([a-z_]+)_cache$/&#039;, $name, $matches );
+
+		if ( is_array( $matches ) &amp;&amp; count( $matches ) === 3 ) {
+			array_shift( $matches );
+
+			$method = hp\get_first_array_value( $matches ) . &#039;_meta_cache&#039;;
+			$type   = hp\get_last_array_value( $matches );
+
+			if ( method_exists( $this, $method ) ) {
+				return call_user_func_array( [ $this, $method ], array_merge( [ $type ], $args ) );
+			}
+		}
+
+		throw new \BadMethodCallException();
+	}
+
+	/**
+	 * Gets transient cache.
+	 *
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @return mixed
+	 */
+	public function get_cache( $key, $group = null ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Get value.
+		$cache = get_transient( $this-&gt;get_cache_name( $key, $group ) );
+
+		// Normalize value.
+		if ( false === $cache ) {
+			$cache = null;
+		}
+
+		return $cache;
+	}
+
+	/**
+	 * Gets meta cache.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @return mixed
+	 */
+	protected function get_meta_cache( $type, $id, $key, $group = null ) {
+		$cache = null;
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Set callback.
+		$callback = &#039;get_&#039; . $type . &#039;_meta&#039;;
+
+		if ( function_exists( $callback ) ) {
+
+			// Get name.
+			$name = $this-&gt;get_meta_cache_name( $type, $id, $key, $group );
+
+			// Get timeout.
+			$timeout = absint( call_user_func_array( $callback, [ $id, &#039;_transient_timeout_&#039; . $name, true ] ) );
+
+			if ( 0 !== $timeout &amp;&amp; $timeout &lt;= time() ) {
+
+				// Delete value.
+				$this-&gt;delete_meta_cache( $type, $id, $key, $group );
+			} else {
+
+				// Get value.
+				$cache = call_user_func_array( $callback, [ $id, &#039;_transient_&#039; . $name, true ] );
+
+				// Normalize value.
+				if ( &#039;&#039; === $cache ) {
+					$cache = null;
+				}
+			}
+		}
+
+		return $cache;
+	}
+
+	/**
+	 * Sets transient cache.
+	 *
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @param mixed  $value Cache value.
+	 * @param int    $expiration Expiration period in seconds.
+	 */
+	public function set_cache( $key, $group, $value, $expiration = 0 ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Get expiration period.
+		if ( 0 === $expiration ) {
+			if ( ! wp_using_ext_object_cache() ) {
+				$expiration = DAY_IN_SECONDS;
+			} else {
+				$expiration = WEEK_IN_SECONDS;
+			}
+		}
+
+		$expiration = absint( $expiration );
+
+		// Set value.
+		set_transient( $this-&gt;get_cache_name( $key, $group ), $value, $expiration );
+	}
+
+	/**
+	 * Sets meta cache.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @param mixed  $value Cache value.
+	 * @param int    $expiration Expiration period in seconds.
+	 */
+	protected function set_meta_cache( $type, $id, $key, $group, $value, $expiration = DAY_IN_SECONDS ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Set callback.
+		$callback = &#039;update_&#039; . $type . &#039;_meta&#039;;
+
+		if ( function_exists( $callback ) ) {
+
+			// Get name.
+			$name = $this-&gt;get_meta_cache_name( $type, $id, $key, $group );
+
+			// Set value.
+			call_user_func_array( $callback, [ $id, &#039;_transient_&#039; . $name, $value ] );
+
+			// Set timeout.
+			if ( $expiration &gt; 0 ) {
+				call_user_func_array( $callback, [ $id, &#039;_transient_timeout_&#039; . $name, time() + $expiration ] );
+			}
+		}
+	}
+
+	/**
+	 * Deletes transient cache.
+	 *
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 */
+	public function delete_cache( $key, $group = null ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		if ( is_null( $key ) &amp;&amp; ! is_null( $group ) ) {
+
+			// Update version.
+			$this-&gt;update_cache_version( $group );
+		} else {
+
+			// Delete value.
+			delete_transient( $this-&gt;get_cache_name( $key, $group ) );
+		}
+	}
+
+	/**
+	 * Deletes meta cache.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 */
+	protected function delete_meta_cache( $type, $id, $key, $group = null ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Set callback.
+		$callback = &#039;delete_&#039; . $type . &#039;_meta&#039;;
+
+		if ( function_exists( $callback ) ) {
+			if ( is_null( $key ) &amp;&amp; ! is_null( $group ) ) {
+
+				// Update version.
+				$this-&gt;update_meta_cache_version( $type, $id, $group );
+			} else {
+
+				// Get name.
+				$name = $this-&gt;get_meta_cache_name( $type, $id, $key, $group );
+
+				// Delete value.
+				call_user_func_array( $callback, [ $id, &#039;_transient_&#039; . $name ] );
+
+				// Delete timeout.
+				call_user_func_array( $callback, [ $id, &#039;_transient_timeout_&#039; . $name ] );
+			}
+		}
+	}
+
+	/**
+	 * Gets transient cache name.
+	 *
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	protected function get_cache_name( $key, $group = null ) {
+		$name = $this-&gt;serialize_cache_key( $key );
+
+		if ( ! is_null( $group ) ) {
+			$name .= $this-&gt;get_cache_version( $group );
+
+			$name = $group . &#039;/&#039; . md5( $name );
+		}
+
+		return hp\prefix( $name );
+	}
+
+	/**
+	 * Gets meta cache name.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param mixed  $key Cache key.
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	protected function get_meta_cache_name( $type, $id, $key, $group = null ) {
+		$name = $this-&gt;serialize_cache_key( $key );
+
+		if ( ! is_null( $group ) ) {
+			$name .= $this-&gt;get_meta_cache_version( $type, $id, $group );
+
+			$name = $group . &#039;/&#039; . md5( $name );
+		}
+
+		return hp\prefix( $name );
+	}
+
+	/**
+	 * Gets transient cache version.
+	 *
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	public function get_cache_version( $group ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Get version.
+		$version = $this-&gt;get_cache( $group . &#039;/version&#039; );
+
+		if ( is_null( $version ) ) {
+
+			// Set version.
+			$version = $this-&gt;update_cache_version( $group );
+		}
+
+		return $version;
+	}
+
+	/**
+	 * Gets meta cache version.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	protected function get_meta_cache_version( $type, $id, $group ) {
+		$version = $this-&gt;get_meta_cache( $type, $id, $group . &#039;/version&#039; );
+
+		if ( is_null( $version ) ) {
+			$version = $this-&gt;update_meta_cache_version( $type, $id, $group );
+		}
+
+		return $version;
+	}
+
+	/**
+	 * Updates transient cache version.
+	 *
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	protected function update_cache_version( $group ) {
+
+		// Get version.
+		$version = uniqid( &#039;&#039;, true );
+
+		// Get expiration period.
+		$expiration = false;
+
+		if ( ! wp_using_ext_object_cache() ) {
+			$expiration = WEEK_IN_SECONDS;
+		}
+
+		// Set version.
+		$this-&gt;set_cache( $group . &#039;/version&#039;, null, $version, $expiration );
+
+		return $version;
+	}
+
+	/**
+	 * Updates meta cache version.
+	 *
+	 * @param string $type Meta type.
+	 * @param int    $id Object ID.
+	 * @param string $group Cache group.
+	 * @return string
+	 */
+	protected function update_meta_cache_version( $type, $id, $group ) {
+		$version = uniqid( &#039;&#039;, true );
+
+		$this-&gt;set_meta_cache( $type, $id, $group . &#039;/version&#039;, null, $version, WEEK_IN_SECONDS );
+
+		return $version;
+	}
+
+	/**
+	 * Serializes cache key.
+	 *
+	 * @param mixed $key Cache key.
+	 * @return string
+	 */
+	protected function serialize_cache_key( $key ) {
+		if ( is_array( $key ) ) {
+			$key = wp_json_encode( $this-&gt;sort_cache_key( $key ) );
+		}
+
+		return $key;
+	}
+
+	/**
+	 * Sorts cache key contents.
+	 *
+	 * @param mixed $key Cache key.
+	 * @return mixed
+	 */
+	protected function sort_cache_key( $key ) {
+		if ( is_array( $key ) ) {
+			ksort( $key );
+
+			foreach ( $key as $name =&gt; $value ) {
+				$key[ $name ] = $this-&gt;sort_cache_key( $value );
+			}
+		}
+
+		return $key;
+	}
+
+	/**
+	 * Clears transient cache.
+	 */
+	public function clear_transient_cache() {
+		global $wpdb;
+
+		// Delete transients.
+		$wpdb-&gt;query( &quot;DELETE FROM {$wpdb-&gt;options} WHERE option_name LIKE &#039;\_transient\_hp\_%&#039;;&quot; );
+		$wpdb-&gt;query( &quot;DELETE FROM {$wpdb-&gt;options} WHERE option_name LIKE &#039;\_transient\_timeout\_hp\_%&#039;;&quot; );
+	}
+
+	/**
+	 * Clears meta cache.
+	 */
+	public function clear_meta_cache() {
+		global $wpdb;
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Set types.
+		$types = [ &#039;user&#039;, &#039;post&#039;, &#039;term&#039;, &#039;comment&#039; ];
+
+		foreach ( $types as $type ) {
+
+			// Set callback.
+			$callback = &#039;delete_&#039; . $type . &#039;_meta&#039;;
+
+			if ( function_exists( $callback ) ) {
+
+				// Get values.
+				$table  = $wpdb-&gt;prefix . $type . &#039;meta&#039;;
+				$column = $type . &#039;_id&#039;;
+
+				$meta_values = $wpdb-&gt;get_results(
+					$wpdb-&gt;prepare(
+						&quot;SELECT {$column}, meta_key FROM {$table} WHERE meta_key LIKE %s AND CAST(meta_value AS SIGNED) &lt;= %d;&quot;,
+						&#039;\_transient\_timeout\_%&#039;,
+						time()
+					),
+					ARRAY_A
+				);
+
+				// Delete values.
+				if ( $meta_values ) {
+					foreach ( $meta_values as $meta_value ) {
+						call_user_func_array( $callback, [ $meta_value[ $column ], $meta_value[&#039;meta_key&#039;] ] );
+						call_user_func_array( $callback, [ $meta_value[ $column ], preg_replace( &#039;/^_transient_timeout/&#039;, &#039;_transient&#039;, $meta_value[&#039;meta_key&#039;] ) ] );
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Clears user cache.
+	 *
+	 * @param int $user_id User ID.
+	 */
+	public function clear_user_cache( $user_id ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Delete transient cache.
+		$this-&gt;delete_cache( null, &#039;models/user&#039; );
+	}
+
+	/**
+	 * Clears post cache.
+	 *
+	 * @param int    $post_id Post ID.
+	 * @param string $post_type Post type.
+	 */
+	public function clear_post_cache( $post_id, $post_type ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Get post.
+		$post = get_post( $post_id );
+
+		// Get cache group.
+		$group = hivepress()-&gt;model-&gt;get_cache_group( &#039;post&#039;, $post_type );
+
+		// Delete transient cache.
+		$this-&gt;delete_cache( null, $group );
+
+		// Delete meta cache.
+		if ( $post-&gt;post_author ) {
+			$this-&gt;delete_user_cache( $post-&gt;post_author, null, $group );
+		}
+
+		if ( $post-&gt;post_parent ) {
+			$this-&gt;delete_post_cache( $post-&gt;post_parent, null, $group );
+		}
+	}
+
+	/**
+	 * Clears post term cache.
+	 *
+	 * @param int    $post_id Post ID.
+	 * @param string $post_type Post type.
+	 * @param string $taxonomy Taxonomy name.
+	 */
+	public function clear_post_term_cache( $post_id, $post_type, $taxonomy ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Delete meta cache.
+		$this-&gt;delete_post_cache( $post_id, null, hivepress()-&gt;model-&gt;get_cache_group( &#039;term&#039;, $taxonomy ) );
+	}
+
+	/**
+	 * Clears term cache.
+	 *
+	 * @param int    $term_id Term ID.
+	 * @param string $taxonomy Taxonomy name.
+	 */
+	public function clear_term_cache( $term_id, $taxonomy ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Delete transient cache.
+		$this-&gt;delete_cache( null, hivepress()-&gt;model-&gt;get_cache_group( &#039;term&#039;, $taxonomy ) );
+	}
+
+	/**
+	 * Clears comment cache.
+	 *
+	 * @param int    $comment_id Comment ID.
+	 * @param string $comment_type Comment type.
+	 */
+	public function clear_comment_cache( $comment_id, $comment_type ) {
+
+		// Check status.
+		if ( ! $this-&gt;is_enabled() ) {
+			return;
+		}
+
+		// Get comment.
+		$comment = get_comment( $comment_id );
+
+		// Get cache group.
+		$group = hivepress()-&gt;model-&gt;get_cache_group( &#039;comment&#039;, $comment_type );
+
+		// Delete transient cache.
+		$this-&gt;delete_cache( null, $group );
+
+		// Delete meta cache.
+		if ( $comment-&gt;user_id ) {
+			$this-&gt;delete_user_cache( $comment-&gt;user_id, null, $group );
+		}
+
+		if ( $comment-&gt;comment_post_ID ) {
+			$this-&gt;delete_post_cache( $comment-&gt;comment_post_ID, null, $group );
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

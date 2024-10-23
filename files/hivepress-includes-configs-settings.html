@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">settings.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Settings configuration.
+ *
+ * @package HivePress\Configs
+ */
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+return [
+	&#039;listings&#039;     =&gt; [
+		&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listings&#039; ),
+		&#039;_order&#039;   =&gt; 10,
+
+		&#039;sections&#039; =&gt; [
+			&#039;display&#039;    =&gt; [
+				&#039;title&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_noun&#039; ),
+				&#039;_order&#039; =&gt; 10,
+
+				&#039;fields&#039; =&gt; [
+					&#039;page_listings&#039;                    =&gt; [
+						&#039;label&#039;       =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listings_page&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;choose_page_that_displays_all_listings&#039; ),
+						&#039;type&#039;        =&gt; &#039;select&#039;,
+						&#039;options&#039;     =&gt; &#039;posts&#039;,
+						&#039;option_args&#039; =&gt; [ &#039;post_type&#039; =&gt; &#039;page&#039; ],
+						&#039;_order&#039;      =&gt; 10,
+					],
+
+					&#039;page_listings_display_categories&#039; =&gt; [
+						&#039;label&#039;   =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listings_page_display&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Display categories instead of listings&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 20,
+					],
+
+					&#039;listings_per_page&#039;                =&gt; [
+						&#039;label&#039;     =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;regular_listings_per_page&#039; ),
+						&#039;type&#039;      =&gt; &#039;number&#039;,
+						&#039;default&#039;   =&gt; 8,
+						&#039;min_value&#039; =&gt; 1,
+						&#039;required&#039;  =&gt; true,
+						&#039;_order&#039;    =&gt; 30,
+					],
+
+					&#039;listings_featured_per_page&#039;       =&gt; [
+						&#039;label&#039;     =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;featured_listings_per_page&#039; ),
+						&#039;type&#039;      =&gt; &#039;number&#039;,
+						&#039;default&#039;   =&gt; 2,
+						&#039;min_value&#039; =&gt; 0,
+						&#039;required&#039;  =&gt; true,
+						&#039;_order&#039;    =&gt; 40,
+					],
+
+					&#039;listings_related_per_page&#039;        =&gt; [
+						&#039;label&#039;     =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;related_listings_per_page&#039; ),
+						&#039;type&#039;      =&gt; &#039;number&#039;,
+						&#039;default&#039;   =&gt; 3,
+						&#039;min_value&#039; =&gt; 0,
+						&#039;required&#039;  =&gt; true,
+						&#039;_order&#039;    =&gt; 50,
+					],
+
+					&#039;listing_title_format&#039;             =&gt; [
+						&#039;label&#039;       =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;title&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;set_title_format_based_on_attributes&#039; ) . &#039; &#039; . sprintf( hivepress()-&gt;translator-&gt;get_string( &#039;these_tokens_are_available&#039; ), &#039;%listing%, %vendor%&#039; ),
+						&#039;type&#039;        =&gt; &#039;text&#039;,
+						&#039;max_length&#039;  =&gt; 256,
+						&#039;_order&#039;      =&gt; 60,
+					],
+
+					&#039;listing_enable_image_preview&#039;     =&gt; [
+						&#039;label&#039;   =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;images&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Enable gallery preview&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 70,
+					],
+
+					&#039;listing_enable_image_zoom&#039;        =&gt; [
+						&#039;caption&#039; =&gt; esc_html__( &#039;Enable image zoom&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 80,
+					],
+
+					&#039;listing_allow_video&#039;              =&gt; [
+						&#039;caption&#039; =&gt; esc_html__( &#039;Allow uploading videos&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 90,
+					],
+				],
+			],
+
+			&#039;search&#039;     =&gt; [
+				&#039;title&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;search_noun&#039; ),
+				&#039;_order&#039; =&gt; 15,
+
+				&#039;fields&#039; =&gt; [
+					&#039;listing_search_fields&#039; =&gt; [
+						&#039;label&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;default_fields&#039; ),
+						&#039;type&#039;     =&gt; &#039;select&#039;,
+						&#039;multiple&#039; =&gt; true,
+						&#039;default&#039;  =&gt; [ &#039;keyword&#039; ],
+						&#039;_order&#039;   =&gt; 10,
+
+						&#039;options&#039;  =&gt; [
+							&#039;keyword&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;keywords&#039; ),
+							&#039;category&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;categories&#039; ),
+						],
+					],
+				],
+			],
+
+			&#039;submission&#039; =&gt; [
+				&#039;title&#039;  =&gt; esc_html__( &#039;Submission&#039;, &#039;hivepress&#039; ),
+				&#039;_order&#039; =&gt; 20,
+
+				&#039;fields&#039; =&gt; [
+					&#039;page_listing_submission_terms&#039; =&gt; [
+						&#039;label&#039;       =&gt; esc_html__( &#039;Submission Terms Page&#039;, &#039;hivepress&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;choose_page_with_listing_submission_terms&#039; ),
+						&#039;type&#039;        =&gt; &#039;select&#039;,
+						&#039;options&#039;     =&gt; &#039;posts&#039;,
+						&#039;option_args&#039; =&gt; [ &#039;post_type&#039; =&gt; &#039;page&#039; ],
+						&#039;_parent&#039;     =&gt; &#039;listing_enable_submission&#039;,
+						&#039;_order&#039;      =&gt; 10,
+					],
+
+					&#039;listing_enable_submission&#039;     =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Submission&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;allow_submitting_listings&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_order&#039;  =&gt; 20,
+					],
+
+					&#039;listing_enable_moderation&#039;     =&gt; [
+						&#039;label&#039;   =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;moderation&#039; ),
+						&#039;caption&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;manually_approve_listings&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_parent&#039; =&gt; &#039;listing_enable_submission&#039;,
+						&#039;_order&#039;  =&gt; 30,
+					],
+
+					&#039;listing_enable_reporting&#039;      =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Reporting&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;allow_reporting_listings&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_order&#039;  =&gt; 40,
+					],
+				],
+			],
+
+			&#039;expiration&#039; =&gt; [
+				&#039;title&#039;  =&gt; esc_html__( &#039;Expiration&#039;, &#039;hivepress&#039; ),
+				&#039;_order&#039; =&gt; 30,
+
+				&#039;fields&#039; =&gt; [
+					&#039;listing_expiration_period&#039; =&gt; [
+						&#039;label&#039;       =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;expiration_period&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;set_number_of_days_until_listing_expires&#039; ),
+						&#039;type&#039;        =&gt; &#039;number&#039;,
+						&#039;min_value&#039;   =&gt; 1,
+						&#039;_order&#039;      =&gt; 10,
+					],
+
+					&#039;listing_storage_period&#039;    =&gt; [
+						&#039;label&#039;       =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;storage_period&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;set_number_of_days_until_listing_deleted&#039; ),
+						&#039;type&#039;        =&gt; &#039;number&#039;,
+						&#039;min_value&#039;   =&gt; 1,
+						&#039;_order&#039;      =&gt; 20,
+					],
+				],
+			],
+		],
+	],
+
+	&#039;vendors&#039;      =&gt; [
+		&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;vendors&#039; ),
+		&#039;_order&#039;   =&gt; 50,
+
+		&#039;sections&#039; =&gt; [
+			&#039;display&#039;      =&gt; [
+				&#039;title&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_noun&#039; ),
+				&#039;_order&#039; =&gt; 10,
+
+				&#039;fields&#039; =&gt; [
+					&#039;vendor_enable_display&#039; =&gt; [
+						&#039;label&#039;   =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_noun&#039; ),
+						&#039;caption&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_vendors_on_frontend&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_order&#039;  =&gt; 10,
+					],
+
+					&#039;page_vendors&#039;          =&gt; [
+						&#039;label&#039;       =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;vendors_page&#039; ),
+						&#039;description&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;choose_page_that_displays_all_vendors&#039; ),
+						&#039;type&#039;        =&gt; &#039;select&#039;,
+						&#039;options&#039;     =&gt; &#039;posts&#039;,
+						&#039;option_args&#039; =&gt; [ &#039;post_type&#039; =&gt; &#039;page&#039; ],
+						&#039;_parent&#039;     =&gt; &#039;vendor_enable_display&#039;,
+						&#039;_order&#039;      =&gt; 20,
+					],
+
+					&#039;vendors_per_page&#039;      =&gt; [
+						&#039;label&#039;     =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;regular_vendors_per_page&#039; ),
+						&#039;type&#039;      =&gt; &#039;number&#039;,
+						&#039;default&#039;   =&gt; 10,
+						&#039;min_value&#039; =&gt; 1,
+						&#039;required&#039;  =&gt; true,
+						&#039;_parent&#039;   =&gt; &#039;vendor_enable_display&#039;,
+						&#039;_order&#039;    =&gt; 30,
+					],
+
+					&#039;vendor_display_name&#039;   =&gt; [
+						&#039;label&#039;       =&gt; esc_html_x( &#039;Display Name&#039;, &#039;noun&#039;, &#039;hivepress&#039; ),
+						&#039;placeholder&#039; =&gt; esc_html__( &#039;User Name&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;        =&gt; &#039;select&#039;,
+						&#039;options&#039;     =&gt; &#039;posts&#039;,
+						&#039;_order&#039;      =&gt; 40,
+
+						&#039;option_args&#039; =&gt; [
+							&#039;post_type&#039;  =&gt; &#039;hp_vendor_attribute&#039;,
+							&#039;meta_key&#039;   =&gt; &#039;hp_edit_field_type&#039;,
+							&#039;meta_value&#039; =&gt; &#039;text&#039;,
+						],
+					],
+				],
+			],
+
+			&#039;search&#039;       =&gt; [
+				&#039;title&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;search_noun&#039; ),
+				&#039;_order&#039; =&gt; 20,
+
+				&#039;fields&#039; =&gt; [
+					&#039;vendor_search_fields&#039; =&gt; [
+						&#039;label&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;default_fields&#039; ),
+						&#039;type&#039;     =&gt; &#039;select&#039;,
+						&#039;multiple&#039; =&gt; true,
+						&#039;default&#039;  =&gt; [ &#039;keyword&#039; ],
+						&#039;_order&#039;   =&gt; 10,
+
+						&#039;options&#039;  =&gt; [
+							&#039;keyword&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;keywords&#039; ),
+							&#039;category&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;categories&#039; ),
+						],
+					],
+				],
+			],
+
+			&#039;registration&#039; =&gt; [
+				&#039;title&#039;  =&gt; esc_html__( &#039;Registration&#039;, &#039;hivepress&#039; ),
+				&#039;_order&#039; =&gt; 30,
+
+				&#039;fields&#039; =&gt; [
+					&#039;vendor_enable_registration&#039; =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Registration&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Allow direct registration&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 10,
+					],
+				],
+			],
+		],
+	],
+
+	&#039;users&#039;        =&gt; [
+		&#039;title&#039;    =&gt; esc_html__( &#039;Users&#039;, &#039;hivepress&#039; ),
+		&#039;_order&#039;   =&gt; 100,
+
+		&#039;sections&#039; =&gt; [
+			&#039;display&#039;      =&gt; [
+				&#039;title&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_noun&#039; ),
+				&#039;_order&#039; =&gt; 10,
+
+				&#039;fields&#039; =&gt; [
+					&#039;user_enable_display&#039; =&gt; [
+						&#039;label&#039;   =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;display_noun&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Display profiles on the front-end&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 10,
+					],
+
+					&#039;user_display_online&#039; =&gt; [
+						&#039;caption&#039; =&gt; esc_html__( &#039;Display online status for users&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_parent&#039; =&gt; &#039;user_enable_display&#039;,
+						&#039;_order&#039;  =&gt; 20,
+					],
+
+					&#039;user_display_name&#039;   =&gt; [
+						&#039;label&#039;    =&gt; esc_html_x( &#039;Display Name&#039;, &#039;noun&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;     =&gt; &#039;select&#039;,
+						&#039;default&#039;  =&gt; &#039;first_name&#039;,
+						&#039;required&#039; =&gt; true,
+						&#039;_order&#039;   =&gt; 30,
+
+						&#039;options&#039;  =&gt; [
+							&#039;username&#039;         =&gt; esc_html__( &#039;Username&#039;, &#039;hivepress&#039; ),
+							&#039;first_name&#039;       =&gt; esc_html__( &#039;First Name&#039;, &#039;hivepress&#039; ),
+							&#039;first_name_extra&#039; =&gt; esc_html__( &#039;First Name and First Letter of Last Name&#039;, &#039;hivepress&#039; ),
+							&#039;last_name&#039;        =&gt; esc_html__( &#039;Last Name&#039;, &#039;hivepress&#039; ),
+							&#039;last_name_extra&#039;  =&gt; esc_html__( &#039;First Letter of First Name and Last Name&#039;, &#039;hivepress&#039; ),
+							&#039;full_name&#039;        =&gt; esc_html__( &#039;Full Name&#039;, &#039;hivepress&#039; ),
+						],
+					],
+				],
+			],
+
+			&#039;registration&#039; =&gt; [
+				&#039;title&#039;  =&gt; esc_html__( &#039;Registration&#039;, &#039;hivepress&#039; ),
+				&#039;_order&#039; =&gt; 20,
+
+				&#039;fields&#039; =&gt; [
+					&#039;page_user_registration_terms&#039; =&gt; [
+						&#039;label&#039;       =&gt; esc_html__( &#039;Registration Terms Page&#039;, &#039;hivepress&#039; ),
+						&#039;description&#039; =&gt; esc_html__( &#039;Choose a page with terms that user has to accept before registering.&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;        =&gt; &#039;select&#039;,
+						&#039;options&#039;     =&gt; &#039;posts&#039;,
+						&#039;option_args&#039; =&gt; [ &#039;post_type&#039; =&gt; &#039;page&#039; ],
+						&#039;_parent&#039;     =&gt; &#039;user_enable_registration&#039;,
+						&#039;_order&#039;      =&gt; 10,
+					],
+
+					&#039;user_enable_registration&#039;     =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Registration&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Allow user registration&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_order&#039;  =&gt; 20,
+					],
+
+					&#039;user_generate_username&#039;       =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Username&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Generate username from the email address&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_parent&#039; =&gt; &#039;user_enable_registration&#039;,
+						&#039;_order&#039;  =&gt; 30,
+					],
+
+					&#039;user_verify_email&#039;            =&gt; [
+						&#039;label&#039;   =&gt; esc_html__( &#039;Email&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Require email address verification&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_parent&#039; =&gt; &#039;user_enable_registration&#039;,
+						&#039;_order&#039;  =&gt; 40,
+					],
+
+					&#039;user_disable_backend&#039;         =&gt; [
+						&#039;label&#039;       =&gt; esc_html__( &#039;Security&#039;, &#039;hivepress&#039; ),
+						&#039;description&#039; =&gt; esc_html__( &#039;Check this option to block the WordPress back-end access for regular users.&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039;     =&gt; esc_html__( &#039;Restrict access to the WordPress back-end&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;        =&gt; &#039;checkbox&#039;,
+						&#039;default&#039;     =&gt; true,
+						&#039;_parent&#039;     =&gt; &#039;user_enable_registration&#039;,
+						&#039;_order&#039;      =&gt; 50,
+					],
+
+					&#039;user_allow_deletion&#039;          =&gt; [
+						&#039;caption&#039; =&gt; esc_html__( &#039;Allow users to delete their accounts&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;default&#039; =&gt; true,
+						&#039;_parent&#039; =&gt; &#039;user_enable_registration&#039;,
+						&#039;_order&#039;  =&gt; 60,
+					],
+				],
+			],
+		],
+	],
+
+	&#039;integrations&#039; =&gt; [
+		&#039;title&#039;    =&gt; esc_html__( &#039;Integrations&#039;, &#039;hivepress&#039; ),
+		&#039;_order&#039;   =&gt; 1000,
+
+		&#039;sections&#039; =&gt; [
+			&#039;recaptcha&#039; =&gt; [
+				&#039;title&#039;  =&gt; &#039;reCAPTCHA&#039;,
+				&#039;_order&#039; =&gt; 10,
+
+				&#039;fields&#039; =&gt; [
+					&#039;recaptcha_forms&#039;      =&gt; [
+						&#039;label&#039;    =&gt; esc_html__( &#039;Protected Forms&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;     =&gt; &#039;select&#039;,
+						&#039;options&#039;  =&gt; &#039;forms&#039;,
+						&#039;multiple&#039; =&gt; true,
+						&#039;_order&#039;   =&gt; 10,
+					],
+
+					&#039;recaptcha_site_key&#039;   =&gt; [
+						&#039;label&#039;      =&gt; esc_html__( &#039;Site Key&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;       =&gt; &#039;text&#039;,
+						&#039;max_length&#039; =&gt; 256,
+						&#039;_parent&#039;    =&gt; &#039;recaptcha_forms[]&#039;,
+						&#039;_order&#039;     =&gt; 20,
+					],
+
+					&#039;recaptcha_secret_key&#039; =&gt; [
+						&#039;label&#039;      =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;secret_key&#039; ),
+						&#039;type&#039;       =&gt; &#039;text&#039;,
+						&#039;max_length&#039; =&gt; 256,
+						&#039;_parent&#039;    =&gt; &#039;recaptcha_forms[]&#039;,
+						&#039;_order&#039;     =&gt; 30,
+					],
+				],
+			],
+
+			&#039;google&#039;    =&gt; [
+				&#039;title&#039;  =&gt; &#039;Google&#039;,
+				&#039;fields&#039; =&gt; [],
+				&#039;_order&#039; =&gt; 20,
+			],
+
+			&#039;hivepress&#039; =&gt; [
+				&#039;title&#039;  =&gt; esc_html__( &#039;HivePress Store&#039;, &#039;hivepress&#039; ),
+				&#039;_order&#039; =&gt; 1000,
+
+				&#039;fields&#039; =&gt; [
+					&#039;hivepress_allow_tracking&#039; =&gt; [
+						&#039;label&#039;       =&gt; esc_html__( &#039;Usage Tracking&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039;     =&gt; esc_html__( &#039;Allow usage tracking&#039;, &#039;hivepress&#039; ),
+						/* translators: %s: terms URL. */
+						&#039;description&#039; =&gt; sprintf( hp\sanitize_html( __( &#039;Check this option to allow tracking &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;non-sensitive usage data&lt;/a&gt; and help us make HivePress better.&#039;, &#039;hivepress&#039; ) ), &#039;https://hivepress.io/usage-tracking/&#039; ),
+						&#039;type&#039;        =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;      =&gt; 10,
+					],
+
+					&#039;hivepress_license_key&#039;    =&gt; [
+						&#039;label&#039;       =&gt; esc_html__( &#039;License Keys&#039;, &#039;hivepress&#039; ),
+						&#039;description&#039; =&gt; esc_html__( &#039;Please enter the license keys for purchased themes and extensions, each key on a new line.&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;        =&gt; &#039;textarea&#039;,
+						&#039;max_length&#039;  =&gt; 2048,
+						&#039;_order&#039;      =&gt; 20,
+					],
+				],
+			],
+		],
+	],
+];
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

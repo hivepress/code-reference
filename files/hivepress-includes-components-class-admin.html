@@ -1,0 +1,2278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-admin.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Admin component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+use HivePress\Fields;
+use HivePress\Blocks;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Implements integration with WordPress admin.
+ */
+final class Admin extends Component {
+
+	/**
+	 * Meta boxes.
+	 *
+	 * @var array
+	 */
+	protected $meta_boxes = [];
+
+	/**
+	 * Post states.
+	 *
+	 * @var array
+	 */
+	protected $post_states = [];
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Register post types.
+		add_action( &#039;init&#039;, [ $this, &#039;register_post_types&#039; ] );
+
+		// Register taxonomies.
+		add_action( &#039;init&#039;, [ $this, &#039;register_taxonomies&#039; ] );
+
+		// Share usage data.
+		add_action( &#039;hivepress/v1/events/weekly&#039;, [ $this, &#039;share_usage_data&#039; ] );
+
+		if ( is_admin() ) {
+
+			// Add admin pages.
+			add_action( &#039;admin_menu&#039;, [ $this, &#039;add_admin_pages&#039; ] );
+
+			// Order admin pages.
+			add_filter( &#039;custom_menu_order&#039;, &#039;__return_true&#039; );
+			add_filter( &#039;menu_order&#039;, [ $this, &#039;order_admin_pages&#039; ] );
+
+			// Initialize settings.
+			add_action( &#039;hivepress/v1/activate&#039;, [ $this, &#039;init_settings&#039; ] );
+			add_action( &#039;hivepress/v1/update&#039;, [ $this, &#039;init_settings&#039; ] );
+
+			// Register settings.
+			add_action( &#039;admin_init&#039;, [ $this, &#039;register_settings&#039; ] );
+
+			// Clear cache.
+			add_action( &#039;update_option_hp_hivepress_license_key&#039;, [ $this, &#039;clear_purchases_cache&#039; ] );
+			add_action( &#039;switch_theme&#039;, [ $this, &#039;clear_themes_cache&#039; ] );
+			add_action( &#039;hivepress/v1/activate&#039;, [ $this, &#039;clear_extensions_cache&#039; ] );
+
+			// Manage post states.
+			add_action( &#039;init&#039;, [ $this, &#039;register_post_states&#039; ] );
+			add_filter( &#039;display_post_states&#039;, [ $this, &#039;add_post_states&#039; ], 10, 2 );
+
+			// Manage meta boxes.
+			add_action( &#039;add_meta_boxes&#039;, [ $this, &#039;add_meta_boxes&#039; ], 10, 2 );
+			add_action( &#039;do_meta_boxes&#039;, [ $this, &#039;remove_meta_boxes&#039; ] );
+			add_action( &#039;save_post&#039;, [ $this, &#039;update_meta_box&#039; ] );
+
+			// Add term boxes.
+			add_action( &#039;admin_init&#039;, [ $this, &#039;add_term_boxes&#039; ] );
+
+			// Manage user boxes.
+			add_action( &#039;show_user_profile&#039;, [ $this, &#039;render_user_boxes&#039; ] );
+			add_action( &#039;edit_user_profile&#039;, [ $this, &#039;render_user_boxes&#039; ] );
+
+			add_action( &#039;personal_options_update&#039;, [ $this, &#039;update_user_boxes&#039; ] );
+			add_action( &#039;edit_user_profile_update&#039;, [ $this, &#039;update_user_boxes&#039; ] );
+
+			// Check access.
+			add_action( &#039;admin_init&#039;, [ $this, &#039;check_access&#039; ] );
+
+			// Enqueue scripts.
+			add_action( &#039;admin_enqueue_scripts&#039;, [ $this, &#039;enqueue_scripts&#039; ] );
+
+			// Render links.
+			add_filter( &#039;plugin_action_links_hivepress/hivepress.php&#039;, [ $this, &#039;render_links&#039; ] );
+
+			// Render notices.
+			add_action( &#039;admin_notices&#039;, [ $this, &#039;render_notices&#039; ] );
+
+			// Render footer.
+			add_action( &#039;admin_footer&#039;, [ $this, &#039;render_footer&#039; ] );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Registers post types.
+	 */
+	public function register_post_types() {
+		foreach ( hivepress()-&gt;get_config( &#039;post_types&#039; ) as $type =&gt; $args ) {
+			register_post_type( hp\prefix( $type ), $args );
+		}
+	}
+
+	/**
+	 * Registers taxonomies.
+	 */
+	public function register_taxonomies() {
+		foreach ( hivepress()-&gt;get_config( &#039;taxonomies&#039; ) as $taxonomy =&gt; $args ) {
+			register_taxonomy( hp\prefix( $taxonomy ), hp\prefix( $args[&#039;post_type&#039;] ), $args );
+		}
+	}
+
+	/**
+	 * Adds admin pages.
+	 */
+	public function add_admin_pages() {
+		global $menu;
+
+		// Add menu separator.
+		$menu[] = [ &#039;&#039;, &#039;manage_options&#039;, &#039;hp_separator&#039;, &#039;&#039;, &#039;wp-menu-separator&#039; ];
+
+		// Set page title.
+		$title = &#039; &amp;lsaquo; &#039; . hivepress()-&gt;get_name();
+
+		// Add pages.
+		add_menu_page( hivepress()-&gt;translator-&gt;get_string( &#039;settings&#039; ) . $title, hivepress()-&gt;get_name(), &#039;manage_options&#039;, &#039;hp_settings&#039;, [ $this, &#039;render_settings&#039; ], hivepress()-&gt;get_url() . &#039;/assets/images/logo-light.svg&#039; );
+		add_submenu_page( &#039;hp_settings&#039;, hivepress()-&gt;translator-&gt;get_string( &#039;settings&#039; ) . $title, hivepress()-&gt;translator-&gt;get_string( &#039;settings&#039; ), &#039;manage_options&#039;, &#039;hp_settings&#039;, [ $this, &#039;render_settings&#039; ], 0 );
+		add_submenu_page( &#039;hp_settings&#039;, esc_html__( &#039;Themes&#039;, &#039;hivepress&#039; ) . $title, esc_html__( &#039;Themes&#039;, &#039;hivepress&#039; ), &#039;install_themes&#039;, &#039;hp_themes&#039;, [ $this, &#039;render_themes&#039; ] );
+		add_submenu_page( &#039;hp_settings&#039;, esc_html__( &#039;Extensions&#039;, &#039;hivepress&#039; ) . $title, esc_html__( &#039;Extensions&#039;, &#039;hivepress&#039; ), &#039;install_plugins&#039;, &#039;hp_extensions&#039;, [ $this, &#039;render_extensions&#039; ] );
+
+		// Add counts.
+		foreach ( $menu as $item_index =&gt; $item_args ) {
+			if ( isset( $item_args[2] ) &amp;&amp; strpos( $item_args[2], &#039;edit.php?post_type=hp_&#039; ) === 0 ) {
+				$item_count = wp_count_posts( hp\get_last_array_value( explode( &#039;=&#039;, $item_args[2] ) ) );
+
+				if ( property_exists( $item_count, &#039;pending&#039; ) &amp;&amp; $item_count-&gt;pending ) {
+					$menu[ $item_index ][0] .= &#039; &lt;span class=&quot;update-plugins count-&#039; . esc_attr( $item_count-&gt;pending ) . &#039;&quot;&gt;&lt;span class=&quot;plugin-count&quot;&gt;&#039; . esc_html( $item_count-&gt;pending ) . &#039;&lt;/span&gt;&lt;/span&gt;&#039;;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Orders admin pages.
+	 *
+	 * @param array $menu Menu items.
+	 * @return array
+	 */
+	public function order_admin_pages( $menu ) {
+		if ( current_user_can( &#039;manage_options&#039; ) ) {
+
+			// Get admin pages.
+			$pages = [
+				&#039;hp_separator&#039;,
+				&#039;hp_settings&#039;,
+			];
+
+			foreach ( hivepress()-&gt;get_config( &#039;post_types&#039; ) as $post_type =&gt; $post_type_args ) {
+				if ( ! isset( $post_type_args[&#039;show_in_menu&#039;] ) ) {
+					$pages[] = &#039;edit.php?post_type=&#039; . hp\prefix( $post_type );
+				}
+			}
+
+			// Filter menu items.
+			$menu = array_filter(
+				$menu,
+				function( $name ) use ( $pages ) {
+					return ! in_array( $name, $pages, true );
+				}
+			);
+
+			// Insert menu items.
+			array_splice( $menu, array_search( &#039;separator2&#039;, $menu, true ) - ( count( $pages ) - 2 ), 0, $pages );
+		}
+
+		return $menu;
+	}
+
+	/**
+	 * Catches calls to undefined methods.
+	 *
+	 * @param string $name Method name.
+	 * @param array  $args Method arguments.
+	 * @throws \BadMethodCallException Invalid method.
+	 * @return mixed
+	 */
+	public function __call( $name, $args ) {
+		if ( strpos( $name, &#039;render_&#039; ) === 0 ) {
+
+			// Render admin page.
+			$template_name = hp\sanitize_slug( substr( $name, strlen( &#039;render_&#039; ) ) );
+			$template_path = hivepress()-&gt;get_path() . &#039;/templates/admin/&#039; . $template_name . &#039;.php&#039;;
+
+			if ( file_exists( $template_path ) ) {
+				if ( &#039;settings&#039; === $template_name ) {
+					$tabs        = $this-&gt;get_settings_tabs();
+					$current_tab = $this-&gt;get_settings_tab();
+				} elseif ( &#039;extensions&#039; === $template_name ) {
+					$tabs        = $this-&gt;get_extensions_tabs();
+					$current_tab = $this-&gt;get_extensions_tab();
+					$extensions  = $this-&gt;get_extensions( $current_tab );
+				} elseif ( &#039;themes&#039; === $template_name ) {
+					$themes = $this-&gt;get_themes();
+				}
+
+				include $template_path;
+
+				return;
+			}
+		} elseif ( strpos( $name, &#039;validate_&#039; ) === 0 ) {
+
+			// Validate settings field.
+			return $this-&gt;validate_settings_field( substr( $name, strlen( &#039;validate_&#039; ) ), hp\get_first_array_value( $args ) );
+		}
+
+		throw new \BadMethodCallException();
+	}
+
+	/**
+	 * Initializes settings.
+	 */
+	public function init_settings() {
+		add_option( &#039;hp_admin_dismissed_notices&#039; );
+
+		foreach ( hivepress()-&gt;get_config( &#039;settings&#039; ) as $tab ) {
+			foreach ( $tab[&#039;sections&#039;] as $section ) {
+				foreach ( $section[&#039;fields&#039;] as $field_name =&gt; $field ) {
+					if ( ! hp\get_array_value( $field, &#039;readonly&#039; ) ) {
+						$autoload = hp\get_array_value( $field, &#039;_autoload&#039;, true ) ? &#039;yes&#039; : &#039;no&#039;;
+
+						add_option( hp\prefix( $field_name ), hp\get_array_value( $field, &#039;default&#039;, &#039;&#039; ), &#039;&#039;, $autoload );
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Registers settings.
+	 */
+	public function register_settings() {
+		global $pagenow;
+
+		if ( &#039;options.php&#039; === $pagenow || ( &#039;admin.php&#039; === $pagenow &amp;&amp; &#039;hp_settings&#039; === hp\get_array_value( $_GET, &#039;page&#039; ) ) ) {
+
+			// Get current tab.
+			$tab = hp\get_array_value( hivepress()-&gt;get_config( &#039;settings&#039; ), $this-&gt;get_settings_tab() );
+
+			if ( empty( $tab ) ) {
+				return;
+			}
+
+			foreach ( hp\sort_array( $tab[&#039;sections&#039;] ) as $section_name =&gt; $section ) {
+				if ( $section[&#039;fields&#039;] ) {
+
+					// Add settings section.
+					add_settings_section( $section_name, esc_html( hp\get_array_value( $section, &#039;title&#039; ) ), [ $this, &#039;render_settings_section&#039; ], &#039;hp_settings&#039; );
+
+					// Register settings.
+					foreach ( hp\sort_array( $section[&#039;fields&#039;] ) as $field_name =&gt; $field_args ) {
+
+						// Get field name.
+						$field_name = hp\prefix( $field_name );
+
+						// Create field.
+						$field = hp\create_class_instance(
+							&#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;],
+							[
+								array_merge(
+									$field_args,
+									[
+										&#039;name&#039;    =&gt; $field_name,
+										&#039;default&#039; =&gt; get_option( $field_name, hp\get_array_value( $field_args, &#039;default&#039; ) ),
+									]
+								),
+							]
+						);
+
+						if ( $field ) {
+
+							// Get field label.
+							$field_label = &#039;&lt;div&gt;&lt;label class=&quot;hp-field__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+							if ( $field-&gt;get_statuses() ) {
+								$field_label .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+							}
+
+							$field_label .= &#039;&lt;/label&gt;&#039; . $this-&gt;render_tooltip( $field-&gt;get_description() ) . &#039;&lt;/div&gt;&#039;;
+
+							// Add field.
+							add_settings_field( $field_name, $field_label, [ $this, &#039;render_settings_field&#039; ], &#039;hp_settings&#039;, $section_name, $field-&gt;get_args() );
+
+							// Register setting.
+							if ( &#039;options.php&#039; !== $pagenow || ! hp\get_array_value( $field_args, &#039;readonly&#039; ) ) {
+								register_setting(
+									&#039;hp_settings&#039;,
+									$field_name,
+									[
+										&#039;sanitize_callback&#039; =&gt; [ $this, &#039;validate_&#039; . hp\unprefix( $field_name ) ],
+									]
+								);
+							}
+						}
+					}
+				}
+			}
+
+			if ( &#039;hp_settings&#039; === hp\get_array_value( $_POST, &#039;option_page&#039; ) ) {
+
+				// Refresh permalinks.
+				hivepress()-&gt;router-&gt;flush_rewrite_rules();
+			}
+		}
+
+		if ( in_array( $pagenow, [ &#039;options.php&#039;, &#039;options-media.php&#039; ], true ) ) {
+			foreach ( hivepress()-&gt;get_config( &#039;image_sizes&#039; ) as $image_size_name =&gt; $image_size ) {
+				if ( isset( $image_size[&#039;label&#039;] ) ) {
+
+					// Get field name.
+					$field_name = hp\prefix( &#039;image_size_&#039; . $image_size_name );
+
+					// Add field.
+					add_settings_field(
+						$field_name,
+						$image_size[&#039;label&#039;],
+						[ $this, &#039;render_settings_field&#039; ],
+						&#039;media&#039;,
+						&#039;default&#039;,
+						[
+							&#039;name&#039;    =&gt; $field_name,
+							&#039;type&#039;    =&gt; &#039;image_size&#039;,
+							&#039;default&#039; =&gt; get_option( $field_name, $image_size ),
+						]
+					);
+
+					// Register setting.
+					register_setting(
+						&#039;media&#039;,
+						$field_name,
+						[
+							&#039;sanitize_callback&#039; =&gt; [ $this, &#039;validate_image_size_field&#039; ],
+						]
+					);
+				}
+			}
+		}
+
+		if ( &#039;options-permalink.php&#039; === $pagenow ) {
+
+			// Get permalinks.
+			$permalinks     = (array) get_option( &#039;hp_permalinks&#039;, [] );
+			$new_permalinks = $permalinks;
+
+			// Get post types and taxonomies.
+			$types = array_filter(
+				array_merge(
+					get_post_types( [ &#039;public&#039; =&gt; true ], &#039;objects&#039; ),
+					get_taxonomies( [ &#039;public&#039; =&gt; true ], &#039;objects&#039; )
+				),
+				function( $type_args ) {
+					return strpos( $type_args-&gt;name, &#039;hp_&#039; ) === 0;
+				}
+			);
+
+			foreach ( $types as $type_name =&gt; $type_args ) {
+
+				// Get field name.
+				$type_name   = hp\unprefix( $type_name );
+				$option_name = $type_name . &#039;_slug&#039;;
+				$field_name  = hp\prefix( $option_name );
+
+				// Get field label.
+				$field_label = $type_args-&gt;labels-&gt;singular_name;
+
+				if ( property_exists( $type_args, &#039;object_type&#039; ) ) {
+					$type_group = hp\unprefix( hp\get_first_array_value( $type_args-&gt;object_type ) );
+
+					if ( hivepress()-&gt;translator-&gt;get_string( $type_group ) ) {
+						$field_label .= &#039; (&#039; . hivepress()-&gt;translator-&gt;get_string( $type_group ) . &#039;)&#039;;
+					}
+				}
+
+				// Add field.
+				add_settings_field(
+					$field_name,
+					$field_label,
+					[ $this, &#039;render_settings_field&#039; ],
+					&#039;permalink&#039;,
+					&#039;optional&#039;,
+					[
+						&#039;name&#039;       =&gt; $field_name,
+						&#039;type&#039;       =&gt; &#039;text&#039;,
+						&#039;max_length&#039; =&gt; 64,
+						&#039;default&#039;    =&gt; hp\get_array_value( $permalinks, $option_name ),
+
+						&#039;attributes&#039; =&gt; [
+							&#039;class&#039; =&gt; [ &#039;regular-text&#039;, &#039;code&#039; ],
+						],
+					]
+				);
+
+				if ( isset( $_POST[ $field_name ] ) ) {
+
+					// Get field value.
+					$field_value = sanitize_title( wp_unslash( $_POST[ $field_name ] ) );
+
+					if ( $field_value ) {
+
+						// Set permalink.
+						$new_permalinks[ $option_name ] = urldecode( $field_value );
+					} else {
+						unset( $new_permalinks[ $option_name ] );
+					}
+				}
+			}
+
+			// Update permalinks.
+			if ( $new_permalinks !== $permalinks ) {
+				update_option( &#039;hp_permalinks&#039;, $new_permalinks );
+			}
+		}
+	}
+
+	/**
+	 * Renders settings section.
+	 *
+	 * @param array $args Section arguments.
+	 */
+	public function render_settings_section( $args ) {
+
+		// Get current tab.
+		$tab = hp\get_array_value( hivepress()-&gt;get_config( &#039;settings&#039; ), $this-&gt;get_settings_tab() );
+
+		if ( empty( $tab ) ) {
+			return;
+		}
+
+		// Get current section.
+		$section = hp\get_array_value( $tab[&#039;sections&#039;], $args[&#039;id&#039;] );
+
+		if ( empty( $section ) ) {
+			return;
+		}
+
+		// Render description.
+		if ( isset( $section[&#039;description&#039;] ) ) {
+			echo &#039;&lt;p&gt;&#039; . hp\sanitize_html( $section[&#039;description&#039;] ) . &#039;&lt;/p&gt;&#039;;
+		}
+	}
+
+	/**
+	 * Renders settings field.
+	 *
+	 * @param array $args Field arguments.
+	 */
+	public function render_settings_field( $args ) {
+		$output = &#039;&#039;;
+
+		// Create field.
+		$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $args[&#039;type&#039;], [ $args ] );
+
+		if ( $field ) {
+
+			// Get field attributes.
+			$attributes = [];
+
+			if ( $field-&gt;get_arg( &#039;_parent&#039; ) ) {
+				$attributes[&#039;data-component&#039;] = &#039;field&#039;;
+				$attributes[&#039;data-parent&#039;]    = hp\prefix( $field-&gt;get_arg( &#039;_parent&#039; ) );
+			}
+
+			// Render field.
+			$output .= &#039;&lt;div &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039; . $field-&gt;render() . &#039;&lt;/div&gt;&#039;;
+		}
+
+		echo $output;
+	}
+
+	/**
+	 * Validates settings field.
+	 *
+	 * @param string $name Field name.
+	 * @param mixed  $value Field value.
+	 * @return mixed
+	 */
+	protected function validate_settings_field( $name, $value ) {
+
+		// Get current tab.
+		$tab = hp\get_array_value( hivepress()-&gt;get_config( &#039;settings&#039; ), $this-&gt;get_settings_tab() );
+
+		if ( empty( $tab ) ) {
+			return;
+		}
+
+		// Get field arguments.
+		$field_args = null;
+
+		foreach ( $tab[&#039;sections&#039;] as $section_name =&gt; $section ) {
+			foreach ( $section[&#039;fields&#039;] as $field_name =&gt; $field ) {
+				if ( $field_name === $name ) {
+					$field_args = $field;
+
+					break 2;
+				}
+			}
+		}
+
+		if ( empty( $field_args ) ) {
+			return;
+		}
+
+		// Get field name.
+		$field_name = hp\prefix( $name );
+
+		// Create field.
+		$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ $field_args ] );
+
+		if ( $field ) {
+
+			// Validate field.
+			$field-&gt;set_value( $value );
+
+			if ( $field-&gt;validate() ) {
+				return $field-&gt;get_value();
+			} else {
+				foreach ( $field-&gt;get_errors() as $error ) {
+					add_settings_error( $field_name, $field_name, esc_html( $error ) );
+				}
+
+				return get_option( $field_name );
+			}
+		}
+	}
+
+	/**
+	 * Validates image size field.
+	 *
+	 * @param mixed $value Field value.
+	 * @return mixed
+	 */
+	public function validate_image_size_field( $value ) {
+
+		// Create field.
+		$field = new Fields\Image_Size();
+
+		// Validate field.
+		$field-&gt;set_value( $value );
+
+		if ( $field-&gt;validate() ) {
+			return $field-&gt;get_value();
+		}
+	}
+
+	/**
+	 * Gets settings page tabs.
+	 *
+	 * @return array
+	 */
+	protected function get_settings_tabs() {
+		return array_map(
+			function( $tab ) {
+				return hp\get_array_value( $tab, &#039;title&#039; );
+			},
+			hp\sort_array( hivepress()-&gt;get_config( &#039;settings&#039; ) )
+		);
+	}
+
+	/**
+	 * Gets current settings page tab.
+	 *
+	 * @return string
+	 */
+	protected function get_settings_tab() {
+		$current_tab = null;
+
+		// Get all tabs.
+		$tabs = array_keys( hp\sort_array( hivepress()-&gt;get_config( &#039;settings&#039; ) ) );
+
+		$first_tab   = hp\get_first_array_value( $tabs );
+		$current_tab = hp\get_array_value( $_GET, &#039;tab&#039;, $first_tab );
+
+		// Set the default tab.
+		if ( ! in_array( $current_tab, $tabs, true ) ) {
+			$current_tab = $first_tab;
+		}
+
+		return $current_tab;
+	}
+
+	/**
+	 * Gets HivePress purchases.
+	 *
+	 * @return array
+	 */
+	protected function get_purchases() {
+
+		// Get license key.
+		$license_key = implode( &#039;,&#039;, explode( &quot;\n&quot;, get_option( &#039;hp_hivepress_license_key&#039; ) ) );
+
+		if ( ! $license_key ) {
+			return [];
+		}
+
+		// Get cached purchases.
+		$purchases = hivepress()-&gt;cache-&gt;get_cache( &#039;purchases&#039; );
+
+		if ( is_null( $purchases ) ) {
+			$purchases = [];
+
+			// Get API response.
+			$response = json_decode(
+				wp_remote_retrieve_body(
+					wp_remote_get(
+						&#039;https://store.hivepress.io/api/v1/products?&#039; . http_build_query(
+							[
+								&#039;license_key&#039; =&gt; $license_key,
+							]
+						)
+					)
+				),
+				true
+			);
+
+			if ( is_array( $response ) &amp;&amp; isset( $response[&#039;data&#039;] ) ) {
+				foreach ( $response[&#039;data&#039;] as $product ) {
+
+					// Add purchase.
+					$purchases[ $product[&#039;slug&#039;] ] = [
+						&#039;name&#039; =&gt; $product[&#039;name&#039;],
+						&#039;slug&#039; =&gt; $product[&#039;slug&#039;],
+						&#039;type&#039; =&gt; $product[&#039;type&#039;],
+					];
+				}
+
+				// Cache purchases.
+				hivepress()-&gt;cache-&gt;set_cache( &#039;purchases&#039;, null, $purchases, DAY_IN_SECONDS );
+			}
+		}
+
+		return $purchases;
+	}
+
+	/**
+	 * Clears cached purchases.
+	 */
+	public function clear_purchases_cache() {
+		hivepress()-&gt;cache-&gt;delete_cache( &#039;purchases&#039; );
+	}
+
+	/**
+	 * Gets HivePress themes.
+	 *
+	 * @return array
+	 */
+	protected function get_themes() {
+
+		// Get cached themes.
+		$themes = hivepress()-&gt;cache-&gt;get_cache( &#039;themes&#039; );
+
+		if ( is_null( $themes ) ) {
+			$themes = [];
+
+			// Get paid themes.
+			$paid_themes = json_decode(
+				wp_remote_retrieve_body(
+					wp_remote_get( &#039;https://store.hivepress.io/api/v1/products?type=theme&#039; )
+				),
+				true
+			);
+
+			if ( is_array( $paid_themes ) &amp;&amp; isset( $paid_themes[&#039;data&#039;] ) ) {
+
+				// Add themes.
+				$themes = array_merge( $themes, $paid_themes[&#039;data&#039;] );
+			}
+
+			// Get free themes.
+			$free_themes = themes_api(
+				&#039;query_themes&#039;,
+				[
+					&#039;author&#039; =&gt; &#039;hivepress&#039;,
+				]
+			);
+
+			if ( ! is_wp_error( $free_themes ) ) {
+
+				// Add themes.
+				$themes = array_merge(
+					$themes,
+					array_map(
+						function( $theme ) {
+							$theme = (array) $theme;
+
+							return array_merge(
+								$theme,
+								[
+									&#039;buy_url&#039;   =&gt; $theme[&#039;homepage&#039;],
+									&#039;image_url&#039; =&gt; $theme[&#039;screenshot_url&#039;],
+								]
+							);
+						},
+						$free_themes-&gt;themes
+					)
+				);
+			}
+
+			// Set theme URLs.
+			$themes = array_map(
+				function( $theme ) {
+					$slug = sanitize_key( $theme[&#039;slug&#039;] );
+
+					$theme[&#039;preview_url&#039;] = &#039;https://&#039; . $slug . &#039;.hivepress.io/&#039;;
+					$theme[&#039;buy_url&#039;]     = &#039;https://hivepress.io/themes/&#039; . $slug . &#039;/?utm_medium=referral&amp;utm_source=dashboard&#039;;
+
+					return $theme;
+				},
+				$themes
+			);
+
+			// Cache themes.
+			if ( is_array( $paid_themes ) &amp;&amp; isset( $paid_themes[&#039;data&#039;] ) &amp;&amp; ! is_wp_error( $free_themes ) &amp;&amp; count( $themes ) &lt;= 100 ) {
+				hivepress()-&gt;cache-&gt;set_cache( &#039;themes&#039;, null, $themes, DAY_IN_SECONDS );
+			}
+		}
+
+		// Set theme statuses.
+		$all_themes    = array_keys( wp_get_themes() );
+		$current_theme = get_template();
+
+		foreach ( $themes as $theme_index =&gt; $theme ) {
+			$slug = sanitize_key( $theme[&#039;slug&#039;] );
+
+			// Get status and URL.
+			$status = &#039;active&#039;;
+			$url    = &#039;&#039;;
+
+			if ( ! in_array( $slug, $all_themes, true ) ) {
+				$status = &#039;install&#039;;
+				$url    = admin_url(
+					&#039;update.php?&#039; . http_build_query(
+						[
+							&#039;action&#039;   =&gt; &#039;install-theme&#039;,
+							&#039;theme&#039;    =&gt; $slug,
+							&#039;_wpnonce&#039; =&gt; wp_create_nonce( &#039;install-theme_&#039; . $slug ),
+						]
+					)
+				);
+			} elseif ( $slug !== $current_theme ) {
+				$status = &#039;activate&#039;;
+				$url    = admin_url(
+					&#039;themes.php?&#039; . http_build_query(
+						[
+							&#039;action&#039;     =&gt; &#039;activate&#039;,
+							&#039;stylesheet&#039; =&gt; $slug,
+							&#039;_wpnonce&#039;   =&gt; wp_create_nonce( &#039;switch-theme_&#039; . $slug ),
+						]
+					)
+				);
+			}
+
+			// Set status and URL.
+			$themes[ $theme_index ][&#039;status&#039;] = $status;
+			$themes[ $theme_index ][&#039;url&#039;]    = $url;
+		}
+
+		return $themes;
+	}
+
+	/**
+	 * Clears cached themes.
+	 */
+	public function clear_themes_cache() {
+		hivepress()-&gt;cache-&gt;delete_cache( &#039;themes&#039; );
+	}
+
+	/**
+	 * Gets HivePress extensions.
+	 *
+	 * @param string $status Extensions status.
+	 * @return array
+	 */
+	protected function get_extensions( $status = &#039;all&#039; ) {
+		require_once ABSPATH . &#039;wp-admin/includes/plugin-install.php&#039;;
+
+		// Get cached extensions.
+		$extensions = hivepress()-&gt;cache-&gt;get_cache( &#039;all_extensions&#039; );
+
+		if ( is_null( $extensions ) ) {
+			$extensions = [];
+
+			// Get paid extensions.
+			$paid_extensions = json_decode(
+				wp_remote_retrieve_body(
+					wp_remote_get( &#039;https://store.hivepress.io/api/v1/products?type=extension&#039; )
+				),
+				true
+			);
+
+			if ( is_array( $paid_extensions ) &amp;&amp; isset( $paid_extensions[&#039;data&#039;] ) ) {
+
+				// Add extensions.
+				$extensions = array_merge( $extensions, $paid_extensions[&#039;data&#039;] );
+			}
+
+			// Get free extensions.
+			$free_extensions = plugins_api(
+				&#039;query_plugins&#039;,
+				[
+					&#039;author&#039; =&gt; &#039;hivepress&#039;,
+
+					&#039;fields&#039; =&gt; [
+						&#039;icons&#039; =&gt; true,
+					],
+				]
+			);
+
+			if ( ! is_wp_error( $free_extensions ) ) {
+
+				// Add extensions.
+				$extensions = array_merge(
+					$extensions,
+					array_filter(
+						array_map(
+							function( $extension ) {
+								$extension = (array) $extension;
+
+								return array_merge(
+									$extension,
+									[
+										&#039;description&#039; =&gt; $extension[&#039;short_description&#039;],
+										&#039;image_url&#039;   =&gt; hp\get_last_array_value( $extension[&#039;icons&#039;] ),
+									]
+								);
+							},
+							$free_extensions-&gt;plugins
+						),
+						function( $extension ) {
+							return ! in_array( $extension[&#039;slug&#039;], [ &#039;hivepress&#039;, &#039;hivepress-authentication&#039; ], true );
+						}
+					)
+				);
+			}
+
+			// Get referral ID.
+			$referral = null;
+
+			$stylesheet = get_template_directory() . &#039;/style.css&#039;;
+
+			if ( file_exists( $stylesheet ) ) {
+				$referral = sanitize_key( hp\get_first_array_value( get_file_data( $stylesheet, [ &#039;HivePress ID&#039; ] ) ) );
+			}
+
+			// Set extension URLs.
+			$extensions = array_map(
+				function( $extension ) use ( $referral ) {
+					$path = preg_replace( &#039;/^hivepress-/&#039;, &#039;&#039;, $extension[&#039;slug&#039;] ) . &#039;/?utm_medium=referral&amp;utm_source=dashboard&#039;;
+
+					if ( $referral ) {
+						$path .= &#039;&amp;ref=&#039; . $referral;
+					}
+
+					return array_merge(
+						$extension,
+						[
+							&#039;buy_url&#039;     =&gt; &#039;https://hivepress.io/extensions/&#039; . $path,
+							&#039;docs_url&#039;    =&gt; &#039;https://hivepress.io/docs/extensions/&#039; . $path,
+							&#039;support_url&#039; =&gt; &#039;https://community.hivepress.io/?utm_medium=referral&amp;utm_source=dashboard&#039;,
+						]
+					);
+				},
+				$extensions
+			);
+
+			// Cache extensions.
+			if ( is_array( $paid_extensions ) &amp;&amp; isset( $paid_extensions[&#039;data&#039;] ) &amp;&amp; ! is_wp_error( $free_extensions ) &amp;&amp; count( $extensions ) &lt;= 100 ) {
+				hivepress()-&gt;cache-&gt;set_cache( &#039;all_extensions&#039;, null, $extensions, DAY_IN_SECONDS );
+			}
+		}
+
+		// Set extension statuses.
+		foreach ( $extensions as $extension_index =&gt; $extension ) {
+
+			// Set bundle status.
+			if ( &#039;bundle&#039; === $extension[&#039;slug&#039;] ) {
+				$extensions[ $extension_index ][&#039;status&#039;] = &#039;install&#039;;
+
+				continue;
+			}
+
+			// Get path and status.
+			$extension_path   = $extension[&#039;slug&#039;] . &#039;/&#039; . $extension[&#039;slug&#039;] . &#039;.php&#039;;
+			$extension_status = install_plugin_install_status( $extension );
+
+			// Set activation status.
+			if ( $extension_status[&#039;file&#039;] &amp;&amp; ! is_plugin_active( $extension_path ) ) {
+				$extension_status = array_merge(
+					$extension_status,
+					[
+						&#039;status&#039; =&gt; &#039;activate&#039;,
+						&#039;url&#039;    =&gt; admin_url(
+							&#039;plugins.php?&#039; . http_build_query(
+								[
+									&#039;action&#039;   =&gt; &#039;activate&#039;,
+									&#039;plugin&#039;   =&gt; $extension_path,
+									&#039;_wpnonce&#039; =&gt; wp_create_nonce( &#039;activate-plugin_&#039; . $extension_path ),
+								]
+							)
+						),
+					]
+				);
+			}
+
+			unset( $extension_status[&#039;version&#039;] );
+
+			$extensions[ $extension_index ] = array_merge(
+				$extension,
+				$extension_status,
+				[
+					&#039;name&#039; =&gt; trim( str_replace( hivepress()-&gt;get_name(), &#039;&#039;, $extension[&#039;name&#039;] ) ),
+				]
+			);
+		}
+
+		// Filter extensions.
+		if ( &#039;all&#039; !== $status ) {
+			$extensions = array_filter(
+				$extensions,
+				function( $extension ) use ( $status ) {
+					return &#039;installed&#039; === $status &amp;&amp; &#039;install&#039; !== $extension[&#039;status&#039;];
+				}
+			);
+		}
+
+		return $extensions;
+	}
+
+	/**
+	 * Clears cached extensions.
+	 */
+	public function clear_extensions_cache() {
+		hivepress()-&gt;cache-&gt;delete_cache( &#039;all_extensions&#039; );
+	}
+
+	/**
+	 * Gets extensions page tabs.
+	 *
+	 * @return array
+	 */
+	protected function get_extensions_tabs() {
+
+		// Set tabs.
+		$tabs = [
+			&#039;all&#039;       =&gt; [
+				&#039;name&#039;  =&gt; esc_html_x( &#039;All&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+				&#039;count&#039; =&gt; 0,
+			],
+
+			&#039;installed&#039; =&gt; [
+				&#039;name&#039;  =&gt; esc_html_x( &#039;Installed&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+				&#039;count&#039; =&gt; 0,
+			],
+		];
+
+		// Get extensions.
+		$extensions = $this-&gt;get_extensions();
+
+		// Set tab counts.
+		$tabs[&#039;all&#039;][&#039;count&#039;] = count( $extensions ) - 1;
+
+		$tabs[&#039;installed&#039;][&#039;count&#039;] = count(
+			array_filter(
+				$extensions,
+				function( $extension ) {
+					return &#039;install&#039; !== $extension[&#039;status&#039;];
+				}
+			)
+		);
+
+		// Filter tabs.
+		$tabs = array_filter(
+			$tabs,
+			function( $tab ) {
+				return 0 !== $tab[&#039;count&#039;];
+			}
+		);
+
+		return $tabs;
+	}
+
+	/**
+	 * Gets current extensions page tab.
+	 *
+	 * @return string
+	 */
+	protected function get_extensions_tab() {
+		$current_tab = null;
+
+		// Get all tabs.
+		$tabs = array_keys( $this-&gt;get_extensions_tabs() );
+
+		$first_tab   = hp\get_first_array_value( $tabs );
+		$current_tab = hp\get_array_value( $_GET, &#039;tab&#039;, $first_tab );
+
+		// Set the default tab.
+		if ( ! in_array( $current_tab, $tabs, true ) ) {
+			$current_tab = $first_tab;
+		}
+
+		return $current_tab;
+	}
+
+	/**
+	 * Registers post states.
+	 */
+	public function register_post_states() {
+		global $pagenow;
+
+		if ( &#039;edit.php&#039; === $pagenow ) {
+			foreach ( hivepress()-&gt;get_config( &#039;settings&#039; ) as $tab ) {
+				foreach ( $tab[&#039;sections&#039;] as $section ) {
+					foreach ( $section[&#039;fields&#039;] as $field_name =&gt; $field ) {
+						if ( strpos( $field_name, &#039;page_&#039; ) === 0 ) {
+							$post_id = absint( get_option( hp\prefix( $field_name ) ) );
+
+							if ( $post_id ) {
+								$this-&gt;post_states[ $post_id ] = $field[&#039;label&#039;];
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Adds post states.
+	 *
+	 * @param array   $states Post states.
+	 * @param WP_Post $post Post object.
+	 * @return array
+	 */
+	public function add_post_states( $states, $post ) {
+		if ( isset( $this-&gt;post_states[ $post-&gt;ID ] ) ) {
+			$states[] = esc_html( $this-&gt;post_states[ $post-&gt;ID ] );
+		}
+
+		return $states;
+	}
+
+	/**
+	 * Gets meta boxes.
+	 *
+	 * @param string $screen Screen name.
+	 * @return array
+	 */
+	protected function get_meta_boxes( $screen ) {
+
+		// Check screen.
+		if ( &#039;user&#039; === $screen ) {
+			$screen = hp\prefix( $screen );
+		}
+
+		if ( empty( $this-&gt;meta_boxes ) ) {
+			$this-&gt;meta_boxes = [];
+
+			foreach ( hivepress()-&gt;get_config( &#039;meta_boxes&#039; ) as $name =&gt; $args ) {
+				if ( in_array( $screen, (array) hp\prefix( $args[&#039;screen&#039;] ), true ) ) {
+
+					/**
+					 * Filters meta box properties. The dynamic part of the hook refers to the meta box name (e.g. `listing_settings`). You can check the available meta boxes in the `includes/configs/meta-boxes.php` file of HivePress.
+					 *
+					 * @hook hivepress/v1/meta_boxes/{meta_box_name}
+					 * @param {array} $props Meta box properties.
+					 * @return {array} Meta box properties.
+					 */
+					$args = apply_filters( &#039;hivepress/v1/meta_boxes/&#039; . $name, array_merge( $args, [ &#039;name&#039; =&gt; $name ] ) );
+
+					// Set default arguments.
+					$args = array_merge(
+						[
+							&#039;title&#039;    =&gt; &#039;&#039;,
+							&#039;screen&#039;   =&gt; &#039;&#039;,
+							&#039;context&#039;  =&gt; &#039;normal&#039;,
+							&#039;priority&#039; =&gt; &#039;default&#039;,
+							&#039;fields&#039;   =&gt; [],
+							&#039;blocks&#039;   =&gt; [],
+						],
+						$args
+					);
+
+					// Set field aliases.
+					foreach ( $args[&#039;fields&#039;] as $field_name =&gt; $field ) {
+						if ( ! isset( $field[&#039;_alias&#039;] ) ) {
+							$args[&#039;fields&#039;][ $field_name ] = array_merge(
+								$field,
+								[
+									&#039;_external&#039; =&gt; true,
+									&#039;_alias&#039;    =&gt; hp\prefix( $field_name ),
+								]
+							);
+						}
+					}
+
+					// Add meta box.
+					$this-&gt;meta_boxes[ $name ] = $args;
+				}
+			}
+		}
+
+		return $this-&gt;meta_boxes;
+	}
+
+	/**
+	 * Adds meta boxes.
+	 *
+	 * @param string  $post_type Post type.
+	 * @param WP_Post $post Post object.
+	 */
+	public function add_meta_boxes( $post_type, $post ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_post&#039;, $post-&gt;ID ) ) {
+			return;
+		}
+
+		// Add meta boxes.
+		foreach ( $this-&gt;get_meta_boxes( $post_type ) as $name =&gt; $args ) {
+			if ( $args[&#039;fields&#039;] || $args[&#039;blocks&#039;] ) {
+				add_meta_box( hp\prefix( $name ), $args[&#039;title&#039;], [ $this, &#039;render_meta_box&#039; ], hp\prefix( $args[&#039;screen&#039;] ), $args[&#039;context&#039;], $args[&#039;priority&#039;] );
+			}
+		}
+	}
+
+	/**
+	 * Removes meta boxes.
+	 */
+	public function remove_meta_boxes() {
+
+		// Check post type.
+		$post_type = get_post_type();
+
+		if ( strpos( $post_type, &#039;hp_&#039; ) !== 0 ) {
+			return;
+		}
+
+		// Remove meta box.
+		if ( array_key_exists( hp\unprefix( $post_type . &#039;_images&#039; ), hivepress()-&gt;get_config( &#039;meta_boxes&#039; ) ) ) {
+			remove_meta_box( &#039;postimagediv&#039;, $post_type, &#039;side&#039; );
+		}
+	}
+
+	/**
+	 * Updates meta box values.
+	 *
+	 * @param int $post_id Post ID.
+	 */
+	public function update_meta_box( $post_id ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_post&#039;, $post_id ) ) {
+			return;
+		}
+
+		// Check action.
+		if ( hp\get_array_value( $_POST, &#039;action&#039; ) !== &#039;editpost&#039; ) {
+			return;
+		}
+
+		// Check autosave.
+		if ( defined( &#039;DOING_AUTOSAVE&#039; ) &amp;&amp; DOING_AUTOSAVE ) {
+			return;
+		}
+
+		// Check post ID.
+		if ( get_the_ID() !== $post_id ) {
+			return;
+		}
+
+		// Remove action.
+		remove_action( &#039;save_post&#039;, [ $this, &#039;update_meta_box&#039; ] );
+
+		// Update field values.
+		foreach ( $this-&gt;get_meta_boxes( get_post_type() ) as $meta_box ) {
+			foreach ( $meta_box[&#039;fields&#039;] as $field_name =&gt; $field_args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ $field_args ] );
+
+				if ( $field &amp;&amp; ! $field-&gt;is_disabled() ) {
+
+					// Validate field.
+					$field-&gt;set_value( hp\get_array_value( $_POST, hp\prefix( $field_name ) ) );
+
+					if ( $field-&gt;validate() ) {
+
+						// Update field value.
+						if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+							$taxonomy = hp\get_array_value( $field-&gt;get_arg( &#039;option_args&#039; ), &#039;taxonomy&#039; );
+
+							if ( in_array( $field-&gt;get_value(), [ null, false ], true ) ) {
+								if ( $taxonomy ) {
+									wp_set_post_terms( $post_id, [], $taxonomy );
+								} else {
+									delete_post_meta( $post_id, $field-&gt;get_arg( &#039;_alias&#039; ) );
+								}
+							} elseif ( ! $field-&gt;get_arg( &#039;readonly&#039; ) ) {
+								if ( $taxonomy ) {
+									wp_set_post_terms( $post_id, (array) $field-&gt;get_value(), $taxonomy );
+								} else {
+									update_post_meta( $post_id, $field-&gt;get_arg( &#039;_alias&#039; ), $field-&gt;get_value() );
+								}
+							}
+						} else {
+							wp_update_post(
+								[
+									&#039;ID&#039; =&gt; $post_id,
+									$field-&gt;get_arg( &#039;_alias&#039; ) =&gt; $field-&gt;get_value(),
+								]
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Renders meta box fields.
+	 *
+	 * @param WP_Post $post Post object.
+	 * @param array   $args Meta box arguments.
+	 */
+	public function render_meta_box( $post, $args ) {
+		$output = &#039;&#039;;
+
+		// Get meta box name.
+		$meta_box_name = hp\unprefix( $args[&#039;id&#039;] );
+
+		// Get meta box.
+		$meta_box = hp\get_array_value( $this-&gt;get_meta_boxes( $post-&gt;post_type ), $meta_box_name );
+
+		if ( $meta_box ) {
+
+			// Render blocks.
+			if ( $meta_box[&#039;blocks&#039;] ) {
+				foreach ( hp\sort_array( $meta_box[&#039;blocks&#039;] ) as $block_name =&gt; $block_args ) {
+
+					// Create block.
+					$block = hp\create_class_instance( &#039;\HivePress\Blocks\\&#039; . $block_args[&#039;type&#039;], [ array_merge( $block_args, [ &#039;name&#039; =&gt; $block_name ] ) ] );
+
+					if ( $block ) {
+
+						// Render block.
+						$output .= $block-&gt;render();
+					}
+				}
+			}
+
+			// Render fields.
+			if ( $meta_box[&#039;fields&#039;] ) {
+				$output .= &#039;&lt;table class=&quot;form-table hp-form hp-form--table&quot; data-model=&quot;&#039; . esc_attr( hp\unprefix( $post-&gt;post_type ) ) . &#039;&quot; data-id=&quot;&#039; . esc_attr( $post-&gt;ID ) . &#039;&quot;&gt;&#039;;
+
+				foreach ( hp\sort_array( $meta_box[&#039;fields&#039;] ) as $field_name =&gt; $field_args ) {
+
+					// Get field name.
+					$field_name = hp\prefix( $field_name );
+
+					// Create field.
+					$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ array_merge( $field_args, [ &#039;name&#039; =&gt; $field_name ] ) ] );
+
+					if ( $field ) {
+
+						// Get field value.
+						$value = &#039;&#039;;
+
+						if ( isset( $args[&#039;defaults&#039;] ) ) {
+							$value = hp\get_array_value( $args[&#039;defaults&#039;], $field_name, &#039;&#039; );
+						} elseif ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+							$taxonomy = hp\get_array_value( $field-&gt;get_arg( &#039;option_args&#039; ), &#039;taxonomy&#039; );
+
+							if ( $taxonomy ) {
+								$value = wp_get_post_terms( $post-&gt;ID, $taxonomy, [ &#039;fields&#039; =&gt; &#039;ids&#039; ] );
+							} else {
+								$value = get_post_meta( $post-&gt;ID, $field-&gt;get_arg( &#039;_alias&#039; ), true );
+							}
+						} else {
+							$value = get_post_field( $field-&gt;get_arg( &#039;_alias&#039; ), $post );
+						}
+
+						// Set field value.
+						if ( &#039;&#039; !== $value ) {
+							$field-&gt;set_value( $value );
+						}
+
+						if ( &#039;hidden&#039; === $field-&gt;get_display_type() ) {
+
+							// Render field.
+							$output .= $field-&gt;render();
+						} else {
+
+							// Get field attributes.
+							$attributes = [
+								&#039;class&#039; =&gt; &#039;hp-form__field hp-form__field--&#039; . hp\sanitize_slug( $field-&gt;get_display_type() ),
+							];
+
+							if ( $field-&gt;get_arg( &#039;_parent&#039; ) ) {
+								$attributes[&#039;data-component&#039;] = &#039;field&#039;;
+								$attributes[&#039;data-parent&#039;]    = hp\prefix( $field-&gt;get_arg( &#039;_parent&#039; ) );
+							}
+
+							// Render field.
+							$output .= &#039;&lt;tr &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039;;
+
+							// Render field label.
+							if ( $field-&gt;get_label() ) {
+								$output .= &#039;&lt;th scope=&quot;row&quot;&gt;&lt;div&gt;&lt;label class=&quot;hp-field__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+								if ( $field-&gt;get_statuses() ) {
+									$output .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+								}
+
+								$output .= &#039;&lt;/label&gt;&#039; . $this-&gt;render_tooltip( $field-&gt;get_description() ) . &#039;&lt;/div&gt;&lt;/th&gt;&#039;;
+								$output .= &#039;&lt;td&gt;&#039;;
+							} else {
+								$output .= &#039;&lt;td colspan=&quot;2&quot;&gt;&#039;;
+							}
+
+							// Render field.
+							$output .= $field-&gt;render();
+
+							$output .= &#039;&lt;/td&gt;&#039;;
+							$output .= &#039;&lt;/tr&gt;&#039;;
+						}
+					}
+				}
+
+				$output .= &#039;&lt;/table&gt;&#039;;
+			}
+		}
+
+		// Return output.
+		if ( ! hp\get_array_value( $args, &#039;echo&#039;, true ) ) {
+			return $output;
+		}
+
+		echo $output;
+	}
+
+	/**
+	 * Adds term boxes.
+	 */
+	public function add_term_boxes() {
+
+		// Get taxonomies.
+		$taxonomies = [];
+
+		foreach ( hivepress()-&gt;get_config( &#039;meta_boxes&#039; ) as $name =&gt; $args ) {
+			$taxonomies = array_merge( $taxonomies, (array) hp\prefix( $args[&#039;screen&#039;] ) );
+		}
+
+		$taxonomies = array_unique( $taxonomies );
+
+		// Add term boxes.
+		foreach ( $taxonomies as $taxonomy ) {
+			if ( taxonomy_exists( $taxonomy ) ) {
+
+				// Update term boxes.
+				add_action( &#039;edit_&#039; . $taxonomy, [ $this, &#039;update_term_box&#039; ] );
+				add_action( &#039;create_&#039; . $taxonomy, [ $this, &#039;update_term_box&#039; ] );
+
+				// Render term boxes.
+				add_action( $taxonomy . &#039;_edit_form_fields&#039;, [ $this, &#039;render_term_box&#039; ], 10, 2 );
+				add_action( $taxonomy . &#039;_add_form_fields&#039;, [ $this, &#039;render_term_box&#039; ], 10, 2 );
+			}
+		}
+	}
+
+	/**
+	 * Updates term box values.
+	 *
+	 * @param int $term_id Term ID.
+	 */
+	public function update_term_box( $term_id ) {
+
+		// Check quick edit.
+		if ( isset( $_POST[&#039;_inline_edit&#039;] ) ) {
+			return;
+		}
+
+		// Get term.
+		$term = get_term( $term_id );
+
+		if ( empty( $term ) ) {
+			return;
+		}
+
+		// Remove actions.
+		remove_action( &#039;edit_&#039; . $term-&gt;taxonomy, [ $this, &#039;update_term_box&#039; ] );
+		remove_action( &#039;create_&#039; . $term-&gt;taxonomy, [ $this, &#039;update_term_box&#039; ] );
+
+		// Update field values.
+		foreach ( $this-&gt;get_meta_boxes( $term-&gt;taxonomy ) as $meta_box ) {
+			foreach ( $meta_box[&#039;fields&#039;] as $field_name =&gt; $field_args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ $field_args ] );
+
+				if ( $field &amp;&amp; ! $field-&gt;is_disabled() ) {
+
+					// Validate field.
+					$field-&gt;set_value( hp\get_array_value( $_POST, hp\prefix( $field_name ) ) );
+
+					if ( $field-&gt;validate() ) {
+
+						// Update field value.
+						if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+							if ( in_array( $field-&gt;get_value(), [ null, false ], true ) ) {
+								delete_term_meta( $term-&gt;term_id, $field-&gt;get_arg( &#039;_alias&#039; ) );
+							} elseif ( ! $field-&gt;get_arg( &#039;readonly&#039; ) ) {
+								update_term_meta( $term-&gt;term_id, $field-&gt;get_arg( &#039;_alias&#039; ), $field-&gt;get_value() );
+							}
+						} else {
+							wp_update_term(
+								$term-&gt;term_id,
+								$term-&gt;taxonomy,
+								[
+									$field-&gt;get_arg( &#039;_alias&#039; ) =&gt; $field-&gt;get_value(),
+								]
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Renders term box fields.
+	 *
+	 * @param mixed  $term Term object.
+	 * @param string $taxonomy Taxonomy name.
+	 */
+	public function render_term_box( $term, $taxonomy = &#039;&#039; ) {
+		$output = &#039;&#039;;
+
+		// Get term ID.
+		$term_id = null;
+
+		if ( ! is_object( $term ) ) {
+			$taxonomy = $term;
+		} else {
+			$term_id = $term-&gt;term_id;
+		}
+
+		foreach ( $this-&gt;get_meta_boxes( $taxonomy ) as $meta_box ) {
+			foreach ( hp\sort_array( $meta_box[&#039;fields&#039;] ) as $field_name =&gt; $field_args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ array_merge( $field_args, [ &#039;name&#039; =&gt; hp\prefix( $field_name ) ] ) ] );
+
+				if ( $field ) {
+
+					// Get field attributes.
+					$attributes = [
+						&#039;class&#039; =&gt; &#039;form-field hp-form--table&#039;,
+					];
+
+					if ( $field-&gt;get_arg( &#039;_parent&#039; ) ) {
+						$attributes[&#039;data-component&#039;] = &#039;field&#039;;
+						$attributes[&#039;data-parent&#039;]    = hp\prefix( $field-&gt;get_arg( &#039;_parent&#039; ) );
+					}
+
+					if ( ! is_object( $term ) ) {
+						$output .= &#039;&lt;div &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039;;
+
+						// Render label.
+						$output .= &#039;&lt;label class=&quot;hp-field__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+						if ( $field-&gt;get_statuses() ) {
+							$output .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+						}
+
+						$output .= &#039;&lt;/label&gt;&#039;;
+
+						// Render field.
+						$output .= $field-&gt;render();
+
+						// Render description.
+						if ( $field-&gt;get_description() ) {
+							$output .= &#039;&lt;p&gt;&#039; . hp\sanitize_html( $field-&gt;get_description() ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						$output .= &#039;&lt;/div&gt;&#039;;
+					} else {
+						$output .= &#039;&lt;tr &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039;;
+
+						// Render label.
+						$output .= &#039;&lt;th scope=&quot;row&quot;&gt;&lt;label class=&quot;hp-field__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+						if ( $field-&gt;get_statuses() ) {
+							$output .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+						}
+
+						$output .= &#039;&lt;/label&gt;&lt;/th&gt;&#039;;
+
+						// Get field value.
+						$value = &#039;&#039;;
+
+						if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+							$value = get_term_meta( $term-&gt;term_id, $field-&gt;get_arg( &#039;_alias&#039; ), true );
+						} else {
+							$value = get_term_field( $field-&gt;get_arg( &#039;_alias&#039; ), $term );
+						}
+
+						// Set field value.
+						if ( &#039;&#039; !== $value ) {
+							$field-&gt;set_value( $value );
+						}
+
+						// Render field.
+						$output .= &#039;&lt;td&gt;&#039;;
+
+						$output .= $field-&gt;render();
+
+						// Render description.
+						if ( $field-&gt;get_description() ) {
+							$output .= &#039;&lt;p class=&quot;description&quot;&gt;&#039; . hp\sanitize_html( $field-&gt;get_description() ) . &#039;&lt;/p&gt;&#039;;
+						}
+
+						$output .= &#039;&lt;/td&gt;&#039;;
+						$output .= &#039;&lt;/tr&gt;&#039;;
+					}
+				}
+			}
+		}
+
+		echo $output;
+	}
+
+	/**
+	 * Updates user box values.
+	 *
+	 * @param int $user_id User ID.
+	 */
+	public function update_user_boxes( $user_id ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_users&#039; ) ) {
+			return;
+		}
+
+		// Remove actions.
+		remove_action( &#039;personal_options_update&#039;, [ $this, &#039;update_user_boxes&#039; ] );
+		remove_action( &#039;edit_user_profile_update&#039;, [ $this, &#039;update_user_boxes&#039; ] );
+
+		// Update field values.
+		foreach ( $this-&gt;get_meta_boxes( &#039;user&#039; ) as $meta_box ) {
+			foreach ( $meta_box[&#039;fields&#039;] as $field_name =&gt; $field_args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ $field_args ] );
+
+				if ( $field &amp;&amp; ! $field-&gt;is_disabled() ) {
+
+					// Validate field.
+					$field-&gt;set_value( hp\get_array_value( $_POST, hp\prefix( $field_name ) ) );
+
+					if ( $field-&gt;validate() ) {
+
+						// Update field value.
+						if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+							if ( in_array( $field-&gt;get_value(), [ null, false ], true ) ) {
+								delete_user_meta( $user_id, $field-&gt;get_arg( &#039;_alias&#039; ) );
+							} elseif ( ! $field-&gt;get_arg( &#039;readonly&#039; ) ) {
+								update_user_meta( $user_id, $field-&gt;get_arg( &#039;_alias&#039; ), $field-&gt;get_value() );
+							}
+						} else {
+							wp_update_user(
+								[
+									&#039;ID&#039; =&gt; $user_id,
+									$field-&gt;get_arg( &#039;_alias&#039; ) =&gt; $field-&gt;get_value(),
+								]
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Renders user box fields.
+	 *
+	 * @param WP_User $user User object.
+	 */
+	public function render_user_boxes( $user ) {
+		$output = &#039;&#039;;
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_users&#039; ) ) {
+			return;
+		}
+
+		foreach ( $this-&gt;get_meta_boxes( &#039;user&#039; ) as $meta_box ) {
+
+			// Check fields.
+			if ( ! $meta_box[&#039;fields&#039;] ) {
+				continue;
+			}
+
+			// Render title.
+			$output .= &#039;&lt;h2&gt;&#039; . esc_html( $meta_box[&#039;title&#039;] ) . &#039;&lt;/h2&gt;&#039;;
+			$output .= &#039;&lt;table class=&quot;form-table hp-form&quot; role=&quot;presentation&quot;&gt;&#039;;
+
+			foreach ( hp\sort_array( $meta_box[&#039;fields&#039;] ) as $field_name =&gt; $field_args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $field_args[&#039;type&#039;], [ array_merge( $field_args, [ &#039;name&#039; =&gt; hp\prefix( $field_name ) ] ) ] );
+
+				if ( $field ) {
+
+					// Get field attributes.
+					$attributes = [
+						&#039;class&#039; =&gt; &#039;form-field hp-form--table&#039;,
+					];
+
+					if ( $field-&gt;get_arg( &#039;_parent&#039; ) ) {
+						$attributes[&#039;data-component&#039;] = &#039;field&#039;;
+						$attributes[&#039;data-parent&#039;]    = hp\prefix( $field-&gt;get_arg( &#039;_parent&#039; ) );
+					}
+
+					$output .= &#039;&lt;tr &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039;;
+
+					// Render label.
+					$output .= &#039;&lt;th&gt;&lt;label class=&quot;hp-field__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+					if ( $field-&gt;get_statuses() ) {
+						$output .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+					}
+
+					$output .= &#039;&lt;/label&gt;&lt;/th&gt;&#039;;
+
+					// Get field value.
+					$value = &#039;&#039;;
+
+					if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+						$value = get_user_meta( $user-&gt;ID, $field-&gt;get_arg( &#039;_alias&#039; ), true );
+					} else {
+						$value = $user-&gt;get( $field-&gt;get_arg( &#039;_alias&#039; ) );
+					}
+
+					// Set field value.
+					if ( &#039;&#039; !== $value ) {
+						$field-&gt;set_value( $value );
+					}
+
+					// Render field.
+					$output .= &#039;&lt;td&gt;&#039;;
+
+					$output .= $field-&gt;render();
+
+					// Render description.
+					if ( $field-&gt;get_description() ) {
+						$output .= &#039;&lt;p class=&quot;description&quot;&gt;&#039; . do_shortcode( wp_kses_post( $field-&gt;get_description() ) ) . &#039;&lt;/p&gt;&#039;;
+					}
+
+					$output .= &#039;&lt;/td&gt;&#039;;
+					$output .= &#039;&lt;/tr&gt;&#039;;
+				}
+			}
+
+			$output .= &#039;&lt;/table&gt;&#039;;
+		}
+
+		echo $output;
+	}
+
+	/**
+	 * Checks user access.
+	 */
+	public function check_access() {
+		if ( ! wp_doing_ajax() &amp;&amp; get_option( &#039;hp_user_disable_backend&#039; ) &amp;&amp; ! current_user_can( &#039;publish_posts&#039; ) ) {
+			wp_safe_redirect( hivepress()-&gt;router-&gt;get_url( &#039;user_account_page&#039; ) );
+
+			exit;
+		}
+	}
+
+	/**
+	 * Enqueues scripts.
+	 */
+	public function enqueue_scripts() {
+		global $pagenow;
+
+		if ( in_array( $pagenow, [ &#039;edit-tags.php&#039;, &#039;term.php&#039; ], true ) ) {
+			wp_enqueue_media();
+		}
+	}
+
+	/**
+	 * Renders plugin links.
+	 *
+	 * @param array $links Plugin links.
+	 * @return array
+	 */
+	public function render_links( $links ) {
+		return array_merge(
+			[
+				&#039;settings&#039; =&gt; &#039;&lt;a href=&quot;&#039; . esc_url( admin_url( &#039;admin.php?page=hp_settings&#039; ) ) . &#039;&quot;&gt;&#039; . esc_html__( &#039;Settings&#039;, &#039;hivepress&#039; ) . &#039;&lt;/a&gt;&#039;,
+			],
+			$links
+		);
+	}
+
+	/**
+	 * Renders notices.
+	 */
+	public function render_notices() {
+		global $pagenow;
+
+		$output = &#039;&#039;;
+
+		// Get installation time.
+		$installed_time = absint( get_option( &#039;hp_installed_time&#039; ) );
+
+		// Add default notices.
+		$notices = [];
+
+		// Check valid purchases.
+		$purchases = $this-&gt;get_purchases();
+
+		$products = array_filter(
+			array_merge( $this-&gt;get_themes(), $this-&gt;get_extensions() ),
+			function( $product ) use ( $purchases ) {
+				return isset( $product[&#039;price&#039;] ) &amp;&amp; &#039;bundle&#039; !== $product[&#039;slug&#039;] &amp;&amp; in_array( $product[&#039;status&#039;], [ &#039;installed&#039;, &#039;latest_installed&#039;, &#039;activate&#039;, &#039;active&#039; ] ) &amp;&amp; ! isset( $purchases[ $product[&#039;slug&#039;] ] );
+			}
+		);
+
+		if ( $products ) {
+			$notices[&#039;license_request&#039;] = [
+				&#039;type&#039;        =&gt; &#039;error&#039;,
+				&#039;dismissible&#039; =&gt; true,
+				&#039;text&#039;        =&gt; sprintf(
+					/* translators: 1: settings URL, 2: unlicensed products. */
+					hp\sanitize_html( __( &#039;Please &lt;a href=&quot;%1$s&quot;&gt;add the license keys&lt;/a&gt; for the installed premium HivePress themes and extensions. The following products without valid licenses are going to be disabled automatically: %2$s.&#039;, &#039;hivepress&#039; ) ),
+					esc_url( admin_url( &#039;admin.php?page=hp_settings&amp;tab=integrations&#039; ) ),
+					implode( &#039;, &#039;, array_column( $products, &#039;name&#039; ) )
+				),
+			];
+		}
+
+		// Check theme support.
+		if ( ! current_theme_supports( &#039;hivepress&#039; ) ) {
+			$notices[&#039;incompatible_theme&#039;] = [
+				&#039;type&#039;        =&gt; &#039;warning&#039;,
+				&#039;dismissible&#039; =&gt; true,
+				&#039;text&#039;        =&gt; sprintf(
+					/* translators: %s: themes URL. */
+					hp\sanitize_html( __( &#039;The current theme doesn\&#039;t declare HivePress support, if you notice any styling issues please consider using one of the &lt;a href=&quot;%s&quot;&gt;official themes&lt;/a&gt; instead.&#039;, &#039;hivepress&#039; ) ),
+					esc_url( admin_url( &#039;admin.php?page=hp_themes&#039; ) )
+				),
+			];
+		}
+
+		// Suggest adding review.
+		if ( $installed_time &lt; time() - WEEK_IN_SECONDS * 2 ) {
+			$notices[&#039;review_request&#039;] = [
+				&#039;type&#039;        =&gt; &#039;info&#039;,
+				&#039;dismissible&#039; =&gt; true,
+				&#039;text&#039;        =&gt; sprintf(
+					/* translators: %s: link URL. */
+					hp\sanitize_html( __( &#039;It\&#039;s been more than 2 weeks since you installed HivePress, that\&#039;s awesome! If you find it useful, please leave a review on &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;WordPress.org&lt;/a&gt; to help us spread the word.&#039;, &#039;hivepress&#039; ) ),
+					&#039;https://wordpress.org/support/plugin/hivepress/reviews/&#039;
+				),
+			];
+		}
+
+		if ( $installed_time &lt; time() - DAY_IN_SECONDS * 2 ) {
+
+			// Suggest premium products.
+			if ( get_template() === &#039;listinghive&#039; &amp;&amp; ! get_option( &#039;hp_hivepress_license_key&#039; ) ) {
+				$notices[&#039;upgrade_request&#039;] = [
+					&#039;type&#039;        =&gt; &#039;info&#039;,
+					&#039;dismissible&#039; =&gt; true,
+					&#039;text&#039;        =&gt; sprintf(
+						/* translators: %s: link URL. */
+						hp\sanitize_html( __( &#039;Great start with HivePress! Check out our &lt;a href=&quot;%1$s&quot;&gt;premium themes&lt;/a&gt; and &lt;a href=&quot;%2$s&quot;&gt;extensions&lt;/a&gt; for more tailored design and functionality.&#039;, &#039;hivepress&#039; ) ),
+						esc_url( admin_url( &#039;admin.php?page=hp_themes&#039; ) ),
+						esc_url( admin_url( &#039;admin.php?page=hp_extensions&#039; ) )
+					),
+				];
+			}
+
+			// Request usage sharing.
+			if ( ! get_option( &#039;hp_hivepress_allow_tracking&#039; ) ) {
+				$notices[&#039;usage_tracking&#039;] = [
+					&#039;type&#039;        =&gt; &#039;info&#039;,
+					&#039;option&#039;      =&gt; &#039;hivepress_allow_tracking&#039;,
+					&#039;dismissible&#039; =&gt; true,
+					/* translators: %s: terms URL. */
+					&#039;text&#039;        =&gt; sprintf( hp\sanitize_html( __( &#039;Help us make HivePress better by sharing &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;non-sensitive usage data&lt;/a&gt; or dismiss this notice to opt out.&#039;, &#039;hivepress&#039; ) ), &#039;https://hivepress.io/usage-tracking/&#039; ) . &#039;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;&#039; . esc_html__( &#039;Share Usage Data&#039;, &#039;hivepress&#039; ) . &#039;&lt;/a&gt;&#039;,
+				];
+			}
+		}
+
+		// Suggest website showcase.
+		if ( $installed_time &lt; time() - MONTH_IN_SECONDS * 2 ) {
+			$notices[&#039;showcase_request&#039;] = [
+				&#039;type&#039;        =&gt; &#039;info&#039;,
+				&#039;dismissible&#039; =&gt; true,
+				&#039;text&#039;        =&gt; sprintf(
+					/* translators: %s: link URL. */
+					hp\sanitize_html( __( &#039;Have you already launched this website? Please submit it to the &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;HivePress Showcase&lt;/a&gt; to inspire others.&#039;, &#039;hivepress&#039; ) ),
+					&#039;https://hivepress.io/showcase/&#039;
+				),
+			];
+		}
+
+		// Suggest expert program.
+		if ( defined( &#039;WP_DEBUG&#039; ) &amp;&amp; WP_DEBUG &amp;&amp; $installed_time &lt; time() - WEEK_IN_SECONDS ) {
+			$notices[&#039;expert_request&#039;] = [
+				&#039;type&#039;        =&gt; &#039;info&#039;,
+				&#039;dismissible&#039; =&gt; true,
+				&#039;text&#039;        =&gt; sprintf(
+					/* translators: %s: link URL. */
+					hp\sanitize_html( __( &#039;Are you a developer familiar with HivePress? Join the &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;HivePress Experts&lt;/a&gt; program to regularly get new clients.&#039;, &#039;hivepress&#039; ) ),
+					&#039;https://hivepress.io/experts/&#039;
+				),
+			];
+		}
+
+		/**
+		 * Filters the WordPress admin area notices.
+		 *
+		 * @hook hivepress/v1/admin_notices
+		 * @param {array} $notices Notice configurations.
+		 * @return {array} Notice configurations.
+		 */
+		$notices = apply_filters( &#039;hivepress/v1/admin_notices&#039;, $notices );
+
+		// Remove dismissed notices.
+		$notices = array_diff_key( $notices, array_flip( array_filter( (array) get_option( &#039;hp_admin_dismissed_notices&#039; ) ) ) );
+
+		// Render notices.
+		foreach ( $notices as $notice_name =&gt; $notice ) {
+			$output .= $this-&gt;render_notice( array_merge( $notice, [ &#039;name&#039; =&gt; $notice_name ] ) );
+		}
+
+		// Render settings errors.
+		if ( &#039;admin.php&#039; === $pagenow &amp;&amp; &#039;hp_settings&#039; === hp\get_array_value( $_GET, &#039;page&#039; ) ) {
+			ob_start();
+
+			settings_errors();
+			$output .= ob_get_contents();
+
+			ob_end_clean();
+		}
+
+		echo $output;
+	}
+
+	/**
+	 * Renders notice.
+	 *
+	 * @param array $args Notice arguments.
+	 * @return string
+	 */
+	public function render_notice( $args ) {
+		$output = &#039;&#039;;
+
+		// Set defaults.
+		$args = array_merge(
+			[
+				&#039;type&#039;        =&gt; &#039;info&#039;,
+				&#039;name&#039;        =&gt; &#039;&#039;,
+				&#039;text&#039;        =&gt; &#039;&#039;,
+				&#039;option&#039;      =&gt; null,
+				&#039;dismissible&#039; =&gt; false,
+				&#039;inline&#039;      =&gt; false,
+			],
+			$args
+		);
+
+		// Set attributes.
+		$attributes = [
+			&#039;class&#039; =&gt; [ &#039;notice-&#039; . $args[&#039;type&#039;] ],
+		];
+
+		if ( $args[&#039;inline&#039;] ) {
+			$attributes = hp\merge_arrays(
+				$attributes,
+				[
+					&#039;class&#039; =&gt; [ &#039;hp-notice&#039; ],
+				]
+			);
+		} else {
+			$attributes = hp\merge_arrays(
+				$attributes,
+				[
+					&#039;class&#039; =&gt; [ &#039;notice&#039; ],
+				]
+			);
+		}
+
+		if ( $args[&#039;option&#039;] ) {
+			$attributes[&#039;data-option&#039;] = $args[&#039;option&#039;];
+		}
+
+		if ( $args[&#039;dismissible&#039;] ) {
+			$attributes = hp\merge_arrays(
+				$attributes,
+				[
+					&#039;class&#039;          =&gt; [ &#039;is-dismissible&#039; ],
+					&#039;data-component&#039; =&gt; &#039;notice&#039;,
+					&#039;data-name&#039;      =&gt; $args[&#039;name&#039;],
+					&#039;data-url&#039;       =&gt; esc_url( hivepress()-&gt;router-&gt;get_url( &#039;admin_notice_update_action&#039;, [ &#039;notice_name&#039; =&gt; $args[&#039;name&#039;] ] ) ),
+				]
+			);
+		}
+
+		// Render notice.
+		$output .= &#039;&lt;div &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&lt;p&gt;&#039; . hp\sanitize_html( $args[&#039;text&#039;] ) . &#039;&lt;/p&gt;&lt;/div&gt;&#039;;
+
+		return $output;
+	}
+
+	/**
+	 * Renders tooltip.
+	 *
+	 * @param string $text Tooltip text.
+	 * @return string
+	 */
+	protected function render_tooltip( $text ) {
+		$output = &#039;&#039;;
+
+		if ( $text ) {
+			$output .= &#039;&lt;div class=&quot;hp-tooltip&quot;&gt;&#039;;
+			$output .= &#039;&lt;span class=&quot;hp-tooltip__icon dashicons dashicons-editor-help&quot;&gt;&lt;/span&gt;&#039;;
+			$output .= &#039;&lt;div class=&quot;hp-tooltip__text&quot;&gt;&#039; . do_shortcode( wp_kses_post( $text ) ) . &#039;&lt;/div&gt;&#039;;
+			$output .= &#039;&lt;/div&gt;&#039;;
+		}
+
+		return $output;
+	}
+
+	/**
+	 * Renders footer.
+	 */
+	public function render_footer() {
+		global $pagenow;
+
+		$output = &#039;&#039;;
+
+		if ( &#039;plugins.php&#039; === $pagenow ) {
+			$output .= ( new Blocks\Modal(
+				[
+					/* translators: %s: plugin name. */
+					&#039;title&#039;  =&gt; sprintf( esc_html__( &#039;Deactivate %s&#039;, &#039;hivepress&#039; ), hivepress()-&gt;get_name() ),
+					&#039;name&#039;   =&gt; &#039;hivepress_deactivate_modal&#039;,
+
+					&#039;blocks&#039; =&gt; [
+						&#039;plugin_deactivate_form&#039; =&gt; [
+							&#039;type&#039;   =&gt; &#039;form&#039;,
+							&#039;form&#039;   =&gt; &#039;plugin_deactivate&#039;,
+							&#039;_order&#039; =&gt; 10,
+						],
+					],
+				]
+			) )-&gt;render();
+		}
+
+		$output .= hivepress()-&gt;request-&gt;get_context( &#039;admin_footer&#039; );
+
+		echo $output;
+	}
+
+	/**
+	 * Shares usage data.
+	 */
+	public function share_usage_data() {
+
+		// Check settings.
+		if ( ! get_option( &#039;hp_hivepress_allow_tracking&#039; ) ) {
+			return;
+		}
+
+		// Set defaults.
+		$data = [
+			&#039;url&#039;       =&gt; home_url(),
+			&#039;date&#039;      =&gt; gmdate( &#039;Y-m-d&#039; ),
+			&#039;email&#039;     =&gt; get_bloginfo( &#039;admin_email&#039; ),
+			&#039;language&#039;  =&gt; get_locale(),
+			&#039;timezone&#039;  =&gt; wp_timezone_string(),
+			&#039;version&#039;   =&gt; get_bloginfo( &#039;version&#039; ),
+			&#039;multisite&#039; =&gt; is_multisite(),
+		];
+
+		if ( get_option( &#039;hp_installed_time&#039; ) ) {
+			$data[&#039;lifetime&#039;] = ceil( ( time() - absint( get_option( &#039;hp_installed_time&#039; ) ) ) / DAY_IN_SECONDS );
+		}
+
+		// Get stats.
+		$data[&#039;stats&#039;] = [
+			&#039;listings&#039; =&gt; wp_count_posts( &#039;hp_listing&#039; )-&gt;publish,
+			&#039;vendors&#039;  =&gt; wp_count_posts( &#039;hp_vendor&#039; )-&gt;publish,
+			&#039;users&#039;    =&gt; get_user_count(),
+		];
+
+		// Get theme.
+		$theme = wp_get_theme( get_template() );
+
+		$data[&#039;theme&#039;] = [
+			&#039;slug&#039; =&gt; get_template(),
+		];
+
+		if ( $theme-&gt;exists() ) {
+			$data[&#039;theme&#039;] = array_merge(
+				$data[&#039;theme&#039;],
+				array_filter(
+					array_combine(
+						[
+							&#039;name&#039;,
+							&#039;version&#039;,
+							&#039;url&#039;,
+							&#039;author&#039;,
+							&#039;author_url&#039;,
+						],
+						array_map(
+							function( $header ) use ( $theme ) {
+								return $theme-&gt;get( $header );
+							},
+							[
+								&#039;Name&#039;,
+								&#039;Version&#039;,
+								&#039;ThemeURI&#039;,
+								&#039;Author&#039;,
+								&#039;AuthorURI&#039;,
+							]
+						)
+					)
+				)
+			);
+		}
+
+		// Get plugins.
+		$data[&#039;plugins&#039;] = array_filter(
+			array_map(
+				function ( $plugin ) {
+					$file = WP_PLUGIN_DIR . &#039;/&#039; . $plugin;
+
+					if ( file_exists( $file ) ) {
+						$headers = array_filter(
+							get_file_data(
+								$file,
+								[
+									&#039;name&#039;       =&gt; &#039;Plugin Name&#039;,
+									&#039;version&#039;    =&gt; &#039;Version&#039;,
+									&#039;url&#039;        =&gt; &#039;Plugin URI&#039;,
+									&#039;author&#039;     =&gt; &#039;Author&#039;,
+									&#039;author_url&#039; =&gt; &#039;Author URI&#039;,
+								]
+							)
+						);
+
+						$headers[&#039;slug&#039;] = basename( $plugin, &#039;.php&#039; );
+
+						return $headers;
+					}
+				},
+				(array) get_option( &#039;active_plugins&#039; )
+			)
+		);
+
+		// Get settings.
+		$settings = hivepress()-&gt;get_config( &#039;settings&#039; );
+
+		unset( $settings[&#039;integrations&#039;] );
+
+		// Get options.
+		$options = [
+			&#039;users_can_register&#039;,
+			&#039;default_role&#039;,
+			&#039;date_format&#039;,
+			&#039;time_format&#039;,
+			&#039;start_of_week&#039;,
+			&#039;show_on_front&#039;,
+			&#039;blog_public&#039;,
+			&#039;permalink_structure&#039;,
+		];
+
+		foreach ( $settings as $tab ) {
+			foreach ( hp\get_array_value( $tab, &#039;sections&#039;, [] ) as $section ) {
+				foreach ( array_keys( hp\get_array_value( $section, &#039;fields&#039;, [] ) ) as $field ) {
+					$options[] = hp\prefix( $field );
+				}
+			}
+		}
+
+		$data[&#039;options&#039;] = array_filter(
+			wp_load_alloptions(),
+			function( $value, $option ) use ( $options ) {
+				return in_array( $option, $options ) &amp;&amp; strlen( $value );
+			},
+			ARRAY_FILTER_USE_BOTH
+		);
+
+		// Get PHP info.
+		$configs = [
+			&#039;max_execution_time&#039;,
+			&#039;max_input_time&#039;,
+			&#039;memory_limit&#039;,
+			&#039;upload_max_filesize&#039;,
+		];
+
+		$data[&#039;php&#039;] = array_combine(
+			$configs,
+			array_map(
+				function( $config ) {
+					return ini_get( $config );
+				},
+				$configs
+			)
+		);
+
+		$data[&#039;php&#039;][&#039;version&#039;] = phpversion();
+
+		// Send usage data.
+		wp_remote_post(
+			&#039;https://hivepress.io/api/v1/feedback&#039;,
+			[
+				&#039;body&#039; =&gt; [
+					&#039;action&#039; =&gt; &#039;share_usage_data&#039;,
+					&#039;data&#039;   =&gt; wp_json_encode( $data ),
+				],
+			]
+		);
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

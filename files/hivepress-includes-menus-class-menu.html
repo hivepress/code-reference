@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-menu.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Abstract menu.
+ *
+ * @package HivePress\Menus
+ */
+
+namespace HivePress\Menus;
+
+use HivePress\Helpers as hp;
+use HivePress\Traits;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Abstract menu class.
+ */
+abstract class Menu {
+	use Traits\Mutator;
+	use Traits\Meta;
+	use Traits\Context;
+
+	/**
+	 * Menu items.
+	 *
+	 * @var array
+	 */
+	protected $items = [];
+
+	/**
+	 * HTML attributes.
+	 *
+	 * @var array
+	 */
+	protected $attributes = [];
+
+	/**
+	 * Add wrapper?
+	 *
+	 * @var bool
+	 */
+	protected $wrap = true;
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;name&#039;    =&gt; hp\get_class_name( static::class ),
+				&#039;chained&#039; =&gt; false,
+			],
+			$meta
+		);
+
+		// Filter meta.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the menu class meta. The class meta stores properties related to the menu type rather than a specific menu instance. The dynamic part of the hook refers to the menu name (e.g. `user_account`). You can check the available menus in the `includes/menus` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/menus/{menu_name}/meta
+			 * @param {array} $meta Class meta values.
+			 * @return {array} Class meta values.
+			 */
+			$meta = apply_filters( &#039;hivepress/v1/menus/&#039; . hp\get_class_name( $class ) . &#039;/meta&#039;, $meta );
+		}
+
+		// Set meta.
+		static::set_meta( $meta );
+	}
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Menu arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Filter properties.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the menu properties. The dynamic part of the hook refers to the menu name (e.g. `user_account`). You can check the available menus in the `includes/menus` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/menus/{menu_name}
+			 * @param {array} $props Menu properties.
+			 * @param {object} $menu Menu object.
+			 * @return {array} Menu properties.
+			 */
+			$args = apply_filters( &#039;hivepress/v1/menus/&#039; . hp\get_class_name( $class ), $args, $this );
+		}
+
+		// Set properties.
+		foreach ( $args as $name =&gt; $value ) {
+			$this-&gt;set_property( $name, $value );
+		}
+
+		// Bootstrap properties.
+		$this-&gt;boot();
+	}
+
+	/**
+	 * Bootstraps menu properties.
+	 */
+	protected function boot() {
+
+		// Get items.
+		$items = $this-&gt;items;
+
+		// Filter items.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters menu items. At the time of this hook the menu context is already available. The dynamic part of the hook refers to the menu name (e.g. `user_account`). You can check the available menus in the `includes/menus` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/menus/{menu_name}/items
+			 * @param {array} $items Menu items.
+			 * @param {object} $menu Menu object.
+			 * @return {array} Menu items.
+			 */
+			$items = apply_filters( &#039;hivepress/v1/menus/&#039; . hp\get_class_name( $class ) . &#039;/items&#039;, $items, $this );
+		}
+
+		// Set items.
+		$this-&gt;set_items( $items );
+
+		// Set attributes.
+		$this-&gt;attributes = hp\merge_arrays(
+			$this-&gt;attributes,
+			[
+				&#039;class&#039; =&gt; [
+					&#039;hp-menu&#039;,
+					&#039;hp-menu--&#039; . hp\sanitize_slug( static::get_meta( &#039;name&#039; ) ),
+				],
+			]
+		);
+	}
+
+	/**
+	 * Sets menu items.
+	 *
+	 * @param array $items Menu items.
+	 */
+	final protected function set_items( $items ) {
+		$this-&gt;items = [];
+
+		foreach ( hp\sort_array( $items ) as $name =&gt; $args ) {
+			if ( isset( $args[&#039;route&#039;] ) &amp;&amp; ( ! isset( $args[&#039;label&#039;] ) || ! isset( $args[&#039;url&#039;] ) ) ) {
+
+				// Get route.
+				$route = hivepress()-&gt;router-&gt;get_route( $args[&#039;route&#039;] );
+
+				if ( $route ) {
+
+					// Set label.
+					if ( ! isset( $args[&#039;label&#039;] ) ) {
+						$title = hp\get_array_value( $route, &#039;title&#039; );
+
+						if ( is_callable( $title ) &amp;&amp; ! static::get_meta( &#039;chained&#039; ) ) {
+							$title = call_user_func( $title );
+						}
+
+						$args[&#039;label&#039;] = $title;
+					}
+
+					// Set URL.
+					if ( ! isset( $args[&#039;url&#039;] ) ) {
+						if ( static::get_meta( &#039;chained&#039; ) ) {
+							$args[&#039;url&#039;] = hivepress()-&gt;router-&gt;get_url( $args[&#039;route&#039;], hivepress()-&gt;request-&gt;get_params(), true );
+						} else {
+							$args[&#039;url&#039;] = hivepress()-&gt;router-&gt;get_url( $args[&#039;route&#039;] );
+						}
+					}
+				}
+			}
+
+			$this-&gt;items[ $name ] = $args;
+		}
+	}
+
+	/**
+	 * Gets menu items.
+	 *
+	 * @return array
+	 */
+	final public function get_items() {
+		return $this-&gt;items;
+	}
+
+	/**
+	 * Renders menu HTML.
+	 *
+	 * @return string
+	 */
+	public function render() {
+		$output = &#039;&#039;;
+
+		if ( $this-&gt;items ) {
+			if ( $this-&gt;wrap ) {
+				$output .= &#039;&lt;nav &#039; . hp\html_attributes( $this-&gt;attributes ) . &#039;&gt;&#039;;
+			}
+
+			// Render items.
+			$output .= $this-&gt;render_items();
+
+			if ( $this-&gt;wrap ) {
+				$output .= &#039;&lt;/nav&gt;&#039;;
+			}
+		}
+
+		return $output;
+	}
+
+	/**
+	 * Renders menu items.
+	 *
+	 * @param mixed $current Current item name.
+	 * @return string
+	 */
+	protected function render_items( $current = null ) {
+		$output = &#039;&#039;;
+
+		// Filter items.
+		$items = array_filter(
+			$this-&gt;items,
+			function( $item ) use ( $current ) {
+				$parent = hp\get_array_value( $item, &#039;_parent&#039; );
+
+				return ( is_null( $current ) &amp;&amp; is_null( $parent ) ) || ( ! is_null( $current ) &amp;&amp; $parent === $current );
+			}
+		);
+
+		if ( $items ) {
+
+			// Get current URL.
+			$url = hivepress()-&gt;router-&gt;get_current_url();
+
+			// Get current route.
+			$route = hivepress()-&gt;router-&gt;get_current_route_name();
+
+			// Render items.
+			if ( ! $this-&gt;wrap &amp;&amp; is_null( $current ) ) {
+				$output .= &#039;&lt;ul &#039; . hp\html_attributes( $this-&gt;attributes ) . &#039;&gt;&#039;;
+			} else {
+				$output .= &#039;&lt;ul &#039; . ( $current ? &#039;class=&quot;sub-menu&quot;&#039; : &#039;&#039; ) . &#039;&gt;&#039;;
+			}
+
+			foreach ( hp\sort_array( $items ) as $name =&gt; $args ) {
+
+				// Get current class.
+				$class = &#039;hp-menu__item--&#039; . hp\sanitize_slug( $name );
+
+				if ( $args[&#039;url&#039;] === $url || hp\get_array_value( $args, &#039;route&#039;, false ) === $route ) {
+					$class .= &#039; hp-menu__item--current current-menu-item&#039;;
+				}
+
+				// Get child items.
+				$child_items = $this-&gt;render_items( $name );
+
+				if ( $child_items ) {
+					$class .= &#039; menu-item-has-children&#039;;
+				}
+
+				// Render menu item.
+				$output .= &#039;&lt;li class=&quot;menu-item hp-menu__item &#039; . esc_attr( $class ) . &#039;&quot;&gt;&#039;;
+				$output .= &#039;&lt;a href=&quot;&#039; . esc_url( $args[&#039;url&#039;] ) . &#039;&quot;&gt;&#039;;
+
+				// Render label.
+				$output .= &#039;&lt;span&gt;&#039; . esc_html( $args[&#039;label&#039;] ) . &#039;&lt;/span&gt;&#039;;
+
+				// Render meta.
+				if ( isset( $args[&#039;meta&#039;] ) ) {
+					$output .= &#039;&lt;small&gt;&#039; . esc_html( $args[&#039;meta&#039;] ) . &#039;&lt;/small&gt;&#039;;
+				}
+
+				$output .= &#039;&lt;/a&gt;&#039;;
+
+				// Render child items.
+				$output .= $child_items;
+
+				$output .= &#039;&lt;/li&gt;&#039;;
+			}
+
+			$output .= &#039;&lt;/ul&gt;&#039;;
+		}
+
+		return $output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

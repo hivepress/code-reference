@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-listing.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Listing controller.
+ *
+ * @package HivePress\Controllers
+ */
+
+namespace HivePress\Controllers;
+
+use HivePress\Helpers as hp;
+use HivePress\Models;
+use HivePress\Forms;
+use HivePress\Blocks;
+use HivePress\Emails;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Manages listings.
+ */
+final class Listing extends Controller {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Controller arguments.
+	 */
+	public function __construct( $args = [] ) {
+		$args = hp\merge_arrays(
+			[
+				&#039;routes&#039; =&gt; [
+					&#039;listings_resource&#039;            =&gt; [
+						&#039;path&#039;   =&gt; &#039;/listings&#039;,
+						&#039;method&#039; =&gt; &#039;GET&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;get_listings&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					* @OA\Parameter(
+					*     name=&quot;listing_id&quot;,
+					*     description=&quot;Listing ID.&quot;,
+					*     in=&quot;path&quot;,
+					*     required=true,
+					*     @OA\Schema(type=&quot;integer&quot;),
+					* ),
+					*/
+					&#039;listing_resource&#039;             =&gt; [
+						&#039;base&#039; =&gt; &#039;listings_resource&#039;,
+						&#039;path&#039; =&gt; &#039;/(?P&lt;listing_id&gt;\d+)&#039;,
+						&#039;rest&#039; =&gt; true,
+					],
+
+					/**
+					 * @OA\Post(
+					 *     path=&quot;/listings/{listing_id}&quot;,
+					 *     summary=&quot;Update a listing&quot;,
+					 *     description=&quot;In addition to the default listing fields, you can also update custom fields added via the listing attributes or HivePress extensions.&quot;,
+					 *     tags={&quot;Listings&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/listing_id&quot;),
+					 *     @OA\RequestBody(@OA\JsonContent(ref=&quot;#/components/schemas/Listing&quot;)),
+					 *     @OA\Response(response=&quot;200&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;listing_update_action&#039;        =&gt; [
+						&#039;base&#039;   =&gt; &#039;listing_resource&#039;,
+						&#039;method&#039; =&gt; &#039;POST&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;update_listing&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					 * @OA\Post(
+					 *     path=&quot;/listings/{listing_id}/hide&quot;,
+					 *     summary=&quot;Hide a listing&quot;,
+					 *     description=&quot;Each new request hides or unhides a listing.&quot;,
+					 *     tags={&quot;Listings&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/listing_id&quot;),
+					 *     @OA\Response(response=&quot;200&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;listing_hide_action&#039;          =&gt; [
+						&#039;base&#039;   =&gt; &#039;listing_resource&#039;,
+						&#039;path&#039;   =&gt; &#039;/hide&#039;,
+						&#039;method&#039; =&gt; &#039;POST&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;hide_listing&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					 * @OA\Post(
+					 *     path=&quot;/listings/{listing_id}/report&quot;,
+					 *     summary=&quot;Report a listing&quot;,
+					 *     description=&quot;Sends an email to the site administrator.&quot;,
+					 *     tags={&quot;Listings&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/listing_id&quot;),
+					 *     @OA\RequestBody(
+					 *       @OA\JsonContent(
+					 *         @OA\Property(property=&quot;details&quot;, type=&quot;string&quot;, description=&quot;Report details.&quot;)
+					 *       ),
+					 *     ),
+					 *     @OA\Response(response=&quot;200&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;listing_report_action&#039;        =&gt; [
+						&#039;base&#039;   =&gt; &#039;listing_resource&#039;,
+						&#039;path&#039;   =&gt; &#039;/report&#039;,
+						&#039;method&#039; =&gt; &#039;POST&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;report_listing&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					 * @OA\Delete(
+					 *     path=&quot;/listings/{listing_id}&quot;,
+					 *     summary=&quot;Delete a listing&quot;,
+					 *     tags={&quot;Listings&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/listing_id&quot;),
+					 *     @OA\Response(response=&quot;204&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;listing_delete_action&#039;        =&gt; [
+						&#039;base&#039;   =&gt; &#039;listing_resource&#039;,
+						&#039;method&#039; =&gt; &#039;DELETE&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;delete_listing&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					&#039;listings_view_page&#039;           =&gt; [
+						&#039;url&#039;      =&gt; [ $this, &#039;get_listings_view_url&#039; ],
+						&#039;match&#039;    =&gt; [ $this, &#039;is_listings_view_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listings_view_page&#039; ],
+
+						&#039;redirect&#039; =&gt; [
+							[
+								&#039;callback&#039; =&gt; [ $this, &#039;redirect_listings_view_page&#039; ],
+								&#039;_order&#039;   =&gt; 5,
+							],
+						],
+					],
+
+					&#039;listing_view_page&#039;            =&gt; [
+						&#039;url&#039;      =&gt; [ $this, &#039;get_listing_view_url&#039; ],
+						&#039;match&#039;    =&gt; [ $this, &#039;is_listing_view_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_view_page&#039; ],
+
+						&#039;redirect&#039; =&gt; [
+							[
+								&#039;callback&#039; =&gt; [ $this, &#039;redirect_listing_view_page&#039; ],
+								&#039;_order&#039;   =&gt; 5,
+							],
+						],
+					],
+
+					&#039;listings_edit_page&#039;           =&gt; [
+						&#039;title&#039;     =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listings&#039; ),
+						&#039;base&#039;      =&gt; &#039;user_account_page&#039;,
+						&#039;path&#039;      =&gt; &#039;/listings&#039;,
+						&#039;redirect&#039;  =&gt; [ $this, &#039;redirect_listings_edit_page&#039; ],
+						&#039;action&#039;    =&gt; [ $this, &#039;render_listings_edit_page&#039; ],
+						&#039;paginated&#039; =&gt; true,
+					],
+
+					&#039;listing_edit_page&#039;            =&gt; [
+						&#039;base&#039;     =&gt; &#039;listings_edit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/(?P&lt;listing_id&gt;\d+)&#039;,
+						&#039;title&#039;    =&gt; [ $this, &#039;get_listing_edit_title&#039; ],
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_edit_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_edit_page&#039; ],
+					],
+
+					&#039;listing_submit_page&#039;          =&gt; [
+						&#039;path&#039;     =&gt; &#039;/submit-listing&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_submit_page&#039; ],
+					],
+
+					// @deprecated since version 1.3.0.
+					&#039;listing/submit_listing&#039;       =&gt; [
+						&#039;base&#039; =&gt; &#039;listing_submit_page&#039;,
+					],
+
+					&#039;listing_submit_profile_page&#039;  =&gt; [
+						&#039;title&#039;    =&gt; esc_html_x( &#039;Complete Profile&#039;, &#039;imperative&#039;, &#039;hivepress&#039; ),
+						&#039;base&#039;     =&gt; &#039;listing_submit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/profile&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_submit_profile_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_submit_profile_page&#039; ],
+					],
+
+					&#039;listing_submit_category_page&#039; =&gt; [
+						&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;select_category_imperative&#039; ),
+						&#039;base&#039;     =&gt; &#039;listing_submit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/category/?(?P&lt;listing_category_id&gt;\d+)?&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_submit_category_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_submit_category_page&#039; ],
+					],
+
+					&#039;listing_submit_details_page&#039;  =&gt; [
+						&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;add_details_imperative&#039; ),
+						&#039;base&#039;     =&gt; &#039;listing_submit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/details&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_submit_details_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_submit_details_page&#039; ],
+					],
+
+					&#039;listing_submit_complete_page&#039; =&gt; [
+						&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listing_submitted&#039; ),
+						&#039;base&#039;     =&gt; &#039;listing_submit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/complete&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_submit_complete_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_submit_complete_page&#039; ],
+					],
+
+					&#039;listing_renew_page&#039;           =&gt; [
+						&#039;base&#039;     =&gt; &#039;listing_edit_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/renew&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_renew_page&#039; ],
+					],
+
+					&#039;listing_renew_complete_page&#039;  =&gt; [
+						&#039;title&#039;    =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;listing_renewed&#039; ),
+						&#039;base&#039;     =&gt; &#039;listing_renew_page&#039;,
+						&#039;path&#039;     =&gt; &#039;/complete&#039;,
+						&#039;redirect&#039; =&gt; [ $this, &#039;redirect_listing_renew_complete_page&#039; ],
+						&#039;action&#039;   =&gt; [ $this, &#039;render_listing_renew_complete_page&#039; ],
+					],
+
+					&#039;listing_category_view_page&#039;   =&gt; [
+						&#039;url&#039; =&gt; [ $this, &#039;get_listing_category_view_url&#039; ],
+					],
+				],
+			],
+			$args
+		);
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Gets listings.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function get_listings( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_others_posts&#039; ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Get search query.
+		$query = sanitize_text_field( $request-&gt;get_param( &#039;search&#039; ) );
+
+		if ( strlen( $query ) &lt; 3 ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get listings.
+		$listings = Models\Listing::query()-&gt;filter(
+			[
+				&#039;status&#039; =&gt; &#039;publish&#039;,
+			]
+		)-&gt;search( $query )
+		-&gt;limit( 20 )
+		-&gt;get();
+
+		// Get results.
+		$results = [];
+
+		if ( $request-&gt;get_param( &#039;context&#039; ) === &#039;list&#039; ) {
+			foreach ( $listings as $listing ) {
+				$results[] = [
+					&#039;id&#039;   =&gt; $listing-&gt;get_id(),
+					&#039;text&#039; =&gt; $listing-&gt;get_title(),
+				];
+			}
+		}
+
+		return hp\rest_response( 200, $results );
+	}
+
+	/**
+	 * Updates listing.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function update_listing( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( $request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		if ( empty( $listing ) ) {
+			return hp\rest_error( 404 );
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_others_posts&#039; ) &amp;&amp; ( get_current_user_id() !== $listing-&gt;get_user__id() || ! in_array( $listing-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ], true ) ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Validate form.
+		$form = null;
+
+		if ( $listing-&gt;get_status() === &#039;auto-draft&#039; ) {
+			$form = new Forms\Listing_Submit( [ &#039;model&#039; =&gt; $listing ] );
+		} else {
+			$form = new Forms\Listing_Update( [ &#039;model&#039; =&gt; $listing ] );
+		}
+
+		$form-&gt;set_values( $request-&gt;get_params() );
+
+		if ( ! $form-&gt;validate() ) {
+			return hp\rest_error( 400, $form-&gt;get_errors() );
+		}
+
+		// Get attributes.
+		$attributes = [];
+
+		if ( $listing-&gt;get_status() !== &#039;auto-draft&#039; ) {
+			foreach ( $form-&gt;get_fields() as $field ) {
+				if ( hp\get_array_value( $field-&gt;get_args(), &#039;_moderated&#039; ) ) {
+					$value = call_user_func( [ $listing, &#039;get_&#039; . $field-&gt;get_name() ] );
+
+					if ( $field-&gt;get_value() !== $value ) {
+						$attributes[] = $field-&gt;get_label();
+					}
+				}
+			}
+		}
+
+		// Set values.
+		$listing-&gt;fill( $form-&gt;get_values() );
+
+		if ( $attributes ) {
+
+			// Set status.
+			$listing-&gt;set_status( &#039;pending&#039; );
+
+			// Send email.
+			( new Emails\Listing_Update(
+				[
+					&#039;recipient&#039; =&gt; get_option( &#039;admin_email&#039; ),
+
+					&#039;tokens&#039;    =&gt; [
+						&#039;listing_title&#039;      =&gt; $listing-&gt;get_title(),
+						&#039;listing_attributes&#039; =&gt; implode( &#039;, &#039;, $attributes ),
+						&#039;listing_url&#039;        =&gt; hivepress()-&gt;router-&gt;get_admin_url( &#039;post&#039;, $listing-&gt;get_id() ),
+						&#039;listing&#039;            =&gt; $listing,
+						&#039;user&#039;               =&gt; hivepress()-&gt;request-&gt;get_user(),
+					],
+				]
+			) )-&gt;send();
+		}
+
+		if ( ! $listing-&gt;save() ) {
+			return hp\rest_error( 400, $listing-&gt;_get_errors() );
+		}
+
+		// Get code.
+		$code = 200;
+
+		if ( $attributes ) {
+			$code = 307;
+		}
+
+		return hp\rest_response(
+			$code,
+			[
+				&#039;id&#039; =&gt; $listing-&gt;get_id(),
+			]
+		);
+	}
+
+	/**
+	 * Hides listing.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function hide_listing( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( $request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		if ( empty( $listing ) ) {
+			return hp\rest_error( 404 );
+		}
+
+		if ( get_current_user_id() !== $listing-&gt;get_user__id() || ! in_array( $listing-&gt;get_status(), [ &#039;draft&#039;, &#039;publish&#039; ], true ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		if ( $listing-&gt;get_status() === &#039;draft&#039; &amp;&amp; $listing-&gt;get_expired_time() &amp;&amp; $listing-&gt;get_expired_time() &lt; time() ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Update status.
+		if ( $listing-&gt;get_status() === &#039;draft&#039; ) {
+			$listing-&gt;set_status( &#039;publish&#039; );
+		} else {
+			$listing-&gt;set_status( &#039;draft&#039; );
+		}
+
+		$listing-&gt;save_status();
+
+		return hp\rest_response(
+			200,
+			[
+				&#039;id&#039; =&gt; $listing-&gt;get_id(),
+			]
+		);
+	}
+
+	/**
+	 * Reports listing.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function report_listing( $request ) {
+
+		// Check permissions.
+		if ( ! get_option( &#039;hp_listing_enable_reporting&#039;, true ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( $request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		if ( empty( $listing ) || $listing-&gt;get_status() !== &#039;publish&#039; ) {
+			return hp\rest_error( 404 );
+		}
+
+		// Validate form.
+		$form = ( new Forms\Listing_Report() )-&gt;set_values( $request-&gt;get_params() );
+
+		if ( ! $form-&gt;validate() ) {
+			return hp\rest_error( 400, $form-&gt;get_errors() );
+		}
+
+		// Send email.
+		( new Emails\Listing_Report(
+			[
+				&#039;recipient&#039; =&gt; get_option( &#039;admin_email&#039; ),
+
+				&#039;tokens&#039;    =&gt; [
+					&#039;listing_title&#039;  =&gt; $listing-&gt;get_title(),
+					&#039;listing_url&#039;    =&gt; get_permalink( $listing-&gt;get_id() ),
+					&#039;report_details&#039; =&gt; $form-&gt;get_value( &#039;details&#039; ),
+					&#039;listing&#039;        =&gt; $listing,
+					&#039;user&#039;           =&gt; hivepress()-&gt;request-&gt;get_user(),
+				],
+			]
+		) )-&gt;send();
+
+		return hp\rest_response(
+			200,
+			[
+				&#039;id&#039; =&gt; $listing-&gt;get_id(),
+			]
+		);
+	}
+
+	/**
+	 * Deletes listing.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function delete_listing( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( $request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		if ( empty( $listing ) ) {
+			return hp\rest_error( 404 );
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;delete_others_posts&#039; ) &amp;&amp; ( get_current_user_id() !== $listing-&gt;get_user__id() || ! in_array( $listing-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ], true ) ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Delete listing.
+		if ( ! $listing-&gt;trash() ) {
+			return hp\rest_error( 400 );
+		}
+
+		return hp\rest_response( 204 );
+	}
+
+	/**
+	 * Gets listings view URL.
+	 *
+	 * @param array $params URL parameters.
+	 * @return string
+	 */
+	public function get_listings_view_url( $params ) {
+		return get_post_type_archive_link( &#039;hp_listing&#039; );
+	}
+
+	/**
+	 * Matches listings view URL.
+	 *
+	 * @return bool
+	 */
+	public function is_listings_view_page() {
+
+		// Get page ID.
+		$page_id = absint( get_option( &#039;hp_page_listings&#039; ) );
+
+		return ( $page_id &amp;&amp; is_page( $page_id ) ) || is_post_type_archive( &#039;hp_listing&#039; ) || ( is_tax() &amp;&amp; strpos( get_queried_object()-&gt;taxonomy, &#039;hp_listing_&#039; ) === 0 );
+	}
+
+	/**
+	 * Redirects listings view page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listings_view_page() {
+
+		// Get category.
+		$category    = null;
+		$category_id = is_tax() ? get_queried_object_id() : absint( hp\get_array_value( $_GET, &#039;_category&#039; ) );
+
+		if ( $category_id ) {
+			$category = Models\Listing_Category::query()-&gt;get_by_id( $category_id );
+		}
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;listing_category&#039;, $category );
+
+		return false;
+	}
+
+	/**
+	 * Renders listings view page.
+	 *
+	 * @return string
+	 */
+	public function render_listings_view_page() {
+
+		// Get category.
+		$category = hivepress()-&gt;request-&gt;get_context( &#039;listing_category&#039; );
+
+		if ( ( ( is_page() || ( empty( $category ) &amp;&amp; is_post_type_archive() ) ) &amp;&amp; get_option( &#039;hp_page_listings_display_categories&#039; ) ) || ( $category &amp;&amp; get_term_meta( $category-&gt;get_id(), &#039;hp_display_subcategories&#039;, true ) ) ) {
+
+			// Render categories.
+			return ( new Blocks\Template(
+				[
+					&#039;template&#039; =&gt; &#039;listing_categories_view_page&#039;,
+
+					&#039;context&#039;  =&gt; [
+						&#039;listing_category&#039; =&gt; $category,
+					],
+				]
+			) )-&gt;render();
+		} else {
+			if ( is_page() ) {
+
+				// Get featured IDs.
+				if ( get_option( &#039;hp_listings_featured_per_page&#039; ) ) {
+					hivepress()-&gt;request-&gt;set_context(
+						&#039;featured_ids&#039;,
+						Models\Listing::query()-&gt;filter(
+							[
+								&#039;status&#039;   =&gt; &#039;publish&#039;,
+								&#039;featured&#039; =&gt; true,
+							]
+						)-&gt;order( &#039;random&#039; )
+						-&gt;limit( get_option( &#039;hp_listings_featured_per_page&#039; ) )
+						-&gt;get_ids()
+					);
+				}
+
+				// Query listings.
+				hivepress()-&gt;request-&gt;set_context(
+					&#039;post_query&#039;,
+					Models\Listing::query()-&gt;filter(
+						[
+							&#039;status&#039;     =&gt; &#039;publish&#039;,
+							&#039;id__not_in&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;featured_ids&#039;, [] ),
+						]
+					)-&gt;order( [ &#039;created_date&#039; =&gt; &#039;desc&#039; ] )
+					-&gt;limit( get_option( &#039;hp_listings_per_page&#039; ) )
+					-&gt;paginate( hivepress()-&gt;request-&gt;get_page_number() )
+					-&gt;get_args()
+				);
+			}
+
+			// Render listings.
+			return ( new Blocks\Template(
+				[
+					&#039;template&#039; =&gt; &#039;listings_view_page&#039;,
+
+					&#039;context&#039;  =&gt; [
+						&#039;listing_category&#039; =&gt; $category,
+						&#039;listings&#039;         =&gt; [],
+					],
+				]
+			) )-&gt;render();
+		}
+	}
+
+	/**
+	 * Gets listing view URL.
+	 *
+	 * @param array $params URL parameters.
+	 * @return string
+	 */
+	public function get_listing_view_url( $params ) {
+		return get_permalink( hp\get_array_value( $params, &#039;listing_id&#039; ) );
+	}
+
+	/**
+	 * Matches listing view URL.
+	 *
+	 * @return bool
+	 */
+	public function is_listing_view_page() {
+		return is_singular( &#039;hp_listing&#039; );
+	}
+
+	/**
+	 * Redirects listing view page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_view_page() {
+		the_post();
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( get_post() );
+
+		// @todo replace temporary fix.
+		$listing-&gt;get_images__id();
+
+		// Get vendor.
+		$vendor = $listing-&gt;get_vendor();
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;listing&#039;, $listing );
+		hivepress()-&gt;request-&gt;set_context( &#039;vendor&#039;, $vendor );
+
+		return false;
+	}
+
+	/**
+	 * Renders listing view page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_view_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_view_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; ),
+					&#039;vendor&#039;  =&gt; hivepress()-&gt;request-&gt;get_context( &#039;vendor&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listings edit page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listings_edit_page() {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hivepress()-&gt;router-&gt;get_return_url( &#039;user_login_page&#039; );
+		}
+
+		// Check listings.
+		if ( ! hivepress()-&gt;request-&gt;get_context( &#039;listing_count&#039; ) ) {
+			return hivepress()-&gt;router-&gt;get_url( &#039;user_account_page&#039; );
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listings edit page.
+	 *
+	 * @return string
+	 */
+	public function render_listings_edit_page() {
+
+		// Query listings.
+		hivepress()-&gt;request-&gt;set_context(
+			&#039;post_query&#039;,
+			Models\Listing::query()-&gt;filter(
+				[
+					&#039;status__in&#039; =&gt; [ &#039;draft&#039;, &#039;pending&#039;, &#039;publish&#039; ],
+					&#039;user&#039;       =&gt; get_current_user_id(),
+				]
+			)-&gt;order( [ &#039;created_date&#039; =&gt; &#039;desc&#039; ] )
+			-&gt;limit( 20 )
+			-&gt;paginate( hivepress()-&gt;request-&gt;get_page_number() )
+			-&gt;get_args()
+		);
+
+		// Render template.
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listings_edit_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listings&#039; =&gt; [],
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Gets listing edit title.
+	 *
+	 * @return string
+	 */
+	public function get_listing_edit_title() {
+		$title = null;
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( hivepress()-&gt;request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		// Set title.
+		if ( $listing ) {
+			$title = $listing-&gt;get_title();
+		}
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;listing&#039;, $listing );
+
+		return $title;
+	}
+
+	/**
+	 * Redirects listing edit page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_edit_page() {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hivepress()-&gt;router-&gt;get_return_url( &#039;user_login_page&#039; );
+		}
+
+		// Check listing.
+		$listing = hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; );
+
+		if ( empty( $listing ) || get_current_user_id() !== $listing-&gt;get_user__id() || ! in_array( $listing-&gt;get_status(), [ &#039;draft&#039;, &#039;publish&#039; ], true ) ) {
+			return hivepress()-&gt;router-&gt;get_url( &#039;listings_edit_page&#039; );
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listing edit page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_edit_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_edit_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listing submit page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_submit_page() {
+
+		// Check permissions.
+		if ( ! get_option( &#039;hp_listing_enable_submission&#039; ) ) {
+			return home_url();
+		}
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hivepress()-&gt;router-&gt;get_return_url( &#039;user_login_page&#039; );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;filter(
+			[
+				&#039;status&#039;  =&gt; &#039;auto-draft&#039;,
+				&#039;drafted&#039; =&gt; true,
+				&#039;user&#039;    =&gt; get_current_user_id(),
+			]
+		)-&gt;get_first();
+
+		if ( empty( $listing ) ) {
+
+			// Add listing.
+			$listing = ( new Models\Listing() )-&gt;fill(
+				[
+					&#039;status&#039;  =&gt; &#039;auto-draft&#039;,
+					&#039;drafted&#039; =&gt; true,
+					&#039;user&#039;    =&gt; get_current_user_id(),
+				]
+			);
+
+			if ( ! $listing-&gt;save( [ &#039;status&#039;, &#039;drafted&#039;, &#039;user&#039; ] ) ) {
+				return home_url();
+			}
+		}
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;listing&#039;, $listing );
+
+		return true;
+	}
+
+	/**
+	 * Redirects listing submit profile page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_submit_profile_page() {
+
+		// Get vendor.
+		$vendor = Models\Vendor::query()-&gt;filter(
+			[
+				&#039;status&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ],
+				&#039;user&#039;   =&gt; get_current_user_id(),
+			]
+		)-&gt;get_first();
+
+		if ( ! $vendor ) {
+
+			// Get user.
+			$user = hivepress()-&gt;request-&gt;get_context( &#039;user&#039; );
+
+			// Add vendor.
+			$vendor = ( new Models\Vendor() )-&gt;fill(
+				[
+					&#039;name&#039;        =&gt; $user-&gt;get_display_name(),
+					&#039;description&#039; =&gt; $user-&gt;get_description(),
+					&#039;slug&#039;        =&gt; $user-&gt;get_username(),
+					&#039;status&#039;      =&gt; &#039;auto-draft&#039;,
+					&#039;image&#039;       =&gt; $user-&gt;get_image__id(),
+					&#039;user&#039;        =&gt; $user-&gt;get_id(),
+				]
+			);
+
+			if ( ! $vendor-&gt;save(
+				[
+					&#039;name&#039;,
+					&#039;description&#039;,
+					&#039;slug&#039;,
+					&#039;status&#039;,
+					&#039;image&#039;,
+					&#039;user&#039;,
+				]
+			) ) {
+				return home_url();
+			}
+		}
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;vendor&#039;, $vendor );
+
+		// Check vendor.
+		if ( $vendor-&gt;validate() ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listing submit profile page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_submit_profile_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_submit_profile_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;vendor&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;vendor&#039; ),
+					&#039;user&#039;   =&gt; hivepress()-&gt;request-&gt;get_context( &#039;user&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listing submit category page.
+	 *
+	 * @deprecated since version 1.6.4.
+	 * @return mixed
+	 */
+	public function redirect_listing_submit_category_page() {
+
+		// Redirect page.
+		if ( ! has_filter( &#039;hivepress/v1/templates/listing_submit_category_page&#039; ) &amp;&amp; ! has_filter( &#039;hivepress/v1/templates/listing_submit_category_page/blocks&#039; ) ) {
+			return true;
+		}
+
+		// Check categories.
+		if ( ! Models\Listing_Category::query()-&gt;get_first_id() ) {
+			return true;
+		}
+
+		// Get listing.
+		$listing = hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; );
+
+		if ( hivepress()-&gt;request-&gt;get_param( &#039;listing_category_id&#039; ) ) {
+
+			// Get category.
+			$category = Models\Listing_Category::query()-&gt;get_by_id( hivepress()-&gt;request-&gt;get_param( &#039;listing_category_id&#039; ) );
+
+			if ( empty( $category ) ) {
+				return hivepress()-&gt;router-&gt;get_url( &#039;listing_submit_category_page&#039; );
+			}
+
+			if ( ! $category-&gt;get_children__id() ) {
+
+				// Set listing category.
+				$listing-&gt;set_categories( $category-&gt;get_id() )-&gt;save_categories();
+
+				return true;
+			}
+
+			// Set request context.
+			hivepress()-&gt;request-&gt;set_context( &#039;listing_category&#039;, $category );
+		}
+
+		// Check category.
+		if ( $listing-&gt;get_categories__id() ) {
+			return;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listing submit category page.
+	 *
+	 * @deprecated since version 1.6.4.
+	 * @return string
+	 */
+	public function render_listing_submit_category_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_submit_category_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing_category&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing_category&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listing submit details page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_submit_details_page() {
+
+		// Get listing.
+		$listing = hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; );
+
+		// @todo replace temporary fix.
+		$listing-&gt;get_images__id();
+
+		// Check redirect.
+		// @todo remove temporary fix.
+		if ( isset( $_GET[&#039;redirect&#039;] ) ) {
+			wp_set_post_terms( $listing-&gt;get_id(), [], &#039;hp_listing_category&#039; );
+
+			return hivepress()-&gt;router-&gt;get_url( &#039;listing_submit_details_page&#039; );
+		}
+
+		// Check listing.
+		if ( $listing-&gt;validate() ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listing submit details page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_submit_details_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_submit_details_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listing submit complete page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_submit_complete_page() {
+
+		// Get listing.
+		$listing = hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; );
+
+		// Get status.
+		$status = get_option( &#039;hp_listing_enable_moderation&#039; ) ? &#039;pending&#039; : &#039;publish&#039;;
+
+		// Update listing.
+		$listing-&gt;fill(
+			[
+				&#039;status&#039;  =&gt; $status,
+				&#039;drafted&#039; =&gt; null,
+			]
+		)-&gt;save( [ &#039;status&#039;, &#039;drafted&#039; ] );
+
+		// Get vendor.
+		$vendor = hivepress()-&gt;request-&gt;get_context( &#039;vendor&#039; );
+
+		// Update vendor.
+		if ( &#039;pending&#039; === $status &amp;&amp; $vendor-&gt;get_status() === &#039;auto-draft&#039; ) {
+			$vendor-&gt;set_status( &#039;draft&#039; )-&gt;save_status();
+		}
+
+		// Send email.
+		( new Emails\Listing_Submit(
+			[
+				&#039;recipient&#039; =&gt; get_option( &#039;admin_email&#039; ),
+
+				&#039;tokens&#039;    =&gt; [
+					&#039;listing_title&#039; =&gt; $listing-&gt;get_title(),
+					&#039;listing_url&#039;   =&gt; &#039;publish&#039; === $status ? get_permalink( $listing-&gt;get_id() ) : get_preview_post_link( $listing-&gt;get_id() ),
+					&#039;listing&#039;       =&gt; $listing,
+					&#039;user&#039;          =&gt; hivepress()-&gt;request-&gt;get_user(),
+				],
+			]
+		) )-&gt;send();
+
+		if ( &#039;publish&#039; === $status ) {
+			return get_permalink( $listing-&gt;get_id() );
+		}
+
+		return false;
+	}
+
+	/**
+	 * Renders listing submit complete page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_submit_complete_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_submit_complete_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Redirects listing renew page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_renew_page() {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hivepress()-&gt;router-&gt;get_return_url( &#039;user_login_page&#039; );
+		}
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( hivepress()-&gt;request-&gt;get_param( &#039;listing_id&#039; ) );
+
+		if ( empty( $listing ) || get_current_user_id() !== $listing-&gt;get_user__id() || $listing-&gt;get_status() !== &#039;draft&#039; || ! $listing-&gt;get_expired_time() || $listing-&gt;get_expired_time() &gt; time() ) {
+			return home_url();
+		}
+
+		// Set request context.
+		hivepress()-&gt;request-&gt;set_context( &#039;listing&#039;, $listing );
+
+		return true;
+	}
+
+	/**
+	 * Redirects listing renew complete page.
+	 *
+	 * @return mixed
+	 */
+	public function redirect_listing_renew_complete_page() {
+
+		// Get listing.
+		$listing = hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; );
+
+		// Get date.
+		$date = current_time( &#039;mysql&#039; );
+
+		// Update listing.
+		$listing-&gt;fill(
+			[
+				&#039;status&#039;           =&gt; &#039;publish&#039;,
+				&#039;created_date&#039;     =&gt; $date,
+				&#039;created_date_gmt&#039; =&gt; get_gmt_from_date( $date ),
+				&#039;expired_time&#039;     =&gt; null,
+			]
+		)-&gt;save(
+			[
+				&#039;status&#039;,
+				&#039;created_date&#039;,
+				&#039;created_date_gmt&#039;,
+				&#039;expired_time&#039;,
+			]
+		);
+
+		return false;
+	}
+
+	/**
+	 * Renders listing renew complete page.
+	 *
+	 * @return string
+	 */
+	public function render_listing_renew_complete_page() {
+		return ( new Blocks\Template(
+			[
+				&#039;template&#039; =&gt; &#039;listing_renew_complete_page&#039;,
+
+				&#039;context&#039;  =&gt; [
+					&#039;listing&#039; =&gt; hivepress()-&gt;request-&gt;get_context( &#039;listing&#039; ),
+				],
+			]
+		) )-&gt;render();
+	}
+
+	/**
+	 * Gets listing category view URL.
+	 *
+	 * @param array $params URL parameters.
+	 * @return string
+	 */
+	public function get_listing_category_view_url( $params ) {
+		return get_term_link( hp\get_array_value( $params, &#039;listing_category_id&#039; ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

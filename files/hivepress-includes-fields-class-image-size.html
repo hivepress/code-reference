@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-image-size.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Image size field.
+ *
+ * @package HivePress\Fields
+ */
+
+namespace HivePress\Fields;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Image size settings.
+ */
+class Image_Size extends Field {
+
+	/**
+	 * Width field.
+	 *
+	 * @var object
+	 */
+	protected $width_field;
+
+	/**
+	 * Height field.
+	 *
+	 * @var object
+	 */
+	protected $height_field;
+
+	/**
+	 * Crop left field.
+	 *
+	 * @var object
+	 */
+	protected $crop_left_field;
+
+	/**
+	 * Crop top field.
+	 *
+	 * @var object
+	 */
+	protected $crop_top_field;
+
+	/**
+	 * Bootstraps field properties.
+	 */
+	protected function boot() {
+
+		// Set defaults.
+		$field_args = [
+			&#039;min_value&#039;  =&gt; 0,
+			&#039;default&#039;    =&gt; 0,
+			&#039;required&#039;   =&gt; true,
+
+			&#039;attributes&#039; =&gt; [
+				&#039;class&#039; =&gt; [ &#039;small-text&#039; ],
+			],
+		];
+
+		// Create fields.
+		$this-&gt;width_field = new Number(
+			array_merge(
+				$field_args,
+				[
+					&#039;label&#039; =&gt; esc_html__( &#039;Width&#039;, &#039;hivepress&#039; ),
+					&#039;name&#039;  =&gt; $this-&gt;name . &#039;[width]&#039;,
+				]
+			)
+		);
+
+		$this-&gt;height_field = new Number(
+			array_merge(
+				$field_args,
+				[
+					&#039;label&#039; =&gt; esc_html__( &#039;Height&#039;, &#039;hivepress&#039; ),
+					&#039;name&#039;  =&gt; $this-&gt;name . &#039;[height]&#039;,
+				]
+			)
+		);
+
+		$this-&gt;crop_left_field = new Select(
+			[
+				&#039;label&#039;   =&gt; esc_html__( &#039;Crop Position&#039;, &#039;hivepress&#039; ),
+				&#039;name&#039;    =&gt; $this-&gt;name . &#039;[crop][]&#039;,
+
+				&#039;options&#039; =&gt; [
+					&#039;left&#039;   =&gt; esc_html__( &#039;Left&#039;, &#039;hivepress&#039; ),
+					&#039;center&#039; =&gt; esc_html__( &#039;Center&#039;, &#039;hivepress&#039; ),
+					&#039;right&#039;  =&gt; esc_html__( &#039;Right&#039;, &#039;hivepress&#039; ),
+				],
+			]
+		);
+
+		$this-&gt;crop_top_field = new Select(
+			[
+				&#039;label&#039;   =&gt; esc_html__( &#039;Crop Position&#039;, &#039;hivepress&#039; ),
+				&#039;name&#039;    =&gt; $this-&gt;name . &#039;[crop][]&#039;,
+
+				&#039;options&#039; =&gt; [
+					&#039;top&#039;    =&gt; esc_html__( &#039;Top&#039;, &#039;hivepress&#039; ),
+					&#039;center&#039; =&gt; esc_html__( &#039;Center&#039;, &#039;hivepress&#039; ),
+					&#039;bottom&#039; =&gt; esc_html__( &#039;Bottom&#039;, &#039;hivepress&#039; ),
+				],
+			]
+		);
+
+		parent::boot();
+	}
+
+	/**
+	 * Sanitizes field value.
+	 */
+	protected function sanitize() {
+
+		// Set size values.
+		$this-&gt;width_field-&gt;set_value( hp\get_array_value( $this-&gt;value, &#039;width&#039; ) );
+		$this-&gt;height_field-&gt;set_value( hp\get_array_value( $this-&gt;value, &#039;height&#039; ) );
+
+		// Set crop values.
+		$crop = hp\get_array_value( $this-&gt;value, &#039;crop&#039; );
+
+		if ( is_array( $crop ) ) {
+			$this-&gt;crop_left_field-&gt;set_value( hp\get_first_array_value( $crop ) );
+			$this-&gt;crop_top_field-&gt;set_value( hp\get_last_array_value( $crop ) );
+		} elseif ( $crop ) {
+			$this-&gt;crop_left_field-&gt;set_value( &#039;center&#039; );
+			$this-&gt;crop_top_field-&gt;set_value( &#039;center&#039; );
+		}
+
+		// Set field value.
+		if ( $this-&gt;width_field-&gt;get_value() || $this-&gt;height_field-&gt;get_value() ) {
+			$this-&gt;value = [
+				&#039;width&#039;  =&gt; (int) $this-&gt;width_field-&gt;get_value(),
+				&#039;height&#039; =&gt; (int) $this-&gt;height_field-&gt;get_value(),
+				&#039;crop&#039;   =&gt; false,
+			];
+
+			if ( $this-&gt;crop_left_field-&gt;get_value() &amp;&amp; $this-&gt;crop_top_field-&gt;get_value() ) {
+				$this-&gt;value[&#039;crop&#039;] = [ $this-&gt;crop_left_field-&gt;get_value(), $this-&gt;crop_top_field-&gt;get_value() ];
+			}
+		} else {
+			$this-&gt;value = null;
+		}
+	}
+
+	/**
+	 * Validates field value.
+	 *
+	 * @return bool
+	 */
+	public function validate() {
+		if ( parent::validate() &amp;&amp; ! is_null( $this-&gt;value ) ) {
+
+			// Validate fields.
+			$this-&gt;width_field-&gt;validate();
+			$this-&gt;height_field-&gt;validate();
+			$this-&gt;crop_left_field-&gt;validate();
+			$this-&gt;crop_top_field-&gt;validate();
+
+			// Add errors.
+			$this-&gt;add_errors(
+				array_unique(
+					array_merge(
+						$this-&gt;width_field-&gt;get_errors(),
+						$this-&gt;height_field-&gt;get_errors(),
+						$this-&gt;crop_left_field-&gt;get_errors(),
+						$this-&gt;crop_top_field-&gt;get_errors()
+					)
+				)
+			);
+		}
+
+		return empty( $this-&gt;errors );
+	}
+
+	/**
+	 * Renders field HTML.
+	 *
+	 * @return string
+	 */
+	public function render() {
+		$output = &#039;&lt;fieldset &#039; . hp\html_attributes( $this-&gt;attributes ) . &#039;&gt;&#039;;
+
+		// Render fields.
+		$output .= &#039;&lt;label for=&quot;&#039; . esc_attr( $this-&gt;width_field-&gt;get_name() ) . &#039;&quot;&gt;&#039; . esc_html( $this-&gt;width_field-&gt;get_label() ) . &#039;&lt;/label&gt;&amp;nbsp;&#039;;
+		$output .= $this-&gt;width_field-&gt;render() . &#039;&lt;br&gt;&#039;;
+
+		$output .= &#039;&lt;label for=&quot;&#039; . esc_attr( $this-&gt;height_field-&gt;get_name() ) . &#039;&quot;&gt;&#039; . esc_html( $this-&gt;height_field-&gt;get_label() ) . &#039;&lt;/label&gt;&amp;nbsp;&#039;;
+		$output .= $this-&gt;height_field-&gt;render() . &#039;&lt;br&gt;&#039;;
+
+		$output .= &#039;&lt;label for=&quot;&#039; . esc_attr( $this-&gt;crop_left_field-&gt;get_name() ) . &#039;&quot;&gt;&#039; . esc_html( $this-&gt;crop_left_field-&gt;get_label() ) . &#039;&lt;/label&gt;&amp;nbsp;&#039;;
+		$output .= $this-&gt;crop_left_field-&gt;render() . &#039;&lt;br&gt;&#039;;
+
+		$output .= &#039;&lt;label for=&quot;&#039; . esc_attr( $this-&gt;crop_top_field-&gt;get_name() ) . &#039;&quot;&gt;&amp;nbsp;&lt;/label&gt;&amp;nbsp;&#039;;
+		$output .= $this-&gt;crop_top_field-&gt;render();
+
+		$output .= &#039;&lt;/fieldset&gt;&#039;;
+
+		return $output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

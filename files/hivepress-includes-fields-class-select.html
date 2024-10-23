@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-select.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Select field.
+ *
+ * @package HivePress\Fields
+ */
+
+namespace HivePress\Fields;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Drop-down list.
+ */
+class Select extends Field {
+
+	/**
+	 * Field placeholder.
+	 *
+	 * @var string
+	 */
+	protected $placeholder;
+
+	/**
+	 * Selectable options.
+	 *
+	 * @var array
+	 */
+	protected $options = [];
+
+	/**
+	 * Disable parent options?
+	 *
+	 * @var bool
+	 */
+	protected $parent_disabled = false;
+
+	/**
+	 * Allow selecting multiple options?
+	 *
+	 * @var bool
+	 */
+	protected $multiple = false;
+
+	/**
+	 * Maximum number of selected options.
+	 *
+	 * @var int
+	 */
+	protected $max_values;
+
+	/**
+	 * SQL query operator.
+	 *
+	 * @var mixed
+	 */
+	protected $filter_operator;
+
+	/**
+	 * Options source URL.
+	 *
+	 * @var string
+	 */
+	protected $source;
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;label&#039;      =&gt; esc_html_x( &#039;Select&#039;, &#039;field&#039;, &#039;hivepress&#039; ),
+				&#039;filterable&#039; =&gt; true,
+
+				&#039;settings&#039;   =&gt; [
+					&#039;placeholder&#039;     =&gt; [
+						&#039;label&#039;      =&gt; esc_html__( &#039;Placeholder&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;       =&gt; &#039;text&#039;,
+						&#039;max_length&#039; =&gt; 256,
+						&#039;_order&#039;     =&gt; 100,
+					],
+
+					&#039;multiple&#039;        =&gt; [
+						&#039;label&#039;   =&gt; esc_html_x( &#039;Multiple&#039;, &#039;selection&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039; =&gt; esc_html__( &#039;Allow multiple selection&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+						&#039;_order&#039;  =&gt; 105,
+					],
+
+					// @todo remove prefix from parent.
+					&#039;max_values&#039;      =&gt; [
+						&#039;label&#039;     =&gt; esc_html__( &#039;Maximum Selection&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;      =&gt; &#039;number&#039;,
+						&#039;min_value&#039; =&gt; 1,
+						&#039;_context&#039;  =&gt; &#039;edit&#039;,
+						&#039;_parent&#039;   =&gt; &#039;edit_field_multiple&#039;,
+						&#039;_order&#039;    =&gt; 110,
+					],
+
+					&#039;options&#039;         =&gt; [
+						&#039;label&#039;    =&gt; esc_html__( &#039;Options&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;     =&gt; &#039;select&#039;,
+						&#039;options&#039;  =&gt; [],
+						&#039;multiple&#039; =&gt; true,
+						&#039;_context&#039; =&gt; &#039;edit&#039;,
+						&#039;_order&#039;   =&gt; 120,
+					],
+
+					// @todo remove prefix from parent.
+					&#039;filter_operator&#039; =&gt; [
+						&#039;label&#039;    =&gt; esc_html__( &#039;Options&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039;  =&gt; esc_html__( &#039;Search any of the selected options&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;     =&gt; &#039;checkbox&#039;,
+						&#039;_context&#039; =&gt; &#039;search&#039;,
+						&#039;_parent&#039;  =&gt; &#039;search_field_multiple&#039;,
+						&#039;_order&#039;   =&gt; 130,
+					],
+				],
+			],
+			$meta
+		);
+
+		parent::init( $meta );
+	}
+
+	/**
+	 * Bootstraps field properties.
+	 */
+	protected function boot() {
+		$attributes = [];
+
+		// Normalize options.
+		if ( ! is_array( $this-&gt;options ) ) {
+			$this-&gt;options = [];
+		}
+
+		// Set placeholder.
+		if ( ! $this-&gt;multiple ) {
+			if ( is_null( $this-&gt;placeholder ) ) {
+				$this-&gt;placeholder = &#039;&amp;mdash;&#039;;
+			}
+
+			if ( ! isset( $this-&gt;options[&#039;&#039;] ) ) {
+				$this-&gt;options = [ &#039;&#039; =&gt; $this-&gt;placeholder ] + $this-&gt;options;
+			}
+		} elseif ( ! is_null( $this-&gt;placeholder ) ) {
+			$attributes[&#039;data-placeholder&#039;] = $this-&gt;placeholder;
+		}
+
+		// Set disabled flags.
+		if ( $this-&gt;disabled ) {
+			$attributes[&#039;disabled&#039;] = true;
+		}
+
+		if ( $this-&gt;parent_disabled ) {
+			foreach ( $this-&gt;options as $value =&gt; $parent ) {
+				foreach ( $this-&gt;options as $child ) {
+					if ( hp\get_array_value( $child, &#039;parent&#039; ) === $value ) {
+						if ( is_array( $parent ) ) {
+							$this-&gt;options[ $value ][&#039;disabled&#039;] = true;
+						}
+
+						break;
+					}
+				}
+			}
+		}
+
+		// Set required flag.
+		if ( $this-&gt;required ) {
+			$attributes[&#039;required&#039;] = true;
+		}
+
+		// Set source.
+		if ( $this-&gt;source ) {
+			$attributes[&#039;data-source&#039;] = esc_url( $this-&gt;source );
+		}
+
+		// Set component.
+		if ( &#039;hidden&#039; !== $this-&gt;display_type ) {
+			$attributes[&#039;data-component&#039;] = &#039;select&#039;;
+		}
+
+		$this-&gt;attributes = hp\merge_arrays( $this-&gt;attributes, $attributes );
+
+		parent::boot();
+	}
+
+	/**
+	 * Sets field value.
+	 *
+	 * @param mixed $value Field value.
+	 * @return object
+	 */
+	final public function set_value( $value ) {
+		parent::set_value( $value );
+
+		if ( ! is_null( $this-&gt;value ) &amp;&amp; $this-&gt;source ) {
+
+			/**
+			 * Filters the selectable field options. At the time of this hook the field value is already available.
+			 *
+			 * @hook hivepress/v1/fields/field/options
+			 * @param {array} $options Selectable options.
+			 * @param {object} $field Field object.
+			 * @return {array} Selectable options.
+			 */
+			$this-&gt;options = apply_filters( &#039;hivepress/v1/fields/field/options&#039;, $this-&gt;options, $this );
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Gets field value for display.
+	 *
+	 * @return mixed
+	 */
+	public function get_display_value() {
+		if ( ! is_null( $this-&gt;value ) ) {
+			$labels = [];
+
+			foreach ( (array) $this-&gt;value as $value ) {
+				$label = hp\get_array_value( $this-&gt;options, $value, &#039;&#039; );
+
+				if ( is_array( $label ) ) {
+					$label = hp\get_array_value( $label, &#039;label&#039;, &#039;&#039; );
+				}
+
+				if ( strlen( $label ) ) {
+					$labels[] = $label;
+				}
+			}
+
+			if ( $labels ) {
+				return implode( &#039;, &#039;, $labels );
+			}
+		}
+	}
+
+	/**
+	 * Adds SQL filter.
+	 */
+	protected function add_filter() {
+		parent::add_filter();
+
+		if ( $this-&gt;multiple ) {
+			if ( $this-&gt;filter_operator ) {
+				$this-&gt;filter[&#039;operator&#039;] = &#039;IN&#039;;
+			} else {
+				$this-&gt;filter[&#039;operator&#039;] = &#039;AND&#039;;
+			}
+		} else {
+			$this-&gt;filter[&#039;operator&#039;] = &#039;IN&#039;;
+		}
+	}
+
+	/**
+	 * Normalizes field value.
+	 */
+	protected function normalize() {
+		parent::normalize();
+
+		if ( $this-&gt;multiple &amp;&amp; ! is_null( $this-&gt;value ) ) {
+			if ( [] !== $this-&gt;value ) {
+				$this-&gt;value = (array) $this-&gt;value;
+			} else {
+				$this-&gt;value = null;
+			}
+		} elseif ( ! $this-&gt;multiple &amp;&amp; is_array( $this-&gt;value ) ) {
+			if ( $this-&gt;value ) {
+				$this-&gt;value = hp\get_first_array_value( $this-&gt;value );
+			} else {
+				$this-&gt;value = null;
+			}
+		}
+	}
+
+	/**
+	 * Sanitizes field value.
+	 */
+	protected function sanitize() {
+		if ( $this-&gt;multiple ) {
+			$this-&gt;value = array_map(
+				function( $value ) {
+					return is_numeric( $value ) ? absint( $value ) : sanitize_text_field( $value );
+				},
+				$this-&gt;value
+			);
+		} else {
+			$this-&gt;value = is_numeric( $this-&gt;value ) ? absint( $this-&gt;value ) : sanitize_text_field( $this-&gt;value );
+		}
+	}
+
+	/**
+	 * Validates field value.
+	 *
+	 * @return bool
+	 */
+	public function validate() {
+		if ( parent::validate() &amp;&amp; ! is_null( $this-&gt;value ) ) {
+			$options = array_intersect_key( $this-&gt;options, array_flip( (array) $this-&gt;value ) );
+
+			if ( count( $options ) !== count( (array) $this-&gt;value ) || array_filter(
+				array_map(
+					function( $option ) {
+						return hp\get_array_value( $option, &#039;disabled&#039; );
+					},
+					$options
+				)
+			) ) {
+				$this-&gt;add_errors( sprintf( hivepress()-&gt;translator-&gt;get_string( &#039;field_contains_invalid_value&#039; ), $this-&gt;get_label( true ) ) );
+			}
+
+			if ( $this-&gt;multiple &amp;&amp; $this-&gt;max_values &amp;&amp; count( $options ) &gt; $this-&gt;max_values ) {
+				$this-&gt;add_errors( sprintf( hivepress()-&gt;translator-&gt;get_string( &#039;field_contains_too_many_values&#039; ), $this-&gt;get_label( true ) ) );
+			}
+		}
+
+		if ( isset( $this-&gt;errors[&#039;required&#039;] ) &amp;&amp; ! $this-&gt;options ) {
+			unset( $this-&gt;errors[&#039;required&#039;] );
+		}
+
+		return empty( $this-&gt;errors );
+	}
+
+	/**
+	 * Displays field HTML.
+	 *
+	 * @return string
+	 */
+	public function display() {
+		if ( ! $this-&gt;multiple &amp;&amp; ! is_null( $this-&gt;value ) ) {
+			$this-&gt;context[&#039;parent_value&#039;] = null;
+
+			$value = hp\get_array_value( $this-&gt;options, $this-&gt;value );
+
+			if ( is_array( $value ) &amp;&amp; isset( $value[&#039;parent&#039;] ) ) {
+				$this-&gt;context[&#039;parent_value&#039;] = hp\get_array_value( hp\get_array_value( $this-&gt;options, $value[&#039;parent&#039;] ), &#039;label&#039; );
+			}
+		}
+
+		return parent::display();
+	}
+
+	/**
+	 * Renders field HTML.
+	 *
+	 * @return string
+	 */
+	public function render() {
+		$output = &#039;&lt;select name=&quot;&#039; . esc_attr( $this-&gt;name ) . ( $this-&gt;multiple ? &#039;[]&quot; multiple&#039; : &#039;&quot;&#039; ) . &#039; &#039; . hp\html_attributes( $this-&gt;attributes ) . &#039;&gt;&#039;;
+
+		// Render options.
+		$output .= $this-&gt;render_options();
+
+		$output .= &#039;&lt;/select&gt;&#039;;
+
+		return $output;
+	}
+
+	/**
+	 * Renders selectable options.
+	 *
+	 * @param mixed $current Current value.
+	 * @param int   $level Nesting level.
+	 * @return string
+	 */
+	protected function render_options( $current = null, $level = 0 ) {
+		$output = &#039;&#039;;
+
+		// Filter options.
+		$options = array_filter(
+			$this-&gt;options,
+			function( $option ) use ( $current ) {
+				$parent = hp\get_array_value( $option, &#039;parent&#039; );
+
+				return ( is_null( $current ) &amp;&amp; is_null( $parent ) ) || ( ! is_null( $current ) &amp;&amp; $parent === $current );
+			}
+		);
+
+		// Render options.
+		foreach ( $options as $value =&gt; $label ) {
+
+			// Get attributes.
+			$attributes = [
+				&#039;value&#039; =&gt; $value,
+			];
+
+			if ( $level ) {
+				$attributes[&#039;data-level&#039;] = $level;
+
+				$attributes[&#039;data-parent&#039;] = hp\get_array_value( $label, &#039;parent&#039; );
+			}
+
+			if ( hp\get_array_value( $label, &#039;disabled&#039; ) ) {
+				$attributes[&#039;disabled&#039;] = true;
+			} elseif ( in_array( $value, (array) $this-&gt;value, true ) ) {
+				$attributes[&#039;selected&#039;] = true;
+			}
+
+			// Get label.
+			if ( is_array( $label ) ) {
+				$label = hp\get_array_value( $label, &#039;label&#039;, $value );
+			}
+
+			// Render option.
+			$output .= &#039;&lt;option &#039; . hp\html_attributes( $attributes ) . &#039;&gt;&#039; . esc_html( $label ) . &#039;&lt;/option&gt;&#039;;
+
+			// Render child options.
+			$output .= $this-&gt;render_options( $value, $level + 1 );
+		}
+
+		return $output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

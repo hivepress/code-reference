@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">strings.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Strings configuration.
+ *
+ * @package HivePress\Configs
+ */
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+return [
+
+	// Common.
+	&#039;settings&#039;                                  =&gt; esc_html__( &#039;Settings&#039;, &#039;hivepress&#039; ),
+	&#039;display_noun&#039;                              =&gt; esc_html_x( &#039;Display&#039;, &#039;noun&#039;, &#039;hivepress&#039; ),
+	&#039;search_noun&#039;                               =&gt; esc_html_x( &#039;Search&#039;, &#039;noun&#039;, &#039;hivepress&#039; ),
+	&#039;search&#039;                                    =&gt; esc_html__( &#039;Search&#039;, &#039;hivepress&#039; ),
+	&#039;filter&#039;                                    =&gt; esc_html__( &#039;Filter&#039;, &#039;hivepress&#039; ),
+	&#039;sort_by&#039;                                   =&gt; esc_html__( &#039;Sort by&#039;, &#039;hivepress&#039; ),
+	&#039;keywords&#039;                                  =&gt; esc_html__( &#039;Keywords&#039;, &#039;hivepress&#039; ),
+	&#039;title&#039;                                     =&gt; esc_html__( &#039;Title&#039;, &#039;hivepress&#039; ),
+	&#039;name&#039;                                      =&gt; esc_html__( &#039;Name&#039;, &#039;hivepress&#039; ),
+	&#039;date&#039;                                      =&gt; esc_html__( &#039;Date&#039;, &#039;hivepress&#039; ),
+	&#039;status&#039;                                    =&gt; esc_html__( &#039;Status&#039;, &#039;hivepress&#039; ),
+	&#039;image&#039;                                     =&gt; esc_html__( &#039;Image&#039;, &#039;hivepress&#039; ),
+	&#039;images&#039;                                    =&gt; esc_html__( &#039;Images&#039;, &#039;hivepress&#039; ),
+	&#039;select_images&#039;                             =&gt; esc_html__( &#039;Select Images&#039;, &#039;hivepress&#039; ),
+	&#039;description&#039;                               =&gt; esc_html__( &#039;Description&#039;, &#039;hivepress&#039; ),
+	&#039;details&#039;                                   =&gt; esc_html__( &#039;Details&#039;, &#039;hivepress&#039; ),
+	&#039;emails&#039;                                    =&gt; esc_html__( &#039;Emails&#039;, &#039;hivepress&#039; ),
+	&#039;editing&#039;                                   =&gt; esc_html__( &#039;Editing&#039;, &#039;hivepress&#039; ),
+	&#039;submission&#039;                                =&gt; esc_html__( &#039;Submission&#039;, &#039;hivepress&#039; ),
+	&#039;moderation&#039;                                =&gt; esc_html__( &#039;Moderation&#039;, &#039;hivepress&#039; ),
+	&#039;expiration&#039;                                =&gt; esc_html__( &#039;Expiration&#039;, &#039;hivepress&#039; ),
+	&#039;expiration_period&#039;                         =&gt; esc_html__( &#039;Expiration Period&#039;, &#039;hivepress&#039; ),
+	&#039;expiration_date&#039;                           =&gt; esc_html__( &#039;Expiration Date&#039;, &#039;hivepress&#039; ),
+	&#039;default_fields&#039;                            =&gt; esc_html__( &#039;Default Fields&#039;, &#039;hivepress&#039; ),
+	&#039;free&#039;                                      =&gt; esc_html__( &#039;Free&#039;, &#039;hivepress&#039; ),
+	&#039;price&#039;                                     =&gt; esc_html__( &#039;Price&#039;, &#039;hivepress&#039; ),
+	&#039;overview&#039;                                  =&gt; esc_html__( &#039;Overview&#039;, &#039;hivepress&#039; ),
+	&#039;form&#039;                                      =&gt; esc_html__( &#039;Form&#039;, &#039;hivepress&#039; ),
+	&#039;filter_form&#039;                               =&gt; esc_html__( &#039;Filter Form&#039;, &#039;hivepress&#039; ),
+	&#039;sort_form&#039;                                 =&gt; esc_html__( &#039;Sort Form&#039;, &#039;hivepress&#039; ),
+	&#039;result_count&#039;                              =&gt; esc_html__( &#039;Result Count&#039;, &#039;hivepress&#039; ),
+	&#039;toolbar&#039;                                   =&gt; esc_html__( &#039;Toolbar&#039;, &#039;hivepress&#039; ),
+	&#039;menu&#039;                                      =&gt; esc_html__( &#039;Menu&#039;, &#039;hivepress&#039; ),
+	&#039;message&#039;                                   =&gt; esc_html__( &#039;Message&#039;, &#039;hivepress&#039; ),
+	&#039;completed&#039;                                 =&gt; esc_html__( &#039;Completed&#039;, &#039;hivepress&#039; ),
+	&#039;profile&#039;                                   =&gt; esc_html__( &#039;Profile&#039;, &#039;hivepress&#039; ),
+	&#039;pagination&#039;                                =&gt; esc_html__( &#039;Pagination&#039;, &#039;hivepress&#039; ),
+	&#039;storage&#039;                                   =&gt; esc_html__( &#039;Storage&#039;, &#039;hivepress&#039; ),
+	&#039;storage_period&#039;                            =&gt; esc_html__( &#039;Storage Period&#039;, &#039;hivepress&#039; ),
+	&#039;api_key&#039;                                   =&gt; esc_html__( &#039;API Key&#039;, &#039;hivepress&#039; ),
+	&#039;secret_key&#039;                                =&gt; esc_html__( &#039;Secret Key&#039;, &#039;hivepress&#039; ),
+	&#039;client_id&#039;                                 =&gt; esc_html__( &#039;Client ID&#039;, &#039;hivepress&#039; ),
+	&#039;client_secret&#039;                             =&gt; esc_html__( &#039;Client Secret&#039;, &#039;hivepress&#039; ),
+	&#039;redirect_url&#039;                              =&gt; esc_html__( &#039;Redirect URL&#039;, &#039;hivepress&#039; ),
+	&#039;app_id&#039;                                    =&gt; esc_html__( &#039;App ID&#039;, &#039;hivepress&#039; ),
+	&#039;authorization&#039;                             =&gt; esc_html__( &#039;Authorization&#039;, &#039;hivepress&#039; ),
+	&#039;return_to_my_account&#039;                      =&gt; esc_html__( &#039;Return to My Account&#039;, &#039;hivepress&#039; ),
+	&#039;my_account&#039;                                =&gt; esc_html__( &#039;My Account&#039;, &#039;hivepress&#039; ),
+	&#039;save_changes&#039;                              =&gt; esc_html__( &#039;Save Changes&#039;, &#039;hivepress&#039; ),
+	&#039;changes_have_been_saved&#039;                   =&gt; esc_html__( &#039;Changes have been saved.&#039;, &#039;hivepress&#039; ),
+	&#039;something_went_wrong&#039;                      =&gt; esc_html__( &#039;Something went wrong.&#039;, &#039;hivepress&#039; ),
+	&#039;user&#039;                                      =&gt; esc_html__( &#039;User&#039;, &#039;hivepress&#039; ),
+	&#039;all_users&#039;                                 =&gt; esc_html__( &#039;All Users&#039;, &#039;hivepress&#039; ),
+	&#039;registered_users&#039;                          =&gt; esc_html__( &#039;Registered Users&#039;, &#039;hivepress&#039; ),
+	&#039;columns_number&#039;                            =&gt; esc_html_x( &#039;Columns&#039;, &#039;quantity&#039;, &#039;hivepress&#039; ),
+	&#039;items_number&#039;                              =&gt; esc_html_x( &#039;Number&#039;, &#039;quantity&#039;, &#039;hivepress&#039; ),
+	&#039;actions&#039;                                   =&gt; esc_html__( &#039;Actions&#039;, &#039;hivepress&#039; ),
+	&#039;widgets&#039;                                   =&gt; esc_html__( &#039;Widgets&#039;, &#039;hivepress&#039; ),
+	&#039;primary_plural&#039;                            =&gt; esc_html_x( &#039;Primary&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+	&#039;secondary_plural&#039;                          =&gt; esc_html_x( &#039;Secondary&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+	&#039;ternary_plural&#039;                            =&gt; esc_html_x( &#039;Ternary&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+	&#039;related_plural&#039;                            =&gt; esc_html_x( &#039;Related&#039;, &#039;plural&#039;, &#039;hivepress&#039; ),
+	&#039;by_items_number&#039;                           =&gt; esc_html_x( &#039;Item Count&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;by_name&#039;                                   =&gt; esc_html_x( &#039;Name&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;by_date_added&#039;                             =&gt; esc_html_x( &#039;Date Added&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;by_date_registered&#039;                        =&gt; esc_html_x( &#039;Date Registered&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;by_title&#039;                                  =&gt; esc_html_x( &#039;Title&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;by_random&#039;                                 =&gt; esc_html_x( &#039;Random&#039;, &#039;sort order&#039;, &#039;hivepress&#039; ),
+	&#039;sort_order&#039;                                =&gt; esc_html_x( &#039;Order&#039;, &#039;sort&#039;, &#039;hivepress&#039; ),
+	&#039;add_details_imperative&#039;                    =&gt; esc_html_x( &#039;Add Details&#039;, &#039;imperative&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: date. */
+	&#039;added_on_date&#039;                             =&gt; esc_html__( &#039;Added on %s&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: WooCommerce. */
+	&#039;ecommerce_product&#039;                         =&gt; sprintf( esc_html__( &#039;%s Product&#039;, &#039;hivepress&#039; ), &#039;WooCommerce&#039; ),
+	/* translators: %s: token list. */
+	&#039;these_tokens_are_available&#039;                =&gt; esc_html__( &#039;The following tokens are available: %s.&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: extension name. */
+	&#039;extension_is_incompatible_with_core&#039;       =&gt; esc_html__( &#039;%s extension is incompatible with the current HivePress version, please update HivePress or deactivate it.&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: terms URL. */
+	&#039;i_agree_to_terms_and_conditions&#039;           =&gt; hp\sanitize_html( __( &#039;I agree to the &lt;a href=&quot;%s&quot; target=&quot;_blank&quot;&gt;terms and conditions&lt;/a&gt;&#039;, &#039;hivepress&#039; ) ),
+	/* translators: %s: field label. */
+	&#039;field_contains_invalid_value&#039;              =&gt; esc_html__( &#039;&quot;%s&quot; field contains an invalid value.&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: field label. */
+	&#039;field_contains_too_many_values&#039;            =&gt; esc_html__( &#039;&quot;%s&quot; field contains too many values.&#039;, &#039;hivepress&#039; ),
+	/* translators: 1: field label, 2: length. */
+	&#039;field_longer_than_n_characters&#039;            =&gt; esc_html__( &#039;&quot;%1$s&quot; can\&#039;t be longer than %2$s characters.&#039;, &#039;hivepress&#039; ),
+	/* translators: 1: field label, 2: length. */
+	&#039;field_shorter_than_n_characters&#039;           =&gt; esc_html__( &#039;&quot;%1$s&quot; should be at least %2$s characters long.&#039;, &#039;hivepress&#039; ),
+
+	// Listings.
+	&#039;listing&#039;                                   =&gt; esc_html__( &#039;Listing&#039;, &#039;hivepress&#039; ),
+	&#039;listings&#039;                                  =&gt; esc_html__( &#039;Listings&#039;, &#039;hivepress&#039; ),
+	&#039;all_listings&#039;                              =&gt; esc_html__( &#039;All Listings&#039;, &#039;hivepress&#039; ),
+	&#039;related_listings&#039;                          =&gt; esc_html__( &#039;Related Listings&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: Listings number. */
+	&#039;n_listings&#039;                                =&gt; _n_noop( &#039;%s Listing&#039;, &#039;%s Listings&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: Vendor name. */
+	&#039;listings_by_vendor&#039;                        =&gt; esc_html__( &#039;Listings by %s&#039;, &#039;hivepress&#039; ),
+	&#039;featuring_of_listings&#039;                     =&gt; esc_html__( &#039;Featuring of Listings&#039;, &#039;hivepress&#039; ),
+	&#039;featured_listings&#039;                         =&gt; esc_html__( &#039;Featured Listings&#039;, &#039;hivepress&#039; ),
+	&#039;view_listings&#039;                             =&gt; esc_html__( &#039;View Listings&#039;, &#039;hivepress&#039; ),
+	&#039;search_listings&#039;                           =&gt; esc_html__( &#039;Search Listings&#039;, &#039;hivepress&#039; ),
+	&#039;no_listings_found&#039;                         =&gt; esc_html__( &#039;No listings found.&#039;, &#039;hivepress&#039; ),
+	&#039;listing_attributes&#039;                        =&gt; esc_html__( &#039;Listing Attributes&#039;, &#039;hivepress&#039; ),
+	&#039;listing_category&#039;                          =&gt; esc_html__( &#039;Listing Category&#039;, &#039;hivepress&#039; ),
+	&#039;listing_categories&#039;                        =&gt; esc_html__( &#039;Listing Categories&#039;, &#039;hivepress&#039; ),
+	&#039;listing_search_form&#039;                       =&gt; esc_html__( &#039;Listing Search Form&#039;, &#039;hivepress&#039; ),
+	&#039;listing_expiration&#039;                        =&gt; esc_html__( &#039;Listing Expiration&#039;, &#039;hivepress&#039; ),
+	&#039;submit_listing&#039;                            =&gt; esc_html__( &#039;Submit Listing&#039;, &#039;hivepress&#039; ),
+	&#039;renew_listing&#039;                             =&gt; esc_html__( &#039;Renew Listing&#039;, &#039;hivepress&#039; ),
+	&#039;add_listing&#039;                               =&gt; esc_html__( &#039;Add Listing&#039;, &#039;hivepress&#039; ),
+	&#039;view_listing&#039;                              =&gt; esc_html__( &#039;View Listing&#039;, &#039;hivepress&#039; ),
+	&#039;edit_listing&#039;                              =&gt; esc_html__( &#039;Edit Listing&#039;, &#039;hivepress&#039; ),
+	&#039;delete_listing&#039;                            =&gt; esc_html__( &#039;Delete Listing&#039;, &#039;hivepress&#039; ),
+	&#039;report_listing&#039;                            =&gt; esc_html__( &#039;Report Listing&#039;, &#039;hivepress&#039; ),
+	&#039;listing_submitted&#039;                         =&gt; esc_html__( &#039;Listing Submitted&#039;, &#039;hivepress&#039; ),
+	&#039;listing_approved&#039;                          =&gt; esc_html__( &#039;Listing Approved&#039;, &#039;hivepress&#039; ),
+	&#039;listing_rejected&#039;                          =&gt; esc_html__( &#039;Listing Rejected&#039;, &#039;hivepress&#039; ),
+	&#039;listing_expired&#039;                           =&gt; esc_html__( &#039;Listing Expired&#039;, &#039;hivepress&#039; ),
+	&#039;listing_renewed&#039;                           =&gt; esc_html__( &#039;Listing Renewed&#039;, &#039;hivepress&#039; ),
+	&#039;listing_updated&#039;                           =&gt; esc_html__( &#039;Listing Updated&#039;, &#039;hivepress&#039; ),
+	&#039;listing_reported&#039;                          =&gt; esc_html__( &#039;Listing Reported&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: Listing title. */
+	&#039;listing_has_been_submitted&#039;                =&gt; esc_html__( &#039;Thank you! Your listing &quot;%s&quot; has been submitted and will be reviewed as soon as possible.&#039;, &#039;hivepress&#039; ),
+	/* translators: %s: Listing title. */
+	&#039;listing_has_been_renewed&#039;                  =&gt; esc_html__( &#039;Thank you! Your listing &quot;%s&quot; has been renewed and will appear at the top of the page.&#039;, &#039;hivepress&#039; ),
+	&#039;listing_has_been_reported&#039;                 =&gt; esc_html__( &#039;Listing has been reported.&#039;, &#039;hivepress&#039; ),
+	&#039;listings_page&#039;                             =&gt; esc_html__( &#039;Listings Page&#039;, &#039;hivepress&#039; ),
+	&#039;listings_page_display&#039;                     =&gt; esc_html__( &#039;Listings Page Display&#039;, &#039;hivepress&#039; ),
+	&#039;regular_listings_per_page&#039;                 =&gt; esc_html__( &#039;Regular Listings per Page&#039;, &#039;hivepress&#039; ),
+	&#039;featured_listings_per_page&#039;                =&gt; esc_html__( &#039;Featured Listings per Page&#039;, &#039;hivepress&#039; ),
+	&#039;related_listings_per_page&#039;                 =&gt; esc_html__( &#039;Related Listings per Page&#039;, &#039;hivepress&#039; ),
+	&#039;mark_listing_as_verified&#039;                  =&gt; esc_html__( &#039;Mark this listing as verified&#039;, &#039;hivepress&#039; ),
+	&#039;make_listing_featured&#039;                     =&gt; esc_html__( &#039;Make this listing featured&#039;, &#039;hivepress&#039; ),
+	&#039;make_listings_featured&#039;                    =&gt; esc_html__( &#039;Make listings featured&#039;, &#039;hivepress&#039; ),
+	&#039;display_only_featured_listings&#039;            =&gt; esc_html__( &#039;Display only featured listings&#039;, &#039;hivepress&#039; ),
+	&#039;display_only_verified_listings&#039;            =&gt; esc_html__( &#039;Display only verified listings&#039;, &#039;hivepress&#039; ),
+	&#039;confirm_listing_deletion&#039;                  =&gt; esc_html__( &#039;Are you sure you want to permanently delete this listing?&#039;, &#039;hivepress&#039; ),
+	&#039;manually_approve_listings&#039;                 =&gt; esc_html__( &#039;Manually approve new listings&#039;, &#039;hivepress&#039; ),
+	&#039;allow_submitting_listings&#039;                 =&gt; esc_html__( &#039;Allow submitting new listings&#039;, &#039;hivepress&#039; ),
+	&#039;allow_reporting_listings&#039;                  =&gt; esc_html__( &#039;Allow reporting listings&#039;, &#039;hivepress&#039; ),
+	&#039;set_number_of_days_until_listing_expires&#039;  =&gt; esc_html__( &#039;Set the number of days after which a listing expires.&#039;, &#039;hivepress&#039; ),
+	&#039;set_number_of_days_until_listing_deleted&#039;  =&gt; esc_html__( &#039;Set the number of days after which an expired listing is deleted.&#039;, &#039;hivepress&#039; ),
+	&#039;set_date_on_which_listing_expired&#039;         =&gt; esc_html__( &#039;Set a date on which the listing will expire.&#039;, &#039;hivepress&#039; ),
+	&#039;set_date_on_which_listing_not_featured&#039;    =&gt; esc_html__( &#039;Set a date on which the listing will lose featured status.&#039;, &#039;hivepress&#039; ),
+	&#039;choose_page_that_displays_all_listings&#039;    =&gt; esc_html__( &#039;Choose a page that displays all listings.&#039;, &#039;hivepress&#039; ),
+	&#039;choose_page_with_listing_submission_terms&#039; =&gt; esc_html__( &#039;Choose a page with terms that user has to accept before submitting a new listing.&#039;, &#039;hivepress&#039; ),
+	&#039;provide_details_to_verify_listing_report&#039;  =&gt; esc_html__( &#039;Please provide details that will help us verify that this listing violates the terms of service.&#039;, &#039;hivepress&#039; ),
+	&#039;set_title_format_based_on_attributes&#039;      =&gt; esc_html__( &#039;Set the title display format to generate titles based on attributes.&#039;, &#039;hivepress&#039; ),
+
+	// Vendors.
+	&#039;vendor&#039;                                    =&gt; esc_html__( &#039;Vendor&#039;, &#039;hivepress&#039; ),
+	&#039;view_vendor&#039;                               =&gt; esc_html__( &#039;View Vendor&#039;, &#039;hivepress&#039; ),
+	&#039;add_vendor&#039;                                =&gt; esc_html__( &#039;Add Vendor&#039;, &#039;hivepress&#039; ),
+	&#039;edit_vendor&#039;                               =&gt; esc_html__( &#039;Edit Vendor&#039;, &#039;hivepress&#039; ),
+	&#039;vendors&#039;                                   =&gt; esc_html__( &#039;Vendors&#039;, &#039;hivepress&#039; ),
+	&#039;search_vendors&#039;                            =&gt; esc_html__( &#039;Search Vendors&#039;, &#039;hivepress&#039; ),
+	&#039;no_vendors_found&#039;                          =&gt; esc_html__( &#039;No vendors found.&#039;, &#039;hivepress&#039; ),
+	&#039;vendor_attributes&#039;                         =&gt; esc_html__( &#039;Vendor Attributes&#039;, &#039;hivepress&#039; ),
+	&#039;vendor_search_form&#039;                        =&gt; esc_html__( &#039;Vendor Search Form&#039;, &#039;hivepress&#039; ),
+	&#039;vendor_registered&#039;                         =&gt; esc_html__( &#039;Vendor Registered&#039;, &#039;hivepress&#039; ),
+	&#039;vendors_page&#039;                              =&gt; esc_html__( &#039;Vendors Page&#039;, &#039;hivepress&#039; ),
+	&#039;regular_vendors_per_page&#039;                  =&gt; esc_html__( &#039;Vendors per Page&#039;, &#039;hivepress&#039; ),
+	&#039;choose_page_that_displays_all_vendors&#039;     =&gt; esc_html__( &#039;Choose a page that displays all vendors.&#039;, &#039;hivepress&#039; ),
+	&#039;display_vendors_on_frontend&#039;               =&gt; esc_html__( &#039;Display vendors on the front-end&#039;, &#039;hivepress&#039; ),
+	&#039;display_only_verified_vendors&#039;             =&gt; esc_html__( &#039;Display only verified vendors&#039;, &#039;hivepress&#039; ),
+	&#039;mark_vendor_as_verified&#039;                   =&gt; esc_html__( &#039;Mark this vendor as verified&#039;, &#039;hivepress&#039; ),
+
+	// Categories.
+	&#039;category&#039;                                  =&gt; esc_html__( &#039;Category&#039;, &#039;hivepress&#039; ),
+	&#039;categories&#039;                                =&gt; esc_html__( &#039;Categories&#039;, &#039;hivepress&#039; ),
+	&#039;all_categories&#039;                            =&gt; esc_html__( &#039;All Categories&#039;, &#039;hivepress&#039; ),
+	&#039;parent_category&#039;                           =&gt; esc_html__( &#039;Parent Category&#039;, &#039;hivepress&#039; ),
+	&#039;add_category&#039;                              =&gt; esc_html__( &#039;Add Category&#039;, &#039;hivepress&#039; ),
+	&#039;edit_category&#039;                             =&gt; esc_html__( &#039;Edit Category&#039;, &#039;hivepress&#039; ),
+	&#039;update_category&#039;                           =&gt; esc_html__( &#039;Update Category&#039;, &#039;hivepress&#039; ),
+	&#039;view_category&#039;                             =&gt; esc_html__( &#039;View Category&#039;, &#039;hivepress&#039; ),
+	&#039;search_categories&#039;                         =&gt; esc_html__( &#039;Search Categories&#039;, &#039;hivepress&#039; ),
+	&#039;no_categories_found&#039;                       =&gt; esc_html__( &#039;No categories found.&#039;, &#039;hivepress&#039; ),
+	&#039;select_category_imperative&#039;                =&gt; esc_html_x( &#039;Select Category&#039;, &#039;imperative&#039;, &#039;hivepress&#039; ),
+
+	// Attributes.
+	&#039;attributes&#039;                                =&gt; esc_html__( &#039;Attributes&#039;, &#039;hivepress&#039; ),
+	&#039;attribute&#039;                                 =&gt; esc_html__( &#039;Attribute&#039;, &#039;hivepress&#039; ),
+	&#039;add_new_attribute&#039;                         =&gt; esc_html_x( &#039;Add New&#039;, &#039;attribute&#039;, &#039;hivepress&#039; ),
+	&#039;add_attribute&#039;                             =&gt; esc_html__( &#039;Add Attribute&#039;, &#039;hivepress&#039; ),
+	&#039;edit_attribute&#039;                            =&gt; esc_html__( &#039;Edit Attribute&#039;, &#039;hivepress&#039; ),
+	&#039;search_attributes&#039;                         =&gt; esc_html__( &#039;Search Attributes&#039;, &#039;hivepress&#039; ),
+	&#039;no_attributes_found&#039;                       =&gt; esc_html__( &#039;No attributes found.&#039;, &#039;hivepress&#039; ),
+
+	// Attachments.
+	&#039;attachment&#039;                                =&gt; esc_html__( &#039;Attachment&#039;, &#039;hivepress&#039; ),
+	&#039;attachments&#039;                               =&gt; esc_html__( &#039;Attachments&#039;, &#039;hivepress&#039; ),
+	&#039;allow_file_attachments&#039;                    =&gt; esc_html__( &#039;Allow file attachments&#039;, &#039;hivepress&#039; ),
+	&#039;allowed_file_types&#039;                        =&gt; esc_html__( &#039;Allowed File Types&#039;, &#039;hivepress&#039; ),
+];
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

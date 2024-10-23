@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-listing.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Listing component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+use HivePress\Models;
+use HivePress\Emails;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Handles listings.
+ */
+final class Listing extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Update listing.
+		add_action( &#039;hivepress/v1/models/listing/create&#039;, [ $this, &#039;update_listing&#039; ], 10, 2 );
+		add_action( &#039;hivepress/v1/models/listing/update&#039;, [ $this, &#039;update_listing&#039; ], 10, 2 );
+
+		// Update image.
+		add_action( &#039;hivepress/v1/models/listing/update_images&#039;, [ $this, &#039;update_image&#039; ] );
+
+		// Update status.
+		add_action( &#039;hivepress/v1/models/listing/update_status&#039;, [ $this, &#039;update_status&#039; ], 10, 4 );
+
+		// Expire listings.
+		add_action( &#039;hivepress/v1/events/hourly&#039;, [ $this, &#039;expire_listings&#039; ] );
+
+		// Set category count callback.
+		add_filter( &#039;hivepress/v1/taxonomies&#039;, [ $this, &#039;set_category_count_callback&#039; ] );
+
+		// Alter model fields.
+		add_filter( &#039;hivepress/v1/models/listing&#039;, [ $this, &#039;alter_model_fields&#039; ] );
+
+		// Alter forms.
+		add_filter( &#039;hivepress/v1/forms/listing_submit&#039;, [ $this, &#039;alter_submit_form&#039; ] );
+		add_filter( &#039;hivepress/v1/forms/listing_update&#039;, [ $this, &#039;alter_update_form&#039; ], 10, 2 );
+
+		if ( is_admin() ) {
+
+			// Manage admin columns.
+			add_filter( &#039;manage_hp_listing_posts_columns&#039;, [ $this, &#039;add_listing_admin_columns&#039; ] );
+			add_action( &#039;manage_hp_listing_posts_custom_column&#039;, [ $this, &#039;render_listing_admin_columns&#039; ], 10, 2 );
+
+			// Add post states.
+			add_filter( &#039;display_post_states&#039;, [ $this, &#039;add_post_states&#039; ], 10, 2 );
+
+			// Alter meta boxes.
+			add_filter( &#039;hivepress/v1/meta_boxes/listing_settings&#039;, [ $this, &#039;alter_listing_settings_meta_box&#039; ] );
+			add_filter( &#039;hivepress/v1/meta_boxes/listing_images&#039;, [ $this, &#039;alter_listing_images_meta_box&#039; ] );
+		} else {
+
+			// Set request context.
+			add_filter( &#039;hivepress/v1/components/request/context&#039;, [ $this, &#039;set_request_context&#039; ] );
+
+			// Alter menus.
+			add_filter( &#039;hivepress/v1/menus/user_account&#039;, [ $this, &#039;alter_user_account_menu&#039; ] );
+			add_filter( &#039;hivepress/v1/menus/listing_manage/items&#039;, [ $this, &#039;alter_listing_manage_menu&#039; ], 10, 2 );
+
+			// Alter templates.
+			add_filter( &#039;hivepress/v1/templates/listing_view_block/blocks&#039;, [ $this, &#039;alter_listing_view_blocks&#039; ], 10, 2 );
+			add_filter( &#039;hivepress/v1/templates/listing_edit_block/blocks&#039;, [ $this, &#039;alter_listing_view_blocks&#039; ], 10, 2 );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Updates listing.
+	 *
+	 * @param int    $listing_id Listing ID.
+	 * @param object $listing Listing object.
+	 */
+	public function update_listing( $listing_id, $listing ) {
+
+		// Remove action.
+		remove_action( &#039;hivepress/v1/models/listing/update&#039;, [ $this, &#039;update_listing&#039; ] );
+
+		// Check user.
+		if ( ! $listing-&gt;get_user__id() ) {
+			return;
+		}
+
+		// Get listing vendor.
+		$vendor = null;
+
+		if ( $listing-&gt;get_vendor__id() ) {
+			$vendor = $listing-&gt;get_vendor();
+		}
+
+		// Get title.
+		$title = get_option( &#039;hp_listing_title_format&#039; );
+
+		if ( $title ) {
+			$title = hp\replace_tokens(
+				[
+					&#039;listing&#039; =&gt; $listing,
+					&#039;vendor&#039;  =&gt; $vendor,
+				],
+				$title
+			);
+
+			// Update title.
+			if ( $listing-&gt;get_title() !== $title ) {
+				$listing-&gt;set_title( $title )-&gt;save_title();
+			}
+		}
+
+		// Update listing user.
+		if ( $vendor &amp;&amp; $vendor-&gt;get_status() === &#039;publish&#039; ) {
+			if ( $vendor-&gt;get_user__id() !== $listing-&gt;get_user__id() ) {
+				$listing-&gt;set_user( $vendor-&gt;get_user__id() )-&gt;save_user();
+			}
+
+			return;
+		}
+
+		// Get user vendor.
+		$vendor = Models\Vendor::query()-&gt;filter(
+			[
+				&#039;status&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ],
+				&#039;user&#039;   =&gt; $listing-&gt;get_user__id(),
+			]
+		)-&gt;get_first();
+
+		if ( $listing-&gt;get_status() === &#039;publish&#039; ) {
+			if ( ! $vendor ) {
+
+				// Get user.
+				$user = $listing-&gt;get_user();
+
+				// Add vendor.
+				$vendor = ( new Models\Vendor() )-&gt;fill(
+					[
+						&#039;name&#039;        =&gt; $user-&gt;get_display_name(),
+						&#039;description&#039; =&gt; $user-&gt;get_description(),
+						&#039;slug&#039;        =&gt; $user-&gt;get_username(),
+						&#039;status&#039;      =&gt; &#039;publish&#039;,
+						&#039;image&#039;       =&gt; $user-&gt;get_image__id(),
+						&#039;user&#039;        =&gt; $user-&gt;get_id(),
+					]
+				);
+
+				if ( ! $vendor-&gt;save(
+					[
+						&#039;name&#039;,
+						&#039;description&#039;,
+						&#039;slug&#039;,
+						&#039;status&#039;,
+						&#039;image&#039;,
+						&#039;user&#039;,
+					]
+				) ) {
+					return;
+				}
+			} elseif ( in_array( $vendor-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039; ], true ) ) {
+
+				// Update vendor status.
+				$vendor-&gt;set_status( &#039;publish&#039; )-&gt;save_status();
+			}
+		}
+
+		if ( $vendor ) {
+
+			// Update listing vendor.
+			$listing-&gt;set_vendor( $vendor-&gt;get_id() )-&gt;save_vendor();
+		}
+	}
+
+	/**
+	 * Updates listing image.
+	 *
+	 * @param int $listing_id Listing ID.
+	 */
+	public function update_image( $listing_id ) {
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( $listing_id );
+
+		// Get image IDs.
+		$image_ids = $listing-&gt;get_images__id();
+
+		if ( get_option( &#039;hp_listing_allow_video&#039; ) ) {
+			$image_ids = [];
+
+			foreach ( (array) $listing-&gt;get_images() as $image ) {
+				if ( strpos( $image-&gt;get_mime_type(), &#039;image&#039; ) === 0 ) {
+					$image_ids[] = $image-&gt;get_id();
+
+					break;
+				}
+			}
+		}
+
+		// Set image.
+		if ( $image_ids ) {
+			set_post_thumbnail( $listing-&gt;get_id(), hp\get_first_array_value( $image_ids ) );
+		} else {
+			delete_post_thumbnail( $listing-&gt;get_id() );
+		}
+	}
+
+	/**
+	 * Updates listing status.
+	 *
+	 * @param int    $listing_id Listing ID.
+	 * @param string $new_status New status.
+	 * @param string $old_status Old status.
+	 * @param object $listing Listing.
+	 */
+	public function update_status( $listing_id, $new_status, $old_status, $listing ) {
+		if ( &#039;pending&#039; === $old_status &amp;&amp; get_option( &#039;hp_listing_enable_moderation&#039; ) ) {
+
+			// Get user.
+			$user = $listing-&gt;get_user();
+
+			if ( $user ) {
+				if ( &#039;publish&#039; === $new_status ) {
+
+					// Send approval email.
+					( new Emails\Listing_Approve(
+						[
+							&#039;recipient&#039; =&gt; $user-&gt;get_email(),
+
+							&#039;tokens&#039;    =&gt; [
+								&#039;user&#039;          =&gt; $user,
+								&#039;listing&#039;       =&gt; $listing,
+								&#039;user_name&#039;     =&gt; $user-&gt;get_display_name(),
+								&#039;listing_title&#039; =&gt; $listing-&gt;get_title(),
+								&#039;listing_url&#039;   =&gt; get_permalink( $listing-&gt;get_id() ),
+							],
+						]
+					) )-&gt;send();
+				} elseif ( &#039;trash&#039; === $new_status ) {
+
+					// Send rejection email.
+					( new Emails\Listing_Reject(
+						[
+							&#039;recipient&#039; =&gt; $user-&gt;get_email(),
+
+							&#039;tokens&#039;    =&gt; [
+								&#039;user&#039;          =&gt; $user,
+								&#039;listing&#039;       =&gt; $listing,
+								&#039;user_name&#039;     =&gt; $user-&gt;get_display_name(),
+								&#039;listing_title&#039; =&gt; $listing-&gt;get_title(),
+							],
+						]
+					) )-&gt;send();
+
+					// Get vendor.
+					$vendor = $listing-&gt;get_vendor();
+
+					// Delete vendor.
+					if ( $vendor &amp;&amp; $vendor-&gt;get_status() === &#039;draft&#039; ) {
+						$vendor-&gt;trash();
+					}
+				}
+			}
+		}
+
+		if ( in_array( $new_status, [ &#039;publish&#039;, &#039;pending&#039; ], true ) ) {
+
+			// Get expiration period.
+			$expiration_period = absint( get_option( &#039;hp_listing_expiration_period&#039; ) );
+
+			if ( $expiration_period &amp;&amp; ! $listing-&gt;get_expired_time() ) {
+
+				// Set expiration time.
+				$listing-&gt;set_expired_time( time() + $expiration_period * DAY_IN_SECONDS )-&gt;save_expired_time();
+			}
+		}
+	}
+
+	/**
+	 * Expires listings.
+	 */
+	public function expire_listings() {
+
+		// Get expired listings.
+		$expired_listings = Models\Listing::query()-&gt;filter(
+			[
+				&#039;status__in&#039;        =&gt; [ &#039;pending&#039;, &#039;publish&#039; ],
+				&#039;expired_time__lte&#039; =&gt; time(),
+			]
+		)-&gt;get();
+
+		// Update expired listings.
+		foreach ( $expired_listings as $listing ) {
+
+			// Update status.
+			$listing-&gt;set_status( &#039;draft&#039; )-&gt;save_status();
+
+			// Send email.
+			$user = $listing-&gt;get_user();
+
+			if ( $user ) {
+				( new Emails\Listing_Expire(
+					[
+						&#039;recipient&#039; =&gt; $user-&gt;get_email(),
+
+						&#039;tokens&#039;    =&gt; [
+							&#039;user&#039;          =&gt; $user,
+							&#039;listing&#039;       =&gt; $listing,
+							&#039;user_name&#039;     =&gt; $user-&gt;get_display_name(),
+							&#039;listing_title&#039; =&gt; $listing-&gt;get_title(),
+							&#039;listing_url&#039;   =&gt; hivepress()-&gt;router-&gt;get_url( &#039;listing_edit_page&#039;, [ &#039;listing_id&#039; =&gt; $listing-&gt;get_id() ] ),
+						],
+					]
+				) )-&gt;send();
+			}
+		}
+
+		// Get storage period.
+		$storage_period = absint( get_option( &#039;hp_listing_storage_period&#039; ) );
+
+		if ( $storage_period ) {
+
+			// Delete stored listings.
+			Models\Listing::query()-&gt;filter(
+				[
+					&#039;status&#039;            =&gt; &#039;draft&#039;,
+					&#039;expired_time__lte&#039; =&gt; time() - DAY_IN_SECONDS * $storage_period,
+				]
+			)-&gt;trash();
+		}
+
+		// Get featured listings.
+		$featured_listings = Models\Listing::query()-&gt;filter(
+			[
+				&#039;status__in&#039;         =&gt; [ &#039;draft&#039;, &#039;pending&#039;, &#039;publish&#039; ],
+				&#039;featured_time__lte&#039; =&gt; time(),
+			]
+		)-&gt;get();
+
+		// Update featured listings.
+		foreach ( $featured_listings as $listing ) {
+			$listing-&gt;fill(
+				[
+					&#039;featured&#039;      =&gt; false,
+					&#039;featured_time&#039; =&gt; null,
+				]
+			)-&gt;save( [ &#039;featured&#039;, &#039;featured_time&#039; ] );
+		}
+	}
+
+	/**
+	 * Sets category count callback.
+	 *
+	 * @param array $taxonomies Taxonomy arguments.
+	 * @return array
+	 */
+	public function set_category_count_callback( $taxonomies ) {
+		return hp\merge_arrays(
+			$taxonomies,
+			[
+				&#039;listing_category&#039; =&gt; [
+					&#039;update_count_callback&#039; =&gt; [ $this, &#039;update_category_count&#039; ],
+				],
+			]
+		);
+	}
+
+	/**
+	 * Updates category count.
+	 *
+	 * @param array $term_taxonomy_ids Term taxonomy IDs.
+	 */
+	public function update_category_count( $term_taxonomy_ids ) {
+		global $wpdb;
+
+		foreach ( $term_taxonomy_ids as $term_taxonomy_id ) {
+
+			// Get term ID.
+			$term_id = get_term_by( &#039;term_taxonomy_id&#039;, $term_taxonomy_id )-&gt;term_id;
+
+			// Get parent term IDs.
+			$parent_term_ids = array_merge( [ $term_id ], get_ancestors( $term_id, &#039;hp_listing_category&#039;, &#039;taxonomy&#039; ) );
+
+			foreach ( $parent_term_ids as $parent_term_id ) {
+
+				// Get child term IDs.
+				$child_term_ids = array_merge( [ $parent_term_id ], get_term_children( $parent_term_id, &#039;hp_listing_category&#039; ) );
+
+				// Set placeholder.
+				$placeholder = implode( &#039;, &#039;, array_fill( 0, count( $child_term_ids ), &#039;%d&#039; ) );
+
+				// Get count.
+				$count = (int) $wpdb-&gt;get_var(
+					$wpdb-&gt;prepare(
+						&quot;SELECT COUNT(*) FROM {$wpdb-&gt;term_relationships}
+						INNER JOIN {$wpdb-&gt;posts} ON {$wpdb-&gt;posts}.ID = {$wpdb-&gt;term_relationships}.object_id
+						INNER JOIN {$wpdb-&gt;term_taxonomy} ON {$wpdb-&gt;term_taxonomy}.term_taxonomy_id = {$wpdb-&gt;term_relationships}.term_taxonomy_id
+						WHERE post_status = &#039;publish&#039; AND post_type = %s AND term_id IN ( {$placeholder} )&quot;,
+						array_merge( [ &#039;hp_listing&#039; ], $child_term_ids )
+					)
+				);
+
+				// Update count.
+				$wpdb-&gt;update( $wpdb-&gt;term_taxonomy, [ &#039;count&#039; =&gt; $count ], [ &#039;term_id&#039; =&gt; $parent_term_id ] );
+			}
+		}
+	}
+
+	/**
+	 * Alters model fields.
+	 *
+	 * @param array $model Model arguments.
+	 * @return array
+	 */
+	public function alter_model_fields( $model ) {
+		if ( get_option( &#039;hp_listing_title_format&#039; ) ) {
+			$model[&#039;fields&#039;][&#039;title&#039;][&#039;required&#039;] = false;
+		}
+
+		if ( get_option( &#039;hp_listing_allow_video&#039; ) ) {
+			$model[&#039;fields&#039;][&#039;images&#039;] = hp\merge_arrays(
+				$model[&#039;fields&#039;][&#039;images&#039;],
+				[
+					&#039;label&#039;   =&gt; esc_html__( &#039;Gallery&#039;, &#039;hivepress&#039; ),
+					&#039;caption&#039; =&gt; null,
+					&#039;formats&#039; =&gt; [ &#039;mp4&#039;, &#039;webm&#039;, &#039;ogv&#039; ],
+				]
+			);
+		}
+
+		return $model;
+	}
+
+	/**
+	 * Alters submit form.
+	 *
+	 * @param array $form Form arguments.
+	 * @return array
+	 */
+	public function alter_submit_form( $form ) {
+
+		// Get terms page ID.
+		$page_id = absint( get_option( &#039;hp_page_listing_submission_terms&#039; ) );
+
+		if ( $page_id ) {
+
+			// Get terms page URL.
+			$page_url = get_permalink( $page_id );
+
+			if ( $page_url ) {
+
+				// Add terms field.
+				$form[&#039;fields&#039;][&#039;_terms&#039;] = [
+					&#039;caption&#039;   =&gt; sprintf( hivepress()-&gt;translator-&gt;get_string( &#039;i_agree_to_terms_and_conditions&#039; ), esc_url( $page_url ) ),
+					&#039;type&#039;      =&gt; &#039;checkbox&#039;,
+					&#039;required&#039;  =&gt; true,
+					&#039;_separate&#039; =&gt; true,
+					&#039;_order&#039;    =&gt; 1000,
+				];
+			}
+		}
+
+		return $form;
+	}
+
+	/**
+	 * Alters update form.
+	 *
+	 * @param array  $form_args Form arguments.
+	 * @param object $form Form object.
+	 * @return array
+	 */
+	public function alter_update_form( $form_args, $form ) {
+
+		// Get listing.
+		$listing = $form-&gt;get_model();
+
+		if ( $listing-&gt;get_status() === &#039;draft&#039; &amp;&amp; $listing-&gt;get_expired_time() &amp;&amp; $listing-&gt;get_expired_time() &lt; time() ) {
+
+			// Set form arguments.
+			$form_args = hp\merge_arrays(
+				$form_args,
+				[
+					&#039;message&#039;  =&gt; null,
+					&#039;redirect&#039; =&gt; hivepress()-&gt;router-&gt;get_url( &#039;listing_renew_page&#039;, [ &#039;listing_id&#039; =&gt; $listing-&gt;get_id() ] ),
+
+					&#039;button&#039;   =&gt; [
+						&#039;label&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;renew_listing&#039; ),
+					],
+				]
+			);
+		}
+
+		// Remove title field.
+		if ( get_option( &#039;hp_listing_title_format&#039; ) ) {
+			unset( $form_args[&#039;fields&#039;][&#039;title&#039;] );
+		}
+
+		return $form_args;
+	}
+
+	/**
+	 * Adds listing admin columns.
+	 *
+	 * @param array $columns Columns.
+	 * @return array
+	 */
+	public function add_listing_admin_columns( $columns ) {
+		return array_merge(
+			array_slice( $columns, 0, 2, true ),
+			[
+				&#039;vendor&#039; =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;vendor&#039; ),
+			],
+			array_slice( $columns, 2, null, true )
+		);
+	}
+
+	/**
+	 * Renders listing admin columns.
+	 *
+	 * @param string $column Column name.
+	 * @param int    $listing_id Listing ID.
+	 */
+	public function render_listing_admin_columns( $column, $listing_id ) {
+		if ( &#039;vendor&#039; === $column ) {
+			$output = &#039;&amp;mdash;&#039;;
+
+			// Get name and URL.
+			$name = &#039;&#039;;
+			$url  = &#039;&#039;;
+
+			// Get vendor ID.
+			$vendor_id = wp_get_post_parent_id( $listing_id );
+
+			if ( $vendor_id ) {
+				$name = get_the_title( $vendor_id );
+				$url  = hivepress()-&gt;router-&gt;get_admin_url( &#039;post&#039;, $vendor_id );
+			} else {
+
+				// Get user ID.
+				$user_id = get_post_field( &#039;post_author&#039;, $listing_id );
+
+				if ( $user_id ) {
+					$name = get_the_author_meta( &#039;display_name&#039;, $user_id );
+					$url  = hivepress()-&gt;router-&gt;get_admin_url( &#039;user&#039;, $user_id );
+				}
+			}
+
+			if ( strlen( $name ) ) {
+
+				// Render link.
+				$output = &#039;&lt;a href=&quot;&#039; . esc_url( $url ) . &#039;&quot;&gt;&#039; . esc_html( $name ) . &#039;&lt;/a&gt;&#039;;
+			}
+
+			echo wp_kses_data( $output );
+		}
+	}
+
+	/**
+	 * Adds post states.
+	 *
+	 * @param array   $states Post states.
+	 * @param WP_Post $post Post object.
+	 * @return array
+	 */
+	public function add_post_states( $states, $post ) {
+		if ( &#039;hp_listing&#039; === $post-&gt;post_type ) {
+
+			// Get listing.
+			$listing = Models\Listing::query()-&gt;get_by_id( $post );
+
+			// Add states.
+			if ( $listing-&gt;is_featured() ) {
+				$states[] = esc_html_x( &#039;Featured&#039;, &#039;listing&#039;, &#039;hivepress&#039; );
+			}
+
+			if ( $listing-&gt;is_verified() ) {
+				$states[] = esc_html_x( &#039;Verified&#039;, &#039;listing&#039;, &#039;hivepress&#039; );
+			}
+		}
+
+		return $states;
+	}
+
+	/**
+	 * Alters listing settings meta box.
+	 *
+	 * @param array $meta_box Meta box arguments.
+	 * @return array
+	 */
+	public function alter_listing_settings_meta_box( $meta_box ) {
+
+		// Get vendor ID.
+		$vendor_id = absint( get_post_field( &#039;post_parent&#039; ) );
+
+		if ( ! $vendor_id || get_post_status( $vendor_id ) !== &#039;publish&#039; ) {
+
+			// Disable vendor field.
+			$meta_box[&#039;fields&#039;][&#039;vendor&#039;] = array_merge(
+				$meta_box[&#039;fields&#039;][&#039;vendor&#039;],
+				[
+					&#039;options&#039;     =&gt; &#039;users&#039;,
+					&#039;option_args&#039; =&gt; [],
+					&#039;source&#039;      =&gt; hivepress()-&gt;router-&gt;get_url( &#039;users_resource&#039; ),
+					&#039;disabled&#039;    =&gt; true,
+					&#039;_alias&#039;      =&gt; &#039;post_author&#039;,
+				]
+			);
+		}
+
+		return $meta_box;
+	}
+
+	/**
+	 * Alters listing images meta box.
+	 *
+	 * @param array $meta_box Meta box arguments.
+	 * @return array
+	 */
+	public function alter_listing_images_meta_box( $meta_box ) {
+
+		// Get listing.
+		$listing = Models\Listing::query()-&gt;get_by_id( get_post() );
+
+		if ( $listing ) {
+
+			// Set image IDs.
+			$meta_box[&#039;fields&#039;][&#039;images&#039;][&#039;default&#039;] = $listing-&gt;get_images__id();
+		}
+
+		return $meta_box;
+	}
+
+	/**
+	 * Sets request context.
+	 *
+	 * @param array $context Request context.
+	 * @return array
+	 */
+	public function set_request_context( $context ) {
+
+		// Get cached listing count.
+		$listing_count = hivepress()-&gt;cache-&gt;get_user_cache( get_current_user_id(), &#039;listing_count&#039;, &#039;models/listing&#039; );
+
+		if ( is_null( $listing_count ) ) {
+
+			// Get listing count.
+			$listing_count = Models\Listing::query()-&gt;filter(
+				[
+					&#039;status__in&#039; =&gt; [ &#039;draft&#039;, &#039;pending&#039;, &#039;publish&#039; ],
+					&#039;user&#039;       =&gt; get_current_user_id(),
+				]
+			)-&gt;get_count();
+
+			// Cache listing count.
+			hivepress()-&gt;cache-&gt;set_user_cache( get_current_user_id(), &#039;listing_count&#039;, &#039;models/listing&#039;, $listing_count );
+		}
+
+		// Set request context.
+		$context[&#039;listing_count&#039;] = $listing_count;
+
+		return $context;
+	}
+
+	/**
+	 * Alters user account menu.
+	 *
+	 * @param array $menu Menu arguments.
+	 * @return array
+	 */
+	public function alter_user_account_menu( $menu ) {
+		if ( hivepress()-&gt;request-&gt;get_context( &#039;listing_count&#039; ) ) {
+			$menu[&#039;items&#039;][&#039;listings_edit&#039;] = [
+				&#039;route&#039;  =&gt; &#039;listings_edit_page&#039;,
+				&#039;_order&#039; =&gt; 10,
+			];
+		}
+
+		return $menu;
+	}
+
+	/**
+	 * Alters listing manage menu.
+	 *
+	 * @param array  $items Menu items.
+	 * @param object $menu Menu object.
+	 * @return array
+	 */
+	public function alter_listing_manage_menu( $items, $menu ) {
+
+		// Get listing.
+		$listing = $menu-&gt;get_context( &#039;listing&#039; );
+
+		if ( hp\is_class_instance( $listing, &#039;\HivePress\Models\Listing&#039; ) ) {
+
+			// Add menu items.
+			if ( $listing-&gt;get_status() === &#039;publish&#039; ) {
+				$items[&#039;listing_view&#039;] = [
+					&#039;label&#039;  =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;details&#039; ),
+					&#039;url&#039;    =&gt; hivepress()-&gt;router-&gt;get_url( &#039;listing_view_page&#039;, [ &#039;listing_id&#039; =&gt; $listing-&gt;get_id() ] ),
+					&#039;_order&#039; =&gt; 5,
+				];
+			}
+
+			if ( get_current_user_id() === $listing-&gt;get_user__id() ) {
+				$items[&#039;listing_edit&#039;] = [
+					&#039;label&#039;  =&gt; esc_html__( &#039;Edit&#039;, &#039;hivepress&#039; ),
+					&#039;url&#039;    =&gt; hivepress()-&gt;router-&gt;get_url( &#039;listing_edit_page&#039;, [ &#039;listing_id&#039; =&gt; $listing-&gt;get_id() ] ),
+					&#039;_order&#039; =&gt; 1000,
+				];
+			}
+		}
+
+		return $items;
+	}
+
+	/**
+	 * Alters listing view blocks.
+	 *
+	 * @param array  $blocks Block arguments.
+	 * @param object $template Template object.
+	 * @return array
+	 */
+	public function alter_listing_view_blocks( $blocks, $template ) {
+
+		// Get listing.
+		$listing = $template-&gt;get_context( &#039;listing&#039; );
+
+		if ( hp\is_class_instance( $listing, &#039;\HivePress\Models\Listing&#039; ) ) {
+
+			// Get classes.
+			$classes = [];
+
+			if ( $listing-&gt;is_featured() ) {
+				$classes[] = &#039;hp-listing--featured&#039;;
+			}
+
+			if ( $listing-&gt;is_verified() ) {
+				$classes[] = &#039;hp-listing--verified&#039;;
+			}
+
+			// Add classes.
+			if ( $classes ) {
+				$blocks = hivepress()-&gt;template-&gt;merge_blocks(
+					$blocks,
+					[
+						&#039;listing_container&#039; =&gt; [
+							&#039;attributes&#039; =&gt; [
+								&#039;class&#039; =&gt; $classes,
+							],
+						],
+					]
+				);
+			}
+		}
+
+		return $blocks;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

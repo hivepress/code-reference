@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-attachment.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Attachment controller.
+ *
+ * @package HivePress\Controllers
+ */
+
+namespace HivePress\Controllers;
+
+use HivePress\Helpers as hp;
+use HivePress\Models;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Manages file attachments.
+ */
+final class Attachment extends Controller {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Controller arguments.
+	 */
+	public function __construct( $args = [] ) {
+		$args = hp\merge_arrays(
+			[
+				&#039;routes&#039; =&gt; [
+					&#039;attachments_resource&#039;     =&gt; [
+						&#039;path&#039; =&gt; &#039;/attachments&#039;,
+						&#039;rest&#039; =&gt; true,
+					],
+
+					/**
+					* @OA\Parameter(
+					*     name=&quot;attachment_id&quot;,
+					*     description=&quot;Attachment ID.&quot;,
+					*     in=&quot;path&quot;,
+					*     required=true,
+					*     @OA\Schema(type=&quot;integer&quot;),
+					* ),
+					*/
+					&#039;attachment_resource&#039;      =&gt; [
+						&#039;base&#039; =&gt; &#039;attachments_resource&#039;,
+						&#039;path&#039; =&gt; &#039;/(?P&lt;attachment_id&gt;\d+)&#039;,
+						&#039;rest&#039; =&gt; true,
+					],
+
+					/**
+					 * @OA\Post(
+					 *     path=&quot;/attachments&quot;,
+					 *     summary=&quot;Upload an attachment&quot;,
+					 *     tags={&quot;Attachments&quot;},
+					 *     @OA\RequestBody(
+					 *       @OA\JsonContent(
+					 *         @OA\Property(property=&quot;parent&quot;, type=&quot;integer&quot;, description=&quot;Parent object ID.&quot;),
+					 *         @OA\Property(property=&quot;parent_model&quot;, type=&quot;string&quot;, description=&quot;Parent model name (e.g. `user`).&quot;),
+					 *         @OA\Property(property=&quot;parent_field&quot;, type=&quot;string&quot;, description=&quot;Parent model field (e.g. `image`).&quot;),
+					 *         @OA\Property(property=&quot;file&quot;, type=&quot;string&quot;, format=&quot;file&quot;, description=&quot;File contents.&quot;),
+					 *       ),
+					 *     ),
+					 *     @OA\Response(response=&quot;201&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;attachment_upload_action&#039; =&gt; [
+						&#039;base&#039;   =&gt; &#039;attachments_resource&#039;,
+						&#039;method&#039; =&gt; &#039;POST&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;upload_attachment&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					 * @OA\Post(
+					 *     path=&quot;/attachments/{attachment_id}&quot;,
+					 *     summary=&quot;Update an attachment&quot;,
+					 *     tags={&quot;Attachments&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/attachment_id&quot;),
+					 *     @OA\RequestBody(@OA\JsonContent(ref=&quot;#/components/schemas/Attachment&quot;)),
+					 *     @OA\Response(response=&quot;200&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;attachment_update_action&#039; =&gt; [
+						&#039;base&#039;   =&gt; &#039;attachment_resource&#039;,
+						&#039;method&#039; =&gt; &#039;POST&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;update_attachment&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+
+					/**
+					 * @OA\Delete(
+					 *     path=&quot;/attachments/{attachment_id}&quot;,
+					 *     summary=&quot;Delete an attachment&quot;,
+					 *     tags={&quot;Attachments&quot;},
+					 *     @OA\Parameter(ref=&quot;#/components/parameters/attachment_id&quot;),
+					 *     @OA\Response(response=&quot;204&quot;, description=&quot;&quot;)
+					 * )
+					 */
+					&#039;attachment_delete_action&#039; =&gt; [
+						&#039;base&#039;   =&gt; &#039;attachment_resource&#039;,
+						&#039;method&#039; =&gt; &#039;DELETE&#039;,
+						&#039;action&#039; =&gt; [ $this, &#039;delete_attachment&#039; ],
+						&#039;rest&#039;   =&gt; true,
+					],
+				],
+			],
+			$args
+		);
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Uploads attachment.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function upload_attachment( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get parent model.
+		$parent_model = hp\create_class_instance( &#039;\HivePress\Models\\&#039; . sanitize_key( $request-&gt;get_param( &#039;parent_model&#039; ) ) );
+
+		if ( empty( $parent_model ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get parent object.
+		$parent = $parent_model-&gt;query()-&gt;get_by_id( $request-&gt;get_param( &#039;parent&#039; ) );
+
+		if ( empty( $parent ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get user ID.
+		$user_id = $parent-&gt;get_user__id();
+
+		if ( $parent::_get_meta( &#039;type&#039; ) === &#039;user&#039; ) {
+			$user_id = $parent-&gt;get_id();
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_others_posts&#039; ) &amp;&amp; ( get_current_user_id() !== $user_id || ( $parent::_get_meta( &#039;type&#039; ) === &#039;post&#039; &amp;&amp; ! in_array( $parent-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ], true ) ) ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Get parent field.
+		$parent_field = hp\get_array_value( $parent-&gt;_get_fields(), sanitize_key( $request-&gt;get_param( &#039;parent_field&#039; ) ) );
+
+		if ( empty( $parent_field ) || $parent_field::get_meta( &#039;name&#039; ) !== &#039;attachment_upload&#039; ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get attachments.
+		$attachments = Models\Attachment::query()-&gt;filter(
+			[
+				&#039;parent_model&#039; =&gt; $parent::_get_meta( &#039;name&#039; ),
+				&#039;parent_field&#039; =&gt; $parent_field-&gt;get_name(),
+				&#039;parent&#039;       =&gt; $parent-&gt;get_id(),
+			]
+		)-&gt;get();
+
+		// Check attachment limit.
+		if ( $parent_field-&gt;is_multiple() &amp;&amp; $attachments-&gt;count() &gt;= $parent_field-&gt;get_max_files() ) {
+			/* translators: %s: files number. */
+			return hp\rest_error( 403, sprintf( esc_html__( &#039;Only up to %s files can be uploaded.&#039;, &#039;hivepress&#039; ), number_format_i18n( $parent_field-&gt;get_max_files() ) ) );
+		}
+
+		// Check file.
+		if ( ! isset( $_FILES[&#039;file&#039;] ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Check file format.
+		if ( $parent_field-&gt;get_formats() &amp;&amp; ! hivepress()-&gt;attachment-&gt;is_valid_file( $_FILES[&#039;file&#039;][&#039;tmp_name&#039;], $_FILES[&#039;file&#039;][&#039;name&#039;], $parent_field-&gt;get_formats() ) ) {
+
+			/* translators: %s: file extensions. */
+			return hp\rest_error( 400, sprintf( esc_html__( &#039;Only %s files are allowed.&#039;, &#039;hivepress&#039; ), strtoupper( implode( &#039;, &#039;, $parent_field-&gt;get_formats() ) ) ) );
+		}
+
+		// Get file callback.
+		$file_callback = null;
+
+		if ( $parent_field-&gt;is_protected() ) {
+			$file_callback = function( $dir, $filename, $ext ) {
+				if ( strlen( $filename ) ) {
+
+					/**
+					 * Filters the attachment filename before the uploading.
+					 *
+					 * @hook hivepress/v1/models/attachment/filename
+					 * @param {string} $filename Filename.
+					 * @param {string} $ext File extension.
+					 * @param {string} $path Directory path.
+					 * @return {string} Filename.
+					 */
+					$filename = apply_filters( &#039;hivepress/v1/models/attachment/filename&#039;, $filename, $ext, $dir );
+				}
+
+				return $filename;
+			};
+		}
+
+		// Get parent ID.
+		$parent_id = 0;
+
+		if ( $parent::_get_meta( &#039;type&#039; ) === &#039;post&#039; ) {
+			$parent_id = $parent-&gt;get_id();
+		}
+
+		// Upload attachment.
+		require_once ABSPATH . &#039;wp-admin/includes/image.php&#039;;
+		require_once ABSPATH . &#039;wp-admin/includes/file.php&#039;;
+		require_once ABSPATH . &#039;wp-admin/includes/media.php&#039;;
+
+		$attachment_id = media_handle_upload(
+			&#039;file&#039;,
+			$parent_id,
+			[],
+			[
+				&#039;test_form&#039;                =&gt; false,
+				&#039;unique_filename_callback&#039; =&gt; $file_callback,
+			]
+		);
+
+		if ( is_wp_error( $attachment_id ) ) {
+			return hp\rest_error( 400, $attachment_id-&gt;get_error_messages() );
+		}
+
+		// Get attachment.
+		$attachment = Models\Attachment::query()-&gt;get_by_id( $attachment_id );
+
+		// Update attachment.
+		$attachment-&gt;fill(
+			[
+				&#039;sort_order&#039;   =&gt; $attachments-&gt;count(),
+				&#039;parent_model&#039; =&gt; $parent::_get_meta( &#039;name&#039; ),
+				&#039;parent_field&#039; =&gt; $parent_field-&gt;get_name(),
+				&#039;parent&#039;       =&gt; $parent-&gt;get_id(),
+			]
+		);
+
+		if ( ! $attachment-&gt;save() ) {
+			return hp\rest_error( 400, $attachment-&gt;_get_errors() );
+		}
+
+		if ( ! $parent_field-&gt;is_multiple() ) {
+
+			// Delete attachments.
+			$attachments-&gt;filter(
+				[
+					&#039;id__not_in&#039; =&gt; [ $attachment-&gt;get_id() ],
+				]
+			)-&gt;delete();
+
+			// Update parent object.
+			$parent-&gt;fill(
+				[
+					$parent_field-&gt;get_name() =&gt; $attachment-&gt;get_id(),
+				]
+			)-&gt;save( [ $parent_field-&gt;get_name() ] );
+		} else {
+
+			// Fire update action.
+			do_action( &#039;hivepress/v1/models/&#039; . $attachment-&gt;get_parent_model() . &#039;/update_&#039; . $attachment-&gt;get_parent_field(), $attachment-&gt;get_parent__id() );
+		}
+
+		// Render attachment.
+		$data = [
+			&#039;id&#039; =&gt; $attachment-&gt;get_id(),
+		];
+
+		if ( $request-&gt;get_param( &#039;render&#039; ) ) {
+			$data[&#039;html&#039;] = $parent_field-&gt;render_attachment( $attachment );
+		}
+
+		return hp\rest_response( 201, $data );
+	}
+
+	/**
+	 * Updates attachment.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function update_attachment( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get attachment.
+		$attachment = Models\Attachment::query()-&gt;get_by_id( $request-&gt;get_param( &#039;attachment_id&#039; ) );
+
+		if ( empty( $attachment ) ) {
+			return hp\rest_error( 404 );
+		}
+
+		// Get parent object.
+		$parent = $attachment-&gt;get_parent();
+
+		if ( empty( $parent ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get user ID.
+		$user_id = $parent-&gt;get_user__id();
+
+		if ( $parent::_get_meta( &#039;type&#039; ) === &#039;user&#039; ) {
+			$user_id = $parent-&gt;get_id();
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_others_posts&#039; ) &amp;&amp; ( get_current_user_id() !== $user_id || ( $parent::_get_meta( &#039;type&#039; ) === &#039;post&#039; &amp;&amp; ! in_array( $parent-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ], true ) ) ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Update attachment.
+		$attachment-&gt;set_sort_order( $request-&gt;get_param( &#039;sort_order&#039; ) );
+
+		if ( ! $attachment-&gt;save() ) {
+			return hp\rest_error( 400, $attachment-&gt;_get_errors() );
+		}
+
+		// Fire update action.
+		do_action( &#039;hivepress/v1/models/&#039; . $attachment-&gt;get_parent_model() . &#039;/update_&#039; . $attachment-&gt;get_parent_field(), $attachment-&gt;get_parent__id() );
+
+		return hp\rest_response(
+			200,
+			[
+				&#039;id&#039; =&gt; $attachment-&gt;get_id(),
+			]
+		);
+	}
+
+	/**
+	 * Deletes attachment.
+	 *
+	 * @param WP_REST_Request $request API request.
+	 * @return WP_Rest_Response
+	 */
+	public function delete_attachment( $request ) {
+
+		// Check authentication.
+		if ( ! is_user_logged_in() ) {
+			return hp\rest_error( 401 );
+		}
+
+		// Get attachment.
+		$attachment = Models\Attachment::query()-&gt;get_by_id( $request-&gt;get_param( &#039;attachment_id&#039; ) );
+
+		if ( empty( $attachment ) ) {
+			return hp\rest_error( 404 );
+		}
+
+		// Get parent object.
+		$parent = $attachment-&gt;get_parent();
+
+		if ( empty( $parent ) ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Get user ID.
+		$user_id = $parent-&gt;get_user__id();
+
+		if ( $parent::_get_meta( &#039;type&#039; ) === &#039;user&#039; ) {
+			$user_id = $parent-&gt;get_id();
+		}
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;delete_others_posts&#039; ) &amp;&amp; ( get_current_user_id() !== $user_id || ( $parent::_get_meta( &#039;type&#039; ) === &#039;post&#039; &amp;&amp; ! in_array( $parent-&gt;get_status(), [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ], true ) ) ) ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Get parent field.
+		$parent_field = hp\get_array_value( $parent-&gt;_get_fields(), $attachment-&gt;get_parent_field() );
+
+		if ( empty( $parent_field ) || $parent_field::get_meta( &#039;name&#039; ) !== &#039;attachment_upload&#039; ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Check requirements.
+		if ( $parent_field-&gt;is_required() &amp;&amp; ! $parent_field-&gt;is_multiple() ) {
+			return hp\rest_error( 403 );
+		}
+
+		// Delete attachment.
+		if ( ! $attachment-&gt;delete() ) {
+			return hp\rest_error( 400 );
+		}
+
+		// Fire update action.
+		do_action( &#039;hivepress/v1/models/&#039; . $attachment-&gt;get_parent_model() . &#039;/update_&#039; . $attachment-&gt;get_parent_field(), $attachment-&gt;get_parent__id() );
+
+		return hp\rest_response( 204 );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

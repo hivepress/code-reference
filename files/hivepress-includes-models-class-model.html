@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-model.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Abstract model.
+ *
+ * @package HivePress\Models
+ */
+
+namespace HivePress\Models;
+
+use HivePress\Helpers as hp;
+use HivePress\Traits;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Abstract model class.
+ */
+abstract class Model {
+	use Traits\Mutator {
+		set_property as _set_property;
+	}
+
+	use Traits\Meta {
+		get_meta as _get_meta;
+		set_meta as _set_meta;
+	}
+
+	/**
+	 * Object ID.
+	 *
+	 * @var int
+	 */
+	protected $id;
+
+	/**
+	 * Object fields.
+	 *
+	 * @var array
+	 */
+	protected $fields = [];
+
+	/**
+	 * Object values.
+	 *
+	 * @var array
+	 */
+	protected $values = [];
+
+	/**
+	 * Object errors.
+	 *
+	 * @var array
+	 */
+	protected $errors = [];
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;name&#039; =&gt; hp\get_class_name( static::class ),
+			],
+			$meta
+		);
+
+		// Filter meta.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the model class meta. The class meta stores properties related to the model type rather than a specific model object. The dynamic part of the hook refers to the model name (e.g. `listing`). You can check the available models in the `includes/models` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/models/{model_name}/meta
+			 * @param {array} $meta Class meta values.
+			 * @return {array} Class meta values.
+			 */
+			$meta = apply_filters( &#039;hivepress/v1/models/&#039; . hp\get_class_name( $class ) . &#039;/meta&#039;, $meta );
+		}
+
+		// Set meta.
+		static::_set_meta( $meta );
+	}
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Model arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Filter properties.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the model properties. The dynamic part of the hook refers to the model name (e.g. `listing`). You can check the available models in the `includes/models` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/models/{model_name}
+			 * @param {array} $props Model properties.
+			 * @param {object} $model Model object.
+			 * @return {array} Model properties.
+			 */
+			$args = apply_filters( &#039;hivepress/v1/models/&#039; . hp\get_class_name( $class ), $args, $this );
+		}
+
+		// Set properties.
+		foreach ( $args as $name =&gt; $value ) {
+			$this-&gt;_set_property( $name, $value, &#039;_&#039; );
+		}
+
+		// Bootstrap properties.
+		$this-&gt;boot();
+	}
+
+	/**
+	 * Bootstraps model properties.
+	 */
+	protected function boot() {}
+
+	/**
+	 * Sets model fields.
+	 *
+	 * @param array $fields Model fields.
+	 */
+	final protected function _set_fields( $fields ) {
+		$this-&gt;fields = [];
+
+		foreach ( $fields as $name =&gt; $args ) {
+
+			// Set alias.
+			if ( ! isset( $args[&#039;_alias&#039;] ) ) {
+				if ( hp\get_array_value( $args, &#039;_relation&#039; ) === &#039;many_to_many&#039; ) {
+					$args[&#039;_alias&#039;] = hp\call_class_method( &#039;\HivePress\Models\\&#039; . hp\get_array_value( $args, &#039;_model&#039; ), &#039;_get_meta&#039;, [ &#039;alias&#039; ] );
+				} elseif ( hp\get_array_value( $args, &#039;_external&#039; ) ) {
+					$args[&#039;_alias&#039;] = hp\prefix( $name );
+				}
+			}
+
+			// Set context.
+			$args[&#039;context&#039;][&#039;model&#039;] = static::_get_meta( &#039;name&#039; );
+
+			// Create field.
+			$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $args[&#039;type&#039;], [ array_merge( $args, [ &#039;name&#039; =&gt; $name ] ) ] );
+
+			// Add field.
+			if ( $field ) {
+				$this-&gt;fields[ $name ] = $field;
+			}
+		}
+	}
+
+	/**
+	 * Gets object fields.
+	 *
+	 * @return array
+	 */
+	public function _get_fields() {
+		return $this-&gt;fields;
+	}
+
+	/**
+	 * Catches calls to undefined static methods.
+	 *
+	 * @param string $name Method name.
+	 * @param array  $args Method arguments.
+	 * @throws \BadMethodCallException Invalid method.
+	 * @return mixed
+	 */
+	final public static function __callStatic( $name, $args ) {
+
+		// Get model query.
+		if ( &#039;query&#039; === $name ) {
+			return static::_get_query();
+		}
+
+		throw new \BadMethodCallException();
+	}
+
+	/**
+	 * Catches calls to undefined methods.
+	 *
+	 * @param string $name Method name.
+	 * @param array  $args Method arguments.
+	 * @throws \BadMethodCallException Invalid method.
+	 * @return mixed
+	 */
+	final public function __call( $name, $args ) {
+
+		// Get model query.
+		if ( &#039;query&#039; === $name ) {
+			return static::_get_query( $this );
+		}
+
+		// Get or set field value.
+		$prefixes = [
+			&#039;set&#039;,
+			&#039;get&#039;,
+			&#039;is&#039;,
+			&#039;has&#039;,
+			&#039;display&#039;,
+			&#039;save&#039;,
+		];
+
+		foreach ( $prefixes as $prefix ) {
+			if ( strpos( $name, $prefix . &#039;_&#039; ) === 0 ) {
+
+				// Get field name.
+				$action = ! in_array( $prefix, [ &#039;set&#039;, &#039;save&#039; ], true ) ? &#039;get&#039; : $prefix;
+				$field  = substr( $name, strlen( $prefix . &#039;_&#039; ) );
+
+				// Get field arguments.
+				if ( &#039;get&#039; === $action ) {
+					$args = [ $args ];
+
+					if ( &#039;display&#039; === $prefix ) {
+						$args[] = true;
+					}
+				}
+
+				array_unshift( $args, $field );
+
+				// Get field value.
+				$value = call_user_func_array( [ $this, &#039;_&#039; . $action . &#039;_value&#039; ], $args );
+
+				if ( &#039;set&#039; !== $action ) {
+					return $value;
+				}
+
+				return $this;
+			}
+		}
+
+		throw new \BadMethodCallException();
+	}
+
+	/**
+	 * Gets model query.
+	 *
+	 * @param object $model Model object.
+	 * @return object
+	 */
+	final protected static function _get_query( $model = null ) {
+
+		// Create model object.
+		if ( empty( $model ) ) {
+			$model = new static();
+		}
+
+		foreach ( array_reverse( hp\get_class_parents( static::class ) ) as $class ) {
+
+			// Create query.
+			$query = hp\create_class_instance( &#039;\HivePress\Queries\\&#039; . hp\get_class_name( $class ), [ [ &#039;model&#039; =&gt; $model ] ] );
+
+			if ( $query ) {
+				return $query;
+			}
+		}
+	}
+
+	/**
+	 * Sets field value.
+	 *
+	 * @param string $name Field name.
+	 * @param mixed  $value Field value.
+	 */
+	final protected function _set_value( $name, $value ) {
+		if ( isset( $this-&gt;fields[ $name ] ) ) {
+
+			// Get object IDs.
+			if ( $this-&gt;fields[ $name ]-&gt;get_arg( &#039;_model&#039; ) ) {
+				if ( is_array( $value ) ) {
+					$value = array_map(
+						function( $object ) {
+							return is_object( $object ) ? $object-&gt;get_id() : $object;
+						},
+						$value
+					);
+				} elseif ( is_object( $value ) ) {
+					$value = $value-&gt;get_id();
+				}
+			}
+
+			// Set field value.
+			$this-&gt;fields[ $name ]-&gt;set_value( $value );
+		}
+	}
+
+	/**
+	 * Gets field value.
+	 *
+	 * @param string $name Field name.
+	 * @param array  $args Field arguments.
+	 * @param bool   $display Format value for display?
+	 * @return mixed
+	 */
+	final protected function _get_value( $name, $args = [], $display = false ) {
+
+		// Get model field.
+		$field = null;
+
+		if ( strpos( $name, &#039;__&#039; ) &amp;&amp; ! isset( $this-&gt;fields[ $name ] ) ) {
+			list($name, $field) = explode( &#039;__&#039;, $name );
+		}
+
+		if ( isset( $this-&gt;fields[ $name ] ) ) {
+
+			// Get field value.
+			$value = null;
+
+			if ( $display &amp;&amp; empty( $field ) ) {
+				$value = $this-&gt;fields[ $name ]-&gt;get_display_value();
+			} else {
+				$value = $this-&gt;fields[ $name ]-&gt;get_value();
+
+				// Get model name.
+				$model = $this-&gt;fields[ $name ]-&gt;get_arg( &#039;_model&#039; );
+
+				if ( $model &amp;&amp; &#039;id&#039; !== $field ) {
+
+					// Get model objects.
+					if ( ! isset( $this-&gt;values[ $name ] ) ) {
+						if ( is_array( $value ) ) {
+							$value = array_filter(
+								array_map(
+									function( $id ) use ( $model ) {
+										return hivepress()-&gt;model-&gt;get_model_object( $model, $id );
+									},
+									$value
+								)
+							);
+						} else {
+							$value = hivepress()-&gt;model-&gt;get_model_object( $model, $value );
+						}
+
+						$this-&gt;values[ $name ] = is_null( $value ) ? false : $value;
+					} else {
+						$value = $this-&gt;values[ $name ];
+
+						if ( false === $value ) {
+							$value = null;
+						}
+					}
+
+					if ( $field ) {
+
+						// Get object method.
+						$method = ( $display ? &#039;display&#039; : &#039;get&#039; ) . &#039;_&#039; . $field;
+
+						// Get object values.
+						if ( is_array( $value ) ) {
+							$value = array_map(
+								function( $object ) use ( $method, $args ) {
+									return call_user_func_array( [ $object, $method ], $args );
+								},
+								$value
+							);
+						} elseif ( $value ) {
+							$value = call_user_func_array( [ $value, $method ], $args );
+						}
+					}
+				}
+			}
+
+			return $value;
+		}
+	}
+
+	/**
+	 * Sets object ID.
+	 *
+	 * @param int $id Object ID.
+	 * @return object
+	 */
+	final public function set_id( $id ) {
+		$this-&gt;id = absint( $id );
+
+		// Get fields.
+		$fields = array_map(
+			function( $field ) {
+				return array_merge(
+					$field-&gt;get_args(),
+					[
+						&#039;default&#039; =&gt; $field-&gt;get_value(),
+					]
+				);
+			},
+			$this-&gt;fields
+		);
+
+		// Filter fields.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters model fields. At the time of this hook the model object ID is already available. The dynamic part of the hook refers to the model name (e.g. `listing`). You can check the available models in the `includes/models` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/models/{model_name}/fields
+			 * @param {array} $fields Model fields.
+			 * @param {object} $model Model object.
+			 * @return {array} Model fields.
+			 */
+			$fields = apply_filters( &#039;hivepress/v1/models/&#039; . hp\get_class_name( $class ) . &#039;/fields&#039;, $fields, $this );
+		}
+
+		// Set fields.
+		$this-&gt;_set_fields( $fields );
+
+		return $this;
+	}
+
+	/**
+	 * Gets object ID.
+	 *
+	 * @return int
+	 */
+	final public function get_id() {
+		return $this-&gt;id;
+	}
+
+	/**
+	 * Adds object errors.
+	 *
+	 * @param mixed $errors Object errors.
+	 */
+	final protected function _add_errors( $errors ) {
+		$this-&gt;errors = array_merge( $this-&gt;errors, (array) $errors );
+	}
+
+	/**
+	 * Gets object errors.
+	 *
+	 * @return array
+	 */
+	final public function _get_errors() {
+		return $this-&gt;errors;
+	}
+
+	/**
+	 * Saves field value.
+	 *
+	 * @param string $name Field name.
+	 */
+	final protected function _save_value( $name ) {
+		return $this-&gt;save( [ $name ] );
+	}
+
+	/**
+	 * Sets field values.
+	 *
+	 * @param array $values Field values.
+	 * @return object
+	 */
+	final public function fill( $values ) {
+		unset( $values[&#039;id&#039;] );
+
+		foreach ( $values as $name =&gt; $value ) {
+			call_user_func( [ $this, &#039;set_&#039; . $name ], $value );
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Gets field values.
+	 *
+	 * @return array
+	 */
+	final public function serialize() {
+		$values = [];
+
+		foreach ( $this-&gt;fields as $name =&gt; $field ) {
+
+			// Get model field.
+			$field_name = $name;
+
+			if ( $field-&gt;get_arg( &#039;_model&#039; ) ) {
+				$field_name .= &#039;__id&#039;;
+			}
+
+			// Get field value.
+			$values[ $name ] = call_user_func( [ $this, &#039;get_&#039; . $field_name ] );
+		}
+
+		return $values;
+	}
+
+	/**
+	 * Validates field values.
+	 *
+	 * @param array $names Field names.
+	 * @return bool
+	 */
+	final public function validate( $names = [] ) {
+		$this-&gt;errors = [];
+
+		// Filter fields.
+		$fields = $this-&gt;fields;
+
+		if ( $names ) {
+			$fields = array_filter(
+				$fields,
+				function( $field ) use ( $names ) {
+					return in_array( $field-&gt;get_name(), $names, true );
+				}
+			);
+		}
+
+		// Validate fields.
+		foreach ( $fields as $field ) {
+			if ( ! $field-&gt;validate() ) {
+				$this-&gt;_add_errors( $field-&gt;get_errors() );
+			}
+		}
+
+		// Filter errors.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the model validation errors. With this hook, you can implement custom validation checks and add new error messages to the filtered array. The dynamic part of the hook refers to the model name (e.g. `listing`). You can check the available models in the `includes/models` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/models/{model_name}/errors
+			 * @param {array} $errors Model errors.
+			 * @param {object} $model Model object.
+			 * @return {array} Model errors.
+			 */
+			$this-&gt;errors = apply_filters( &#039;hivepress/v1/models/&#039; . hp\get_class_name( $class ) . &#039;/errors&#039;, $this-&gt;errors, $this );
+		}
+
+		return empty( $this-&gt;errors );
+	}
+
+	/**
+	 * Gets object.
+	 *
+	 * @param int $id Object ID.
+	 * @return mixed
+	 */
+	abstract public function get( $id );
+
+	/**
+	 * Saves object.
+	 *
+	 * @param array $names Field names.
+	 * @return bool
+	 */
+	abstract public function save( $names = [] );
+
+	/**
+	 * Deletes object.
+	 *
+	 * @param int $id Object ID.
+	 * @return bool
+	 */
+	abstract public function delete( $id = null );
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

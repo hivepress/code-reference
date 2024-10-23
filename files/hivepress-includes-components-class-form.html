@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-form.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Form component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Handles forms.
+ */
+final class Form extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Set field arguments.
+		add_filter( &#039;hivepress/v1/fields/field&#039;, [ $this, &#039;set_field_arguments&#039; ] );
+
+		// Set field options.
+		add_filter( &#039;hivepress/v1/fields/field/options&#039;, [ $this, &#039;set_field_options&#039; ], 10, 2 );
+
+		// Manage captcha.
+		if ( $this-&gt;is_captcha_enabled() ) {
+			add_filter( &#039;hivepress/v1/forms/form/meta&#039;, [ $this, &#039;set_captcha&#039; ] );
+			add_filter( &#039;hivepress/v1/forms/form&#039;, [ $this, &#039;add_captcha&#039; ], 10, 2 );
+			add_filter( &#039;hivepress/v1/forms/form/errors&#039;, [ $this, &#039;validate_captcha&#039; ], 10, 2 );
+		}
+
+		// Enqueue scripts.
+		add_action( &#039;admin_enqueue_scripts&#039;, [ $this, &#039;enqueue_scripts&#039; ] );
+		add_action( &#039;wp_enqueue_scripts&#039;, [ $this, &#039;enqueue_scripts&#039; ] );
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Gets field options.
+	 *
+	 * @param string $type Options type.
+	 * @param array  $args Option arguments.
+	 * @param mixed  $value Current value.
+	 * @return array
+	 */
+	protected function get_field_options( $type, $args, $value = null ) {
+		$options = [];
+
+		// Set method.
+		$method = &#039;get_&#039; . $type;
+
+		// Get options.
+		if ( method_exists( $this, $method ) ) {
+			$options = call_user_func_array( [ $this, $method ], [ $args, $value ] );
+		} else {
+			$options = hivepress()-&gt;get_config( $type );
+		}
+
+		return $options;
+	}
+
+	/**
+	 * Sets field arguments.
+	 *
+	 * @param array $args Field arguments.
+	 * @return array
+	 */
+	public function set_field_arguments( $args ) {
+		if ( isset( $args[&#039;options&#039;] ) &amp;&amp; ! is_array( $args[&#039;options&#039;] ) ) {
+
+			// Set attributes.
+			if ( &#039;icons&#039; === $args[&#039;options&#039;] ) {
+				$args[&#039;attributes&#039;][&#039;data-template&#039;] = &#039;icon&#039;;
+			}
+
+			// Set options.
+			if ( ! isset( $args[&#039;source&#039;] ) ) {
+				$args[&#039;options&#039;] = $this-&gt;get_field_options( $args[&#039;options&#039;], hp\get_array_value( $args, &#039;option_args&#039;, [] ) );
+			}
+		}
+
+		return $args;
+	}
+
+	/**
+	 * Sets field options.
+	 *
+	 * @param array  $options Field options.
+	 * @param object $field Field object.
+	 * @return array
+	 */
+	public function set_field_options( $options, $field ) {
+		return $this-&gt;get_field_options(
+			$field-&gt;get_arg( &#039;options&#039; ),
+			(array) $field-&gt;get_arg( &#039;option_args&#039; ),
+			$field-&gt;get_value()
+		);
+	}
+
+	/**
+	 * Gets user objects.
+	 *
+	 * @param array $args User arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_users( $args, $value ) {
+
+		// Set default arguments.
+		$args = array_merge(
+			[
+				&#039;fields&#039; =&gt; [ &#039;ID&#039;, &#039;user_login&#039; ],
+			],
+			$args
+		);
+
+		// Set IDs.
+		if ( $value ) {
+			$args[&#039;include&#039;] = (array) $value;
+		}
+
+		// Get users.
+		$users = wp_list_pluck( get_users( $args ), &#039;user_login&#039;, &#039;ID&#039; );
+
+		return $users;
+	}
+
+	/**
+	 * Gets post objects.
+	 *
+	 * @param array $args Post arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_posts( $args, $value ) {
+
+		// Set default arguments.
+		$args = array_merge(
+			[
+				&#039;post_type&#039;      =&gt; &#039;post&#039;,
+				&#039;post_status&#039;    =&gt; &#039;publish&#039;,
+				&#039;posts_per_page&#039; =&gt; -1,
+				&#039;orderby&#039;        =&gt; &#039;title&#039;,
+				&#039;order&#039;          =&gt; &#039;ASC&#039;,
+			],
+			$args
+		);
+
+		// Set IDs.
+		if ( $value ) {
+			$args[&#039;post__in&#039;] = (array) $value;
+		}
+
+		// Get options.
+		$options = [];
+
+		if ( post_type_exists( $args[&#039;post_type&#039;] ) ) {
+
+			// Get cache group.
+			$cache_group = hivepress()-&gt;model-&gt;get_cache_group( &#039;post&#039;, $args[&#039;post_type&#039;] );
+
+			// Get cached options.
+			$options = null;
+
+			if ( strpos( $args[&#039;post_type&#039;], &#039;hp_&#039; ) === 0 ) {
+				$options = hivepress()-&gt;cache-&gt;get_cache( array_merge( $args, [ &#039;fields&#039; =&gt; &#039;titles&#039; ] ), $cache_group );
+			}
+
+			if ( is_null( $options ) ) {
+				$options = wp_list_pluck( get_posts( $args ), &#039;post_title&#039;, &#039;ID&#039; );
+
+				// Cache options.
+				if ( strpos( $args[&#039;post_type&#039;], &#039;hp_&#039; ) === 0 &amp;&amp; count( $options ) &lt;= 1000 ) {
+					hivepress()-&gt;cache-&gt;set_cache( array_merge( $args, [ &#039;fields&#039; =&gt; &#039;titles&#039; ] ), $cache_group, $options );
+				}
+			}
+		}
+
+		return $options;
+	}
+
+	/**
+	 * Gets term objects.
+	 *
+	 * @param array $args Term arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_terms( $args, $value ) {
+
+		// Set default arguments.
+		$args = array_merge(
+			[
+				&#039;taxonomy&#039;   =&gt; &#039;category&#039;,
+				&#039;hide_empty&#039; =&gt; false,
+			],
+			$args
+		);
+
+		// Set IDs.
+		if ( $value ) {
+			$args[&#039;include&#039;] = (array) $value;
+		}
+
+		// Get options.
+		$options = [];
+
+		if ( taxonomy_exists( $args[&#039;taxonomy&#039;] ) ) {
+
+			// Get cache group.
+			$cache_group = hivepress()-&gt;model-&gt;get_cache_group( &#039;term&#039;, $args[&#039;taxonomy&#039;] );
+
+			// Get cached options.
+			$options = null;
+
+			if ( strpos( $args[&#039;taxonomy&#039;], &#039;hp_&#039; ) === 0 ) {
+				$options = hivepress()-&gt;cache-&gt;get_cache( $args, $cache_group );
+			}
+
+			if ( is_null( $options ) ) {
+				$options = [];
+
+				// Set custom order.
+				if ( strpos( $args[&#039;taxonomy&#039;], &#039;hp_&#039; ) === 0 &amp;&amp; ! isset( $args[&#039;orderby&#039;] ) &amp;&amp; get_terms(
+					array_merge(
+						$args,
+						[
+							&#039;number&#039;     =&gt; 1,
+							&#039;fields&#039;     =&gt; &#039;ids&#039;,
+
+							&#039;meta_query&#039; =&gt; [
+								[
+									&#039;key&#039;     =&gt; &#039;hp_sort_order&#039;,
+									&#039;value&#039;   =&gt; 0,
+									&#039;compare&#039; =&gt; &#039;&gt;&#039;,
+									&#039;type&#039;    =&gt; &#039;NUMERIC&#039;,
+								],
+							],
+						]
+					)
+				) ) {
+
+					// Get terms.
+					$terms = get_terms(
+						array_merge(
+							$args,
+							[
+								&#039;orderby&#039;    =&gt; &#039;meta_value_num&#039;,
+
+								&#039;meta_query&#039; =&gt; [
+									&#039;relation&#039; =&gt; &#039;OR&#039;,
+
+									[
+										&#039;key&#039;     =&gt; &#039;hp_sort_order&#039;,
+										&#039;type&#039;    =&gt; &#039;NUMERIC&#039;,
+										&#039;compare&#039; =&gt; &#039;EXISTS&#039;,
+									],
+
+									[
+										&#039;key&#039;     =&gt; &#039;hp_sort_order&#039;,
+										&#039;type&#039;    =&gt; &#039;NUMERIC&#039;,
+										&#039;compare&#039; =&gt; &#039;NOT EXISTS&#039;,
+									],
+								],
+							]
+						)
+					);
+				} else {
+
+					// Get terms.
+					$terms = get_terms( $args );
+				}
+
+				// Add options.
+				foreach ( $terms as $term ) {
+					$options[ $term-&gt;term_id ] = [
+						&#039;label&#039;  =&gt; $term-&gt;name,
+						&#039;parent&#039; =&gt; $term-&gt;parent ? $term-&gt;parent : null,
+					];
+				}
+
+				// Cache options.
+				if ( strpos( $args[&#039;taxonomy&#039;], &#039;hp_&#039; ) === 0 &amp;&amp; count( $options ) &lt;= 1000 ) {
+					hivepress()-&gt;cache-&gt;set_cache( $args, $cache_group, $options );
+				}
+			}
+		}
+
+		return $options;
+	}
+
+	/**
+	 * Gets form names.
+	 *
+	 * @param array $args Form arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_forms( $args, $value ) {
+		$options = [];
+
+		foreach ( hivepress()-&gt;get_classes( &#039;forms&#039; ) as $form_name =&gt; $form ) {
+			if ( $form::get_meta( &#039;label&#039; ) &amp;&amp; ! array_diff( $args, array_intersect_key( $form::get_meta(), $args ) ) ) {
+				$options[ $form_name ] = $form::get_meta( &#039;label&#039; );
+			}
+		}
+
+		asort( $options );
+
+		return $options;
+	}
+
+	/**
+	 * Gets field names.
+	 *
+	 * @param array $args Field arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_fields( $args, $value ) {
+		$options = [];
+
+		foreach ( hivepress()-&gt;get_classes( &#039;fields&#039; ) as $field_name =&gt; $field ) {
+			if ( $field::get_meta( &#039;label&#039; ) &amp;&amp; ! array_diff( $args, array_intersect_key( $field::get_meta(), $args ) ) ) {
+				$options[ $field_name ] = $field::get_meta( &#039;label&#039; );
+			}
+		}
+
+		asort( $options );
+
+		return $options;
+	}
+
+	/**
+	 * Gets MIME types.
+	 *
+	 * @param array $args MIME type arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_mime_types( $args, $value ) {
+		return get_allowed_mime_types();
+	}
+
+	/**
+	 * Gets template names.
+	 *
+	 * @param array $args Template arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_templates( $args, $value ) {
+		$options = [];
+
+		foreach ( hivepress()-&gt;get_classes( &#039;templates&#039; ) as $template_name =&gt; $template ) {
+			if ( $template::get_meta( &#039;label&#039; ) ) {
+				$options[ $template_name ] = $template::get_meta( &#039;label&#039; );
+			}
+		}
+
+		asort( $options );
+
+		return $options;
+	}
+
+	/**
+	 * Gets days of the week.
+	 *
+	 * @param array $args Day arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_days( $args, $value ) {
+		return array_map(
+			function( $day ) {
+				return date_i18n( &#039;D&#039;, strtotime( $day ) );
+			},
+			[
+				1 =&gt; &#039;monday&#039;,
+				2 =&gt; &#039;tuesday&#039;,
+				3 =&gt; &#039;wednesday&#039;,
+				4 =&gt; &#039;thursday&#039;,
+				5 =&gt; &#039;friday&#039;,
+				6 =&gt; &#039;saturday&#039;,
+				0 =&gt; &#039;sunday&#039;,
+			]
+		);
+	}
+
+	/**
+	 * Gets time zones.
+	 *
+	 * @return array
+	 */
+	protected function get_timezones() {
+
+		// Load textdomain.
+		if ( ! is_textdomain_loaded( &#039;continents-cities&#039; ) ) {
+			load_textdomain( &#039;continents-cities&#039;, WP_LANG_DIR . &#039;/continents-cities-&#039; . get_locale() . &#039;.mo&#039; );
+		}
+
+		// Get timezones.
+		$timezones = [];
+
+		foreach ( timezone_identifiers_list() as $name ) {
+			$labels = [];
+
+			foreach ( explode( &#039;/&#039;, str_replace( &#039;_&#039;, &#039; &#039;, $name ) ) as $label ) {
+				$labels[] = translate( $label, &#039;continents-cities&#039; );
+			}
+
+			if ( count( $labels ) &gt; 1 ) {
+				array_shift( $labels );
+			}
+
+			$timezones[ $name ] = implode( &#039; - &#039;, $labels );
+		}
+
+		// Sort timezones.
+		asort( $timezones );
+
+		return $timezones;
+	}
+
+	/**
+	 * Gets email names.
+	 *
+	 * @param array $args Email arguments.
+	 * @param mixed $value Current value.
+	 * @return array
+	 */
+	protected function get_emails( $args, $value ) {
+		$options = [];
+
+		foreach ( hivepress()-&gt;get_classes( &#039;emails&#039; ) as $email_name =&gt; $email ) {
+			if ( $email::get_meta( &#039;label&#039; ) ) {
+				$options[ $email_name ] = $email::get_meta( &#039;label&#039; );
+			}
+		}
+
+		asort( $options );
+
+		return $options;
+	}
+
+	/**
+	 * Checks if captcha is enabled.
+	 *
+	 * @return bool
+	 */
+	protected function is_captcha_enabled() {
+		return get_option( &#039;hp_recaptcha_site_key&#039; ) &amp;&amp; get_option( &#039;hp_recaptcha_secret_key&#039; );
+	}
+
+	/**
+	 * Sets captcha flag.
+	 *
+	 * @param string $meta Class meta.
+	 * @return array
+	 */
+	public function set_captcha( $meta ) {
+		if ( isset( $meta[&#039;captcha&#039;] ) &amp;&amp; in_array( $meta[&#039;name&#039;], (array) get_option( &#039;hp_recaptcha_forms&#039; ), true ) ) {
+
+			// Set captcha flag.
+			$meta[&#039;captcha&#039;] = true;
+		}
+
+		return $meta;
+	}
+
+	/**
+	 * Adds captcha field.
+	 *
+	 * @param array  $args Form arguments.
+	 * @param object $form Form object.
+	 * @return array
+	 */
+	public function add_captcha( $args, $form ) {
+		if ( $form::get_meta( &#039;captcha&#039; ) ) {
+
+			// Add captcha field.
+			$args[&#039;fields&#039;][&#039;_captcha&#039;] = [
+				&#039;type&#039;      =&gt; &#039;captcha&#039;,
+				&#039;_separate&#039; =&gt; true,
+				&#039;_order&#039;    =&gt; 10000,
+			];
+		}
+
+		return $args;
+	}
+
+	/**
+	 * Validates captcha.
+	 *
+	 * @param array  $errors Form errors.
+	 * @param object $form Form object.
+	 * @return array
+	 */
+	public function validate_captcha( $errors, $form ) {
+		if ( $form::get_meta( &#039;captcha&#039; ) ) {
+
+			// Get ReCAPTCHA response.
+			$response = json_decode(
+				wp_remote_retrieve_body(
+					wp_remote_get(
+						&#039;https://www.google.com/recaptcha/api/siteverify?&#039; . http_build_query(
+							[
+								&#039;secret&#039;   =&gt; get_option( &#039;hp_recaptcha_secret_key&#039; ),
+								&#039;response&#039; =&gt; sanitize_text_field( hp\get_array_value( $_POST, &#039;g-recaptcha-response&#039; ) ),
+							]
+						)
+					)
+				),
+				true
+			);
+
+			// Add form error.
+			if ( ! hp\get_array_value( $response, &#039;success&#039;, false ) ) {
+				$errors[] = esc_html__( &#039;Captcha is invalid.&#039;, &#039;hivepress&#039; );
+			}
+		}
+
+		return $errors;
+	}
+
+	/**
+	 * Enqueues scripts.
+	 */
+	public function enqueue_scripts() {
+
+		// Get language.
+		$language = hivepress()-&gt;translator-&gt;get_language();
+
+		// Enqueue Flatpickr.
+		$filepath = &#039;/node_modules/flatpickr/dist/l10n/&#039; . ( &#039;el&#039; === $language ? &#039;gr&#039; : $language ) . &#039;.js&#039;;
+
+		if ( file_exists( hivepress()-&gt;get_path() . $filepath ) ) {
+			wp_enqueue_script(
+				&#039;flatpickr-&#039; . $language,
+				hivepress()-&gt;get_url() . $filepath,
+				[ &#039;flatpickr&#039; ],
+				hivepress()-&gt;get_version(),
+				true
+			);
+		}
+
+		if ( ! is_admin() ) {
+
+			// Enqueue Select2.
+			$filepath = &#039;/node_modules/select2/dist/js/i18n/&#039; . $language . &#039;.js&#039;;
+
+			if ( file_exists( hivepress()-&gt;get_path() . $filepath ) ) {
+				wp_enqueue_script(
+					&#039;select2-&#039; . $language,
+					hivepress()-&gt;get_url() . $filepath,
+					[ &#039;select2-full&#039; ],
+					hivepress()-&gt;get_version(),
+					true
+				);
+			}
+
+			// Enqueue ReCAPTCHA.
+			if ( $this-&gt;is_captcha_enabled() ) {
+				wp_enqueue_script(
+					&#039;recaptcha&#039;,
+					&#039;https://www.google.com/recaptcha/api.js&#039;,
+					[],
+					null,
+					false
+				);
+
+				wp_script_add_data( &#039;recaptcha&#039;, &#039;async&#039;, true );
+				wp_script_add_data( &#039;recaptcha&#039;, &#039;defer&#039;, true );
+			}
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-vendor.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Vendor component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+use HivePress\Models;
+use HivePress\Forms;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Handles vendors.
+ */
+final class Vendor extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Create listing.
+		add_action( &#039;hivepress/v1/models/listing/create&#039;, [ $this, &#039;create_listing&#039; ], 10, 2 );
+
+		// Update user.
+		add_action( &#039;hivepress/v2/models/user/update&#039;, [ $this, &#039;update_user&#039; ], 100, 2 );
+
+		// Update vendor.
+		add_action( &#039;hivepress/v1/models/vendor/update&#039;, [ $this, &#039;update_vendor&#039; ], 10, 2 );
+		add_action( &#039;hivepress/v1/models/vendor/update_status&#039;, [ $this, &#039;update_vendor_status&#039; ], 10, 4 );
+
+		// Add vendor fields.
+		add_filter( &#039;hivepress/v1/forms/user_update&#039;, [ $this, &#039;add_vendor_fields&#039; ], 100, 2 );
+
+		// Update vendor fields.
+		add_filter( &#039;hivepress/v1/forms/user_update/errors&#039;, [ $this, &#039;update_vendor_fields&#039; ], 100, 2 );
+
+		// Alter post types.
+		add_filter( &#039;hivepress/v1/post_types&#039;, [ $this, &#039;alter_post_types&#039; ] );
+
+		if ( ! is_admin() ) {
+
+			// Set request context.
+			add_filter( &#039;hivepress/v1/components/request/context&#039;, [ $this, &#039;set_request_context&#039; ] );
+
+			// Alter templates.
+			add_filter( &#039;hivepress/v1/templates/listing_view_page&#039;, [ $this, &#039;alter_listing_view_page&#039; ] );
+			add_filter( &#039;hivepress/v1/templates/user_edit_settings_page/blocks&#039;, [ $this, &#039;alter_user_edit_settings_page&#039; ], 100, 2 );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Updates listings.
+	 *
+	 * @param object $vendor Vendor object.
+	 * @param array  $listings Listing objects.
+	 */
+	protected function update_listings( $vendor, $listings ) {
+
+		// Get attributes.
+		$attributes = array_filter(
+			hivepress()-&gt;attribute-&gt;get_attributes( &#039;listing&#039; ),
+			function( $attribute ) {
+				return hp\get_array_value( $attribute, &#039;synced&#039; );
+			}
+		);
+
+		if ( ! $attributes ) {
+			return;
+		}
+
+		// Get values.
+		$values = array_intersect_key( $vendor-&gt;serialize(), $attributes );
+
+		foreach ( $attributes as $attribute_name =&gt; $attribute ) {
+			if ( ! isset( $attribute[&#039;edit_field&#039;][&#039;options&#039;] ) || isset( $attribute[&#039;edit_field&#039;][&#039;_external&#039;] ) ) {
+				continue;
+			}
+
+			// Get field.
+			$attribute_field = hp\get_array_value( $vendor-&gt;_get_fields(), $attribute_name );
+
+			if ( ! $attribute_field || ! $attribute_field-&gt;get_value() ) {
+				continue;
+			}
+
+			// Get term names.
+			$term_names = get_terms(
+				[
+					&#039;taxonomy&#039;   =&gt; $attribute_field-&gt;get_arg( &#039;option_args&#039; )[&#039;taxonomy&#039;],
+					&#039;include&#039;    =&gt; (array) $attribute_field-&gt;get_value(),
+					&#039;fields&#039;     =&gt; &#039;names&#039;,
+					&#039;hide_empty&#039; =&gt; false,
+				]
+			);
+
+			if ( ! $term_names ) {
+				continue;
+			}
+
+			// Get term IDs.
+			$term_ids = get_terms(
+				[
+					&#039;taxonomy&#039;   =&gt; $attribute[&#039;edit_field&#039;][&#039;option_args&#039;][&#039;taxonomy&#039;],
+					&#039;name&#039;       =&gt; $term_names,
+					&#039;fields&#039;     =&gt; &#039;ids&#039;,
+					&#039;hide_empty&#039; =&gt; false,
+				]
+			);
+
+			if ( ! $term_ids ) {
+				continue;
+			}
+
+			// Set value.
+			$values[ $attribute_name ] = $term_ids;
+		}
+
+		// Update listings.
+		foreach ( $listings as $listing ) {
+			if ( array_intersect_key( $listing-&gt;serialize(), $attributes ) !== $values ) {
+				$listing-&gt;fill( $values )-&gt;save( array_keys( $values ) );
+			}
+		}
+	}
+
+	/**
+	 * Creates listing.
+	 *
+	 * @param int    $listing_id Listing ID.
+	 * @param object $listing Listing object.
+	 */
+	public function create_listing( $listing_id, $listing ) {
+
+		// Get vendor.
+		$vendor = $listing-&gt;get_vendor();
+
+		if ( ! $vendor ) {
+			return;
+		}
+
+		// Update listing.
+		$this-&gt;update_listings( $vendor, [ $listing ] );
+	}
+
+	/**
+	 * Updates vendor.
+	 *
+	 * @param int    $vendor_id Vendor ID.
+	 * @param object $vendor Vendor object.
+	 */
+	public function update_vendor( $vendor_id, $vendor ) {
+
+		// Remove action.
+		remove_action( &#039;hivepress/v1/models/vendor/update&#039;, [ $this, &#039;update_vendor&#039; ] );
+
+		// Get listings.
+		$listings = Models\Listing::query()-&gt;filter(
+			[
+				&#039;status__in&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;pending&#039;, &#039;publish&#039; ],
+				&#039;user&#039;       =&gt; $vendor-&gt;get_user__id(),
+			]
+		)-&gt;get()
+		-&gt;serialize();
+
+		// Update listings.
+		$this-&gt;update_listings( $vendor, $listings );
+	}
+
+	/**
+	 * Updates vendor status.
+	 *
+	 * @param int    $vendor_id Vendor ID.
+	 * @param string $new_status New status.
+	 * @param string $old_status Old status.
+	 * @param object $vendor Vendor object.
+	 */
+	public function update_vendor_status( $vendor_id, $new_status, $old_status, $vendor ) {
+
+		// Check user.
+		if ( ! $vendor-&gt;get_user__id() ) {
+			return;
+		}
+
+		if ( &#039;publish&#039; === $new_status ) {
+
+			// Get user object.
+			$user_object = get_userdata( $vendor-&gt;get_user__id() );
+
+			// Update user role.
+			if ( $user_object &amp;&amp; ! user_can( $user_object, &#039;edit_posts&#039; ) ) {
+				$user_object-&gt;set_role( &#039;contributor&#039; );
+			}
+		}
+	}
+
+	/**
+	 * Updates user.
+	 *
+	 * @param int    $user_id User ID.
+	 * @param object $user User object.
+	 */
+	public function update_user( $user_id, $user ) {
+
+		// Get vendor.
+		$vendor = Models\Vendor::query()-&gt;filter(
+			[
+				&#039;status&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ],
+				&#039;user&#039;   =&gt; $user_id,
+			]
+		)-&gt;get_first();
+
+		if ( ! $vendor ) {
+			return;
+		}
+
+		// Get slug.
+		$slug = $user-&gt;get_username();
+
+		// Get name.
+		$name = $user-&gt;get_display_name();
+
+		// Get name attribute.
+		$name_attribute_id = get_option( &#039;hp_vendor_display_name&#039; );
+
+		if ( $name_attribute_id ) {
+			$name_attribute = hivepress()-&gt;attribute-&gt;get_attribute_name( get_post_field( &#039;post_name&#039;, $name_attribute_id ) );
+
+			if ( $name_attribute ) {
+
+				// Get attribute value.
+				$name_attribute_value = hp\get_array_value( $vendor-&gt;serialize(), $name_attribute );
+
+				// Set name and slug.
+				if ( $name_attribute_value ) {
+					$name = $name_attribute_value;
+					$slug = $name;
+				}
+			}
+		}
+
+		// Update vendor.
+		$vendor-&gt;fill(
+			[
+				&#039;name&#039;        =&gt; $name,
+				&#039;description&#039; =&gt; $user-&gt;get_description(),
+				&#039;slug&#039;        =&gt; $slug,
+				&#039;image&#039;       =&gt; $user-&gt;get_image__id(),
+			]
+		)-&gt;save(
+			[
+				&#039;name&#039;,
+				&#039;description&#039;,
+				&#039;slug&#039;,
+				&#039;image&#039;,
+			]
+		);
+	}
+
+	/**
+	 * Adds vendor fields.
+	 *
+	 * @param array  $form_args Form arguments.
+	 * @param object $form Form object.
+	 * @return array
+	 */
+	public function add_vendor_fields( $form_args, $form ) {
+
+		// Get user.
+		$user = $form-&gt;get_model();
+
+		if ( $user-&gt;get_id() ) {
+
+			// Get vendor.
+			$vendor = Models\Vendor::query()-&gt;filter(
+				[
+					&#039;status&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ],
+					&#039;user&#039;   =&gt; $user-&gt;get_id(),
+				]
+			)-&gt;get_first();
+
+			if ( $vendor &amp;&amp; ( $vendor-&gt;get_status() === &#039;publish&#039; || $form::get_meta( &#039;name&#039; ) === &#039;user_update_profile&#039; ) ) {
+
+				// Get form.
+				$vendor_form = hp\create_class_instance( &#039;\HivePress\Forms\\&#039; . ( &#039;user_update_profile&#039; === $form::get_meta( &#039;name&#039; ) ? &#039;vendor_submit&#039; : &#039;vendor_update&#039; ), [ [ &#039;model&#039; =&gt; $vendor ] ] );
+
+				// Add fields.
+				foreach ( $vendor_form-&gt;get_fields() as $field_name =&gt; $field ) {
+					if ( ! isset( $form_args[&#039;fields&#039;][ $field_name ] ) ) {
+						$field_args = $field-&gt;get_args();
+
+						if ( &#039;attachment_upload&#039; === $field_args[&#039;type&#039;] ) {
+							$field_args[&#039;attributes&#039;][&#039;data-model&#039;] = &#039;vendor&#039;;
+							$field_args[&#039;attributes&#039;][&#039;data-id&#039;]    = $vendor-&gt;get_id();
+						}
+
+						$form_args[&#039;fields&#039;][ $field_name ] = array_merge(
+							$field_args,
+							[
+								&#039;default&#039;   =&gt; $field-&gt;get_value(),
+								&#039;_separate&#039; =&gt; true,
+							]
+						);
+					}
+				}
+			}
+		}
+
+		return $form_args;
+	}
+
+	/**
+	 * Updates vendor fields.
+	 *
+	 * @param array  $errors Form errors.
+	 * @param object $form Form object.
+	 * @return array
+	 */
+	public function update_vendor_fields( $errors, $form ) {
+		if ( empty( $errors ) ) {
+
+			// Get user.
+			$user = $form-&gt;get_model();
+
+			if ( $user-&gt;get_id() ) {
+
+				// Get vendor.
+				$vendor = Models\Vendor::query()-&gt;filter(
+					[
+						&#039;status&#039; =&gt; [ &#039;auto-draft&#039;, &#039;draft&#039;, &#039;publish&#039; ],
+						&#039;user&#039;   =&gt; $user-&gt;get_id(),
+					]
+				)-&gt;get_first();
+
+				if ( $vendor &amp;&amp; ( $vendor-&gt;get_status() === &#039;publish&#039; || $form::get_meta( &#039;name&#039; ) === &#039;user_update_profile&#039; ) ) {
+
+					// Get fields.
+					$vendor_fields = array_keys( ( new Forms\Vendor_Update( [ &#039;model&#039; =&gt; $vendor ] ) )-&gt;get_fields() );
+
+					if ( $vendor_fields ) {
+
+						// Get values.
+						$vendor_values = array_map(
+							function( $field ) {
+								return $field-&gt;get_value();
+							},
+							array_filter(
+								$form-&gt;get_fields(),
+								function( $field ) use ( $vendor_fields ) {
+									return ! $field-&gt;is_disabled() &amp;&amp; in_array( $field-&gt;get_name(), $vendor_fields, true ) &amp;&amp; hp\get_array_value( $field-&gt;get_args(), &#039;_separate&#039; );
+								}
+							)
+						);
+
+						// Update vendor.
+						if ( ! $vendor-&gt;fill( $vendor_values )-&gt;save( $vendor_fields ) ) {
+							$errors = array_merge( $errors, $vendor-&gt;_get_errors() );
+						}
+					}
+				}
+			}
+		}
+
+		return $errors;
+	}
+
+	/**
+	 * Sets request context.
+	 *
+	 * @param array $context Request context.
+	 * @return array
+	 */
+	public function set_request_context( $context ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_posts&#039; ) ) {
+			return $context;
+		}
+
+		// Get cached vendor ID.
+		$vendor_id = hivepress()-&gt;cache-&gt;get_user_cache( get_current_user_id(), &#039;vendor_id&#039;, &#039;models/vendor&#039; );
+
+		if ( is_null( $vendor_id ) ) {
+
+			// Get vendor ID.
+			$vendor_id = (int) Models\Vendor::query()-&gt;filter(
+				[
+					&#039;status&#039; =&gt; &#039;publish&#039;,
+					&#039;user&#039;   =&gt; get_current_user_id(),
+				]
+			)-&gt;get_first_id();
+
+			// Cache vendor ID.
+			hivepress()-&gt;cache-&gt;set_user_cache( get_current_user_id(), &#039;vendor_id&#039;, &#039;models/vendor&#039;, $vendor_id );
+		}
+
+		// Set request context.
+		$context[&#039;vendor_id&#039;] = $vendor_id;
+
+		return $context;
+	}
+
+	/**
+	 * Alters post types.
+	 *
+	 * @param array $post_types Post type arguments.
+	 * @return array
+	 */
+	public function alter_post_types( $post_types ) {
+		$post_types[&#039;vendor&#039;][&#039;public&#039;] = (bool) get_option( &#039;hp_vendor_enable_display&#039; );
+
+		return $post_types;
+	}
+
+	/**
+	 * Alters listing view page.
+	 *
+	 * @param array $template Template arguments.
+	 * @return array
+	 */
+	public function alter_listing_view_page( $template ) {
+
+		// @todo remove temporary fix after adding context to the editor.
+		if ( hp\is_rest() ) {
+			return $template;
+		}
+
+		// Get vendor.
+		$vendor = hivepress()-&gt;request-&gt;get_context( &#039;vendor&#039; );
+
+		if ( ! get_option( &#039;hp_vendor_enable_display&#039; ) || ! $vendor || $vendor-&gt;get_status() !== &#039;publish&#039; ) {
+
+			// Hide vendor.
+			hivepress()-&gt;template-&gt;fetch_block( $template, &#039;listing_vendor&#039; );
+		}
+
+		return $template;
+	}
+
+	/**
+	 * Alters user edit settings page.
+	 *
+	 * @param array  $blocks Template arguments.
+	 * @param object $template Template object.
+	 * @return array
+	 */
+	public function alter_user_edit_settings_page( $blocks, $template ) {
+
+		// Get vendor ID.
+		$vendor_id = hivepress()-&gt;request-&gt;get_context( &#039;vendor_id&#039; );
+
+		if ( ! $vendor_id ) {
+			return $blocks;
+		}
+
+		// Get vendor.
+		$vendor = Models\Vendor::query()-&gt;get_by_id( $vendor_id );
+
+		if ( ! $vendor || $vendor-&gt;get_status() !== &#039;publish&#039; ) {
+			return $blocks;
+		}
+
+		// Set template context.
+		$template-&gt;set_context( &#039;vendor&#039;, $vendor );
+
+		return hivepress()-&gt;template-&gt;merge_blocks(
+			$blocks,
+			[
+				&#039;user_update_form&#039; =&gt; [
+					&#039;footer&#039; =&gt; [
+						&#039;form_actions&#039; =&gt; [
+							&#039;blocks&#039; =&gt; [
+								&#039;vendor_view_link&#039; =&gt; [
+									&#039;type&#039;   =&gt; &#039;part&#039;,
+									&#039;path&#039;   =&gt; &#039;vendor/edit/page/vendor-view-link&#039;,
+									&#039;_order&#039; =&gt; 5,
+								],
+							],
+						],
+					],
+				],
+			]
+		);
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

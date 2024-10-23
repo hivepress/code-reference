@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-form.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Abstract form.
+ *
+ * @package HivePress\Forms
+ */
+
+namespace HivePress\Forms;
+
+use HivePress\Helpers as hp;
+use HivePress\Traits;
+use HivePress\Fields;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Abstract form class.
+ */
+abstract class Form {
+	use Traits\Mutator;
+	use Traits\Meta;
+
+	/**
+	 * Form description.
+	 *
+	 * @var string
+	 */
+	protected $description;
+
+	/**
+	 * Success message.
+	 *
+	 * @var string
+	 */
+	protected $message;
+
+	/**
+	 * Action URL.
+	 *
+	 * @var string
+	 */
+	protected $action = &#039;&#039;;
+
+	/**
+	 * HTTP method.
+	 *
+	 * @var string
+	 */
+	protected $method = &#039;POST&#039;;
+
+	/**
+	 * Redirect on success?
+	 *
+	 * @var mixed
+	 */
+	protected $redirect;
+
+	/**
+	 * Reset on success?
+	 *
+	 * @var bool
+	 */
+	protected $reset = false;
+
+	/**
+	 * Form fields.
+	 *
+	 * @var array
+	 */
+	protected $fields = [];
+
+	/**
+	 * Form button.
+	 *
+	 * @var object
+	 */
+	protected $button;
+
+	/**
+	 * Form errors.
+	 *
+	 * @var array
+	 */
+	protected $errors = [];
+
+	/**
+	 * HTML attributes.
+	 *
+	 * @var array
+	 */
+	protected $attributes = [];
+
+	/**
+	 * Header HTML.
+	 *
+	 * @var string
+	 */
+	protected $header;
+
+	/**
+	 * Footer HTML.
+	 *
+	 * @var string
+	 */
+	protected $footer;
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;name&#039; =&gt; hp\get_class_name( static::class ),
+			],
+			$meta
+		);
+
+		// Filter meta.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the form class meta. The class meta stores properties related to the form type rather than a specific form instance. For example, it stores the form captcha settings. The dynamic part of the hook refers to the form name (e.g. `listing_update`). You can check the available forms in the `includes/forms` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/forms/{form_name}/meta
+			 * @param {array} $meta Class meta values.
+			 * @return {array} Class meta values.
+			 */
+			$meta = apply_filters( &#039;hivepress/v1/forms/&#039; . hp\get_class_name( $class ) . &#039;/meta&#039;, $meta );
+		}
+
+		// Set meta.
+		static::set_meta( $meta );
+	}
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Form arguments.
+	 */
+	public function __construct( $args = [] ) {
+		$args = hp\merge_arrays(
+			[
+				&#039;button&#039; =&gt; [
+					&#039;label&#039;        =&gt; esc_html__( &#039;Submit&#039;, &#039;hivepress&#039; ),
+					&#039;display_type&#039; =&gt; &#039;submit&#039;,
+
+					&#039;attributes&#039;   =&gt; [
+						&#039;class&#039; =&gt; [ &#039;hp-form__button&#039;, &#039;button-primary&#039;, &#039;alt&#039; ],
+					],
+				],
+			],
+			$args
+		);
+
+		// Filter properties.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the form properties. The dynamic part of the hook refers to the form name (e.g. `listing_update`). You can check the available forms in the `includes/forms` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/forms/{form_name}
+			 * @param {array} $props Form properties.
+			 * @param {object} $form Form object.
+			 * @return {array} Form properties.
+			 */
+			$args = apply_filters( &#039;hivepress/v1/forms/&#039; . hp\get_class_name( $class ), $args, $this );
+		}
+
+		// Set properties.
+		foreach ( $args as $name =&gt; $value ) {
+			$this-&gt;set_property( $name, $value );
+		}
+
+		// Bootstrap properties.
+		$this-&gt;boot();
+	}
+
+	/**
+	 * Bootstraps form properties.
+	 */
+	protected function boot() {
+		$attributes = [];
+
+		// Set message.
+		if ( $this-&gt;message ) {
+			$attributes[&#039;data-message&#039;] = $this-&gt;message;
+		}
+
+		// Set action.
+		if ( strpos( $this-&gt;action, get_rest_url() ) === 0 ) {
+			$attributes[&#039;action&#039;]      = &#039;#&#039;;
+			$attributes[&#039;data-action&#039;] = esc_url( $this-&gt;action );
+		} else {
+			$attributes[&#039;action&#039;] = esc_url( $this-&gt;action );
+		}
+
+		// Set method.
+		if ( ! in_array( $this-&gt;method, [ &#039;GET&#039;, &#039;POST&#039; ], true ) ) {
+			$attributes[&#039;method&#039;]      = &#039;POST&#039;;
+			$attributes[&#039;data-method&#039;] = $this-&gt;method;
+		} else {
+			$attributes[&#039;method&#039;] = $this-&gt;method;
+		}
+
+		// Set redirect.
+		if ( $this-&gt;redirect ) {
+			if ( is_bool( $this-&gt;redirect ) ) {
+				$attributes[&#039;data-redirect&#039;] = &#039;true&#039;;
+			} else {
+				$attributes[&#039;data-redirect&#039;] = esc_url( $this-&gt;redirect );
+			}
+		}
+
+		// Set reset.
+		if ( $this-&gt;reset ) {
+			$attributes[&#039;data-reset&#039;] = &#039;true&#039;;
+		}
+
+		// Set component.
+		$attributes[&#039;data-component&#039;] = &#039;form&#039;;
+
+		// Set attributes.
+		$attributes[&#039;class&#039;] = [ &#039;hp-form&#039;, &#039;hp-form--&#039; . hp\sanitize_slug( static::get_meta( &#039;name&#039; ) ) ];
+
+		$this-&gt;attributes = hp\merge_arrays( $this-&gt;attributes, $attributes );
+	}
+
+	/**
+	 * Gets HTTP method.
+	 *
+	 * @return string
+	 */
+	final public function get_method() {
+		return $this-&gt;method;
+	}
+
+	/**
+	 * Sets form fields.
+	 *
+	 * @param array $fields Form fields.
+	 */
+	protected function set_fields( $fields ) {
+		$this-&gt;fields = [];
+
+		foreach ( hp\sort_array( $fields ) as $name =&gt; $args ) {
+			if ( isset( $args[&#039;type&#039;] ) ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $args[&#039;type&#039;], [ array_merge( $args, [ &#039;name&#039; =&gt; $name ] ) ] );
+
+				// Add field.
+				if ( $field ) {
+					$this-&gt;fields[ $name ] = $field;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Gets form fields.
+	 *
+	 * @return array
+	 */
+	final public function get_fields() {
+		return $this-&gt;fields;
+	}
+
+	/**
+	 * Sets form button.
+	 *
+	 * @param array $button Button arguments.
+	 */
+	final protected function set_button( $button ) {
+		if ( $button ) {
+			$this-&gt;button = new Fields\Button( $button );
+		}
+	}
+
+	/**
+	 * Adds form errors.
+	 *
+	 * @param array $errors Form errors.
+	 */
+	final protected function add_errors( $errors ) {
+		$this-&gt;errors = array_merge( $this-&gt;errors, (array) $errors );
+	}
+
+	/**
+	 * Gets form errors.
+	 *
+	 * @return array
+	 */
+	final public function get_errors() {
+		return $this-&gt;errors;
+	}
+
+	/**
+	 * Sets field values.
+	 *
+	 * @param array $values Field values.
+	 * @param bool  $override Override only passed values?
+	 * @return object
+	 */
+	public function set_values( $values, $override = false ) {
+		$names = [];
+
+		if ( $override ) {
+			$names = array_keys( $values );
+		} else {
+			$names = array_keys( $this-&gt;fields );
+		}
+
+		foreach ( $names as $name ) {
+			$this-&gt;set_value( $name, hp\get_array_value( $values, $name ) );
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Sets field value.
+	 *
+	 * @param string $name Field name.
+	 * @param mixed  $value Field value.
+	 * @return object
+	 */
+	final public function set_value( $name, $value ) {
+		if ( isset( $this-&gt;fields[ $name ] ) ) {
+			$this-&gt;fields[ $name ]-&gt;set_value( $value );
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Gets field values.
+	 *
+	 * @return array
+	 */
+	final public function get_values() {
+		$values = [];
+
+		foreach ( $this-&gt;fields as $name =&gt; $field ) {
+			if ( ! $field-&gt;is_disabled() ) {
+				$values[ $name ] = $field-&gt;get_value();
+			}
+		}
+
+		return $values;
+	}
+
+	/**
+	 * Gets field value.
+	 *
+	 * @param string $name Field name.
+	 * @return mixed
+	 */
+	final public function get_value( $name ) {
+		$field = hp\get_array_value( $this-&gt;fields, $name );
+
+		if ( $field &amp;&amp; ! $field-&gt;is_disabled() ) {
+			return $field-&gt;get_value();
+		}
+	}
+
+	/**
+	 * Validates field values.
+	 *
+	 * @return bool
+	 */
+	final public function validate() {
+		$this-&gt;errors = [];
+
+		// Validate fields.
+		foreach ( $this-&gt;fields as $field ) {
+			if ( ! $field-&gt;is_disabled() &amp;&amp; ! $field-&gt;validate() ) {
+				$this-&gt;add_errors( $field-&gt;get_errors() );
+			}
+		}
+
+		// Filter errors.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the form validation errors. With this hook, you can implement custom validation checks and add new error messages to the filtered array. The dynamic part of the hook refers to the form name (e.g. `listing_update`). You can check the available forms in the `includes/forms` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/forms/{form_name}/errors
+			 * @param {array} $errors Form errors.
+			 * @param {object} $form Form object.
+			 * @return {array} Form errors.
+			 */
+			$this-&gt;errors = apply_filters( &#039;hivepress/v1/forms/&#039; . hp\get_class_name( $class ) . &#039;/errors&#039;, $this-&gt;errors, $this );
+		}
+
+		return empty( $this-&gt;errors );
+	}
+
+	/**
+	 * Renders form HTML.
+	 *
+	 * @return string
+	 */
+	final public function render() {
+		$output = &#039;&lt;form &#039; . hp\html_attributes( $this-&gt;attributes ) . &#039;&gt;&#039;;
+
+		// Render header.
+		if ( $this-&gt;description || $this-&gt;header ) {
+			$output .= &#039;&lt;div class=&quot;hp-form__header&quot;&gt;&#039;;
+
+			if ( $this-&gt;description ) {
+				$output .= &#039;&lt;p class=&quot;hp-form__description&quot;&gt;&#039; . do_shortcode( wp_kses_post( $this-&gt;description ) ) . &#039;&lt;/p&gt;&#039;;
+			}
+
+			if ( $this-&gt;header ) {
+				$output .= $this-&gt;header;
+			}
+
+			$output .= &#039;&lt;div class=&quot;hp-form__messages&quot; data-component=&quot;messages&quot;&gt;&lt;/div&gt;&#039;;
+			$output .= &#039;&lt;/div&gt;&#039;;
+		} else {
+			$output .= &#039;&lt;div class=&quot;hp-form__messages&quot; data-component=&quot;messages&quot;&gt;&lt;/div&gt;&#039;;
+		}
+
+		// Render fields.
+		if ( $this-&gt;fields ) {
+			$output .= &#039;&lt;div class=&quot;hp-form__fields&quot;&gt;&#039;;
+
+			foreach ( $this-&gt;fields as $field ) {
+				if ( $field-&gt;get_display_type() !== &#039;hidden&#039; ) {
+					$output .= &#039;&lt;div class=&quot;hp-form__field hp-form__field--&#039; . esc_attr( hp\sanitize_slug( $field-&gt;get_display_type() ) ) . &#039;&quot;&gt;&#039;;
+
+					// Render label.
+					if ( $field-&gt;get_label() ) {
+
+						// @deprecated &quot;hp-form__label&quot; class since version 1.3.2.
+						$output .= &#039;&lt;label class=&quot;hp-field__label hp-form__label&quot;&gt;&lt;span&gt;&#039; . esc_html( $field-&gt;get_label() ) . &#039;&lt;/span&gt;&#039;;
+
+						if ( $field-&gt;get_statuses() ) {
+							$output .= &#039; &lt;small&gt;(&#039; . esc_html( implode( &#039;, &#039;, $field-&gt;get_statuses() ) ) . &#039;)&lt;/small&gt;&#039;;
+						}
+
+						$output .= &#039;&lt;/label&gt;&#039;;
+					}
+
+					// Render description.
+					if ( $field-&gt;get_description() ) {
+						$output .= &#039;&lt;div class=&quot;hp-field__description&quot;&gt;&#039; . do_shortcode( wp_kses_post( $field-&gt;get_description() ) ) . &#039;&lt;/div&gt;&#039;;
+					}
+				}
+
+				// Render field.
+				$output .= $field-&gt;render();
+
+				if ( $field-&gt;get_display_type() !== &#039;hidden&#039; ) {
+					$output .= &#039;&lt;/div&gt;&#039;;
+				}
+			}
+
+			$output .= &#039;&lt;/div&gt;&#039;;
+		}
+
+		// Render footer.
+		if ( $this-&gt;button || $this-&gt;footer ) {
+			$output .= &#039;&lt;div class=&quot;hp-form__footer&quot;&gt;&#039;;
+
+			if ( $this-&gt;button ) {
+				$output .= $this-&gt;button-&gt;render();
+			}
+
+			if ( $this-&gt;footer ) {
+				$output .= $this-&gt;footer;
+			}
+
+			$output .= &#039;&lt;/div&gt;&#039;;
+		}
+
+		$output .= &#039;&lt;/form&gt;&#039;;
+
+		return $output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

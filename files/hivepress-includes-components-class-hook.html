@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-hook.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Hook component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Implements integration with WordPress hooks.
+ */
+final class Hook extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Start import.
+		add_action( &#039;import_start&#039;, [ $this, &#039;start_import&#039; ] );
+
+		// Update users.
+		add_action( &#039;user_register&#039;, [ $this, &#039;update_user&#039; ] );
+		add_action( &#039;profile_update&#039;, [ $this, &#039;update_user&#039; ] );
+		add_action( &#039;delete_user&#039;, [ $this, &#039;update_user&#039; ] );
+
+		// Update user meta.
+		add_action( &#039;added_user_meta&#039;, [ $this, &#039;update_user_meta&#039; ], 10, 4 );
+		add_action( &#039;updated_user_meta&#039;, [ $this, &#039;update_user_meta&#039; ], 10, 4 );
+		add_action( &#039;deleted_user_meta&#039;, [ $this, &#039;update_user_meta&#039; ], 10, 4 );
+
+		// Update posts.
+		add_action( &#039;save_post&#039;, [ $this, &#039;update_post&#039; ], 10, 3 );
+		add_action( &#039;before_delete_post&#039;, [ $this, &#039;update_post&#039; ] );
+
+		add_action( &#039;add_attachment&#039;, [ $this, &#039;update_post&#039; ] );
+		add_action( &#039;edit_attachment&#039;, [ $this, &#039;update_post&#039; ] );
+		add_action( &#039;delete_attachment&#039;, [ $this, &#039;update_post&#039; ] );
+
+		// Update post status.
+		add_action( &#039;transition_post_status&#039;, [ $this, &#039;update_post_status&#039; ], 10, 3 );
+
+		// Update post meta.
+		add_action( &#039;added_post_meta&#039;, [ $this, &#039;update_post_meta&#039; ], 10, 4 );
+		add_action( &#039;updated_post_meta&#039;, [ $this, &#039;update_post_meta&#039; ], 10, 4 );
+		add_action( &#039;deleted_post_meta&#039;, [ $this, &#039;update_post_meta&#039; ], 10, 4 );
+
+		// Update post terms.
+		add_action( &#039;set_object_terms&#039;, [ $this, &#039;update_post_terms&#039; ], 10, 6 );
+
+		// Update terms.
+		add_action( &#039;create_term&#039;, [ $this, &#039;update_term&#039; ], 10, 3 );
+		add_action( &#039;edit_term&#039;, [ $this, &#039;update_term&#039; ], 10, 3 );
+		add_action( &#039;pre_delete_term&#039;, [ $this, &#039;update_term&#039; ], 10, 2 );
+
+		// Update term meta.
+		add_action( &#039;added_term_meta&#039;, [ $this, &#039;update_term_meta&#039; ], 10, 4 );
+		add_action( &#039;updated_term_meta&#039;, [ $this, &#039;update_term_meta&#039; ], 10, 4 );
+		add_action( &#039;deleted_term_meta&#039;, [ $this, &#039;update_term_meta&#039; ], 10, 4 );
+
+		// Update comments.
+		add_action( &#039;wp_insert_comment&#039;, [ $this, &#039;update_comment&#039; ] );
+		add_action( &#039;edit_comment&#039;, [ $this, &#039;update_comment&#039; ] );
+		add_action( &#039;delete_comment&#039;, [ $this, &#039;update_comment&#039; ] );
+
+		// Update comment status.
+		add_action( &#039;wp_set_comment_status&#039;, [ $this, &#039;update_comment_status&#039; ], 10, 2 );
+
+		// Update comment meta.
+		add_action( &#039;added_comment_meta&#039;, [ $this, &#039;update_comment_meta&#039; ], 10, 4 );
+		add_action( &#039;updated_comment_meta&#039;, [ $this, &#039;update_comment_meta&#039; ], 10, 4 );
+		add_action( &#039;deleted_comment_meta&#039;, [ $this, &#039;update_comment_meta&#039; ], 10, 4 );
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Checks if import started.
+	 *
+	 * @return bool
+	 */
+	protected function is_import_started() {
+		return defined( &#039;HP_IMPORT&#039; ) &amp;&amp; HP_IMPORT;
+	}
+
+	/**
+	 * Starts import.
+	 */
+	public function start_import() {
+		if ( ! defined( &#039;HP_IMPORT&#039; ) ) {
+			define( &#039;HP_IMPORT&#039;, true );
+		}
+	}
+
+	/**
+	 * Updates user.
+	 *
+	 * @param int $user_id User ID.
+	 */
+	public function update_user( $user_id ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get action.
+		$action = hp\get_last_array_value( explode( &#039;_&#039;, current_action() ) );
+
+		if ( &#039;register&#039; === $action ) {
+			$action = &#039;create&#039;;
+		} elseif ( &#039;update&#039; !== $action ) {
+			$action = &#039;delete&#039;;
+		}
+
+		/**
+		 * Fires when a user is created, updated or deleted. The dynamic part of the hook refers to the action type (`create`, `update` or `delete`).
+		 *
+		 * @hook hivepress/v2/models/user/{action_type}
+		 * @param {int} $user_id User ID.
+		 * @param {object} $user User object.
+		 */
+		do_action( &#039;hivepress/v2/models/user/&#039; . $action, $user_id, hivepress()-&gt;model-&gt;get_model_object( &#039;user&#039;, $user_id ) );
+
+		/**
+		 * Fires when a user is created, updated or deleted. The dynamic part of the hook refers to the action type (`create`, `update` or `delete`).
+		 *
+		 * @hook hivepress/v1/models/user/{action_type}
+		 * @param {int} $user_id User ID.
+		 */
+		do_action( &#039;hivepress/v1/models/user/&#039; . $action, $user_id, &#039;user&#039; );
+	}
+
+	/**
+	 * Updates user meta.
+	 *
+	 * @param int    $meta_id Meta ID.
+	 * @param int    $user_id User ID.
+	 * @param string $meta_key Meta key.
+	 * @param string $meta_value Meta value.
+	 */
+	public function update_user_meta( $meta_id, $user_id, $meta_key, $meta_value ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get field name.
+		$field = hivepress()-&gt;model-&gt;get_field_name( &#039;user&#039;, &#039;meta&#039;, $meta_key, $user_id );
+
+		if ( $field ) {
+
+			// Normalize meta value.
+			if ( strpos( current_action(), &#039;deleted_&#039; ) === 0 ) {
+				$meta_value = null;
+			}
+
+			/**
+			 * Fires when a specific user field is updated. The dynamic part of the hook refers to the field name. For example, use the `hivepress/v1/models/user/update_image` hook to call a custom function each time the user image is changed.
+			 *
+			 * @hook hivepress/v1/models/user/update_{field_name}
+			 * @param {int} $user_id User ID.
+			 * @param {mixed} $value Field value.
+			 */
+			do_action( &#039;hivepress/v1/models/user/update_&#039; . $field, $user_id, $meta_value );
+		}
+	}
+
+	/**
+	 * Updates post.
+	 *
+	 * @param int   $post_id Post ID.
+	 * @param mixed $post Post object.
+	 * @param bool  $update Is post updated?
+	 */
+	public function update_post( $post_id, $post = null, $update = false ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get post type.
+		$post_type = get_post_type( $post_id );
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;post&#039;, $post_type );
+
+		if ( $model || strpos( $post_type, &#039;hp_&#039; ) === 0 ) {
+
+			// Get action.
+			$action = hp\get_first_array_value( explode( &#039;_&#039;, current_action() ) );
+
+			if ( in_array( $action, [ &#039;save&#039;, &#039;add&#039;, &#039;edit&#039; ], true ) ) {
+				if ( $update || &#039;edit&#039; === $action ) {
+					$action = &#039;update&#039;;
+				} else {
+					$action = &#039;create&#039;;
+				}
+			} else {
+				$action = &#039;delete&#039;;
+			}
+
+			if ( $model ) {
+
+				/**
+				 * Fires when the model (e.g. `listing` or `vendor`) object is created, updated or deleted. The last part of the hook refers to the action type (`create`, `update` or `delete`). For example, use the `hivepress/v1/models/listing/update` hook to call a custom function each time a listing is updated.
+				 *
+				 * @hook hivepress/v1/models/{model_name}/{action_type}
+				 * @param {int} $object_id Object ID.
+				 * @param {object} $object Model object.
+				 */
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/&#039; . $action, $post_id, hivepress()-&gt;model-&gt;get_model_object( $model, $post_id ) );
+			}
+
+			/**
+			 * Fires when a post is created, updated or deleted. The dynamic part of the hook refers to the action type (`create`, `update` or `delete`).
+			 *
+			 * @hook hivepress/v1/models/post/{action_type}
+			 * @param {int} $post_id Post ID.
+			 * @param {string} $post_type Post type.
+			 */
+			do_action( &#039;hivepress/v1/models/post/&#039; . $action, $post_id, $post_type );
+		}
+	}
+
+	/**
+	 * Updates post status.
+	 *
+	 * @param string  $new_status New status.
+	 * @param string  $old_status Old status.
+	 * @param WP_Post $post Post object.
+	 */
+	public function update_post_status( $new_status, $old_status, $post ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		if ( $new_status !== $old_status ) {
+
+			// Get model name.
+			$model = hivepress()-&gt;model-&gt;get_model_name( &#039;post&#039;, $post-&gt;post_type );
+
+			if ( $model ) {
+
+				/**
+				 * Fires when the model object status is updated. The dynamic part of the hook refers to the model name (e.g. `listing` or `vendor`). For example, use the `hivepress/v1/models/listing/update_status` hook to call a custom function each time the listing status is changed.
+				 *
+				 * @hook hivepress/v1/models/{model_name}/update_status
+				 * @param {int} $object_id Object ID.
+				 * @param {string} $new_status New status.
+				 * @param {string} $old_status Old status.
+				 * @param {object} $object Model object.
+				 */
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/update_status&#039;, $post-&gt;ID, $new_status, $old_status, hivepress()-&gt;model-&gt;get_model_object( $model, $post-&gt;ID ) );
+			}
+		}
+	}
+
+	/**
+	 * Updates post meta.
+	 *
+	 * @param int    $meta_id Meta ID.
+	 * @param int    $post_id Post ID.
+	 * @param string $meta_key Meta key.
+	 * @param string $meta_value Meta value.
+	 */
+	public function update_post_meta( $meta_id, $post_id, $meta_key, $meta_value ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;post&#039;, get_post_type( $post_id ) );
+
+		if ( $model ) {
+
+			// Get field name.
+			$field = hivepress()-&gt;model-&gt;get_field_name( $model, &#039;meta&#039;, $meta_key, $post_id );
+
+			if ( $field &amp;&amp; &#039;status&#039; !== $field ) {
+
+				// Normalize meta value.
+				if ( strpos( current_action(), &#039;deleted_&#039; ) === 0 ) {
+					$meta_value = null;
+				}
+
+				/**
+				 * Fires when a specific model (e.g. `listing` or `vendor`) object field is updated. The last part of the hook refers to the field name. For example, use the `hivepress/v1/models/listing/update_image` hook to call a custom function each time the listing image is changed.
+				 *
+				 * @hook hivepress/v1/models/{model_name}/update_{field_name}
+				 * @param {int} $object_id Object ID.
+				 * @param {mixed} $value Field value.
+				 */
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/update_&#039; . $field, $post_id, $meta_value );
+			}
+		}
+	}
+
+	/**
+	 * Updates post terms.
+	 *
+	 * @param int    $post_id Post ID.
+	 * @param array  $terms Terms.
+	 * @param array  $term_taxonomy_ids Term taxonomy IDs.
+	 * @param string $taxonomy Taxonomy name.
+	 * @param bool   $append Append property.
+	 * @param array  $old_term_taxonomy_ids Old term taxonomy IDs.
+	 */
+	public function update_post_terms( $post_id, $terms, $term_taxonomy_ids, $taxonomy, $append, $old_term_taxonomy_ids ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		if ( array_diff( $term_taxonomy_ids, $old_term_taxonomy_ids ) || array_diff( $old_term_taxonomy_ids, $term_taxonomy_ids ) ) {
+
+			// Get term model name.
+			$term_model = hivepress()-&gt;model-&gt;get_model_name( &#039;term&#039;, $taxonomy );
+
+			if ( $term_model || strpos( $taxonomy, &#039;hp_&#039; ) === 0 ) {
+
+				// Get post type.
+				$post_type = get_post_type( $post_id );
+
+				// Get post model name.
+				$post_model = hivepress()-&gt;model-&gt;get_model_name( &#039;post&#039;, $post_type );
+
+				if ( $post_model || strpos( $post_type, &#039;hp_&#039; ) === 0 ) {
+
+					// Get term IDs.
+					$term_ids = get_terms(
+						[
+							&#039;taxonomy&#039;         =&gt; $taxonomy,
+							&#039;term_taxonomy_id&#039; =&gt; array_merge( [ 0 ], $term_taxonomy_ids ),
+							&#039;fields&#039;           =&gt; &#039;ids&#039;,
+							&#039;hide_empty&#039;       =&gt; false,
+						]
+					);
+
+					/**
+					 * Fires when the taxonomy terms linked to a post are updated.
+					 *
+					 * @hook hivepress/v1/models/post/update_terms
+					 * @param {int} $post_id Post ID.
+					 * @param {string} $post_type Post type.
+					 * @param {string} $taxonomy Taxonomy name.
+					 */
+					do_action( &#039;hivepress/v1/models/post/update_terms&#039;, $post_id, $post_type, $taxonomy );
+
+					if ( $post_model ) {
+
+						// Get post field name.
+						$post_field = hivepress()-&gt;model-&gt;get_field_name( $post_model, &#039;term&#039;, $taxonomy, $post_id );
+
+						if ( $post_field ) {
+							do_action( &#039;hivepress/v1/models/&#039; . $post_model . &#039;/update_&#039; . $post_field, $post_id, $term_ids );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Updates term.
+	 *
+	 * @param int    $term_id Term ID.
+	 * @param int    $term_taxonomy_id Term taxonomy ID.
+	 * @param string $taxonomy Taxonomy name.
+	 */
+	public function update_term( $term_id, $term_taxonomy_id, $taxonomy = null ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get taxonomy.
+		if ( empty( $taxonomy ) ) {
+			$taxonomy = $term_taxonomy_id;
+		}
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;term&#039;, $taxonomy );
+
+		if ( $model || strpos( $taxonomy, &#039;hp_&#039; ) === 0 ) {
+
+			// Get action.
+			$action = hp\get_first_array_value( explode( &#039;_&#039;, current_action() ) );
+
+			if ( &#039;edit&#039; === $action ) {
+				$action = &#039;update&#039;;
+			} elseif ( &#039;create&#039; !== $action ) {
+				$action = &#039;delete&#039;;
+			}
+
+			if ( $model ) {
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/&#039; . $action, $term_id, hivepress()-&gt;model-&gt;get_model_object( $model, $term_id ) );
+			}
+
+			/**
+			 * Fires when a taxonomy term is created, updated or deleted. The dynamic part of the hook refers to the action type (`create`, `update` or `delete`).
+			 *
+			 * @hook hivepress/v1/models/term/{action_type}
+			 * @param {int} $term_id Term ID.
+			 * @param {string} $taxonomy Taxonomy name.
+			 */
+			do_action( &#039;hivepress/v1/models/term/&#039; . $action, $term_id, $taxonomy );
+		}
+	}
+
+	/**
+	 * Updates term meta.
+	 *
+	 * @param int    $meta_id Meta ID.
+	 * @param int    $term_id Term ID.
+	 * @param string $meta_key Meta key.
+	 * @param string $meta_value Meta value.
+	 */
+	public function update_term_meta( $meta_id, $term_id, $meta_key, $meta_value ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;term&#039;, get_term( $term_id )-&gt;taxonomy );
+
+		if ( $model ) {
+
+			// Get field name.
+			$field = hivepress()-&gt;model-&gt;get_field_name( $model, &#039;meta&#039;, $meta_key, $term_id );
+
+			if ( $field ) {
+
+				// Normalize meta value.
+				if ( strpos( current_action(), &#039;deleted_&#039; ) === 0 ) {
+					$meta_value = null;
+				}
+
+				// Fire action.
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/update_&#039; . $field, $term_id, $meta_value );
+			}
+		}
+	}
+
+	/**
+	 * Updates comment.
+	 *
+	 * @param int $comment_id Comment ID.
+	 */
+	public function update_comment( $comment_id ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get comment type.
+		$comment_type = get_comment_type( $comment_id );
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;comment&#039;, $comment_type );
+
+		if ( $model || strpos( $comment_type, &#039;hp_&#039; ) === 0 ) {
+
+			// Get action.
+			$action = hp\get_first_array_value( explode( &#039;_&#039;, preg_replace( &#039;/^wp_/&#039;, &#039;&#039;, current_action() ) ) );
+
+			if ( &#039;insert&#039; === $action ) {
+				$action = &#039;create&#039;;
+			} elseif ( &#039;edit&#039; === $action ) {
+				$action = &#039;update&#039;;
+			}
+
+			if ( $model ) {
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/&#039; . $action, $comment_id, hivepress()-&gt;model-&gt;get_model_object( $model, $comment_id ) );
+			}
+
+			/**
+			 * Fires when a comment is created, updated or deleted. The dynamic part of the hook refers to the action type (`create`, `update` or `delete`).
+			 *
+			 * @hook hivepress/v1/models/comment/{action_type}
+			 * @param {int} $comment_id Comment ID.
+			 * @param {string} $comment_type Comment type.
+			 */
+			do_action( &#039;hivepress/v1/models/comment/&#039; . $action, $comment_id, $comment_type );
+		}
+	}
+
+	/**
+	 * Updates comment status.
+	 *
+	 * @param int    $comment_id Comment ID.
+	 * @param string $new_status New status.
+	 */
+	public function update_comment_status( $comment_id, $new_status ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Update comment status.
+		if ( &#039;delete&#039; !== $new_status ) {
+
+			// Get model name.
+			$model = hivepress()-&gt;model-&gt;get_model_name( &#039;comment&#039;, get_comment_type( $comment_id ) );
+
+			if ( $model ) {
+
+				// Fire action.
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/update_status&#039;, $comment_id, $new_status, null, hivepress()-&gt;model-&gt;get_model_object( $model, $comment_id ) );
+			}
+		}
+	}
+
+	/**
+	 * Updates comment meta.
+	 *
+	 * @param int    $meta_id Meta ID.
+	 * @param int    $comment_id Comment ID.
+	 * @param string $meta_key Meta key.
+	 * @param string $meta_value Meta value.
+	 */
+	public function update_comment_meta( $meta_id, $comment_id, $meta_key, $meta_value ) {
+
+		// Check import status.
+		if ( $this-&gt;is_import_started() ) {
+			return;
+		}
+
+		// Get model name.
+		$model = hivepress()-&gt;model-&gt;get_model_name( &#039;comment&#039;, get_comment_type( $comment_id ) );
+
+		if ( $model ) {
+
+			// Get field name.
+			$field = hivepress()-&gt;model-&gt;get_field_name( $model, &#039;meta&#039;, $meta_key, $comment_id );
+
+			if ( $field &amp;&amp; &#039;status&#039; !== $field ) {
+
+				// Normalize meta value.
+				if ( strpos( current_action(), &#039;deleted_&#039; ) === 0 ) {
+					$meta_value = null;
+				}
+
+				// Fire action.
+				do_action( &#039;hivepress/v1/models/&#039; . $model . &#039;/update_&#039; . $field, $comment_id, $meta_value );
+			}
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

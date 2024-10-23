@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-field.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Abstract field.
+ *
+ * @package HivePress\Fields
+ */
+
+namespace HivePress\Fields;
+
+use HivePress\Helpers as hp;
+use HivePress\Traits;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Abstract field class.
+ */
+abstract class Field {
+	use Traits\Mutator;
+	use Traits\Context;
+
+	use Traits\Meta {
+		set_meta as _set_meta;
+	}
+
+	/**
+	 * Field arguments.
+	 *
+	 * @var array
+	 */
+	protected $args = [];
+
+	/**
+	 * Display type.
+	 *
+	 * @var string
+	 */
+	protected $display_type;
+
+	/**
+	 * Display template.
+	 *
+	 * @var string
+	 */
+	protected $display_template;
+
+	/**
+	 * Field name.
+	 *
+	 * @var string
+	 */
+	protected $name;
+
+	/**
+	 * Field label.
+	 *
+	 * @var string
+	 */
+	protected $label;
+
+	/**
+	 * Field description.
+	 *
+	 * @var string
+	 */
+	protected $description;
+
+	/**
+	 * Field statuses.
+	 *
+	 * @var array
+	 */
+	protected $statuses = [];
+
+	/**
+	 * Field value.
+	 *
+	 * @var mixed
+	 */
+	protected $value;
+
+	/**
+	 * Parent field value.
+	 *
+	 * @var mixed
+	 */
+	protected $parent_value;
+
+	/**
+	 * SQL filter.
+	 *
+	 * @var mixed
+	 */
+	protected $filter;
+
+	/**
+	 * Disable this field?
+	 *
+	 * @var bool
+	 */
+	protected $disabled = false;
+
+	/**
+	 * Is value required?
+	 *
+	 * @var bool
+	 */
+	protected $required = false;
+
+	/**
+	 * Field errors.
+	 *
+	 * @var array
+	 */
+	protected $errors = [];
+
+	/**
+	 * HTML attributes.
+	 *
+	 * @var array
+	 */
+	protected $attributes = [];
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;name&#039;       =&gt; hp\get_class_name( static::class ),
+				&#039;type&#039;       =&gt; &#039;CHAR&#039;,
+				&#039;editable&#039;   =&gt; true,
+				&#039;filterable&#039; =&gt; false,
+				&#039;sortable&#039;   =&gt; false,
+
+				&#039;settings&#039;   =&gt; [
+					&#039;required&#039;    =&gt; [
+						&#039;label&#039;    =&gt; esc_html_x( &#039;Required&#039;, &#039;field&#039;, &#039;hivepress&#039; ),
+						&#039;caption&#039;  =&gt; esc_html__( &#039;Make this field required&#039;, &#039;hivepress&#039; ),
+						&#039;type&#039;     =&gt; &#039;checkbox&#039;,
+						&#039;_context&#039; =&gt; &#039;edit&#039;,
+						&#039;_order&#039;   =&gt; 10,
+					],
+
+					&#039;description&#039; =&gt; [
+						&#039;label&#039;      =&gt; hivepress()-&gt;translator-&gt;get_string( &#039;description&#039; ),
+						&#039;type&#039;       =&gt; &#039;textarea&#039;,
+						&#039;max_length&#039; =&gt; 2048,
+						&#039;html&#039;       =&gt; true,
+						&#039;_context&#039;   =&gt; &#039;edit&#039;,
+						&#039;_order&#039;     =&gt; 20,
+					],
+				],
+			],
+			$meta
+		);
+
+		// Filter meta.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the field class meta. The class meta stores properties related to the field type rather than a specific field instance. For example, it stores the field settings displayed for an attribute. The dynamic part of the hook refers to the field type (e.g. `textarea`). You can check the available field types in the `includes/fields` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/fields/{field_type}/meta
+			 * @param {array} $meta Class meta values.
+			 * @return {array} Class meta values.
+			 */
+			$meta = apply_filters( &#039;hivepress/v1/fields/&#039; . hp\get_class_name( $class ) . &#039;/meta&#039;, $meta );
+		}
+
+		// Set meta.
+		static::set_meta( $meta );
+	}
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Field arguments.
+	 */
+	public function __construct( $args = [] ) {
+		$args = hp\merge_arrays(
+			[
+				&#039;display_type&#039;     =&gt; hp\get_class_name( static::class ),
+				&#039;display_template&#039; =&gt; &#039;%value%&#039;,
+			],
+			$args
+		);
+
+		// Filter properties.
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the field properties. The dynamic part of the hook refers to the field type (e.g. `textarea`). You can check the available field types in the `includes/fields` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/fields/{field_type}
+			 * @param {array} $props Field properties.
+			 * @param {object} $field Field object.
+			 * @return {array} Field properties.
+			 */
+			$args = apply_filters( &#039;hivepress/v1/fields/&#039; . hp\get_class_name( $class ), $args, $this );
+		}
+
+		// Set arguments.
+		$this-&gt;args = $args;
+
+		// Set properties.
+		foreach ( $args as $name =&gt; $value ) {
+			$this-&gt;set_property( $name, $value );
+		}
+
+		// Bootstrap properties.
+		$this-&gt;boot();
+	}
+
+	/**
+	 * Bootstraps field properties.
+	 */
+	protected function boot() {
+
+		// Set default value.
+		if ( isset( $this-&gt;args[&#039;default&#039;] ) ) {
+			$this-&gt;set_value( $this-&gt;args[&#039;default&#039;] );
+		}
+
+		// Set optional status.
+		if ( ! $this-&gt;required ) {
+			$this-&gt;statuses = array_merge( [ &#039;optional&#039; =&gt; esc_html_x( &#039;optional&#039;, &#039;field&#039;, &#039;hivepress&#039; ) ], $this-&gt;statuses );
+		}
+
+		$this-&gt;statuses = array_filter( $this-&gt;statuses );
+
+		// Set attributes.
+		if ( &#039;hidden&#039; === $this-&gt;display_type ) {
+			$this-&gt;attributes = array_filter(
+				$this-&gt;attributes,
+				function( $name ) {
+					return strpos( $name, &#039;data-&#039; ) === 0;
+				},
+				ARRAY_FILTER_USE_KEY
+			);
+		}
+
+		$this-&gt;attributes = hp\merge_arrays(
+			$this-&gt;attributes,
+			[
+				&#039;class&#039; =&gt; [ &#039;hp-field&#039;, &#039;hp-field--&#039; . hp\sanitize_slug( $this-&gt;display_type ) ],
+			]
+		);
+	}
+
+	/**
+	 * Sets class meta values.
+	 *
+	 * @param array $meta Meta values.
+	 */
+	final protected static function set_meta( $meta ) {
+
+		// Get settings.
+		$settings = array_filter( hp\get_array_value( $meta, &#039;settings&#039;, [] ) );
+
+		if ( $settings ) {
+			$meta[&#039;settings&#039;] = [];
+
+			foreach ( $settings as $name =&gt; $args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $args[&#039;type&#039;], [ array_merge( $args, [ &#039;name&#039; =&gt; $name ] ) ] );
+
+				// Add field.
+				if ( $field ) {
+					$meta[&#039;settings&#039;][ $name ] = $field;
+				}
+			}
+		}
+
+		static::_set_meta( $meta );
+	}
+
+	/**
+	 * Gets field arguments.
+	 *
+	 * @return array
+	 */
+	final public function get_args() {
+		return $this-&gt;args;
+	}
+
+	/**
+	 * Gets field argument.
+	 *
+	 * @param string $name Argument name.
+	 * @return mixed
+	 */
+	final public function get_arg( $name ) {
+		return hp\get_array_value( $this-&gt;args, $name );
+	}
+
+	/**
+	 * Gets display type.
+	 *
+	 * @return string
+	 */
+	final public function get_display_type() {
+		return $this-&gt;display_type;
+	}
+
+	/**
+	 * Sets field display template.
+	 *
+	 * @param string $display_template Display template.
+	 */
+	protected function set_display_template( $display_template ) {
+		$this-&gt;display_template = $display_template;
+	}
+
+	/**
+	 * Gets field name.
+	 *
+	 * @return string
+	 */
+	final public function get_name() {
+		return $this-&gt;name;
+	}
+
+	/**
+	 * Gets field slug.
+	 *
+	 * @return string
+	 */
+	final public function get_slug() {
+		return hp\sanitize_slug( $this-&gt;name );
+	}
+
+	/**
+	 * Gets field label.
+	 *
+	 * @param mixed $default Default label.
+	 * @return string
+	 */
+	final public function get_label( $default = null ) {
+		$label = $this-&gt;label;
+
+		if ( ! $label &amp;&amp; $default ) {
+			$label = true === $default ? $this-&gt;name : $default;
+		}
+
+		return $label;
+	}
+
+	/**
+	 * Gets field description.
+	 *
+	 * @return string
+	 */
+	final public function get_description() {
+		return $this-&gt;description;
+	}
+
+	/**
+	 * Gets field statuses.
+	 *
+	 * @return array
+	 */
+	final public function get_statuses() {
+		return $this-&gt;statuses;
+	}
+
+	/**
+	 * Sets field value.
+	 *
+	 * @param mixed $value Field value.
+	 * @return object
+	 */
+	public function set_value( $value ) {
+		$this-&gt;value  = $value;
+		$this-&gt;filter = null;
+
+		if ( ! is_null( $this-&gt;value ) ) {
+			$this-&gt;normalize();
+
+			if ( ! is_null( $this-&gt;value ) ) {
+				$this-&gt;sanitize();
+
+				$this-&gt;update_filter();
+			}
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Gets field value.
+	 *
+	 * @return mixed
+	 */
+	final public function get_value() {
+		return $this-&gt;value;
+	}
+
+	/**
+	 * Gets field value for display.
+	 *
+	 * @return mixed
+	 */
+	public function get_display_value() {
+		return $this-&gt;value;
+	}
+
+	/**
+	 * Sets parent field value.
+	 *
+	 * @param mixed $value Field value.
+	 * @return object
+	 */
+	public function set_parent_value( $value ) {
+		$this-&gt;parent_value = $value;
+
+		return $this;
+	}
+
+	/**
+	 * Adds SQL filter.
+	 */
+	protected function add_filter() {
+		$this-&gt;filter = [
+			&#039;name&#039;     =&gt; $this-&gt;name,
+			&#039;type&#039;     =&gt; static::get_meta( &#039;type&#039; ),
+			&#039;value&#039;    =&gt; $this-&gt;value,
+			&#039;operator&#039; =&gt; &#039;=&#039;,
+		];
+	}
+
+	/**
+	 * Gets SQL filter.
+	 *
+	 * @return mixed
+	 */
+	final public function get_filter() {
+		return $this-&gt;filter;
+	}
+
+	/**
+	 * Updates SQL filter.
+	 *
+	 * @param bool $force Force update?
+	 */
+	final public function update_filter( $force = false ) {
+		if ( $force || ( ! is_null( $this-&gt;value ) &amp;&amp; static::get_meta( &#039;filterable&#039; ) ) ) {
+			$this-&gt;add_filter();
+		}
+	}
+
+	/**
+	 * Checks if field is disabled.
+	 *
+	 * @return bool
+	 */
+	final public function is_disabled() {
+		return $this-&gt;disabled;
+	}
+
+	/**
+	 * Checks if field is required.
+	 *
+	 * @return bool
+	 */
+	final public function is_required() {
+		return $this-&gt;required;
+	}
+
+	/**
+	 * Adds field errors.
+	 *
+	 * @param mixed $errors Field errors.
+	 */
+	final protected function add_errors( $errors ) {
+		$this-&gt;errors = array_merge( $this-&gt;errors, (array) $errors );
+	}
+
+	/**
+	 * Gets field errors.
+	 *
+	 * @return array
+	 */
+	final public function get_errors() {
+		return $this-&gt;errors;
+	}
+
+	/**
+	 * Normalizes field value.
+	 */
+	protected function normalize() {
+		if ( &#039;&#039; === $this-&gt;value ) {
+			$this-&gt;value = null;
+		}
+	}
+
+	/**
+	 * Sanitizes field value.
+	 */
+	abstract protected function sanitize();
+
+	/**
+	 * Validates field value.
+	 *
+	 * @return bool
+	 */
+	public function validate() {
+		$this-&gt;errors = [];
+
+		if ( $this-&gt;required &amp;&amp; is_null( $this-&gt;value ) ) {
+
+			/* translators: %s: field label. */
+			$this-&gt;errors[&#039;required&#039;] = sprintf( esc_html__( &#039;&quot;%s&quot; field is required.&#039;, &#039;hivepress&#039; ), $this-&gt;get_label( true ) );
+		}
+
+		return empty( $this-&gt;errors );
+	}
+
+	/**
+	 * Renders field HTML.
+	 *
+	 * @return string
+	 */
+	abstract public function render();
+
+	/**
+	 * Displays field HTML.
+	 *
+	 * @return string
+	 */
+	public function display() {
+
+		// Check shortcodes.
+		$shortcode = hp\has_shortcode( $this-&gt;display_template );
+
+		// Get value.
+		$value = $this-&gt;get_display_value();
+
+		foreach ( hp\get_class_parents( static::class ) as $class ) {
+
+			/**
+			 * Filters the field display value. The dynamic part of the hook refers to the field type (e.g. `textarea`). You can check the available field types in the `includes/fields` directory of HivePress.
+			 *
+			 * @hook hivepress/v1/fields/{field_type}/display_value
+			 * @param {string} $value Display value.
+			 * @return {string} Display value.
+			 */
+			$value = apply_filters( &#039;hivepress/v1/fields/&#039; . hp\get_class_name( $class ) . &#039;/display_value&#039;, $value, $this );
+		}
+
+		if ( $shortcode ) {
+			$value = strip_shortcodes( $value );
+		}
+
+		// Render output.
+		$output = hp\replace_tokens(
+			array_merge(
+				$this-&gt;context,
+				[
+					&#039;label&#039; =&gt; &#039;&lt;strong&gt;&#039; . $this-&gt;label . &#039;&lt;/strong&gt;&#039;,
+					&#039;value&#039; =&gt; $value,
+				]
+			),
+			$this-&gt;display_template,
+			true
+		);
+
+		if ( $shortcode ) {
+			$output = do_shortcode( $output );
+		}
+
+		return $output;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

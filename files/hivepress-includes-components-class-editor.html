@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-editor.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Editor component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Blocks;
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Implements integration with Gutenberg.
+ */
+final class Editor extends Component {
+
+	/**
+	 * Registered blocks.
+	 *
+	 * @var array
+	 */
+	protected $blocks = [];
+
+	/**
+	 * Template blocks.
+	 *
+	 * @var array
+	 */
+	protected $template;
+
+	/**
+	 * Template context.
+	 *
+	 * @var array
+	 */
+	protected $context = [];
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Initialize template editor.
+		add_action( &#039;rest_api_init&#039;, [ $this, &#039;init_template_editor&#039; ] );
+		add_action( &#039;admin_init&#039;, [ $this, &#039;init_template_editor&#039; ] );
+
+		// Register block categories.
+		add_filter( &#039;block_categories_all&#039;, [ $this, &#039;register_block_categories&#039; ] );
+
+		// Register default blocks.
+		add_action( &#039;init&#039;, [ $this, &#039;register_default_blocks&#039; ], 200 );
+
+		if ( is_admin() ) {
+
+			// Enqueue editor styles.
+			add_action( &#039;admin_init&#039;, [ $this, &#039;enqueue_editor_styles&#039; ] );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Checks if editor preview mode is enabled.
+	 *
+	 * @return bool
+	 */
+	public function is_preview() {
+
+		/**
+		 * Filters the editor preview mode status.
+		 *
+		 * @hook hivepress/v1/components/editor/preview
+		 * @param {bool} $enabled Preview status.
+		 * @return {bool} Preview status.
+		 */
+		return apply_filters( &#039;hivepress/v1/components/editor/preview&#039;, hp\is_rest() );
+	}
+
+	/**
+	 * Checks if block preview mode is enabled.
+	 *
+	 * @return bool
+	 */
+	protected function is_block_preview() {
+		global $wp;
+
+		return hp\is_rest() &amp;&amp; strpos( $wp-&gt;request, &#039;/wp/v2/block-renderer/hivepress/&#039; );
+	}
+
+	/**
+	 * Gets block arguments.
+	 *
+	 * @param string $type Block type.
+	 * @param string $name Block name.
+	 * @param array  $args Template arguments.
+	 * @return array
+	 */
+	protected function get_block( $type, $name = null, $args = [] ) {
+		$block = null;
+
+		// Get class.
+		$class = &#039;\HivePress\Blocks\\&#039; . $type;
+
+		if ( class_exists( $class ) ) {
+
+			// Get slug.
+			$slug = hp\sanitize_slug( $name ? $name : $type );
+
+			// Set block.
+			$block = [
+				&#039;title&#039;      =&gt; hp\get_array_value( $args, &#039;_label&#039;, $class::get_meta( &#039;label&#039; ) ),
+				&#039;type&#039;       =&gt; &#039;hivepress/&#039; . $slug,
+				&#039;script&#039;     =&gt; &#039;hivepress-block-&#039; . $slug,
+				&#039;category&#039;   =&gt; isset( $args[&#039;_label&#039;] ) ? &#039;hivepress-template&#039; : &#039;hivepress&#039;,
+				&#039;attributes&#039; =&gt; [],
+				&#039;settings&#039;   =&gt; [],
+			];
+
+			// Get field names.
+			$field_names = hp\get_array_value( $args, &#039;_settings&#039; );
+
+			foreach ( $class::get_meta( &#039;settings&#039; ) as $field_name =&gt; $field ) {
+				if ( ! is_array( $field_names ) || in_array( $field_name, $field_names, true ) ) {
+
+					// Get field arguments.
+					$field_args = $field-&gt;get_args();
+
+					if ( isset( $field_args[&#039;options&#039;] ) ) {
+						if ( is_array( hp\get_first_array_value( $field_args[&#039;options&#039;] ) ) ) {
+							$field_args[&#039;options&#039;] = wp_list_pluck( $field_args[&#039;options&#039;], &#039;label&#039; );
+						}
+
+						if ( ! hp\get_array_value( $field_args, &#039;required&#039;, false ) &amp;&amp; ! isset( $field_args[&#039;options&#039;][&#039;&#039;] ) ) {
+							$field_args[&#039;options&#039;] = [ &#039;&#039; =&gt; &#039;&amp;mdash;&#039; ] + $field_args[&#039;options&#039;];
+						}
+					}
+
+					// Add attribute.
+					$block[&#039;attributes&#039;][ $field_name ] = [
+						&#039;type&#039;    =&gt; &#039;string&#039;,
+						&#039;default&#039; =&gt; hp\get_array_value( $field_args, &#039;default&#039;, &#039;&#039; ),
+					];
+
+					// Add setting.
+					$block[&#039;settings&#039;][ $field_name ] = $field_args;
+				}
+			}
+		}
+
+		return $block;
+	}
+
+	/**
+	 * Registers block type.
+	 *
+	 * @param string $type Block type.
+	 * @param array  $args Block arguments.
+	 */
+	protected function register_block( $type, $args ) {
+
+		// Check compatibility.
+		if ( ! function_exists( &#039;register_block_type&#039; ) ) {
+			return;
+		}
+
+		// Register block script.
+		wp_register_script( $args[&#039;script&#039;], hivepress()-&gt;get_url() . &#039;/assets/js/block.min.js&#039;, [ &#039;wp-blocks&#039;, &#039;wp-element&#039;, &#039;wp-components&#039;, &#039;wp-editor&#039; ], hivepress()-&gt;get_version(), true );
+		wp_add_inline_script( $args[&#039;script&#039;], &#039;var hivepressBlock = &#039; . wp_json_encode( $args ) . &#039;;&#039;, &#039;before&#039; );
+
+		// Register block type.
+		register_block_type(
+			$args[&#039;type&#039;],
+			[
+				&#039;editor_script&#039;   =&gt; $args[&#039;script&#039;],
+				&#039;render_callback&#039; =&gt; [ $this, &#039;render_&#039; . $type ],
+				&#039;attributes&#039;      =&gt; $args[&#039;attributes&#039;],
+			]
+		);
+
+		// Add block.
+		$this-&gt;blocks[ $type ] = $args;
+	}
+
+	/**
+	 * Initializes template editor.
+	 */
+	public function init_template_editor() {
+		global $pagenow;
+
+		// Check template.
+		if ( is_array( $this-&gt;template ) ) {
+			return;
+		}
+
+		// Get template ID.
+		$template_id = null;
+
+		if ( is_admin() &amp;&amp; &#039;post.php&#039; === $pagenow &amp;&amp; isset( $_GET[&#039;post&#039;] ) ) {
+			$template_id = absint( $_GET[&#039;post&#039;] );
+		} elseif ( $this-&gt;is_block_preview() &amp;&amp; isset( $_GET[&#039;post_id&#039;] ) ) {
+			$template_id = absint( $_GET[&#039;post_id&#039;] );
+		}
+
+		// Register template blocks.
+		if ( $template_id &amp;&amp; get_post_type( $template_id ) === &#039;hp_template&#039; ) {
+			$this-&gt;register_template_blocks( get_post_field( &#039;post_name&#039;, $template_id ) );
+		}
+	}
+
+	/**
+	 * Registers block categories.
+	 *
+	 * @param array $categories Block categories.
+	 * @return array
+	 */
+	public function register_block_categories( $categories ) {
+		return array_merge(
+			$categories,
+			[
+				[
+					&#039;title&#039; =&gt; hivepress()-&gt;get_name(),
+					&#039;slug&#039;  =&gt; &#039;hivepress&#039;,
+				],
+
+				[
+					&#039;title&#039; =&gt; esc_html__( &#039;Template&#039;, &#039;hivepress&#039; ),
+					&#039;slug&#039;  =&gt; &#039;hivepress-template&#039;,
+				],
+			]
+		);
+	}
+
+	/**
+	 * Gets template blocks.
+	 *
+	 * @param array $template Template arguments.
+	 * @return array
+	 */
+	protected function get_template_blocks( $template ) {
+		$blocks = [];
+
+		foreach ( $template[&#039;blocks&#039;] as $name =&gt; $block ) {
+			if ( isset( $block[&#039;_label&#039;] ) || isset( $block[&#039;_parent&#039;] ) ) {
+				$blocks[ $name ] = $block;
+			}
+
+			if ( isset( $block[&#039;blocks&#039;] ) ) {
+				$blocks = array_merge( $blocks, $this-&gt;get_template_blocks( $block ) );
+			}
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * Registers template blocks.
+	 *
+	 * @param string $name Template name.
+	 * @param array  $args Template arguments.
+	 * @return object
+	 */
+	public function register_template_blocks( $name, $args = [] ) {
+
+		// Create template.
+		$template = hp\create_class_instance( &#039;\HivePress\Templates\\&#039; . $name, [ $args ] );
+
+		if ( ! $template ) {
+			return;
+		}
+
+		// Get template blocks.
+		$this-&gt;template = $this-&gt;get_template_blocks( [ &#039;blocks&#039; =&gt; $template-&gt;get_blocks() ] );
+
+		foreach ( $this-&gt;template as $block_name =&gt; $block_args ) {
+
+			// Move block.
+			if ( isset( $block_args[&#039;_parent&#039;] ) ) {
+				if ( isset( $this-&gt;template[ $block_args[&#039;_parent&#039;] ] ) ) {
+					$this-&gt;template[ $block_args[&#039;_parent&#039;] ][&#039;_blocks&#039;][ $block_name ] = $block_args;
+				}
+
+				unset( $this-&gt;template[ $block_name ] );
+
+				continue;
+			}
+
+			if ( ! isset( $this-&gt;blocks[ $block_name ] ) ) {
+
+				// Get block.
+				$block = $this-&gt;get_block( hp\get_array_value( $block_args, &#039;type&#039; ), $block_name, $block_args );
+
+				if ( $block ) {
+
+					// Register block.
+					$this-&gt;register_block( $block_name, $block );
+				}
+			} else {
+
+				// Filter settings.
+				$block_settings = hp\get_array_value( $block_args, &#039;_settings&#039; );
+
+				if ( is_array( $block_settings ) ) {
+					$block_settings = array_flip( $block_settings );
+
+					$this-&gt;blocks[ $block_name ][&#039;attributes&#039;] = array_intersect_key( $this-&gt;blocks[ $block_name ][&#039;attributes&#039;], $block_settings );
+					$this-&gt;blocks[ $block_name ][&#039;settings&#039;]   = array_intersect_key( $this-&gt;blocks[ $block_name ][&#039;settings&#039;], $block_settings );
+				}
+			}
+		}
+
+		if ( $this-&gt;blocks ) {
+			wp_localize_script( hp\get_array_value( hp\get_first_array_value( $this-&gt;blocks ), &#039;script&#039; ), &#039;hivepressBlocks&#039;, $this-&gt;blocks );
+		}
+
+		// Set template context.
+		$this-&gt;context = $template-&gt;get_context();
+
+		return $template;
+	}
+
+	/**
+	 * Registers default blocks.
+	 */
+	public function register_default_blocks() {
+		global $pagenow;
+
+		// Check request.
+		if ( isset( $_GET[&#039;doing_wp_cron&#039;] ) || ( is_admin() &amp;&amp; ! in_array( $pagenow, [ &#039;post.php&#039;, &#039;post-new.php&#039; ] ) ) ) {
+			return;
+		}
+
+		foreach ( hivepress()-&gt;get_classes( &#039;blocks&#039; ) as $block_type =&gt; $block_class ) {
+			if ( $block_class::get_meta( &#039;label&#039; ) ) {
+
+				// Get block.
+				$block = $this-&gt;get_block( $block_type );
+
+				if ( $block ) {
+
+					// Register block.
+					$this-&gt;register_block( $block_type, $block );
+
+					// Add shortcode.
+					if ( function_exists( &#039;add_shortcode&#039; ) ) {
+						add_shortcode( &#039;hivepress_&#039; . $block_type, [ $this, &#039;render_&#039; . $block_type ] );
+					}
+				}
+			}
+		}
+
+		if ( $this-&gt;blocks ) {
+			wp_localize_script( hp\get_array_value( hp\get_first_array_value( $this-&gt;blocks ), &#039;script&#039; ), &#039;hivepressBlocks&#039;, $this-&gt;blocks );
+		}
+	}
+
+	/**
+	 * Catches calls to undefined methods.
+	 *
+	 * @param string $name Method name.
+	 * @param array  $args Method arguments.
+	 * @throws \BadMethodCallException Invalid method.
+	 * @return string
+	 */
+	public function __call( $name, $args ) {
+		if ( strpos( $name, &#039;render_&#039; ) === 0 ) {
+			$output = &#039; &#039;;
+
+			// Get block arguments.
+			$block_type = substr( $name, strlen( &#039;render_&#039; ) );
+			$block_args = (array) hp\get_first_array_value( $args );
+
+			if ( isset( $this-&gt;blocks[ $block_type ] ) ) {
+				if ( is_array( $this-&gt;template ) ) {
+
+					// Render placeholder.
+					if ( is_admin() || $this-&gt;is_block_preview() ) {
+						return &#039;&lt;div class=&quot;hp-block__placeholder&quot;&gt;&lt;span&gt;&#039; . esc_html( $this-&gt;blocks[ $block_type ][&#039;title&#039;] ) . &#039;&lt;/span&gt;&lt;/div&gt;&#039;;
+					}
+
+					if ( isset( $this-&gt;template[ $block_type ] ) ) {
+
+						// Filter block settings.
+						if ( isset( $this-&gt;template[ $block_type ][&#039;_settings&#039;] ) ) {
+							$block_args = array_intersect_key( $block_args, array_flip( $this-&gt;template[ $block_type ][&#039;_settings&#039;] ) );
+						}
+
+						// Set block arguments.
+						$block_args = array_merge( $this-&gt;template[ $block_type ], $block_args, [ &#039;name&#039; =&gt; $block_type ] );
+						$block_type = hp\get_array_value( $this-&gt;template[ $block_type ], &#039;type&#039; );
+					}
+				}
+
+				// Set block context.
+				if ( $this-&gt;context ) {
+					if ( isset( $block_args[&#039;context&#039;] ) ) {
+						$block_args[&#039;context&#039;] = array_merge( $this-&gt;context, $block_args[&#039;context&#039;] );
+					} else {
+						$block_args = array_merge( [ &#039;context&#039; =&gt; $this-&gt;context ], $block_args );
+					}
+				}
+
+				// Create block.
+				$block = hp\create_class_instance( &#039;\HivePress\Blocks\\&#039; . $block_type, [ $block_args ] );
+
+				if ( $block ) {
+
+					// Render block.
+					$output .= $block-&gt;render();
+
+					if ( isset( $block_args[&#039;_blocks&#039;] ) ) {
+						$output .= ( new Blocks\Container(
+							[
+								&#039;context&#039; =&gt; hp\get_array_value( $block_args, &#039;context&#039;, [] ),
+								&#039;tag&#039;     =&gt; false,
+								&#039;blocks&#039;  =&gt; $block_args[&#039;_blocks&#039;],
+							]
+						) )-&gt;render();
+					}
+				}
+			}
+
+			return $output;
+		}
+
+		throw new \BadMethodCallException();
+	}
+
+	/**
+	 * Enqueues editor styles.
+	 */
+	public function enqueue_editor_styles() {
+
+		// @todo remove when fixed in the theme framework.
+		if ( ! defined( &#039;REQUESTS_SILENCE_PSR0_DEPRECATIONS&#039; ) ) {
+			define( &#039;REQUESTS_SILENCE_PSR0_DEPRECATIONS&#039;, true );
+		}
+
+		foreach ( hivepress()-&gt;get_config( &#039;styles&#039; ) as $style ) {
+			if ( in_array( &#039;editor&#039;, (array) hp\get_array_value( $style, &#039;scope&#039; ), true ) ) {
+				add_editor_style( $style[&#039;src&#039;] );
+			}
+		}
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-woocommerce.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * WooCommerce component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Implements integration with WooCommerce.
+ */
+final class WooCommerce extends Component {
+
+	/**
+	 * WooCommerce objects.
+	 *
+	 * @var array
+	 */
+	protected $objects = [];
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Update options.
+		add_action( &#039;activate_woocommerce/woocommerce.php&#039;, [ $this, &#039;update_options&#039; ] );
+
+		// Check WooCommerce status.
+		if ( ! hp\is_plugin_active( &#039;woocommerce&#039; ) ) {
+			return;
+		}
+
+		// Update options.
+		add_action( &#039;hivepress/v1/activate&#039;, [ $this, &#039;update_options&#039; ] );
+
+		// Update order status.
+		add_action( &#039;woocommerce_order_status_changed&#039;, [ $this, &#039;update_order_status&#039; ], 10, 4 );
+
+		// Set order item meta.
+		add_action( &#039;woocommerce_checkout_create_order_line_item&#039;, [ $this, &#039;set_order_item_meta&#039; ], 10, 3 );
+
+		// Format order item meta.
+		add_filter( &#039;woocommerce_order_item_get_formatted_meta_data&#039;, [ $this, &#039;format_order_item_meta&#039; ] );
+
+		// Format cart item meta.
+		add_filter( &#039;woocommerce_get_item_data&#039;, [ $this, &#039;format_cart_item_meta&#039; ], 10, 2 );
+
+		// Update user billing name.
+		add_action( &#039;hivepress/v1/models/user/update_first_name&#039;, [ $this, &#039;update_user_billing_name&#039; ], 10, 2 );
+		add_action( &#039;hivepress/v1/models/user/update_last_name&#039;, [ $this, &#039;update_user_billing_name&#039; ], 10, 2 );
+
+		// Set countries configuration.
+		add_filter( &#039;hivepress/v1/countries&#039;, [ $this, &#039;set_countries&#039; ] );
+
+		if ( ! is_admin() ) {
+
+			// Set request context.
+			add_filter( &#039;hivepress/v1/components/request/context&#039;, [ $this, &#039;set_request_context&#039; ] );
+
+			// Redirect pages.
+			add_action( &#039;template_redirect&#039;, [ $this, &#039;redirect_pages&#039; ] );
+
+			// Set account template.
+			add_filter( &#039;wc_get_template&#039;, [ $this, &#039;set_account_template&#039; ], 10, 2 );
+
+			// Alter account menu.
+			add_filter( &#039;hivepress/v1/menus/user_account&#039;, [ $this, &#039;alter_account_menu&#039; ] );
+
+			// Alter account page.
+			add_filter( &#039;hivepress/v1/templates/user_account_page&#039;, [ $this, &#039;alter_account_page&#039; ] );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Updates options.
+	 */
+	public function update_options() {
+		update_option( &#039;woocommerce_enable_guest_checkout&#039;, &#039;no&#039; );
+		update_option( &#039;woocommerce_enable_checkout_login_reminder&#039;, &#039;yes&#039; );
+		update_option( &#039;woocommerce_enable_signup_and_login_from_checkout&#039;, &#039;yes&#039; );
+
+		if ( get_option( &#039;hp_installed_time&#039; ) &gt; strtotime( &#039;2024-07-08&#039; ) ) {
+
+			// @todo Remove after HPOS integration.
+			update_option( &#039;woocommerce_custom_orders_table_enabled&#039;, &#039;no&#039; );
+			update_option( &#039;woocommerce_custom_orders_table_data_sync_enabled&#039;, &#039;no&#039; );
+		}
+	}
+
+	/**
+	 * Gets WooCommerce configuration.
+	 *
+	 * @param string $name Configuration name.
+	 * @return array
+	 */
+	public function get_config( $name ) {
+		return hp\get_array_value( hivepress()-&gt;get_config( &#039;woocommerce&#039; ), $name, [] );
+	}
+
+	/**
+	 * Gets item meta fields.
+	 *
+	 * @return array
+	 */
+	protected function get_item_meta_fields() {
+		if ( ! isset( $this-&gt;objects[&#039;item_meta&#039;] ) ) {
+			$this-&gt;objects[&#039;item_meta&#039;] = [];
+
+			foreach ( hp\sort_array( $this-&gt;get_config( &#039;item_meta&#039; ) ) as $name =&gt; $args ) {
+
+				// Create field.
+				$field = hp\create_class_instance( &#039;\HivePress\Fields\\&#039; . $args[&#039;type&#039;], [ array_merge( $args, [ &#039;name&#039; =&gt; $name ] ) ] );
+
+				// Add field.
+				if ( $field ) {
+					$this-&gt;objects[&#039;item_meta&#039;][ $name ] = $field;
+				}
+			}
+		}
+
+		return $this-&gt;objects[&#039;item_meta&#039;];
+	}
+
+	/**
+	 * Gets order product IDs.
+	 *
+	 * @param WC_Order $order Order object.
+	 * @return array
+	 */
+	public function get_order_product_ids( $order ) {
+		return array_map(
+			function( $item ) {
+				return $item-&gt;get_product_id();
+			},
+			$order-&gt;get_items()
+		);
+	}
+
+	/**
+	 * Gets related product.
+	 *
+	 * @param int   $parent_id Parent ID.
+	 * @param array $args Query arguments.
+	 * @return object
+	 */
+	public function get_related_product( $parent_id, $args = [] ) {
+		return hp\get_first_array_value(
+			wc_get_products(
+				array_merge(
+					[
+						&#039;parent&#039; =&gt; $parent_id,
+						&#039;limit&#039;  =&gt; 1,
+					],
+					$args
+				)
+			)
+		);
+	}
+
+	/**
+	 * Formats price.
+	 *
+	 * @param float $price Price.
+	 * @return string
+	 */
+	public function format_price( $price ) {
+		return wp_strip_all_tags( wc_price( $price ) );
+	}
+
+	/**
+	 * Gets product price text.
+	 *
+	 * @param WC_Product $product Product object.
+	 * @return string
+	 */
+	public function get_product_price_text( $product ) {
+		return $this-&gt;format_price( $product-&gt;get_price() );
+	}
+
+	/**
+	 * Updates order status.
+	 *
+	 * @param int      $order_id Order ID.
+	 * @param string   $old_status Old status.
+	 * @param string   $new_status New status.
+	 * @param WC_Order $order Order object.
+	 */
+	public function update_order_status( $order_id, $old_status, $new_status, $order ) {
+
+		// Check user.
+		if ( ! $order-&gt;get_user_id() ) {
+			return;
+		}
+
+		// Delete cached order count.
+		hivepress()-&gt;cache-&gt;delete_user_cache( $order-&gt;get_user_id(), &#039;order_count&#039; );
+	}
+
+	/**
+	 * Sets order item meta.
+	 *
+	 * @param WC_Order_Item_Product $item Order item.
+	 * @param string                $cart_item_key Cart item key.
+	 * @param array                 $meta Meta values.
+	 */
+	public function set_order_item_meta( $item, $cart_item_key, $meta ) {
+
+		// Get fields.
+		$fields = $this-&gt;get_item_meta_fields();
+
+		// Set meta.
+		foreach ( $meta as $meta_key =&gt; $meta_value ) {
+			if ( strpos( $meta_key, &#039;hp_&#039; ) === 0 ) {
+
+				// Get field.
+				$field = hp\get_array_value( $fields, hp\unprefix( $meta_key ) );
+
+				if ( $field ) {
+
+					// Set value.
+					$field-&gt;set_value( $meta_value );
+
+					if ( $field-&gt;validate() ) {
+						$item-&gt;update_meta_data( $meta_key, $field-&gt;get_value() );
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Formats order item meta.
+	 *
+	 * @param array $meta Meta values.
+	 * @return array
+	 */
+	public function format_order_item_meta( $meta ) {
+
+		// Get fields.
+		$fields = $this-&gt;get_item_meta_fields();
+
+		// Filter meta.
+		$meta = array_filter(
+			array_map(
+				function( $args ) use ( $fields ) {
+					if ( strpos( $args-&gt;key, &#039;hp_&#039; ) === 0 ) {
+
+						// Get field.
+						$field = hp\get_array_value( $fields, hp\unprefix( $args-&gt;key ) );
+
+						if ( $field ) {
+							if ( $field-&gt;get_label() ) {
+
+								// Set value.
+								$field-&gt;set_value( $args-&gt;value );
+
+								// Set meta.
+								$args-&gt;display_key   = $field-&gt;get_label();
+								$args-&gt;display_value = &#039;&lt;p&gt;&#039; . $field-&gt;display() . &#039;&lt;/p&gt;&#039;;
+							} else {
+
+								// Remove meta.
+								$args = null;
+							}
+						}
+					}
+
+					return $args;
+				},
+				$meta
+			)
+		);
+
+		return $meta;
+	}
+
+	/**
+	 * Formats cart item meta.
+	 *
+	 * @param array $meta Meta values.
+	 * @param array $cart_item Cart item.
+	 * @return array
+	 */
+	public function format_cart_item_meta( $meta, $cart_item ) {
+
+		// Get fields.
+		$fields = $this-&gt;get_item_meta_fields();
+
+		foreach ( $fields as $name =&gt; $field ) {
+			if ( isset( $cart_item[ hp\prefix( $name ) ] ) &amp;&amp; $field-&gt;get_label() ) {
+
+				// Set value.
+				$field-&gt;set_value( $cart_item[ hp\prefix( $name ) ] );
+
+				// Add meta.
+				$meta[] = [
+					&#039;key&#039;   =&gt; $field-&gt;get_label(),
+					&#039;value&#039; =&gt; $field-&gt;display(),
+				];
+			}
+		}
+
+		return $meta;
+	}
+
+	/**
+	 * Updates user billing name.
+	 *
+	 * @param int    $user_id User ID.
+	 * @param string $value Value.
+	 */
+	public function update_user_billing_name( $user_id, $value ) {
+
+		// Check field value.
+		if ( ! $value ) {
+			return;
+		}
+
+		// Get field name.
+		$field_name = substr( hp\get_last_array_value( explode( &#039;/&#039;, current_filter() ) ), strlen( &#039;update_&#039; ) );
+
+		// Update field value.
+		update_user_meta( $user_id, &#039;billing_&#039; . $field_name, $value );
+	}
+
+	/**
+	 * Sets countries configuration.
+	 *
+	 * @param array $countries Countries array.
+	 * @return array
+	 */
+	public function set_countries( $countries ) {
+		return WC()-&gt;countries-&gt;get_countries();
+	}
+
+	/**
+	 * Sets request context.
+	 *
+	 * @param array $context Request context.
+	 * @return array
+	 */
+	public function set_request_context( $context ) {
+
+		// Get cached order count.
+		$order_count = hivepress()-&gt;cache-&gt;get_user_cache( get_current_user_id(), &#039;order_count&#039; );
+
+		if ( is_null( $order_count ) ) {
+
+			// Get order count.
+			$order_count = wc_get_customer_order_count( get_current_user_id() );
+
+			// Cache order count.
+			hivepress()-&gt;cache-&gt;set_user_cache( get_current_user_id(), &#039;order_count&#039;, null, $order_count );
+		}
+
+		// Set request context.
+		$context[&#039;order_count&#039;] = $order_count;
+
+		return $context;
+	}
+
+	/**
+	 * Redirects pages.
+	 */
+	public function redirect_pages() {
+		$url = null;
+
+		// Redirect account page.
+		if ( ! is_user_logged_in() &amp;&amp; is_account_page() ) {
+			$url = hivepress()-&gt;router-&gt;get_return_url( &#039;user_login_page&#039; );
+		}
+
+		// Redirect product page.
+		if ( is_product() ) {
+			$parent = get_post_parent();
+
+			if ( $parent &amp;&amp; strpos( $parent-&gt;post_type, &#039;hp_&#039; ) === 0 ) {
+				$url = get_permalink( $parent-&gt;ID );
+			}
+		}
+
+		if ( $url ) {
+			wp_safe_redirect( $url );
+
+			exit;
+		}
+	}
+
+	/**
+	 * Sets account page template.
+	 *
+	 * @param string $path Template filepath.
+	 * @param string $name Template name.
+	 * @return string
+	 */
+	public function set_account_template( $path, $name ) {
+		if ( &#039;myaccount/my-account.php&#039; === $name &amp;&amp; ( is_wc_endpoint_url( &#039;orders&#039; ) || is_wc_endpoint_url( &#039;view-order&#039; ) ) ) {
+			$path = hivepress()-&gt;get_path() . &#039;/templates/woocommerce/myaccount/my-account.php&#039;;
+		}
+
+		return $path;
+	}
+
+	/**
+	 * Alters account menu.
+	 *
+	 * @param array $menu Menu arguments.
+	 * @return array
+	 */
+	public function alter_account_menu( $menu ) {
+		if ( hivepress()-&gt;request-&gt;get_context( &#039;order_count&#039; ) ) {
+			$menu[&#039;items&#039;][&#039;orders_view&#039;] = [
+				&#039;label&#039;  =&gt; hp\get_array_value( wc_get_account_menu_items(), &#039;orders&#039; ),
+				&#039;url&#039;    =&gt; wc_get_endpoint_url( &#039;orders&#039;, &#039;&#039;, wc_get_page_permalink( &#039;myaccount&#039; ) ),
+				&#039;_order&#039; =&gt; 40,
+			];
+		}
+
+		return $menu;
+	}
+
+	/**
+	 * Alters account page.
+	 *
+	 * @param array $template Template arguments.
+	 * @return array
+	 */
+	public function alter_account_page( $template ) {
+		if ( is_wc_endpoint_url( &#039;orders&#039; ) || is_wc_endpoint_url( &#039;view-order&#039; ) ) {
+
+			// Set page title.
+			add_filter( &#039;the_title&#039;, &#039;wc_page_endpoint_title&#039; );
+
+			// Alter page template.
+			$template = hp\merge_trees(
+				$template,
+				[
+					&#039;blocks&#039; =&gt; [
+						&#039;page_container&#039; =&gt; [
+							&#039;type&#039; =&gt; &#039;container&#039;,
+						],
+
+						&#039;page_content&#039;   =&gt; [
+							&#039;blocks&#039; =&gt; [
+								&#039;woocommerce_content&#039; =&gt; [
+									&#039;type&#039;     =&gt; &#039;callback&#039;,
+									&#039;callback&#039; =&gt; &#039;do_action&#039;,
+									&#039;params&#039;   =&gt; [ &#039;woocommerce_account_content&#039; ],
+									&#039;_order&#039;   =&gt; 10,
+								],
+							],
+						],
+					],
+				]
+			);
+		}
+
+		return $template;
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

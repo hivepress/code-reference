@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-term.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * Term model.
+ *
+ * @package HivePress\Models
+ */
+
+namespace HivePress\Models;
+
+use HivePress\Helpers as hp;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Taxonomy term.
+ */
+abstract class Term extends Model {
+
+	/**
+	 * Class initializer.
+	 *
+	 * @param array $meta Class meta values.
+	 */
+	public static function init( $meta = [] ) {
+		$meta = hp\merge_arrays(
+			[
+				&#039;type&#039;  =&gt; &#039;term&#039;,
+				&#039;alias&#039; =&gt; hp\prefix( hp\get_class_name( static::class ) ),
+			],
+			$meta
+		);
+
+		parent::init( $meta );
+	}
+
+	/**
+	 * Gets object.
+	 *
+	 * @param int $id Object ID.
+	 * @return mixed
+	 */
+	final public function get( $id ) {
+
+		// Get term.
+		$term = null;
+
+		if ( is_object( $id ) ) {
+			$term = get_object_vars( $id );
+		} else {
+			$term = get_term( absint( $id ), static::_get_meta( &#039;alias&#039; ), ARRAY_A );
+		}
+
+		if ( empty( $term ) || is_wp_error( $term ) || static::_get_meta( &#039;alias&#039; ) !== $term[&#039;taxonomy&#039;] ) {
+			return;
+		}
+
+		// Get term meta.
+		$meta = array_map(
+			function( $values ) {
+				return maybe_unserialize( hp\get_first_array_value( $values ) );
+			},
+			get_term_meta( $term[&#039;term_id&#039;] )
+		);
+
+		// Create object.
+		$object = ( new static() )-&gt;set_id( $term[&#039;term_id&#039;] );
+
+		// Get field values.
+		$values = [];
+
+		foreach ( $object-&gt;_get_fields() as $field_name =&gt; $field ) {
+			if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+
+				// Get meta value.
+				$values[ $field_name ] = hp\get_array_value( $meta, $field-&gt;get_arg( &#039;_alias&#039; ) );
+			} elseif ( ! $field-&gt;get_arg( &#039;_relation&#039; ) ) {
+
+				// Get term value.
+				$values[ $field_name ] = hp\get_array_value( $term, $field-&gt;get_arg( &#039;_alias&#039; ) );
+			}
+		}
+
+		return $object-&gt;fill( $values );
+	}
+
+	/**
+	 * Saves object.
+	 *
+	 * @param array $names Field names.
+	 * @return bool
+	 */
+	final public function save( $names = [] ) {
+
+		// Validate fields.
+		if ( ! $this-&gt;validate( $names ) ) {
+			return false;
+		}
+
+		// Filter fields.
+		$fields = $this-&gt;fields;
+
+		if ( $names ) {
+			$fields = array_filter(
+				$fields,
+				function( $field ) use ( $names ) {
+					return in_array( $field-&gt;get_name(), $names, true );
+				}
+			);
+		}
+
+		// Get term data.
+		$term = [];
+		$meta = [];
+
+		foreach ( $fields as $field ) {
+			if ( $field-&gt;get_arg( &#039;_external&#039; ) ) {
+
+				// Set meta value.
+				$meta[ $field-&gt;get_arg( &#039;_alias&#039; ) ] = $field-&gt;get_value();
+			} elseif ( ! $field-&gt;get_arg( &#039;_relation&#039; ) ) {
+
+				// Set term value.
+				$term[ $field-&gt;get_arg( &#039;_alias&#039; ) ] = $field-&gt;get_value();
+			}
+		}
+
+		// Create term.
+		$created = false;
+
+		if ( empty( $this-&gt;id ) ) {
+			$ids = wp_insert_term( uniqid(), static::_get_meta( &#039;alias&#039; ), $term );
+
+			if ( ! is_wp_error( $ids ) ) {
+				$this-&gt;set_id( hp\get_first_array_value( $ids ) );
+
+				$created = true;
+			} else {
+				return false;
+			}
+		}
+
+		// Update term meta.
+		foreach ( $meta as $meta_key =&gt; $meta_value ) {
+			if ( in_array( $meta_value, [ null, false ], true ) ) {
+				delete_term_meta( $this-&gt;id, $meta_key );
+			} else {
+				update_term_meta( $this-&gt;id, $meta_key, $meta_value );
+			}
+		}
+
+		// Update term.
+		if ( ! $created ) {
+			if ( empty( $term ) ) {
+
+				// Fire actions.
+				do_action( &#039;hivepress/v1/models/&#039; . static::_get_meta( &#039;name&#039; ) . &#039;/update&#039;, $this-&gt;id, $this );
+				do_action( &#039;hivepress/v1/models/term/update&#039;, $this-&gt;id, static::_get_meta( &#039;alias&#039; ) );
+			} else {
+				return ! is_wp_error( wp_update_term( $this-&gt;id, static::_get_meta( &#039;alias&#039; ), $term ) );
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Deletes object.
+	 *
+	 * @param int $id Object ID.
+	 * @return bool
+	 */
+	final public function delete( $id = null ) {
+		if ( is_null( $id ) ) {
+			$id = $this-&gt;id;
+		}
+
+		return $id &amp;&amp; wp_delete_term( absint( $id ), static::_get_meta( &#039;alias&#039; ) );
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>

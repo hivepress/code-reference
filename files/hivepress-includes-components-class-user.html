@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HivePress Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/base.css?updated=1729724201">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/template.css?updated=1729724201">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+            <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WB2WZE22L6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WB2WZE22L6');
+</script>
+        <script src="../js/prism.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+        });
+    </script>
+</head>
+<body id="top">
+    <header class="phpdocumentor-top-header">
+    <section class="phpdocumentor-section">
+        <div class="site-branding">
+            <a class="site-logo" href="https://hivepress.io/"><img width="186" src="../images/logo.svg" alt="HivePress" /></a>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://hivepress.github.io/hook-reference/">Hook Reference</a></li>
+                <li><a href="https://help.hivepress.io/">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+    
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/hivepress.html"><abbr title="\HivePress">HivePress</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="../namespaces/hivepress-blocks.html"><abbr title="\HivePress\Blocks">Blocks</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-components.html"><abbr title="\HivePress\Components">Components</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-controllers.html"><abbr title="\HivePress\Controllers">Controllers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-emails.html"><abbr title="\HivePress\Emails">Emails</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-fields.html"><abbr title="\HivePress\Fields">Fields</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-forms.html"><abbr title="\HivePress\Forms">Forms</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-helpers.html"><abbr title="\HivePress\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-integrations.html"><abbr title="\HivePress\Integrations">Integrations</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-menus.html"><abbr title="\HivePress\Menus">Menus</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-models.html"><abbr title="\HivePress\Models">Models</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-queries.html"><abbr title="\HivePress\Queries">Queries</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-templates.html"><abbr title="\HivePress\Templates">Templates</abbr></a></li>
+                                            <li><a href="../namespaces/hivepress-traits.html"><abbr title="\HivePress\Traits">Traits</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../indices/files.html">Files</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+    </ul>
+
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">class-user.php</h2>
+
+                
+
+        
+                    <h3 class="phpdocumentor-elements__header" id="source-code">
+                Source code
+                <a href="#source-code" class="headerlink"><i class="fas fa-link"></i></a>
+            </h3>
+            <pre id="source-view" tabindex="-1" class="language-php line-numbers linkable-line-numbers"><code>&lt;?php
+/**
+ * User component.
+ *
+ * @package HivePress\Components
+ */
+
+namespace HivePress\Components;
+
+use HivePress\Helpers as hp;
+use HivePress\Models;
+use HivePress\Emails;
+use HivePress\Fields;
+
+// Exit if accessed directly.
+defined( &#039;ABSPATH&#039; ) || exit;
+
+/**
+ * Handles users.
+ */
+final class User extends Component {
+
+	/**
+	 * Class constructor.
+	 *
+	 * @param array $args Component arguments.
+	 */
+	public function __construct( $args = [] ) {
+
+		// Register user.
+		add_action( &#039;hivepress/v1/models/user/register&#039;, [ $this, &#039;register_user&#039; ], 10, 2 );
+
+		// Login user.
+		add_filter( &#039;authenticate&#039;, [ $this, &#039;login_user&#039; ], 100 );
+
+		// Update user.
+		add_action( &#039;hivepress/v2/models/user/update&#039;, [ $this, &#039;update_user&#039; ], 10, 2 );
+
+		// Alter registration form.
+		add_filter( &#039;hivepress/v1/forms/user_register&#039;, [ $this, &#039;alter_register_form&#039; ] );
+
+		// Alter model fields.
+		add_filter( &#039;hivepress/v1/models/user&#039;, [ $this, &#039;alter_model_fields&#039; ] );
+
+		// Render user image.
+		add_filter( &#039;get_avatar&#039;, [ $this, &#039;render_user_image&#039; ], 1, 5 );
+
+		if ( is_admin() ) {
+
+			// Manage admin columns.
+			if ( get_option( &#039;hp_user_verify_email&#039; ) ) {
+				add_filter( &#039;manage_users_columns&#039;, [ $this, &#039;add_admin_columns&#039; ] );
+				add_filter( &#039;manage_users_custom_column&#039;, [ $this, &#039;render_admin_columns&#039; ], 10, 3 );
+			}
+
+			// Manage profile fields.
+			add_filter( &#039;hivepress/v1/meta_boxes/user_settings&#039;, [ $this, &#039;add_profile_fields&#039; ] );
+
+			add_action( &#039;personal_options_update&#039;, [ $this, &#039;update_profile_fields&#039; ], 100 );
+			add_action( &#039;edit_user_profile_update&#039;, [ $this, &#039;update_profile_fields&#039; ], 100 );
+		} else {
+
+			// Set request context.
+			add_filter( &#039;hivepress/v1/components/request/context&#039;, [ $this, &#039;set_request_context&#039; ] );
+
+			// Redirect author page.
+			add_action( &#039;template_redirect&#039;, [ $this, &#039;redirect_author_page&#039; ] );
+
+			// Alter templates.
+			add_filter( &#039;hivepress/v1/templates/user_view_block/blocks&#039;, [ $this, &#039;alter_user_view_blocks&#039; ], 10, 2 );
+			add_filter( &#039;hivepress/v1/templates/user_view_page/blocks&#039;, [ $this, &#039;alter_user_view_blocks&#039; ], 10, 2 );
+
+			add_filter( &#039;hivepress/v1/templates/vendor_view_block/blocks&#039;, [ $this, &#039;alter_vendor_view_blocks&#039; ], 10, 2 );
+			add_filter( &#039;hivepress/v1/templates/vendor_view_page/blocks&#039;, [ $this, &#039;alter_vendor_view_blocks&#039; ], 10, 2 );
+
+			add_filter( &#039;hivepress/v1/templates/site_footer_block&#039;, [ $this, &#039;alter_site_footer_block&#039; ] );
+		}
+
+		parent::__construct( $args );
+	}
+
+	/**
+	 * Checks online status.
+	 *
+	 * @param object $user User object.
+	 * @return bool
+	 */
+	protected function is_online( $user ) {
+		return $user-&gt;get_online_time() &gt; time() - 15 * MINUTE_IN_SECONDS;
+	}
+
+	/**
+	 * Gets online status.
+	 *
+	 * @param object $user User object.
+	 * @return string
+	 */
+	protected function get_online_status( $user ) {
+		$status = __( &#039;Offline&#039;, &#039;hivepress&#039; );
+
+		if ( $this-&gt;is_online( $user ) ) {
+			$status = __( &#039;Online&#039;, &#039;hivepress&#039; );
+		} elseif ( $user-&gt;get_online_time() ) {
+
+			/* translators: %s: time. */
+			$status = sprintf( __( &#039;Last seen %s ago&#039;, &#039;hivepress&#039; ), human_time_diff( $user-&gt;get_online_time(), time() ) );
+		}
+
+		return $status;
+	}
+
+	/**
+	 * Registers user.
+	 *
+	 * @param int   $user_id User ID.
+	 * @param array $values User values.
+	 */
+	public function register_user( $user_id, $values ) {
+
+		// Get user.
+		$user = Models\User::query()-&gt;get_by_id( $user_id );
+
+		// Hide admin bar.
+		update_user_meta( $user_id, &#039;show_admin_bar_front&#039;, &#039;false&#039; );
+
+		// Send emails.
+		wp_new_user_notification( $user_id );
+
+		if ( get_option( &#039;hp_user_verify_email&#039; ) &amp;&amp; ! isset( $values[&#039;id&#039;] ) ) {
+			return;
+		}
+
+		( new Emails\User_Register(
+			[
+				&#039;recipient&#039; =&gt; $user-&gt;get_email(),
+
+				&#039;tokens&#039;    =&gt; [
+					&#039;user&#039;          =&gt; $user,
+					&#039;user_name&#039;     =&gt; $user-&gt;get_display_name(),
+					&#039;user_password&#039; =&gt; hp\get_array_value( $values, &#039;password&#039; ),
+				],
+			]
+		) )-&gt;send();
+	}
+
+	/**
+	 * Logins user.
+	 *
+	 * @param WP_User $user User object.
+	 */
+	public function login_user( $user ) {
+
+		// Check email verification.
+		if ( get_option( &#039;hp_user_verify_email&#039; ) &amp;&amp; hp\is_class_instance( $user, &#039;WP_User&#039; ) &amp;&amp; $user-&gt;hp_email_verify_key ) {
+			return new \WP_Error( &#039;email_not_verified&#039;, esc_html__( &#039;Please check your email to activate your account.&#039;, &#039;hivepress&#039; ) );
+		}
+
+		return $user;
+	}
+
+	/**
+	 * Updates user.
+	 *
+	 * @param int    $user_id User ID.
+	 * @param object $user User object.
+	 */
+	public function update_user( $user_id, $user ) {
+
+		// Remove action.
+		remove_action( &#039;hivepress/v2/models/user/update&#039;, [ $this, &#039;update_user&#039; ] );
+
+		// Get display name.
+		$display_name = null;
+
+		switch ( get_option( &#039;hp_user_display_name&#039; ) ) {
+			case &#039;first_name&#039;:
+				$display_name = $user-&gt;get_first_name();
+
+				break;
+
+			case &#039;first_name_extra&#039;:
+				$display_name = $user-&gt;get_first_name();
+
+				if ( $user-&gt;get_last_name() ) {
+					$display_name .= &#039; &#039; . mb_substr( $user-&gt;get_last_name(), 0, 1 ) . &#039;.&#039;;
+				}
+
+				break;
+
+			case &#039;last_name&#039;:
+				$display_name = $user-&gt;get_last_name();
+
+				break;
+
+			case &#039;last_name_extra&#039;:
+				if ( $user-&gt;get_first_name() ) {
+					$display_name = mb_substr( $user-&gt;get_first_name(), 0, 1 ) . &#039;. &#039;;
+				}
+
+				$display_name .= $user-&gt;get_last_name();
+
+				break;
+
+			case &#039;full_name&#039;:
+				$display_name = $user-&gt;get_full_name();
+
+				break;
+		}
+
+		if ( ! $display_name ) {
+			$display_name = $user-&gt;get_username();
+		}
+
+		// Update display name.
+		$user-&gt;set_display_name( $display_name )-&gt;save_display_name();
+	}
+
+	/**
+	 * Alters registration form.
+	 *
+	 * @param array $form Form arguments.
+	 * @return array
+	 */
+	public function alter_register_form( $form ) {
+		if ( get_option( &#039;hp_user_verify_email&#039; ) ) {
+
+			// Set form message.
+			$form[&#039;message&#039;]  = esc_html__( &#039;Please check your email to activate your account.&#039;, &#039;hivepress&#039; );
+			$form[&#039;redirect&#039;] = false;
+
+			// Add redirect field.
+			$form[&#039;fields&#039;][&#039;_redirect&#039;] = [
+				&#039;type&#039;         =&gt; &#039;url&#039;,
+				&#039;display_type&#039; =&gt; &#039;hidden&#039;,
+				&#039;default&#039;      =&gt; hp\get_array_value( $_GET, &#039;redirect&#039; ),
+				&#039;_separate&#039;    =&gt; true,
+			];
+		}
+
+		// Add username field.
+		if ( ! get_option( &#039;hp_user_generate_username&#039; ) ) {
+			$form[&#039;fields&#039;][&#039;username&#039;] = [
+				&#039;label&#039;      =&gt; esc_html__( &#039;Username&#039;, &#039;hivepress&#039; ),
+				&#039;type&#039;       =&gt; &#039;text&#039;,
+				&#039;max_length&#039; =&gt; 60,
+				&#039;required&#039;   =&gt; true,
+				&#039;_order&#039;     =&gt; 5,
+
+				&#039;attributes&#039; =&gt; [
+					&#039;autocomplete&#039; =&gt; &#039;username&#039;,
+				],
+			];
+		}
+
+		// Get terms page ID.
+		$page_id = absint( get_option( &#039;hp_page_user_registration_terms&#039; ) );
+
+		if ( $page_id ) {
+
+			// Get terms page URL.
+			$page_url = get_permalink( $page_id );
+
+			if ( $page_url ) {
+
+				// Add terms field.
+				$form[&#039;fields&#039;][&#039;_terms&#039;] = [
+					&#039;caption&#039;   =&gt; sprintf( hivepress()-&gt;translator-&gt;get_string( &#039;i_agree_to_terms_and_conditions&#039; ), esc_url( $page_url ) ),
+					&#039;type&#039;      =&gt; &#039;checkbox&#039;,
+					&#039;required&#039;  =&gt; true,
+					&#039;_separate&#039; =&gt; true,
+					&#039;_order&#039;    =&gt; 1000,
+				];
+			}
+		}
+
+		return $form;
+	}
+
+	/**
+	 * Alters model fields.
+	 *
+	 * @param array $model Model arguments.
+	 * @return array
+	 */
+	public function alter_model_fields( $model ) {
+		if ( get_option( &#039;hp_user_display_online&#039; ) ) {
+			$model[&#039;fields&#039;][&#039;online_time&#039;] = [
+				&#039;type&#039;      =&gt; &#039;number&#039;,
+				&#039;min_value&#039; =&gt; 0,
+				&#039;_external&#039; =&gt; true,
+			];
+		}
+
+		return $model;
+	}
+
+	/**
+	 * Renders user image.
+	 *
+	 * @param string $image Image HTML.
+	 * @param mixed  $id_or_email User ID.
+	 * @param int    $size Image size.
+	 * @param string $default Default image.
+	 * @param string $alt Image description.
+	 * @return string
+	 */
+	public function render_user_image( $image, $id_or_email, $size, $default, $alt ) {
+
+		// Check ID.
+		if ( ! $id_or_email ) {
+			return $image;
+		}
+
+		// Get user.
+		$user_object = null;
+
+		if ( is_object( $id_or_email ) ) {
+			$user_object = get_userdata( $id_or_email-&gt;user_id );
+		} elseif ( is_numeric( $id_or_email ) ) {
+			$user_object = get_userdata( $id_or_email );
+		} elseif ( is_email( $id_or_email ) ) {
+			$user_object = get_user_by( &#039;email&#039;, $id_or_email );
+		}
+
+		if ( $user_object ) {
+			$user = Models\User::query()-&gt;get_by_id( $user_object );
+
+			// Render image.
+			if ( $user-&gt;get_image__url( &#039;thumbnail&#039; ) ) {
+				$image = &#039;&lt;img src=&quot;&#039; . esc_url( $user-&gt;get_image__url( &#039;thumbnail&#039; ) ) . &#039;&quot; class=&quot;avatar avatar-&#039; . esc_attr( $size ) . &#039; photo&quot; height=&quot;&#039; . esc_attr( $size ) . &#039;&quot; width=&quot;&#039; . esc_attr( $size ) . &#039;&quot; alt=&quot;&#039; . esc_attr( $alt ) . &#039;&quot; loading=&quot;lazy&quot;&gt;&#039;;
+			}
+		}
+
+		return $image;
+	}
+
+	/**
+	 * Adds admin columns.
+	 *
+	 * @param array $columns Columns.
+	 * @return array
+	 */
+	public function add_admin_columns( $columns ) {
+		return array_merge(
+			array_slice( $columns, 0, 5, true ),
+			[
+				&#039;verified&#039; =&gt; &#039;&#039;,
+			],
+			array_slice( $columns, 5, null, true )
+		);
+	}
+
+	/**
+	 * Renders admin columns.
+	 *
+	 * @param string $output Output.
+	 * @param string $column Column name.
+	 * @param int    $user_id User ID.
+	 */
+	public function render_admin_columns( $output, $column, $user_id ) {
+		if ( &#039;verified&#039; === $column &amp;&amp; get_user_meta( $user_id, &#039;hp_email_verify_key&#039;, true ) ) {
+			$output = &#039;&lt;div class=&quot;hp-status hp-status--draft&quot;&gt;&lt;span&gt;&#039; . esc_html_x( &#039;Unverified&#039;, &#039;user&#039;, &#039;hivepress&#039; ) . &#039;&lt;/span&gt;&lt;/div&gt;&#039;;
+		}
+
+		return $output;
+	}
+
+	/**
+	 * Adds admin profile fields.
+	 *
+	 * @param array $meta_box Meta box arguments.
+	 * @return array
+	 */
+	public function add_profile_fields( $meta_box ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_users&#039; ) ) {
+			return;
+		}
+
+		// Get user ID.
+		$user_id = absint( hp\get_array_value( $_GET, &#039;user_id&#039; ) );
+
+		if ( ! $user_id ) {
+			$user_id = get_current_user_id();
+		}
+
+		if ( get_user_meta( $user_id, &#039;hp_email_verify_key&#039;, true ) ) {
+			$meta_box[&#039;fields&#039;][&#039;email_verified&#039;] = [
+				&#039;caption&#039; =&gt; esc_html__( &#039;Confirm the email verification&#039;, &#039;hivepress&#039; ),
+				&#039;type&#039;    =&gt; &#039;checkbox&#039;,
+				&#039;_order&#039;  =&gt; 15,
+			];
+		}
+
+		return $meta_box;
+	}
+
+	/**
+	 * Updates admin profile fields.
+	 *
+	 * @param int $user_id User ID.
+	 */
+	public function update_profile_fields( $user_id ) {
+
+		// Check permissions.
+		if ( ! current_user_can( &#039;edit_users&#039; ) ) {
+			return;
+		}
+
+		// Delete verification key.
+		if ( hp\get_array_value( $_POST, &#039;hp_email_verified&#039; ) &amp;&amp; get_user_meta( $user_id, &#039;hp_email_verify_key&#039;, true ) ) {
+			delete_user_meta( $user_id, &#039;hp_email_verified&#039; );
+			delete_user_meta( $user_id, &#039;hp_email_verify_key&#039; );
+		}
+	}
+
+	/**
+	 * Sets request context.
+	 *
+	 * @param array $context Request context.
+	 * @return array
+	 */
+	public function set_request_context( $context ) {
+		if ( get_option( &#039;hp_user_display_online&#039; ) ) {
+			$user = $context[&#039;user&#039;];
+
+			if ( ! $this-&gt;is_online( $user ) ) {
+				$user-&gt;set_online_time( time() )-&gt;save_online_time();
+			}
+		}
+
+		return $context;
+	}
+
+	/**
+	 * Redirect author page.
+	 */
+	public function redirect_author_page() {
+
+		// Check settings.
+		if ( ! get_option( &#039;hp_user_enable_display&#039; ) || ! is_author() ) {
+			return;
+		}
+
+		// Redirect user.
+		wp_safe_redirect( hivepress()-&gt;router-&gt;get_url( &#039;user_view_page&#039;, [ &#039;username&#039; =&gt; get_the_author_meta( &#039;user_login&#039; ) ] ) );
+
+		exit;
+	}
+
+	/**
+	 * Alters user view blocks.
+	 *
+	 * @param array  $blocks Block arguments.
+	 * @param object $template Template object.
+	 * @return array
+	 */
+	public function alter_user_view_blocks( $blocks, $template ) {
+
+		// Get user.
+		$user = $template-&gt;get_context( &#039;user&#039; );
+
+		if ( $user &amp;&amp; get_option( &#039;hp_user_display_online&#039; ) ) {
+			$blocks = hivepress()-&gt;template-&gt;merge_blocks(
+				$blocks,
+				[
+					&#039;user_name&#039; =&gt; [
+						&#039;blocks&#039; =&gt; [
+							&#039;user_online_badge&#039; =&gt; [
+								&#039;type&#039;    =&gt; &#039;part&#039;,
+								&#039;path&#039;    =&gt; &#039;user/view/user-online-badge&#039;,
+								&#039;_order&#039;  =&gt; 5,
+
+								&#039;context&#039; =&gt; [
+									&#039;user_online&#039;        =&gt; $this-&gt;is_online( $user ),
+									&#039;user_online_status&#039; =&gt; $this-&gt;get_online_status( $user ),
+								],
+							],
+						],
+					],
+				]
+			);
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * Alters vendor view blocks.
+	 *
+	 * @param array  $blocks Block arguments.
+	 * @param object $template Template object.
+	 * @return array
+	 */
+	public function alter_vendor_view_blocks( $blocks, $template ) {
+
+		// Get vendor.
+		$vendor = $template-&gt;get_context( &#039;vendor&#039; );
+
+		if ( $vendor &amp;&amp; get_option( &#039;hp_user_display_online&#039; ) ) {
+
+			// Get user.
+			$user = $vendor-&gt;get_user();
+
+			if ( $user ) {
+				$blocks = hivepress()-&gt;template-&gt;merge_blocks(
+					$blocks,
+					[
+						&#039;vendor_name&#039; =&gt; [
+							&#039;blocks&#039; =&gt; [
+								&#039;user_online_badge&#039; =&gt; [
+									&#039;type&#039;    =&gt; &#039;part&#039;,
+									&#039;path&#039;    =&gt; &#039;user/view/user-online-badge&#039;,
+									&#039;_order&#039;  =&gt; 5,
+
+									&#039;context&#039; =&gt; [
+										&#039;user_online&#039; =&gt; $this-&gt;is_online( $user ),
+										&#039;user_online_status&#039; =&gt; $this-&gt;get_online_status( $user ),
+									],
+								],
+							],
+						],
+					]
+				);
+			}
+		}
+
+		return $blocks;
+	}
+
+	/**
+	 * Alters site footer block.
+	 *
+	 * @param array $template Template arguments.
+	 * @return array
+	 */
+	public function alter_site_footer_block( $template ) {
+		return hivepress()-&gt;template-&gt;merge_blocks(
+			$template,
+			[
+				&#039;modals&#039; =&gt; [
+					&#039;blocks&#039; =&gt; [
+						&#039;user_login_modal&#039;            =&gt; [
+							&#039;type&#039;        =&gt; &#039;modal&#039;,
+							&#039;title&#039;       =&gt; esc_html__( &#039;Sign In&#039;, &#039;hivepress&#039; ),
+							&#039;_capability&#039; =&gt; &#039;login&#039;,
+
+							&#039;blocks&#039;      =&gt; [
+								&#039;user_login_form&#039; =&gt; [
+									&#039;type&#039;   =&gt; &#039;user_login_form&#039;,
+									&#039;_order&#039; =&gt; 10,
+								],
+							],
+						],
+
+						&#039;user_register_modal&#039;         =&gt; [
+							&#039;type&#039;        =&gt; &#039;modal&#039;,
+							&#039;title&#039;       =&gt; esc_html__( &#039;Register&#039;, &#039;hivepress&#039; ),
+							&#039;_capability&#039; =&gt; &#039;login&#039;,
+
+							&#039;blocks&#039;      =&gt; [
+								&#039;user_register_form&#039; =&gt; [
+									&#039;type&#039;   =&gt; &#039;user_register_form&#039;,
+									&#039;_order&#039; =&gt; 10,
+								],
+							],
+						],
+
+						&#039;user_password_request_modal&#039; =&gt; [
+							&#039;type&#039;        =&gt; &#039;modal&#039;,
+							&#039;title&#039;       =&gt; esc_html__( &#039;Reset Password&#039;, &#039;hivepress&#039; ),
+							&#039;_capability&#039; =&gt; &#039;login&#039;,
+
+							&#039;blocks&#039;      =&gt; [
+								&#039;user_password_request_form&#039; =&gt; [
+									&#039;type&#039;   =&gt; &#039;form&#039;,
+									&#039;form&#039;   =&gt; &#039;user_password_request&#039;,
+									&#039;_order&#039; =&gt; 10,
+								],
+							],
+						],
+					],
+				],
+			]
+		);
+	}
+}
+</code></pre>
+            </article>
+            </div>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <footer class="phpdocumentor phpdocumentor-footer">
+    <div class="phpdocumentor-section">
+        <span>HivePress Code Reference generated by <a href="http://www.phpdoc.org/">phpDocumentor</a> on October 23rd, 2024 at 10:56 pm.</span>
+    </div>
+</footer>
+
+    <script>
+        cssVars({});
+    </script>
+        </body>
+</html>
