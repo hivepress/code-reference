@@ -6,6 +6,11 @@
     "config": {
         "allow-plugins": {
             "symfony/flex": true
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
         }
     }
 }
